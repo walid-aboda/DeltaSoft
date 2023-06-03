@@ -22,19 +22,19 @@ namespace Report_Pro.Forms
         public frmWord()
         {
             InitializeComponent();
-            DataTable dtCurrencySAR = dal.getDataTabl_1(@"SELECT Currency_Code,Currency_Name,Currency_Name_e FROM Wh_Currency");
+            System.Data.DataTable dtCurrencySAR = dal.getDataTabl_1(@"SELECT Currency_Code,Currency_Name,Currency_Name_e FROM Wh_Currency");
             txtLoanCurrency.DataSource = dtCurrencySAR;
             txtLoanCurrency.ValueMember = "Currency_Code";
             txtLoanCurrency.DisplayMember = "Currency_Name";
             txtLoanCurrency.SelectedValue = "s";
 
-            DataTable dtCurrency = dal.getDataTabl_1(@"SELECT Currency_Code,Currency_Name,Currency_Name_e FROM Wh_Currency");
+            System.Data.DataTable dtCurrency = dal.getDataTabl_1(@"SELECT Currency_Code,Currency_Name,Currency_Name_e FROM Wh_Currency");
             txtLcCurrency.DataSource = dtCurrency;
             txtLcCurrency.ValueMember = "Currency_Code";
             txtLcCurrency.DisplayMember = "Currency_Name";
             txtLcCurrency.SelectedValue = "D";
 
-            DataTable dtBank = dal.getDataTabl_1(@"SELECT BID,BNameA,BNameE,BAccNo FROM BanksTbl");
+            System.Data.DataTable dtBank = dal.getDataTabl_1(@"SELECT BID,BNameA,BNameE,BAccNo FROM BanksTbl");
             txtBank.DataSource = dtBank;
             txtBank.ValueMember = "BID";
             txtBank.DisplayMember = "BNameA";
@@ -223,7 +223,7 @@ namespace Report_Pro.Forms
         {
             try
             {
-                DataTable getBankAcc = dal.getDataTabl_1(@"SELECT BID,BNameA,BNameE,BAccNo FROM BanksTbl where BID='"+txtBank.SelectedValue.ToString().ParseInt(0)+"'");
+                System.Data.DataTable getBankAcc = dal.getDataTabl_1(@"SELECT BID,BNameA,BNameE,BAccNo FROM BanksTbl where BID='"+txtBank.SelectedValue.ToString().ParseInt(0)+"'");
                 txtBankAccount.Text = getBankAcc.Rows[0]["BAccNo"].ToString();
 
             }
