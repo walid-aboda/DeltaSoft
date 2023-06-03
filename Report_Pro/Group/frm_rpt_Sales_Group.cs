@@ -138,7 +138,7 @@ namespace Report_Pro.Group
  	        inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
 	        inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
             inner join (SELECT CASE Category WHEN 'r' THEN LEFT(group_code, 4) WHEN 'F' THEN LEFT(group_code, 2) WHEN 'c' THEN LEFT(group_code, 2) ELSE LEFT(group_code, 2) END AS G_Id, item_no
-                , CASE WHEN LEFT(group_code, 2) IN ('40','41','42','43','44','45','46','47','48','49') THEN '2' WHEN LEFT(group_code, 2) IN ('50') THEN '3' ELSE '1' END AS xe_ FROM wh_main_master) As V on V.item_no=a.item_no
+            , CASE WHEN LEFT(group_code, 2) IN ('40','41','42','43','44','45','46','47','48','49') THEN '2' WHEN LEFT(group_code, 2) IN ('50') THEN '3' ELSE '1' END AS xe_ FROM wh_main_master) As V on V.item_no=a.item_no
 	        left join wh_Groups As G on  v.G_ID=G.group_code
 	        inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
             Inner Join Payer2 as P on P.ACC_NO = C.Acc_no  and P.BRANCH_code =C.Acc_Branch_code

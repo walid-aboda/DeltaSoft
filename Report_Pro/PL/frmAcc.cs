@@ -107,7 +107,7 @@ namespace Report_Pro.PL
                                 "', COSTMER_CASH_NO = '" + uC_CashCard.ID.Text + "', CAT_CODE = '" + uC_Catogry.ID.Text + "', acc_no2 = '" + uC_OtherNu.ID.Text +
                                 "', KM_CODE_Sales = '" + KM_Sales.ID.Text + "', KM_CODE_Purch = '" + KM_Purch.ID.Text + "', COSTMER_K_M_NO = '" + txtKM_No.Text +
                                 "' ,adress_E ='" + txtAddress_E.Text + 
-                                "',SEGEL_NO = '"+txtCrNo.Text + "',SEGEL_Expiry ='"+txtCrExpiryDate.Text+
+                                "',SEGEL_NO = '"+txtCrNo.Text + "',SEGEL_Expiry ='"+txtCrExpiryDate.Text+"',MAIN_MEZAN='"+txtMaimMezan.Text+
                                 "'where  acc_type = '" + CoId.Text + "' and ACC_NO = '" + AccId.Text + "' and BRANCH_code = '" + dgvBranches.Rows[i].Cells[_branch.Name].FormattedValue.ToString() + "'");
 
                     }
@@ -118,7 +118,7 @@ namespace Report_Pro.PL
                             , PriceCatogry, adress, b_o_box, area_code, phone_no, E_MAIL, fax_no, mobile_no, RESP_MOBILE_NO, RESP_PHONE
                             , t_final, resp_name, t_level, PREV_NO, balance, COST_CENTER, notes, S_DATE, med_MEZAN, user_id, MultyCurrency
                             , Currency_Code, Last_Currency_Value_Purch, Last_Currency_Value_Sales, CREDIT_AGE, COSTMER_CASH_NO, CAT_CODE
-                            , acc_no2, KM_CODE_Sales, KM_CODE_Purch, COSTMER_K_M_NO,adress_E,SEGEL_NO ,SEGEL_Expiry) VALUES
+                            , acc_no2, KM_CODE_Sales, KM_CODE_Purch, COSTMER_K_M_NO,adress_E,SEGEL_NO ,SEGEL_Expiry,MAIN_MEZAN) VALUES
                             ('" + CoId.Text + "','" + txtAcc_no.Text + "','" + dgvBranches.Rows[i].Cells[_branch.Name].FormattedValue.ToString() + "','" + MAccId.Text + "','" + (radioActive.Checked ? "" : "S")
                             + "','" + AccName.Text + "','" + AccNameL.Text + "','" + txtCredit.Text.ToDecimal() + "','" + UC_QutType.ID.Text + "','" + Address.Text
                             + "','" + BOBox.Text + "','" + uC_Area.ID.Text + "','" + PhoneNo.Text + "','" + Email.Text + "','" + FaxNo.Text + "','" + MobileNo.Text + "','" + RespMobileNo.Text
@@ -126,7 +126,7 @@ namespace Report_Pro.PL
                             + "','" + Balance.Text.ToDecimal() + "','" + uC_cost.ID.Text + "','" + Notes.Text + "','" + Sdate.Text + "','" + uC_FinalAcc.ID.Text + "','" + txtUser.Text
                             + "','" + UC_MultiCurncey.Desc.Text + "','" + uC_currency.ID.Text + "','" + UC_Purch_price.Desc.Text.ToDecimal() + "','" + UC_Sales_price.Desc.Text
                             + "','" + txtDays.Text.ToDecimal() + "','" + uC_CashCard.ID.Text + "','" + uC_Catogry.ID.Text + "','" + uC_OtherNu.ID.Text + "','" + KM_Sales.ID.Text
-                            + "','" + KM_Purch.ID.Text + "','" + txtKM_No.Text + "','" + txtAddress_E.Text + "', '" + txtCrNo.Text + "','" + txtCrExpiryDate.Text +"')");
+                            + "','" + KM_Purch.ID.Text + "','" + txtKM_No.Text + "','" + txtAddress_E.Text + "', '" + txtCrNo.Text + "','" + txtCrExpiryDate.Text +"','"+txtMaimMezan.Text+"')");
                     }
 
                 }
@@ -298,6 +298,14 @@ namespace Report_Pro.PL
                 UC_BSheet_NO.Desc.Text = r["MEZANIA_ACC_NO"].ToString();
                txtCrNo.Text = r["SEGEL_NO"].ToString();
                 txtCrExpiryDate.Text = r["SEGEL_Expiry"].ToString();
+                if (r["t_level"].ToString().ParseInt(0) <= 1)
+                {
+                    txtMaimMezan.Text = txtAcc_no.Text;
+                }
+                else
+                {
+                    txtMaimMezan.Text = r["MAIN_MEZAN"].ToString();
+                }
                 AccId.ReadOnly = true;
             }
 

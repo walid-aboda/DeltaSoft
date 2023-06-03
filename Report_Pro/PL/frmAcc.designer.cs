@@ -149,6 +149,7 @@
             this.rdoAllBranches = new System.Windows.Forms.RadioButton();
             this.rdoCurrentBranch = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtMaimMezan = new System.Windows.Forms.Label();
             this.ContextMenuStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -168,163 +169,163 @@
             // 
             // Address
             // 
-            resources.ApplyResources(this.Address, "Address");
             this.Address.BackColor = System.Drawing.SystemColors.Window;
             this.Address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Address, "Address");
             this.Address.Name = "Address";
             // 
             // Email
             // 
-            resources.ApplyResources(this.Email, "Email");
             this.Email.BackColor = System.Drawing.SystemColors.Window;
             this.Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Email, "Email");
             this.Email.Name = "Email";
             // 
             // Label15
             // 
-            resources.ApplyResources(this.Label15, "Label15");
             this.Label15.BackColor = System.Drawing.Color.Transparent;
             this.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label15, "Label15");
             this.Label15.Name = "Label15";
             // 
             // Label8
             // 
-            resources.ApplyResources(this.Label8, "Label8");
             this.Label8.BackColor = System.Drawing.Color.Transparent;
             this.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label8, "Label8");
             this.Label8.Name = "Label8";
             // 
             // Label14
             // 
-            resources.ApplyResources(this.Label14, "Label14");
             this.Label14.BackColor = System.Drawing.Color.Transparent;
             this.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label14, "Label14");
             this.Label14.Name = "Label14";
             // 
             // RespPhone
             // 
-            resources.ApplyResources(this.RespPhone, "RespPhone");
             this.RespPhone.BackColor = System.Drawing.SystemColors.Window;
             this.RespPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.RespPhone, "RespPhone");
             this.RespPhone.Name = "RespPhone";
             // 
             // FaxNo
             // 
-            resources.ApplyResources(this.FaxNo, "FaxNo");
             this.FaxNo.BackColor = System.Drawing.SystemColors.Window;
             this.FaxNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.FaxNo, "FaxNo");
             this.FaxNo.Name = "FaxNo";
             // 
             // MobileNo
             // 
-            resources.ApplyResources(this.MobileNo, "MobileNo");
             this.MobileNo.BackColor = System.Drawing.SystemColors.Window;
             this.MobileNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.MobileNo, "MobileNo");
             this.MobileNo.Name = "MobileNo";
             // 
             // Label19
             // 
-            resources.ApplyResources(this.Label19, "Label19");
             this.Label19.BackColor = System.Drawing.Color.Transparent;
             this.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label19, "Label19");
             this.Label19.Name = "Label19";
             // 
             // Label12
             // 
-            resources.ApplyResources(this.Label12, "Label12");
             this.Label12.BackColor = System.Drawing.Color.Transparent;
             this.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label12, "Label12");
             this.Label12.Name = "Label12";
             // 
             // RespMobileNo
             // 
-            resources.ApplyResources(this.RespMobileNo, "RespMobileNo");
             this.RespMobileNo.BackColor = System.Drawing.SystemColors.Window;
             this.RespMobileNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.RespMobileNo, "RespMobileNo");
             this.RespMobileNo.Name = "RespMobileNo";
             // 
             // Label21
             // 
-            resources.ApplyResources(this.Label21, "Label21");
             this.Label21.BackColor = System.Drawing.Color.Transparent;
             this.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label21, "Label21");
             this.Label21.Name = "Label21";
             // 
             // PhoneNo
             // 
-            resources.ApplyResources(this.PhoneNo, "PhoneNo");
             this.PhoneNo.BackColor = System.Drawing.SystemColors.Window;
             this.PhoneNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.PhoneNo, "PhoneNo");
             this.PhoneNo.Name = "PhoneNo";
             // 
             // Label18
             // 
-            resources.ApplyResources(this.Label18, "Label18");
             this.Label18.BackColor = System.Drawing.Color.Transparent;
             this.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label18, "Label18");
             this.Label18.Name = "Label18";
             // 
             // RespName
             // 
-            resources.ApplyResources(this.RespName, "RespName");
             this.RespName.BackColor = System.Drawing.SystemColors.Window;
             this.RespName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.RespName, "RespName");
             this.RespName.Name = "RespName";
             // 
             // Label10
             // 
-            resources.ApplyResources(this.Label10, "Label10");
             this.Label10.BackColor = System.Drawing.Color.Transparent;
             this.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label10, "Label10");
             this.Label10.Name = "Label10";
             // 
             // Label13
             // 
-            resources.ApplyResources(this.Label13, "Label13");
             this.Label13.BackColor = System.Drawing.Color.Transparent;
             this.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label13, "Label13");
             this.Label13.Name = "Label13";
             // 
             // BOBox
             // 
-            resources.ApplyResources(this.BOBox, "BOBox");
             this.BOBox.BackColor = System.Drawing.SystemColors.Window;
             this.BOBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.BOBox, "BOBox");
             this.BOBox.Name = "BOBox";
             // 
             // Label11
             // 
-            resources.ApplyResources(this.Label11, "Label11");
             this.Label11.BackColor = System.Drawing.Color.Transparent;
             this.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label11, "Label11");
             this.Label11.Name = "Label11";
             // 
             // AreaCode
             // 
-            resources.ApplyResources(this.AreaCode, "AreaCode");
             this.AreaCode.BackColor = System.Drawing.SystemColors.Window;
             this.AreaCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.AreaCode, "AreaCode");
             this.AreaCode.Name = "AreaCode";
             // 
             // AccLevel
             // 
-            resources.ApplyResources(this.AccLevel, "AccLevel");
             this.AccLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.AccLevel, "AccLevel");
             this.AccLevel.Name = "AccLevel";
             // 
             // AccId
             // 
-            resources.ApplyResources(this.AccId, "AccId");
             this.AccId.BackColor = System.Drawing.SystemColors.Window;
             this.AccId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.AccId, "AccId");
             this.AccId.Name = "AccId";
             this.AccId.ReadOnly = true;
             this.AccId.TextChanged += new System.EventHandler(this.AccId_TextChanged);
             // 
             // Label6
             // 
-            resources.ApplyResources(this.Label6, "Label6");
             this.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label6, "Label6");
             this.Label6.Name = "Label6";
             // 
             // ImageList1
@@ -341,80 +342,80 @@
             // 
             // ToolStripMenuItem2
             // 
-            resources.ApplyResources(this.ToolStripMenuItem2, "ToolStripMenuItem2");
             this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
+            resources.ApplyResources(this.ToolStripMenuItem2, "ToolStripMenuItem2");
             this.ToolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
             // 
             // ToolStripMenuItem1
             // 
-            resources.ApplyResources(this.ToolStripMenuItem1, "ToolStripMenuItem1");
             this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
+            resources.ApplyResources(this.ToolStripMenuItem1, "ToolStripMenuItem1");
             this.ToolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // TV1
             // 
-            resources.ApplyResources(this.TV1, "TV1");
             this.TV1.ContextMenuStrip = this.ContextMenuStrip1;
+            resources.ApplyResources(this.TV1, "TV1");
             this.TV1.ImageList = this.ImageList1;
             this.TV1.Name = "TV1";
             this.TV1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TV1_AfterSelect_1);
             // 
             // ContextMenuStrip1
             // 
-            resources.ApplyResources(this.ContextMenuStrip1, "ContextMenuStrip1");
             this.ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem1,
             this.ToolStripMenuItem2,
             this.عرضToolStripMenuItem});
             this.ContextMenuStrip1.Name = "ContextMenuStrip1";
+            resources.ApplyResources(this.ContextMenuStrip1, "ContextMenuStrip1");
             // 
             // عرضToolStripMenuItem
             // 
-            resources.ApplyResources(this.عرضToolStripMenuItem, "عرضToolStripMenuItem");
             this.عرضToolStripMenuItem.Name = "عرضToolStripMenuItem";
+            resources.ApplyResources(this.عرضToolStripMenuItem, "عرضToolStripMenuItem");
             this.عرضToolStripMenuItem.Click += new System.EventHandler(this.عرضToolStripMenuItem_Click);
             // 
             // Label2
             // 
-            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label2, "Label2");
             this.Label2.Name = "Label2";
             // 
             // Label4
             // 
-            resources.ApplyResources(this.Label4, "Label4");
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label4, "Label4");
             this.Label4.Name = "Label4";
             // 
             // Label3
             // 
-            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.BackColor = System.Drawing.Color.Transparent;
             this.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label3, "Label3");
             this.Label3.Name = "Label3";
             this.Label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // AccName
             // 
-            resources.ApplyResources(this.AccName, "AccName");
             this.AccName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.AccName, "AccName");
             this.AccName.Name = "AccName";
             // 
             // AccNameL
             // 
-            resources.ApplyResources(this.AccNameL, "AccNameL");
             this.AccNameL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.AccNameL, "AccNameL");
             this.AccNameL.Name = "AccNameL";
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.radioTransaction);
             this.panel4.Controls.Add(this.radioParent);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // radioTransaction
@@ -435,18 +436,18 @@
             // 
             // txtAcc_no
             // 
-            resources.ApplyResources(this.txtAcc_no, "txtAcc_no");
             this.txtAcc_no.BackColor = System.Drawing.SystemColors.Window;
             this.txtAcc_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtAcc_no, "txtAcc_no");
             this.txtAcc_no.Name = "txtAcc_no";
             this.txtAcc_no.ReadOnly = true;
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.radioStop);
             this.panel2.Controls.Add(this.radioActive);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // radioStop
@@ -467,9 +468,9 @@
             // 
             // MAccId
             // 
-            resources.ApplyResources(this.MAccId, "MAccId");
             this.MAccId.BackColor = System.Drawing.SystemColors.Info;
             this.MAccId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.MAccId, "MAccId");
             this.MAccId.Name = "MAccId";
             this.MAccId.ReadOnly = true;
             // 
@@ -481,17 +482,17 @@
             // 
             // txtSearchName
             // 
-            resources.ApplyResources(this.txtSearchName, "txtSearchName");
             this.txtSearchName.BackColor = System.Drawing.SystemColors.Window;
             this.txtSearchName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtSearchName, "txtSearchName");
             this.txtSearchName.Name = "txtSearchName";
             this.txtSearchName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyUp);
             // 
             // ribbonBar1
             // 
-            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.AutoOverflowEnabled = true;
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
+            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.BNew,
@@ -505,61 +506,61 @@
             // 
             // BNew
             // 
-            resources.ApplyResources(this.BNew, "BNew");
             this.BNew.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BNew.FontBold = true;
             this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
             this.BNew.Name = "BNew";
             this.BNew.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.BNew, "BNew");
             this.BNew.Click += new System.EventHandler(this.BNew_Click);
             // 
             // BSave
             // 
-            resources.ApplyResources(this.BSave, "BSave");
             this.BSave.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSave.FontBold = true;
             this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
             this.BSave.Name = "BSave";
             this.BSave.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.BSave, "BSave");
             this.BSave.Click += new System.EventHandler(this.BSave_Click);
             // 
             // BEdit
             // 
-            resources.ApplyResources(this.BEdit, "BEdit");
             this.BEdit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BEdit.FontBold = true;
             this.BEdit.Image = global::Report_Pro.Properties.Resources.update;
             this.BEdit.Name = "BEdit";
             this.BEdit.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.BEdit, "BEdit");
             this.BEdit.Click += new System.EventHandler(this.BEdit_Click);
             // 
             // BSearch
             // 
-            resources.ApplyResources(this.BSearch, "BSearch");
             this.BSearch.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSearch.Image = global::Report_Pro.Properties.Resources.search_16;
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.BSearch, "BSearch");
             this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
             // BExit
             // 
-            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BExit.Image = global::Report_Pro.Properties.Resources.deleteAttach_icon;
             this.BExit.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Far;
             this.BExit.Name = "BExit";
+            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.SubItemsExpandWidth = 14;
             this.BExit.Click += new System.EventHandler(this.BExit_Click);
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.CausesValidation = false;
             this.tabControl1.Controls.Add(this.tabControlPanel4);
             this.tabControl1.Controls.Add(this.tabControlPanel5);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
@@ -570,7 +571,6 @@
             // 
             // tabControlPanel4
             // 
-            resources.ApplyResources(this.tabControlPanel4, "tabControlPanel4");
             this.tabControlPanel4.Controls.Add(this.txtCrExpiryDate);
             this.tabControlPanel4.Controls.Add(this.label41);
             this.tabControlPanel4.Controls.Add(this.txtCrNo);
@@ -607,6 +607,7 @@
             this.tabControlPanel4.Controls.Add(this.BranchId);
             this.tabControlPanel4.Controls.Add(this.Label16);
             this.tabControlPanel4.Controls.Add(this.Notes);
+            resources.ApplyResources(this.tabControlPanel4, "tabControlPanel4");
             this.tabControlPanel4.Name = "tabControlPanel4";
             this.tabControlPanel4.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
             this.tabControlPanel4.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(188)))), ((int)(((byte)(227)))));
@@ -620,28 +621,13 @@
             // 
             // txtCrExpiryDate
             // 
-            resources.ApplyResources(this.txtCrExpiryDate, "txtCrExpiryDate");
             // 
             // 
             // 
             this.txtCrExpiryDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtCrExpiryDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("txtCrExpiryDate.ButtonClear.DisplayPosition")));
-            this.txtCrExpiryDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("txtCrExpiryDate.ButtonClear.Image")));
-            this.txtCrExpiryDate.ButtonClear.Text = resources.GetString("txtCrExpiryDate.ButtonClear.Text");
-            this.txtCrExpiryDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtCrExpiryDate.ButtonCustom.DisplayPosition")));
-            this.txtCrExpiryDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtCrExpiryDate.ButtonCustom.Image")));
-            this.txtCrExpiryDate.ButtonCustom.Text = resources.GetString("txtCrExpiryDate.ButtonCustom.Text");
-            this.txtCrExpiryDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtCrExpiryDate.ButtonCustom2.DisplayPosition")));
-            this.txtCrExpiryDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtCrExpiryDate.ButtonCustom2.Image")));
-            this.txtCrExpiryDate.ButtonCustom2.Text = resources.GetString("txtCrExpiryDate.ButtonCustom2.Text");
-            this.txtCrExpiryDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("txtCrExpiryDate.ButtonDropDown.DisplayPosition")));
-            this.txtCrExpiryDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("txtCrExpiryDate.ButtonDropDown.Image")));
             this.txtCrExpiryDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.txtCrExpiryDate.ButtonDropDown.Text = resources.GetString("txtCrExpiryDate.ButtonDropDown.Text");
             this.txtCrExpiryDate.ButtonDropDown.Visible = true;
-            this.txtCrExpiryDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("txtCrExpiryDate.ButtonFreeText.DisplayPosition")));
-            this.txtCrExpiryDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("txtCrExpiryDate.ButtonFreeText.Image")));
-            this.txtCrExpiryDate.ButtonFreeText.Text = resources.GetString("txtCrExpiryDate.ButtonFreeText.Text");
+            resources.ApplyResources(this.txtCrExpiryDate, "txtCrExpiryDate");
             // 
             // 
             // 
@@ -650,9 +636,7 @@
             // 
             // 
             this.txtCrExpiryDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCrExpiryDate.MonthCalendar.Category = resources.GetString("txtCrExpiryDate.MonthCalendar.Category");
             this.txtCrExpiryDate.MonthCalendar.ClearButtonVisible = true;
-            this.txtCrExpiryDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("txtCrExpiryDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -662,8 +646,6 @@
             this.txtCrExpiryDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txtCrExpiryDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.txtCrExpiryDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.txtCrExpiryDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("txtCrExpiryDate.MonthCalendar.DayNames")));
-            this.txtCrExpiryDate.MonthCalendar.Description = resources.GetString("txtCrExpiryDate.MonthCalendar.Description");
             this.txtCrExpiryDate.MonthCalendar.DisplayMonth = new System.DateTime(2023, 5, 1, 0, 0, 0, 0);
             this.txtCrExpiryDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("txtCrExpiryDate.MonthCalendar.MarkedDates")));
             this.txtCrExpiryDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("txtCrExpiryDate.MonthCalendar.MonthlyMarkedDates")));
@@ -673,90 +655,87 @@
             this.txtCrExpiryDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.txtCrExpiryDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.txtCrExpiryDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.txtCrExpiryDate.MonthCalendar.Tag = resources.GetString("txtCrExpiryDate.MonthCalendar.Tag");
-            this.txtCrExpiryDate.MonthCalendar.Text = resources.GetString("txtCrExpiryDate.MonthCalendar.Text");
             this.txtCrExpiryDate.MonthCalendar.TodayButtonVisible = true;
-            this.txtCrExpiryDate.MonthCalendar.Tooltip = resources.GetString("txtCrExpiryDate.MonthCalendar.Tooltip");
             this.txtCrExpiryDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("txtCrExpiryDate.MonthCalendar.WeeklyMarkedDays")));
             this.txtCrExpiryDate.Name = "txtCrExpiryDate";
             // 
             // label41
             // 
-            resources.ApplyResources(this.label41, "label41");
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label41, "label41");
             this.label41.Name = "label41";
             // 
             // txtCrNo
             // 
-            resources.ApplyResources(this.txtCrNo, "txtCrNo");
             this.txtCrNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtCrNo, "txtCrNo");
             this.txtCrNo.Name = "txtCrNo";
             // 
             // label39
             // 
-            resources.ApplyResources(this.label39, "label39");
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
             // 
             // CoId
             // 
-            resources.ApplyResources(this.CoId, "CoId");
             this.CoId.BackColor = System.Drawing.SystemColors.Window;
             this.CoId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.CoId, "CoId");
             this.CoId.Name = "CoId";
             // 
             // txtUser
             // 
-            resources.ApplyResources(this.txtUser, "txtUser");
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtUser, "txtUser");
             this.txtUser.Name = "txtUser";
             // 
             // Label43
             // 
-            resources.ApplyResources(this.Label43, "Label43");
             this.Label43.BackColor = System.Drawing.Color.Transparent;
             this.Label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label43, "Label43");
             this.Label43.Name = "Label43";
             // 
             // txtKM_No
             // 
-            resources.ApplyResources(this.txtKM_No, "txtKM_No");
             this.txtKM_No.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtKM_No, "txtKM_No");
             this.txtKM_No.Name = "txtKM_No";
             // 
             // Label29
             // 
-            resources.ApplyResources(this.Label29, "Label29");
             this.Label29.BackColor = System.Drawing.Color.Transparent;
             this.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label29, "Label29");
             this.Label29.Name = "Label29";
             // 
             // Sdate
             // 
-            resources.ApplyResources(this.Sdate, "Sdate");
             this.Sdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Sdate, "Sdate");
             this.Sdate.Name = "Sdate";
             // 
             // Label28
             // 
-            resources.ApplyResources(this.Label28, "Label28");
             this.Label28.BackColor = System.Drawing.Color.Transparent;
             this.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label28, "Label28");
             this.Label28.Name = "Label28";
             // 
             // KM_Purch
             // 
-            resources.ApplyResources(this.KM_Purch, "KM_Purch");
             this.KM_Purch.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.KM_Purch, "KM_Purch");
             this.KM_Purch.Name = "KM_Purch";
             // 
             // Label30
             // 
-            resources.ApplyResources(this.Label30, "Label30");
             this.Label30.BackColor = System.Drawing.Color.Transparent;
             this.Label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label30, "Label30");
             this.Label30.Name = "Label30";
             // 
             // KM_Sales
@@ -766,9 +745,9 @@
             // 
             // Label27
             // 
-            resources.ApplyResources(this.Label27, "Label27");
             this.Label27.BackColor = System.Drawing.Color.Transparent;
             this.Label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label27, "Label27");
             this.Label27.Name = "Label27";
             // 
             // uC_cost
@@ -778,9 +757,9 @@
             // 
             // Label26
             // 
-            resources.ApplyResources(this.Label26, "Label26");
             this.Label26.BackColor = System.Drawing.Color.Transparent;
             this.Label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label26, "Label26");
             this.Label26.Name = "Label26";
             // 
             // UC_BSheet_NO
@@ -791,49 +770,49 @@
             // 
             // Label32
             // 
-            resources.ApplyResources(this.Label32, "Label32");
             this.Label32.BackColor = System.Drawing.Color.Transparent;
             this.Label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label32, "Label32");
             this.Label32.Name = "Label32";
             // 
             // uC_OtherNu
             // 
-            resources.ApplyResources(this.uC_OtherNu, "uC_OtherNu");
             this.uC_OtherNu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.uC_OtherNu, "uC_OtherNu");
             this.uC_OtherNu.Name = "uC_OtherNu";
             // 
             // Label33
             // 
-            resources.ApplyResources(this.Label33, "Label33");
             this.Label33.BackColor = System.Drawing.Color.Transparent;
             this.Label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label33, "Label33");
             this.Label33.Name = "Label33";
             // 
             // uC_Area
             // 
-            resources.ApplyResources(this.uC_Area, "uC_Area");
             this.uC_Area.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.uC_Area, "uC_Area");
             this.uC_Area.Name = "uC_Area";
             // 
             // Label25
             // 
-            resources.ApplyResources(this.Label25, "Label25");
             this.Label25.BackColor = System.Drawing.Color.Transparent;
             this.Label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label25, "Label25");
             this.Label25.Name = "Label25";
             // 
             // uC_FinalAcc
             // 
-            resources.ApplyResources(this.uC_FinalAcc, "uC_FinalAcc");
             this.uC_FinalAcc.BackColor = System.Drawing.Color.Transparent;
             this.uC_FinalAcc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.uC_FinalAcc, "uC_FinalAcc");
             this.uC_FinalAcc.Name = "uC_FinalAcc";
             // 
             // Label34
             // 
-            resources.ApplyResources(this.Label34, "Label34");
             this.Label34.BackColor = System.Drawing.Color.Transparent;
             this.Label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label34, "Label34");
             this.Label34.Name = "Label34";
             this.Label34.Click += new System.EventHandler(this.Label34_Click);
             // 
@@ -844,69 +823,69 @@
             // 
             // Label40
             // 
-            resources.ApplyResources(this.Label40, "Label40");
             this.Label40.BackColor = System.Drawing.Color.Transparent;
             this.Label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label40, "Label40");
             this.Label40.Name = "Label40";
             // 
             // label23
             // 
-            resources.ApplyResources(this.label23, "label23");
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
             // 
             // Balance
             // 
-            resources.ApplyResources(this.Balance, "Balance");
             this.Balance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Balance, "Balance");
             this.Balance.Name = "Balance";
             // 
             // uC_CashCard
             // 
-            resources.ApplyResources(this.uC_CashCard, "uC_CashCard");
             this.uC_CashCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.uC_CashCard, "uC_CashCard");
             this.uC_CashCard.Name = "uC_CashCard";
             // 
             // Label22
             // 
-            resources.ApplyResources(this.Label22, "Label22");
             this.Label22.BackColor = System.Drawing.Color.Transparent;
             this.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label22, "Label22");
             this.Label22.Name = "Label22";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
             // Label44
             // 
-            resources.ApplyResources(this.Label44, "Label44");
             this.Label44.BackColor = System.Drawing.Color.Transparent;
             this.Label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label44, "Label44");
             this.Label44.Name = "Label44";
             // 
             // BranchId
             // 
-            resources.ApplyResources(this.BranchId, "BranchId");
             this.BranchId.BackColor = System.Drawing.SystemColors.Window;
             this.BranchId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.BranchId, "BranchId");
             this.BranchId.Name = "BranchId";
             // 
             // Label16
             // 
-            resources.ApplyResources(this.Label16, "Label16");
             this.Label16.BackColor = System.Drawing.Color.Transparent;
             this.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Label16, "Label16");
             this.Label16.Name = "Label16";
             // 
             // Notes
             // 
-            resources.ApplyResources(this.Notes, "Notes");
             this.Notes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Notes, "Notes");
             this.Notes.Name = "Notes";
             // 
             // tabItem4
@@ -917,7 +896,6 @@
             // 
             // tabControlPanel5
             // 
-            resources.ApplyResources(this.tabControlPanel5, "tabControlPanel5");
             this.tabControlPanel5.Controls.Add(this.txtAddress_E);
             this.tabControlPanel5.Controls.Add(this.label38);
             this.tabControlPanel5.Controls.Add(this.Address);
@@ -955,6 +933,7 @@
             this.tabControlPanel5.Controls.Add(this.Label14);
             this.tabControlPanel5.Controls.Add(this.RespPhone);
             this.tabControlPanel5.Controls.Add(this.Label10);
+            resources.ApplyResources(this.tabControlPanel5, "tabControlPanel5");
             this.tabControlPanel5.Name = "tabControlPanel5";
             this.tabControlPanel5.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
             this.tabControlPanel5.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(188)))), ((int)(((byte)(227)))));
@@ -967,23 +946,23 @@
             // 
             // txtAddress_E
             // 
-            resources.ApplyResources(this.txtAddress_E, "txtAddress_E");
             this.txtAddress_E.BackColor = System.Drawing.SystemColors.Window;
             this.txtAddress_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtAddress_E, "txtAddress_E");
             this.txtAddress_E.Name = "txtAddress_E";
             // 
             // label38
             // 
-            resources.ApplyResources(this.label38, "label38");
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
             // 
             // txtDays
             // 
-            resources.ApplyResources(this.txtDays, "txtDays");
             this.txtDays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDays.DicemalDigits = 0;
+            resources.ApplyResources(this.txtDays, "txtDays");
             this.txtDays.maxmumNumber = 0D;
             this.txtDays.minimumNumber = 0D;
             this.txtDays.Name = "txtDays";
@@ -996,15 +975,15 @@
             // 
             // UC_QutType
             // 
-            resources.ApplyResources(this.UC_QutType, "UC_QutType");
             this.UC_QutType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.UC_QutType, "UC_QutType");
             this.UC_QutType.Name = "UC_QutType";
             // 
             // txtCredit
             // 
-            resources.ApplyResources(this.txtCredit, "txtCredit");
             this.txtCredit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCredit.DicemalDigits = 0;
+            resources.ApplyResources(this.txtCredit, "txtCredit");
             this.txtCredit.maxmumNumber = 0D;
             this.txtCredit.minimumNumber = 0D;
             this.txtCredit.Name = "txtCredit";
@@ -1023,9 +1002,9 @@
             // 
             // label37
             // 
-            resources.ApplyResources(this.label37, "label37");
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label37, "label37");
             this.label37.Name = "label37";
             // 
             // UC_Purch_price
@@ -1036,9 +1015,9 @@
             // 
             // label36
             // 
-            resources.ApplyResources(this.label36, "label36");
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
             // 
             // UC_Sales_price
@@ -1049,29 +1028,29 @@
             // 
             // label31
             // 
-            resources.ApplyResources(this.label31, "label31");
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
             // 
             // uC_currency
             // 
-            resources.ApplyResources(this.uC_currency, "uC_currency");
             this.uC_currency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.uC_currency, "uC_currency");
             this.uC_currency.Name = "uC_currency";
             // 
             // label35
             // 
-            resources.ApplyResources(this.label35, "label35");
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
             // 
             // label24
             // 
-            resources.ApplyResources(this.label24, "label24");
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
             // 
             // label20
@@ -1083,16 +1062,16 @@
             // 
             // label17
             // 
-            resources.ApplyResources(this.label17, "label17");
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
             // tabItem5
@@ -1103,34 +1082,34 @@
             // 
             // txtSearchNumber
             // 
-            resources.ApplyResources(this.txtSearchNumber, "txtSearchNumber");
             this.txtSearchNumber.BackColor = System.Drawing.SystemColors.Window;
             this.txtSearchNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtSearchNumber, "txtSearchNumber");
             this.txtSearchNumber.Name = "txtSearchNumber";
             this.txtSearchNumber.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchNumber_KeyUp);
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
             // dgvBranches
             // 
-            resources.ApplyResources(this.dgvBranches, "dgvBranches");
             this.dgvBranches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBranches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._branch,
             this._branchName,
             this._colChoise});
+            resources.ApplyResources(this.dgvBranches, "dgvBranches");
             this.dgvBranches.Name = "dgvBranches";
             // 
             // _branch
@@ -1151,10 +1130,10 @@
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.rdoAllBranches);
             this.panel3.Controls.Add(this.dgvBranches);
             this.panel3.Controls.Add(this.rdoCurrentBranch);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // rdoAllBranches
@@ -1177,7 +1156,7 @@
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Controls.Add(this.txtMaimMezan);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.txtAcc_no);
             this.panel5.Controls.Add(this.txtSearchName);
@@ -1195,13 +1174,21 @@
             this.panel5.Controls.Add(this.Label3);
             this.panel5.Controls.Add(this.Label6);
             this.panel5.Controls.Add(this.Label4);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
+            // 
+            // txtMaimMezan
+            // 
+            this.txtMaimMezan.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMaimMezan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtMaimMezan, "txtMaimMezan");
+            this.txtMaimMezan.Name = "txtMaimMezan";
             // 
             // frmAcc
             // 
-            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Appearance.Options.UseBackColor = true;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -1356,5 +1343,6 @@
         internal System.Windows.Forms.Label label39;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput txtCrExpiryDate;
         internal System.Windows.Forms.Label label41;
+        internal System.Windows.Forms.Label txtMaimMezan;
     }
 }

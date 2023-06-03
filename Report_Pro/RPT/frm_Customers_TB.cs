@@ -58,7 +58,7 @@ namespace Report_Pro.RPT
         {
             createDattable();
             DataGridView1.DataSource = dt_;
-            btn_preview1.Visibility=DevExpress.XtraBars.BarItemVisibility.Always; ;
+            btn_preview.Visible=true; 
             
         }
 

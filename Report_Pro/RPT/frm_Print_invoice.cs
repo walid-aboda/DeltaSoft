@@ -166,6 +166,8 @@ namespace Report_Pro.RPT
               
 
                     getInvoiceTotal(ser_1, text1, text2, cyear_1);
+                    ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
+
                     DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where company_no = left('"+Branch.ID.Text+"',1)");
 
                     string vat_no = dt_Co.Rows[0]["Comp_Vat_no"].ToString();
@@ -229,6 +231,9 @@ namespace Report_Pro.RPT
 
                     {
                         RPT.Rpt_sales_Invoice_2 reportInv = new RPT.Rpt_sales_Invoice_2();
+                        reportInv.DataDefinition.FormulaFields["tafqeet"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+                        reportInv.DataDefinition.FormulaFields["tafqeet_E"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";
+
                         reportInv.SetDataSource(ds);
 
                         reportInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");

@@ -44,7 +44,7 @@ namespace Report_Pro
 
         public virtual void preview()
         {
-
+           
         }
 
         public int canEdit=1 ;
@@ -251,9 +251,9 @@ namespace Report_Pro
             this.btn_close.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_close.ImageOptions.LargeImage")));
             this.btn_close.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_close.ImageOptions.LargeImageIndex")));
             this.btn_close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_close.ImageOptions.SvgImage")));
-            this.btn_close.ItemAppearance.Hovered.BackColor = System.Drawing.Color.Red;
+            this.btn_close.ItemAppearance.Hovered.BackColor = ((System.Drawing.Color)(resources.GetObject("btn_close.ItemAppearance.Hovered.BackColor")));
             this.btn_close.ItemAppearance.Hovered.Font = ((System.Drawing.Font)(resources.GetObject("btn_close.ItemAppearance.Hovered.Font")));
-            this.btn_close.ItemAppearance.Hovered.ForeColor = System.Drawing.Color.White;
+            this.btn_close.ItemAppearance.Hovered.ForeColor = ((System.Drawing.Color)(resources.GetObject("btn_close.ItemAppearance.Hovered.ForeColor")));
             this.btn_close.ItemAppearance.Hovered.Options.UseBackColor = true;
             this.btn_close.ItemAppearance.Hovered.Options.UseFont = true;
             this.btn_close.ItemAppearance.Hovered.Options.UseForeColor = true;
@@ -292,6 +292,8 @@ namespace Report_Pro
             // skinDropDownButtonItem1
             // 
             resources.ApplyResources(this.skinDropDownButtonItem1, "skinDropDownButtonItem1");
+            this.skinDropDownButtonItem1.ActAsDropDown = true;
+            this.skinDropDownButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.skinDropDownButtonItem1.Id = 8;
             this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
             // 

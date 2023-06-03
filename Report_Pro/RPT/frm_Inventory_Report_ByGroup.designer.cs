@@ -30,7 +30,13 @@ namespace Report_Pro.RPT
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Inventory_Report_ByGroup));
+            this.btn_preview1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
@@ -77,6 +83,34 @@ namespace Report_Pro.RPT
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_preview1
+            // 
+            this.btn_preview1.Id = 15;
+            this.btn_preview1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_preview1.ImageOptions.Image")));
+            this.btn_preview1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_preview1.ImageOptions.LargeImage")));
+            this.btn_preview1.Name = "btn_preview1";
+            this.btn_preview1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             // 
             // headLbl
             // 
@@ -498,6 +532,10 @@ namespace Report_Pro.RPT
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frm_Inventory_Report_ByGroup";
             this.Load += new System.EventHandler(this.frm_Inventory_Report_Load);
+            this.Controls.SetChildIndex(this.barDockControlTop, 0);
+            this.Controls.SetChildIndex(this.barDockControlBottom, 0);
+            this.Controls.SetChildIndex(this.barDockControlRight, 0);
+            this.Controls.SetChildIndex(this.barDockControlLeft, 0);
             this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panelEx1.ResumeLayout(false);
@@ -557,5 +595,10 @@ namespace Report_Pro.RPT
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private DevExpress.XtraBars.BarButtonItem btn_preview1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
     }
 }
