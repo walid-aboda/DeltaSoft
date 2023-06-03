@@ -26,7 +26,6 @@
         private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btn_Option1;
         private DevExpress.XtraBars.BarButtonItem btn_Report1;
-        public DevExpress.XtraBars.BarButtonItem btn_preview1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -43,5 +42,6 @@
         public System.Windows.Forms.ToolStripMenuItem btn_Option;
         public System.Windows.Forms.ToolStripMenuItem btn_Report;
         public System.Windows.Forms.ToolStripMenuItem btn_preview;
+        private DevExpress.XtraBars.BarButtonItem btn_preview1;
     }
 }

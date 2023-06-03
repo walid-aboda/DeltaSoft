@@ -11,7 +11,7 @@ using System.Text;
 using System.Windows.Forms;
 namespace Report_Pro.Group
 {
-    public partial class frm_Inventory_Report_Group : Form
+    public partial class frm_Inventory_Report_Group : frm_ReportMaster
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string R, F, C, P, S, Z, X;
@@ -112,7 +112,7 @@ namespace Report_Pro.Group
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
 
         }
 
@@ -127,7 +127,7 @@ namespace Report_Pro.Group
 
         private void btnOptions_Click(object sender, EventArgs e)
         {
-            groupPanel1.Visible = true;
+            
         }
 
         private void buttonX4_Click(object sender, EventArgs e)
@@ -143,13 +143,13 @@ namespace Report_Pro.Group
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
 
 
           
         }
 
-        private void buttonX5_Click(object sender, EventArgs e)
+        private void inventoryByGroups()
         {
             choises();
             DataTable dt1 = new DataTable();
@@ -180,7 +180,7 @@ namespace Report_Pro.Group
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
 
 
 
@@ -191,7 +191,7 @@ namespace Report_Pro.Group
         private void buttonX6_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
             choises();
 
             DataTable dt1 = new DataTable();
@@ -218,11 +218,31 @@ namespace Report_Pro.Group
 
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
 
         }
 
         private void frm_Inventory_Report_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chR_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelChoise_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -232,45 +252,74 @@ namespace Report_Pro.Group
 
         }
 
-        private void groupPanel1_Click(object sender, EventArgs e)
+        private void panelChoise_Click(object sender, EventArgs e)
         {
 
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void buttonX5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public override void Option()
+        {
+            panelChoise.Visible = true;
+            base.Option();
+        }
+
+        public override void preview()
+        {
+            if (rdo_ByItem.Checked)
             {
-                Cursor.Current = Cursors.WaitCursor;
-                choises();
-                
+                inventoryByItems();
+            }
+           else if (rdo_ByGroup.Checked)
+            {
+                inventoryByGroups();
+            }
 
-                RPT.rpt_inventory rpt = new RPT.rpt_inventory();
+            base.preview();
+        }
+        private void inventoryByItems()
+        {
 
-                RPT.DataSet1 ds = new RPT.DataSet1();
-                DataTable dt1 = new DataTable();
+            Cursor.Current = Cursors.WaitCursor;
+            choises();
 
-                //dt1 = dal.getDataTabl("get_inventory_", dTP2.Value.Date, Convert.ToString(category.SelectedValue), dal.db1);
-                dt1 = dal.getDataTabl_1(@"Use GroupDB SELECT A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
+
+            RPT.rpt_inventory rpt = new RPT.rpt_inventory();
+
+            RPT.DataSet1 ds = new RPT.DataSet1();
+            DataTable dt1 = new DataTable();
+
+            //dt1 = dal.getDataTabl("get_inventory_", dTP2.Value.Date, Convert.ToString(category.SelectedValue), dal.db1);
+            dt1 = dal.getDataTabl_1(@"Use GroupDB SELECT A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
                 a.Dim_category, round(sum(D.QTY_ADD - D.QTY_TAKE), 2) as balance, sum(D.QTY_ADD - D.QTY_TAKE) * a.local_cost as cost
                 FROM wh_material_transaction As D 
                 inner join wh_main_master As A on A.item_no = D.ITEM_NO 
                 inner join wh_Groups As G on g.group_code = a.group_code 
                 inner join(select ITEM_NO, COST_PRICE from(select *, ROW_NUMBER() OVER(PARTITION BY item_no ORDER BY G_DATE DESC) AS DuplicateCount 
                 FROM wh_MATERIAL_TRANSACTION  where cast(G_DATE as date) <= '" +
-                dTP2.Value.ToString("yyyy/MM/dd") + "') as t1 where DuplicateCount = 1) as t2 on t2.ITEM_NO = a.item_no " +
-                "where cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" +Properties.Settings.Default.C_year + "' " +
-                "and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "')  and   D.branch_code like " +
-                " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
-                "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE order by A.item_no");
+            dTP2.Value.ToString("yyyy/MM/dd") + "') as t1 where DuplicateCount = 1) as t2 on t2.ITEM_NO = a.item_no " +
+            "where cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + Properties.Settings.Default.C_year + "' " +
+            "and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "')  and   D.branch_code like " +
+            " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
+            "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE order by A.item_no");
 
-                ds.Tables.Add(dt1);
-                ////ds.WriteXmlSchema("schema_rpt.xml");
-                rpt.SetDataSource(ds);
-                crystalReportViewer1.ReportSource = rpt;
-                Cursor.Current = Cursors.Default;
-                groupPanel1.Visible = false;
+            ds.Tables.Add(dt1);
+            ////ds.WriteXmlSchema("schema_rpt.xml");
+            rpt.SetDataSource(ds);
+            crystalReportViewer1.ReportSource = rpt;
+            rpt.SetParameterValue("EnterLanguh", cmbLanguh.SelectedIndex.ToString());
+            Cursor.Current = Cursors.Default;
+            panelChoise.Visible = false;
 
-            }
         }
 
         private void buttonX2_Click(object sender, EventArgs e)
@@ -366,7 +415,7 @@ namespace Report_Pro.Group
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
 
 
 
@@ -410,7 +459,7 @@ namespace Report_Pro.Group
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Cursor.Current = Cursors.Default;
-            groupPanel1.Visible = false;
+            panelChoise.Visible = false;
         }
 
        

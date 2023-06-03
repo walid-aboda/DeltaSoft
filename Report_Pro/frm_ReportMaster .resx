@@ -121,148 +121,6 @@
   <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;btn_Report1.Name" xml:space="preserve">
-    <value>btn_Report1</value>
-  </data>
-  <data name="btn_close.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 14pt</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="headLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;headLbl.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btn_Min.Name" xml:space="preserve">
-    <value>btn_Min</value>
-  </data>
-  <data name="&gt;&gt;btn_Min.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cmbLanguh.Name" xml:space="preserve">
-    <value>cmbLanguh</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="cmbLanguh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <data name="btn_Min.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0VGl0
-        bGUARGVsZXRlO1JlbW92ZTtNaW51c+upj0EAAANRSURBVDhPfZJdTFN3GMYPkPiBF2NeejEXkyVubtXg
-        YnSJMZu6KQazhWHZpnFxc06Z0xWwFqEwJS4NaBEtRKVJh6Ji+agUKaWipoIEQmf5sBUKpS0y+sEOlrbW
-        FZLH93+q8c4mv/R93/P8ntOLciPh/wXok0AkZpcbP86t7lFI1ZY+qcYaPK55xEvVfZacSw9L9xZfW0GZ
-        JJYdJofBjUZigpy6OWvh0cpupaymf76m04M2ewAWXxj/+MMwPpnGla4JyP62zh48YzpA+QXMeeVyCWs+
-        Fy/8TdXdptQPY/C/KKz8C/QEouj0PkcX0Tsdv1m8YZQ22XGowqxf/tH6JcxlBUm/Ks0VZTo7BmdewOgK
-        wTAegtEdhmkiApMnDts7PGE8DsZQTi/6SWEsI3cBlymtXXW4sme+zxuB1jaDxidB6EZmoR8NocX5hmba
-        dY4gGui5xR+FpKo3tv2XsyJud0l7ldo0hrpBHjWPeNQO8KizPYPWHg+/5qYtiBuPnwnPrw/NoMbsgriw
-        Scl9f7LDWm/xobLbj10lBmzKrn0rYspc7PWjoT+ArOK2IS6z6M60pscHxd1JITAw/C+GHFOwO30Ydvkx
-        QjjcAThcAbgneWz54ybK7k9BTSWZ8nae+zrfOKu8N4ES01OhwMdHEHoeQygaQzg6hwgRppnts3TfKtHi
-        r45JlNILv5EZeC5N0jxwSj+KPw0T+O50OzYfrRNCX+bUI02mE+av8hqQdlyHHfm3sO+cGaeMTyG/5cS2
-        I41W7osD11RHLltQbPBAQc3nzFM4/8CLC51Elxcq+mawnd3L7k2iyODG79VWbPzxciknSi9K3SZpiRU2
-        jyOfOKF3ofC2C/JWN4paPRSOI6e5oMWFE4RM58SOvNa5DzbuX83+SIvW7VarMorvooDkY7pxSOnnyahM
-        Rnt+MwkCdGeQnHHyPtZmqSrITWYFiclL30/59AeNMb3gDqSNY1TiRF5TnFxhHkMuzRKtAzvlHSRX3yYv
-        hbmcfw6sJGlxynvvijIqqz77uT4mVnTh8BXbK3EM2Vdt2EW3Dfu1kZXbS3Io/w5zvMz1z+N1SSKRvHxD
-        9voPd5ZfEGWq+0VijZ/wfvJttXVl+tnzy1L3rKHMYiKByd45cC8B0oKaPyRsCA8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;xToolStripMenuItem1.Name" xml:space="preserve">
-    <value>xToolStripMenuItem1</value>
-  </data>
-  <data name="btn_preview1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
-    <value>barDockControlTop</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_Option.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_Report.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="xToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_Option1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btn_Option1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 62</value>
-  </data>
-  <data name="btn_Max.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;headLbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_Max.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAB50RVh0VGl0
-        bGUAU2VsZWN0O1NlbGVjdEFsbDtTcXVhcmU7YryufQAABtRJREFUWEfFV2lQlWUYvZn7Urlv4Q7iQoo7
-        SCTgriA6WlZj0zg2VpqGZtOiLebkDgqCKCoKgmjWZI2KgmyyyL3EKiiUZmWJ7ItsF53T87zfcr/vSvqn
-        8p05XOb9uN8553nOu2AA8EQhfti7LMLwqQtV2LksMgx3Xmiwc/YmLOBP2DktgK0KL9hO8TQMm+JF8DQM
-        daLfJ8/H0EkShkyahyETBQyDJ841DJ4gYdCEORg0fg4Gjp+NgeNmE7UsgEkN//MYOG7WYwU89R9AHQMc
-        tQKcdQKUP35aRusW0OYxaGsF/g6/SxVh4zjTIsDOxVueFqPV2tAc9/URhcZ1kUXwiSiEz/FCrA2/jjVh
-        1/HesWtYfbQAq0Pz8e6RfLx96CpWHsrDWwfysOJALpbvz8HyoGy8GZiFNwKysSwgE6/5mkwLN1+YQe9W
-        RdiMnSG4JQEUNnkI5x9EFhWfK7iHjL8eIOPP+zARjLfvI/2PZsJ9pNFn6m9mpBAu3zIj6VczEm82IeFG
-        E+IJcT83IqaoEReLGhB9vQGhKWVYutNYTO/marQkYAHP8eCHrdeTcyY/ndeMb/LMAqdyzTiZ04So7Cac
-        IERmNRIacDyzAeE/1SM8ox7HTPU4aqpDaHodjly5h8OEQ2m1OJtfj5d3GrnN7QmtmOj5MdPbqAJoafEc
-        DxbQhgWYbj+wIjcjigRYyBst5IRjRHzUqCWvFeQhqTX44WodluwQAjoQhACbMR7tNAK8+CEPFtB2HfWd
-        S87EeueNOJHVhAgilsgbEKYjv0fktcJ5SKpEfiClBt/n1WHxtis6Af0dPIhaFkAbik4Ahy6Nen0yt8nK
-        OaMBEUTMrsNE2WVyI5NLZQ8h5wcFeTWCk6vwbXYtFm4VAjoSJAEvtCyAH7Z7P7wQqb83S84VckKE2nOC
-        hvwokSv9PkTOBXlyDfYnV2P/5SqcyqyF99dpigBeCYa+Du4aAZM99QLCCinhzYI8isrO/Y7IVHoukYdl
-        WDnnfqfVyM5rEHy5GkFJVQhKrEJURg28t6QwRyeCJGC0m0XAUL2A9mtpvSfdatYHTpRdJqe0s3up51Lg
-        1J6TcyZn54EkYF9CBSJM1fD6KlknoI9WAB0ePMdDCFgTdg0JN5up7NJSE6Ejcu45k0vOOe0cOE57jZ5c
-        dr4vsRIBJCDcWI35X15mAZ0JQkA/h2mCuyUBHXi3i7thRqRIe+NDPVeda3vOgVOdVwrnAfGV8I+vQOiV
-        Ksz7QgjoQpBb8JJGAB2b8hACeKuN/cUsO7ekXS07QfSciJWlpiNn50TsH1eOvYQjKVWY+3mSTkDvkToB
-        c3mOBwvouCq0gLbRJuG8xaWWxutcDhwlPZiI1bIncNkrsZcE7L1Ujj2xZQhJrsDsjULAMwQ+mAy9Rrla
-        BNClgR/yYHWdVtEhE11IpVfI2bk27Vx2ci2tcynt7DyQyWXnewh+l8rgRwKCE8sx69NE5niWIAkY4UrU
-        sgC+pfAkDSHgncP5OHutkciVwDG5FDjF+UHhnMtejUByHigHzj+uQiKPLYdvTCl2E4ISyjHjk3idgN4j
-        X9QKmK0V0JmP2B8LGiyBS6ewcdo1m4zac03a/eOlnrNrX8Lui6XYRQiIK8P0j+OY4zmCENDT/lECDubh
-        zFU6RuWyS4eKnlyUnYgVciZWyP1iiJycM/nOCyWUhVJ4fGQlYLhGwAC6n/EkDRbQZSUJ+C6vXjiXtlgq
-        uei5vL3KPReBU3rOgaOe+zK57JzJt0ffJUElcP/wEnN0JUgZsHfRCHCcxXM8hAC+3ZzOqVP3d2mpSf3m
-        slvSLvWc0849Z/fCOREz+Q4i336+GLsv3IXbhlgW0I0gt2Cq4JYFzOQ5HkLAiuBcnMqqEz0PkdNuIdek
-        nZeaEjiF/CKRR7Nzwvm72HaumIQUw3V9jK4CPYdrBNiM1QnotDww686+uFJ94Hid81JTA0dpZ+e81ETZ
-        y8g5lV2Qs/O72HqOcPYONkTegItP9B16t7oKdAIGOE7nOR68EbXz3nRm8eu+ppJX/UxYusuIV+g6tWRH
-        OhbTmb6IjlXvLanicPHcnIx5tMfP+SwJszYlYubGeLHcOPHcc7cNlzCNnLv4nC9xXBa8lN6tXkh62Dlb
-        BND9jMvDgy8kXAW+u/G2yanlslmDe2mN7o8AO+e7ALtnDhZA1GoLPBQBPPgPWCUL4S9Yo6X/Ax4H/h6/
-        k9/9sAC+HvHkvzAUgn+COnrYOVkE9CMB/eiK1He0O/o7uNHv0/jCYOgzij4JdHKhzyhXCSNdwdtoL3tX
-        3k55RxPoNcKF5lxA4RLobsefzoYeCqjn3Wyd0d3WiZ45oeswjYAnBxj+BnprFUN2sApJAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="btn_preview1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_Report.Text" xml:space="preserve">
-    <value>Report</value>
-  </data>
   <data name="btn_Min.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABp0RVh0VGl0
@@ -310,6 +168,112 @@
         AzIX4bNMm0EgAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="&gt;&gt;btn_Report1.Name" xml:space="preserve">
+    <value>btn_Report1</value>
+  </data>
+  <data name="btn_close.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14pt</value>
+  </data>
+  <data name="headLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="headLbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="xToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 23</value>
+  </data>
+  <data name="&gt;&gt;headLbl.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_Min.Name" xml:space="preserve">
+    <value>btn_Min</value>
+  </data>
+  <data name="&gt;&gt;btn_Min.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cmbLanguh.Name" xml:space="preserve">
+    <value>cmbLanguh</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="cmbLanguh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="&gt;&gt;btn_close.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btn_Min.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0VGl0
+        bGUARGVsZXRlO1JlbW92ZTtNaW51c+upj0EAAANRSURBVDhPfZJdTFN3GMYPkPiBF2NeejEXkyVubtXg
+        YnSJMZu6KQazhWHZpnFxc06Z0xWwFqEwJS4NaBEtRKVJh6Ji+agUKaWipoIEQmf5sBUKpS0y+sEOlrbW
+        FZLH93+q8c4mv/R93/P8ntOLciPh/wXok0AkZpcbP86t7lFI1ZY+qcYaPK55xEvVfZacSw9L9xZfW0GZ
+        JJYdJofBjUZigpy6OWvh0cpupaymf76m04M2ewAWXxj/+MMwPpnGla4JyP62zh48YzpA+QXMeeVyCWs+
+        Fy/8TdXdptQPY/C/KKz8C/QEouj0PkcX0Tsdv1m8YZQ22XGowqxf/tH6JcxlBUm/Ks0VZTo7BmdewOgK
+        wTAegtEdhmkiApMnDts7PGE8DsZQTi/6SWEsI3cBlymtXXW4sme+zxuB1jaDxidB6EZmoR8NocX5hmba
+        dY4gGui5xR+FpKo3tv2XsyJud0l7ldo0hrpBHjWPeNQO8KizPYPWHg+/5qYtiBuPnwnPrw/NoMbsgriw
+        Scl9f7LDWm/xobLbj10lBmzKrn0rYspc7PWjoT+ArOK2IS6z6M60pscHxd1JITAw/C+GHFOwO30Ydvkx
+        QjjcAThcAbgneWz54ybK7k9BTSWZ8nae+zrfOKu8N4ES01OhwMdHEHoeQygaQzg6hwgRppnts3TfKtHi
+        r45JlNILv5EZeC5N0jxwSj+KPw0T+O50OzYfrRNCX+bUI02mE+av8hqQdlyHHfm3sO+cGaeMTyG/5cS2
+        I41W7osD11RHLltQbPBAQc3nzFM4/8CLC51Elxcq+mawnd3L7k2iyODG79VWbPzxciknSi9K3SZpiRU2
+        jyOfOKF3ofC2C/JWN4paPRSOI6e5oMWFE4RM58SOvNa5DzbuX83+SIvW7VarMorvooDkY7pxSOnnyahM
+        Rnt+MwkCdGeQnHHyPtZmqSrITWYFiclL30/59AeNMb3gDqSNY1TiRF5TnFxhHkMuzRKtAzvlHSRX3yYv
+        hbmcfw6sJGlxynvvijIqqz77uT4mVnTh8BXbK3EM2Vdt2EW3Dfu1kZXbS3Io/w5zvMz1z+N1SSKRvHxD
+        9voPd5ZfEGWq+0VijZ/wfvJttXVl+tnzy1L3rKHMYiKByd45cC8B0oKaPyRsCA8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_ReportMaster</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;btn_Option.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_Report.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_Max.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 486</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 0</value>
+  </data>
+  <data name="btn_Option1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btn_Option1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;headLbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Report.Text" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_Min.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -353,8 +317,8 @@
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 486</value>
   </data>
-  <data name="&gt;&gt;btn_Option1.Name" xml:space="preserve">
-    <value>btn_Option1</value>
+  <data name="&gt;&gt;btn_preview1.Name" xml:space="preserve">
+    <value>btn_preview1</value>
   </data>
   <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -364,6 +328,117 @@
   </data>
   <data name="btn_Max.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="btn_Max.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 62</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xToolStripMenuItem.Name" xml:space="preserve">
+    <value>xToolStripMenuItem</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="headLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_preview.Text" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
+    <value>barButtonItem1</value>
+  </data>
+  <data name="btn_Min.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="xToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 23</value>
+  </data>
+  <data name="&gt;&gt;btn_Option.Name" xml:space="preserve">
+    <value>btn_Option</value>
+  </data>
+  <data name="&gt;&gt;skinDropDownButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.SkinDropDownButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_preview.Name" xml:space="preserve">
+    <value>btn_preview</value>
+  </data>
+  <data name="&gt;&gt;skinDropDownButtonItem1.Name" xml:space="preserve">
+    <value>skinDropDownButtonItem1</value>
+  </data>
+  <data name="btn_Max.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAB50RVh0VGl0
+        bGUAU2VsZWN0O1NlbGVjdEFsbDtTcXVhcmU7YryufQAABtRJREFUWEfFV2lQlWUYvZn7Urlv4Q7iQoo7
+        SCTgriA6WlZj0zg2VpqGZtOiLebkDgqCKCoKgmjWZI2KgmyyyL3EKiiUZmWJ7ItsF53T87zfcr/vSvqn
+        8p05XOb9uN8553nOu2AA8EQhfti7LMLwqQtV2LksMgx3Xmiwc/YmLOBP2DktgK0KL9hO8TQMm+JF8DQM
+        daLfJ8/H0EkShkyahyETBQyDJ841DJ4gYdCEORg0fg4Gjp+NgeNmE7UsgEkN//MYOG7WYwU89R9AHQMc
+        tQKcdQKUP35aRusW0OYxaGsF/g6/SxVh4zjTIsDOxVueFqPV2tAc9/URhcZ1kUXwiSiEz/FCrA2/jjVh
+        1/HesWtYfbQAq0Pz8e6RfLx96CpWHsrDWwfysOJALpbvz8HyoGy8GZiFNwKysSwgE6/5mkwLN1+YQe9W
+        RdiMnSG4JQEUNnkI5x9EFhWfK7iHjL8eIOPP+zARjLfvI/2PZsJ9pNFn6m9mpBAu3zIj6VczEm82IeFG
+        E+IJcT83IqaoEReLGhB9vQGhKWVYutNYTO/marQkYAHP8eCHrdeTcyY/ndeMb/LMAqdyzTiZ04So7Cac
+        IERmNRIacDyzAeE/1SM8ox7HTPU4aqpDaHodjly5h8OEQ2m1OJtfj5d3GrnN7QmtmOj5MdPbqAJoafEc
+        DxbQhgWYbj+wIjcjigRYyBst5IRjRHzUqCWvFeQhqTX44WodluwQAjoQhACbMR7tNAK8+CEPFtB2HfWd
+        S87EeueNOJHVhAgilsgbEKYjv0fktcJ5SKpEfiClBt/n1WHxtis6Af0dPIhaFkAbik4Ahy6Nen0yt8nK
+        OaMBEUTMrsNE2WVyI5NLZQ8h5wcFeTWCk6vwbXYtFm4VAjoSJAEvtCyAH7Z7P7wQqb83S84VckKE2nOC
+        hvwokSv9PkTOBXlyDfYnV2P/5SqcyqyF99dpigBeCYa+Du4aAZM99QLCCinhzYI8isrO/Y7IVHoukYdl
+        WDnnfqfVyM5rEHy5GkFJVQhKrEJURg28t6QwRyeCJGC0m0XAUL2A9mtpvSfdatYHTpRdJqe0s3up51Lg
+        1J6TcyZn54EkYF9CBSJM1fD6KlknoI9WAB0ePMdDCFgTdg0JN5up7NJSE6Ejcu45k0vOOe0cOE57jZ5c
+        dr4vsRIBJCDcWI35X15mAZ0JQkA/h2mCuyUBHXi3i7thRqRIe+NDPVeda3vOgVOdVwrnAfGV8I+vQOiV
+        Ksz7QgjoQpBb8JJGAB2b8hACeKuN/cUsO7ekXS07QfSciJWlpiNn50TsH1eOvYQjKVWY+3mSTkDvkToB
+        c3mOBwvouCq0gLbRJuG8xaWWxutcDhwlPZiI1bIncNkrsZcE7L1Ujj2xZQhJrsDsjULAMwQ+mAy9Rrla
+        BNClgR/yYHWdVtEhE11IpVfI2bk27Vx2ci2tcynt7DyQyWXnewh+l8rgRwKCE8sx69NE5niWIAkY4UrU
+        sgC+pfAkDSHgncP5OHutkciVwDG5FDjF+UHhnMtejUByHigHzj+uQiKPLYdvTCl2E4ISyjHjk3idgN4j
+        X9QKmK0V0JmP2B8LGiyBS6ewcdo1m4zac03a/eOlnrNrX8Lui6XYRQiIK8P0j+OY4zmCENDT/lECDubh
+        zFU6RuWyS4eKnlyUnYgVciZWyP1iiJycM/nOCyWUhVJ4fGQlYLhGwAC6n/EkDRbQZSUJ+C6vXjiXtlgq
+        uei5vL3KPReBU3rOgaOe+zK57JzJt0ffJUElcP/wEnN0JUgZsHfRCHCcxXM8hAC+3ZzOqVP3d2mpSf3m
+        slvSLvWc0849Z/fCOREz+Q4i336+GLsv3IXbhlgW0I0gt2Cq4JYFzOQ5HkLAiuBcnMqqEz0PkdNuIdek
+        nZeaEjiF/CKRR7Nzwvm72HaumIQUw3V9jK4CPYdrBNiM1QnotDww686+uFJ94Hid81JTA0dpZ+e81ETZ
+        y8g5lV2Qs/O72HqOcPYONkTegItP9B16t7oKdAIGOE7nOR68EbXz3nRm8eu+ppJX/UxYusuIV+g6tWRH
+        OhbTmb6IjlXvLanicPHcnIx5tMfP+SwJszYlYubGeLHcOPHcc7cNlzCNnLv4nC9xXBa8lN6tXkh62Dlb
+        BND9jMvDgy8kXAW+u/G2yanlslmDe2mN7o8AO+e7ALtnDhZA1GoLPBQBPPgPWCUL4S9Yo6X/Ax4H/h6/
+        k9/9sAC+HvHkvzAUgn+COnrYOVkE9CMB/eiK1He0O/o7uNHv0/jCYOgzij4JdHKhzyhXCSNdwdtoL3tX
+        3k55RxPoNcKF5lxA4RLobsefzoYeCqjn3Wyd0d3WiZ45oeswjYAnBxj+BnprFUN2sApJAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;btn_Option1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Max.Name" xml:space="preserve">
+    <value>btn_Max</value>
   </data>
   <data name="btn_Max.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -382,92 +457,11 @@
         4N8F4ScKrjI42l9nLwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="btn_Option1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;xToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 486</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_preview.Text" xml:space="preserve">
-    <value>Print Preview</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
-    <value>barButtonItem1</value>
-  </data>
-  <data name="btn_Max.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 27</value>
-  </data>
-  <data name="xToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_Option.Name" xml:space="preserve">
-    <value>btn_Option</value>
-  </data>
-  <data name="btn_Report1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;skinDropDownButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.SkinDropDownButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_Min.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
-  </data>
-  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_preview.Name" xml:space="preserve">
-    <value>btn_preview</value>
-  </data>
-  <data name="&gt;&gt;skinDropDownButtonItem1.Name" xml:space="preserve">
-    <value>skinDropDownButtonItem1</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
-    <value>barManager1</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;btn_Option1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Max.Name" xml:space="preserve">
-    <value>btn_Max</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
-    <value>barDockControlBottom</value>
-  </data>
   <data name="&gt;&gt;cmbLanguh.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="btn_Report1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -475,8 +469,11 @@
   <data name="btn_Option.Text" xml:space="preserve">
     <value>Options</value>
   </data>
-  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="&gt;&gt;xToolStripMenuItem1.Name" xml:space="preserve">
+    <value>xToolStripMenuItem1</value>
+  </data>
+  <data name="btn_Option1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;btn_preview1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -484,8 +481,8 @@
   <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="cmbLanguh.Items" xml:space="preserve">
-    <value>English Print</value>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 486</value>
   </data>
   <data name="btn_Report.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 23</value>
@@ -502,20 +499,23 @@
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btn_preview1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="panel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;headLbl.Name" xml:space="preserve">
-    <value>headLbl</value>
+  <data name="cmbLanguh.Items" xml:space="preserve">
+    <value>English Print</value>
+  </data>
+  <data name="&gt;&gt;xToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;xToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btn_Option1.Name" xml:space="preserve">
+    <value>btn_Option1</value>
   </data>
   <data name="&gt;&gt;xToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -529,11 +529,20 @@
   <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btn_close.ItemAppearance.Hovered.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
   <data name="btn_preview1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;headLbl.Name" xml:space="preserve">
+    <value>headLbl</value>
+  </data>
   <data name="btn_close.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 486</value>
@@ -541,14 +550,14 @@
   <data name="&gt;&gt;xToolStripMenuItem2.Name" xml:space="preserve">
     <value>xToolStripMenuItem2</value>
   </data>
-  <data name="cmbLanguh.Items1" xml:space="preserve">
-    <value>Arabic Print</value>
+  <data name="btn_close.ItemAppearance.Hovered.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="headLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 27</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
     <value>1085, 0</value>
@@ -561,9 +570,6 @@
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xToolStripMenuItem.Name" xml:space="preserve">
-    <value>xToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;btn_Max.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -583,8 +589,8 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;btn_preview1.Name" xml:space="preserve">
-    <value>btn_preview1</value>
+  <data name="btn_Min.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -608,32 +614,32 @@
   <data name="btn_Report1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;btn_close.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 486</value>
+  <data name="cmbLanguh.Items1" xml:space="preserve">
+    <value>Arabic Print</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frm_ReportMaster</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="headLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="headLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btn_Min.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+  <data name="btn_preview1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="barButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
+  </data>
+  <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="headLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="headLbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>

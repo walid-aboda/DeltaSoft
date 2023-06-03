@@ -118,8 +118,117 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_preview1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABt0RVh0VGl0
+        bGUAUHJpbnRQcmV2aWV3O1ByZXZpZXc7LXL6rgAAAORJREFUOE+tkjEKwkAQRb1GDpXKVF7D0kII6TyC
+        VgbsBYtAsLBSPIGFhdhpIyhYCGb9LyQSk7gJ4sInw+yfN7Ob7Rhj3gqCwLRRsaYCaFr/BygRk5RaA3Kv
+        FOfBr4CPiyvGTaoHqEEr4ZUS6mxdMQxdP+r2J+tDb7R8ImJy7OGxAUKMg+n2MlvtzfF8S0VMLoOENoAn
+        05yC8iLHJHgqgMJyGJmu1/vDbHanVMTk2JPfAbAoA9QZNQJktb7ExiMorAdkE3y9RPYFGOtrnSCRan9j
+        VgzIrQBK4i2Ekic5uY/OFLt+ZF5wXeot7mGZPwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_preview1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABt0RVh0VGl0
+        bGUAUHJpbnRQcmV2aWV3O1ByZXZpZXc7LXL6rgAAAblJREFUWEftlTFOw0AQRdNEuQJVJI6RQ9CkpCCp
+        OAi48xVyAA5AYSkX4Aaho+YAkVCEZP6z1tLOejbBITZNVnqy/uzs/PHgLJO6rv8VNzgmbnBM3OCYuMGY
+        oijqv5DWS3GDMaHIWevawLWBsxrQoS0HAxdpIKq3RccYAVEyXLqBRscYAXGySHVv0pqtT4sRECeLzv45
+        qM6urZnuGQFtYg9KcXP3VC3FRuzEITzRS/ZDniysnxFAUg/Kh+eXW5mU4lvUDsSbPPJTPyMgMTgGY+XN
+        McfoQxRiIWbhiSbOfjOp1M8IiAxOsVJRxs4bYnKv82tRiX14romHffKWihk/I8AxyjFXQf7GvF3x9v65
+        Fl+ijkDTBJMgb5P6GQGOUY6pCvKhUXghoyoyjqnYD3m71M8IcIwanDVRQb52Cs+kGbu39uyHvIO08TMC
+        ZPaamgMrFGkZZgIebQPJGuYb8MhMYJhfgUdmAoyzzz0Aj8LUNiJHZgKA+W9uwlibJoxRjswE2sX1evR/
+        gcDUbaJj5kEDJ+BaXom5mIYzzRMwC6adJjpmQ4BRoNOEe2AIZOY24SYPQTBPmxhvAj715AeyqKfiPR0p
+        SwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1282, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 510</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1282, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 510</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1282, 0</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 510</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="headLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1268, 35</value>
+    <value>1282, 35</value>
   </data>
   <data name="headLbl.Text" xml:space="preserve">
     <value>Inventory Report By Group</value>
@@ -137,9 +246,8 @@
     <value>1</value>
   </data>
   <data name="buttonX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 55</value>
+    <value>454, 91</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -166,7 +274,7 @@
     <value>0</value>
   </data>
   <data name="buttonX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 55</value>
+    <value>344, 91</value>
   </data>
   <data name="buttonX5.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 39</value>
@@ -190,7 +298,7 @@
     <value>1</value>
   </data>
   <data name="buttonX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 55</value>
+    <value>234, 91</value>
   </data>
   <data name="buttonX4.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 39</value>
@@ -214,7 +322,7 @@
     <value>2</value>
   </data>
   <data name="buttonX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 55</value>
+    <value>106, 91</value>
   </data>
   <data name="buttonX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 39</value>
@@ -358,10 +466,10 @@
     <value>8</value>
   </data>
   <data name="panelEx1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 183</value>
+    <value>573, 115</value>
   </data>
   <data name="panelEx1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 91</value>
+    <value>655, 189</value>
   </data>
   <data name="panelEx1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -391,7 +499,7 @@
     <value>16, 73</value>
   </data>
   <data name="chX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 15</value>
+    <value>59, 17</value>
   </data>
   <data name="chX.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -421,7 +529,7 @@
     <value>85, 25</value>
   </data>
   <data name="chF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 15</value>
+    <value>63, 17</value>
   </data>
   <data name="chF.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -451,7 +559,7 @@
     <value>172, 49</value>
   </data>
   <data name="chZ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 15</value>
+    <value>58, 17</value>
   </data>
   <data name="chZ.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -481,7 +589,7 @@
     <value>16, 25</value>
   </data>
   <data name="chR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 15</value>
+    <value>47, 17</value>
   </data>
   <data name="chR.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -511,7 +619,7 @@
     <value>85, 49</value>
   </data>
   <data name="chP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 15</value>
+    <value>63, 17</value>
   </data>
   <data name="chP.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -541,7 +649,7 @@
     <value>172, 25</value>
   </data>
   <data name="chC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 15</value>
+    <value>83, 17</value>
   </data>
   <data name="chC.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -571,7 +679,7 @@
     <value>16, 49</value>
   </data>
   <data name="chS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 15</value>
+    <value>46, 17</value>
   </data>
   <data name="chS.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -826,7 +934,7 @@
     <value>0, 62</value>
   </data>
   <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1268, 441</value>
+    <value>1282, 448</value>
   </data>
   <data name="crystalReportViewer1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1145,7 +1253,7 @@
     <value>0, 62</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1268, 354</value>
+    <value>1282, 354</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1172,13 +1280,19 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1268, 503</value>
+    <value>1282, 510</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Inventr report</value>
+  </data>
+  <data name="&gt;&gt;btn_preview1.Name" xml:space="preserve">
+    <value>btn_preview1</value>
+  </data>
+  <data name="&gt;&gt;btn_preview1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_Inventory_Report_ByGroup</value>
