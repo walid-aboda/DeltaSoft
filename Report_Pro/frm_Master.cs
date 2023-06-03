@@ -40,7 +40,7 @@ namespace Report_Pro
 
                 //XtraMessageBox.Show("تم الحفظ بنجاح");
             RefreshData();
-            //IsNew = false;
+            IsNew = false;
         }
         public virtual void New()
         {
@@ -101,19 +101,19 @@ namespace Report_Pro
 
         public virtual void GoFrist()
         {
-           
+            IsNew = false;
         }
         public virtual void GoPrevious()
         {
-
+            IsNew = false;
         }
         public virtual void GoNext()
         {
-
+            IsNew = false;
         }
         public virtual void GoLast()
         {
-
+            IsNew = false;
         }
 
         public virtual void RefreshData()

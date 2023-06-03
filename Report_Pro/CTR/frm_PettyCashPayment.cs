@@ -830,7 +830,8 @@ namespace Report_Pro.CTR
 
 
                 trans.Commit();
-                  MessageBox.Show(dal.rm.GetString("msgEdit", dal.cul), dal.rm.GetString("msgEdit_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                IsNew = false;
+                MessageBox.Show(dal.rm.GetString("msgEdit", dal.cul), dal.rm.GetString("msgEdit_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
@@ -973,6 +974,7 @@ namespace Report_Pro.CTR
                 cmd.ExecuteNonQuery();
 
                 trans.Commit();
+                IsNew = false;
                           MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), dal.rm.GetString("msgSave_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -1144,7 +1146,7 @@ namespace Report_Pro.CTR
 
 
             showDetailsbySanad(AccBranch.ID.Text, MyResult, "CE");
-
+          //  IsNew = false;
 
             base.GoFrist();
 
@@ -1178,7 +1180,7 @@ namespace Report_Pro.CTR
                 MyResult = dtNaf.Rows[dtNaf.Rows.Count - 1]["sanad_no"].ToString();
             }
             showDetailsbySanad(AccBranch.ID.Text, MyResult, "CE");
-            IsNew = false;
+          //  IsNew = false;
 
 
             base.GoPrevious();
@@ -1203,7 +1205,8 @@ namespace Report_Pro.CTR
                 MyResult = dtNaf.Rows[RowNo + 1]["sanad_no"].ToString();
                 showDetailsbySanad(AccBranch.ID.Text, MyResult,"CE");
             }
-           
+           // IsNew = false;
+
             base.GoNext();
         }
 
@@ -1222,7 +1225,7 @@ namespace Report_Pro.CTR
             showDetailsbySanad(AccBranch.ID.Text, MyResult, "CE");
 
 
-
+           // IsNew = false;
             base.GoLast();
         }
 

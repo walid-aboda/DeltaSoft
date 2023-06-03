@@ -67,7 +67,7 @@ namespace Report_Pro.PL
 
             //if (Properties.Settings.Default.lungh == "0")
             //{
-            //    headLbl.Text = "قيد اليومية";
+            //    headLbl.Text = "قيد اليومية"; IsNew = false;
             //}
             //else
             //{
@@ -832,6 +832,7 @@ namespace Report_Pro.PL
 
 
                 trans.Commit();
+              //  IsNew = false;
                 MessageBox.Show(dal.rm.GetString("msgEdit", dal.cul), dal.rm.GetString("msgEdit_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -1139,8 +1140,9 @@ namespace Report_Pro.PL
                 cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + txtSanadNo.TextS + "' , main_daily_ser = '" + Main_serNo.Text + "' WHERE BRANCH_CODE=  '" + Properties.Settings.Default.BranchAccID + "' and ACC_YEAR='" + txt_Cyear.Text + "' ";
                 cmd.ExecuteNonQuery();
 
-                trans.Commit();
-                          MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), dal.rm.GetString("msgSave_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+              trans.Commit();
+              //  IsNew = false;
+                MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), dal.rm.GetString("msgSave_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)

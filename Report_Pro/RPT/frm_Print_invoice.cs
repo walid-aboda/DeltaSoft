@@ -166,7 +166,7 @@ namespace Report_Pro.RPT
               
 
                     getInvoiceTotal(ser_1, text1, text2, cyear_1);
-                    DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp ");
+                    DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where company_no = left('"+Branch.ID.Text+"',1)");
 
                     string vat_no = dt_Co.Rows[0]["Comp_Vat_no"].ToString();
                     string Co_Name = dt_Co.Rows[0]["Company_e_name"].ToString();
@@ -288,7 +288,7 @@ namespace Report_Pro.RPT
         private void buttonX2_Click(object sender, EventArgs e)
 
         {
-            DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No = 'A'");
+            DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No = left('" + Branch.ID.Text + "',1)");
 //(select left(Branch_code,1) as Com_Code from wh_BRANCHES where Branch_code = '" + Branch.ID.Text+"')");
 
             for (int int32 = Convert.ToInt32(this.txtSer.Text); int32 <= Convert.ToInt32(txtSer_1.Text); ++int32)
