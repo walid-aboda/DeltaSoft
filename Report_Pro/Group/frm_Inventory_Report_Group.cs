@@ -115,6 +115,22 @@ namespace Report_Pro.Group
 
         }
 
+<<<<<<< HEAD
+=======
+        private void labelX5_Click(object sender, EventArgs e)
+        {
+                   }
+
+        private void labelX3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+            
+        }
+>>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
 
         private void buttonX4_Click(object sender, EventArgs e)
         {
@@ -216,8 +232,59 @@ namespace Report_Pro.Group
             base.Option();
         }
 
+<<<<<<< HEAD
         public override void preview()
         {
+=======
+        private void chR_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelChoise_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelChoise_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonX5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public override void Option()
+        {
+            panelChoise.Visible = true;
+            base.Option();
+        }
+
+        public override void preview()
+        {
+>>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
             if (rdo_ByItem.Checked)
             {
                 inventoryByItems();
@@ -226,6 +293,7 @@ namespace Report_Pro.Group
             {
                 inventoryByGroups();
             }
+<<<<<<< HEAD
             else if (rdo_TotalBranches.Checked)
             {
                 inventoryTotalBranches();
@@ -247,6 +315,18 @@ namespace Report_Pro.Group
             choises();
 
 
+=======
+
+            base.preview();
+        }
+        private void inventoryByItems()
+        {
+
+            Cursor.Current = Cursors.WaitCursor;
+            choises();
+
+
+>>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
             RPT.rpt_inventory rpt = new RPT.rpt_inventory();
 
             RPT.DataSet1 ds = new RPT.DataSet1();
