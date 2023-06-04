@@ -115,8 +115,6 @@ namespace Report_Pro.Group
 
         }
 
-<<<<<<< HEAD
-=======
         private void labelX5_Click(object sender, EventArgs e)
         {
                    }
@@ -130,7 +128,6 @@ namespace Report_Pro.Group
         {
             
         }
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
 
         private void buttonX4_Click(object sender, EventArgs e)
         {
@@ -232,10 +229,6 @@ namespace Report_Pro.Group
             base.Option();
         }
 
-<<<<<<< HEAD
-        public override void preview()
-        {
-=======
         private void chR_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -276,15 +269,10 @@ namespace Report_Pro.Group
 
         }
 
-        public override void Option()
-        {
-            panelChoise.Visible = true;
-            base.Option();
-        }
+        
 
         public override void preview()
         {
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
             if (rdo_ByItem.Checked)
             {
                 inventoryByItems();
@@ -293,7 +281,6 @@ namespace Report_Pro.Group
             {
                 inventoryByGroups();
             }
-<<<<<<< HEAD
             else if (rdo_TotalBranches.Checked)
             {
                 inventoryTotalBranches();
@@ -308,32 +295,19 @@ namespace Report_Pro.Group
             }
             base.preview();
         }
+ 
         private void inventoryByItems()
         {
 
             Cursor.Current = Cursors.WaitCursor;
             choises();
-
-
-=======
-
-            base.preview();
-        }
-        private void inventoryByItems()
-        {
-
-            Cursor.Current = Cursors.WaitCursor;
-            choises();
-
-
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-            RPT.rpt_inventory rpt = new RPT.rpt_inventory();
+            Group.rpt_inventory_Group rpt = new Group.rpt_inventory_Group();
 
             RPT.DataSet1 ds = new RPT.DataSet1();
             DataTable dt1 = new DataTable();
 
             //dt1 = dal.getDataTabl("get_inventory_", dTP2.Value.Date, Convert.ToString(category.SelectedValue), dal.db1);
-            dt1 = dal.getDataTabl_1(@"Use GroupDB SELECT A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
+            dt1 = dal.getDataTabl_1(@"Use GroupDB SELECT D.company_code,A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
                 a.Dim_category, round(sum(D.QTY_ADD - D.QTY_TAKE), 2) as balance, sum(D.QTY_ADD - D.QTY_TAKE) * a.local_cost as cost
                 FROM wh_material_transaction As D 
                 inner join wh_main_master As A on A.item_no = D.ITEM_NO 
@@ -343,11 +317,12 @@ namespace Report_Pro.Group
             dTP2.Value.ToString("yyyy/MM/dd") + "') as t1 where DuplicateCount = 1) as t2 on t2.ITEM_NO = a.item_no " +
             "where cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + Properties.Settings.Default.C_year + "' " +
             "and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "')  and   D.branch_code like " +
-            " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
-            "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE order by A.item_no");
+            " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
+            "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 +
+            "'  group by D.company_code,A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE order by A.item_no");
 
             ds.Tables.Add(dt1);
-            ////ds.WriteXmlSchema("schema_rpt.xml");
+            ds.WriteXmlSchema("schema_rpt.xml");
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             rpt.SetParameterValue("EnterLanguh", cmbLanguh.SelectedIndex.ToString());

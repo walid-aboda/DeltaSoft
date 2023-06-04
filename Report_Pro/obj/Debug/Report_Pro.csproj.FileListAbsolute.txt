@@ -3941,3 +3941,4 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe.manifest
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.Form3.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

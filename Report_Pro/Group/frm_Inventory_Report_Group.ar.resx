@@ -119,116 +119,17 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="headLbl.Size" type="System.Drawing.Size, System.Drawing">
-<<<<<<< HEAD
     <value>1345, 35</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelEx1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-=======
-    <value>1331, 35</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelEx1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 15</value>
-  </data>
-  <data name="buttonX6.Text" xml:space="preserve">
-    <value>اجمالي ارصدة الفروع</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-  </data>
-  <data name="buttonX4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 59</value>
-  </data>
-  <data name="buttonX4.Text" xml:space="preserve">
-    <value>قائمة جرد المخزون</value>
-  </data>
-  <data name="buttonX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX3.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>151, 49</value>
-=======
-    <value>230, 59</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-  </data>
-  <data name="buttonX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 39</value>
-  </data>
-  <data name="buttonX3.Text" xml:space="preserve">
-    <value>الرصيد مستودعات وفروع بالمجموعات</value>
-  </data>
-  <data name="buttonX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>284, 5</value>
-=======
-    <value>363, 15</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-  </data>
-  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 35</value>
-  </data>
-  <data name="buttonX2.Text" xml:space="preserve">
-    <value>الرصيد مستودعات وفروع بالاصناف</value>
-  </data>
-<<<<<<< HEAD
-  <data name="panelEx1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 74</value>
-=======
-  <data name="btn_stockByBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btn_stockByBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 15</value>
-  </data>
-  <data name="btn_stockByBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 39</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-  </data>
-  <data name="panelEx1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 110</value>
-  </data>
-<<<<<<< HEAD
-=======
-  <data name="btnReport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 59</value>
-  </data>
-  <data name="btnReport.Text" xml:space="preserve">
-    <value>الرصيد بالفروع</value>
-  </data>
-  <data name="panelEx1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 74</value>
-  </data>
-  <data name="panelEx1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 110</value>
-  </data>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
   <data name="chX.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="chX.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 52</value>
-<<<<<<< HEAD
   </data>
   <data name="chX.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 15</value>
-=======
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
   </data>
   <data name="chX.Text" xml:space="preserve">
     <value>سكراب</value>
@@ -238,12 +139,9 @@
   </data>
   <data name="chF.Location" type="System.Drawing.Point, System.Drawing">
     <value>320, 27</value>
-<<<<<<< HEAD
   </data>
   <data name="chF.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 15</value>
-=======
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
   </data>
   <data name="chF.Text" xml:space="preserve">
     <value>منتج تام</value>
@@ -312,11 +210,7 @@
     <value>Top, Right</value>
   </data>
   <data name="dTP1.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>1126, 145</value>
-=======
-    <value>1112, 145</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>1140, 145</value>
   </data>
   <data name="dTP1.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -334,11 +228,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Uc_Transaction.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 98</value>
-=======
-    <value>901, 98</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 98</value>
   </data>
   <data name="Uc_Transaction.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 20</value>
@@ -347,11 +237,7 @@
     <value>Top, Right</value>
   </data>
   <data name="thick_2.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 169</value>
-=======
-    <value>901, 169</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 169</value>
   </data>
   <data name="thick_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -360,11 +246,7 @@
     <value>Top, Right</value>
   </data>
   <data name="thick_1.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 145</value>
-=======
-    <value>901, 145</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 145</value>
   </data>
   <data name="thick_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -373,11 +255,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Branch.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 26</value>
-=======
-    <value>901, 26</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 26</value>
   </data>
   <data name="Branch.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 20</value>
@@ -386,11 +264,7 @@
     <value>Top, Right</value>
   </data>
   <data name="cmb_DimCategory.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 121</value>
-=======
-    <value>901, 121</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 121</value>
   </data>
   <data name="cmb_DimCategory.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 21</value>
@@ -399,11 +273,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Item.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 74</value>
-=======
-    <value>901, 74</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 74</value>
   </data>
   <data name="Item.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 20</value>
@@ -412,11 +282,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Group.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>915, 50</value>
-=======
-    <value>901, 50</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>929, 50</value>
   </data>
   <data name="Group.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 20</value>
@@ -425,11 +291,7 @@
     <value>Top, Right</value>
   </data>
   <data name="dTP2.Location" type="System.Drawing.Point, System.Drawing">
-<<<<<<< HEAD
-    <value>1126, 169</value>
-=======
-    <value>1112, 169</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+    <value>1140, 169</value>
   </data>
   <data name="dTP2.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -444,16 +306,56 @@
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-<<<<<<< HEAD
     <value>1345, 487</value>
-=======
-    <value>1331, 480</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
   </data>
   <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-<<<<<<< HEAD
+  <data name="rdo_TotalBranches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 154</value>
+  </data>
+  <data name="rdo_TotalBranches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="rdo_TotalBranches.Text" xml:space="preserve">
+    <value>التقرير بااجمالي الفروع</value>
+  </data>
+  <data name="rdo_ByBranches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 125</value>
+  </data>
+  <data name="rdo_ByBranches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="rdo_ByBranches.Text" xml:space="preserve">
+    <value>التقرير بالفروع</value>
+  </data>
+  <data name="rdo_ByItemsAndBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 96</value>
+  </data>
+  <data name="rdo_ByItemsAndBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="rdo_ByItemsAndBranch.Text" xml:space="preserve">
+    <value>التقرير بالفروع والاصناف</value>
+  </data>
+  <data name="rdo_ByGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 67</value>
+  </data>
+  <data name="rdo_ByGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="rdo_ByGroup.Text" xml:space="preserve">
+    <value>التقرير بالمجموعات</value>
+  </data>
+  <data name="rdo_ByItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 38</value>
+  </data>
+  <data name="rdo_ByItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="rdo_ByItem.Text" xml:space="preserve">
+    <value>التقرير بالاصناف</value>
+  </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>733, 26</value>
   </data>
@@ -565,171 +467,8 @@
   <data name="panelChoise.Size" type="System.Drawing.Size, System.Drawing">
     <value>1345, 313</value>
   </data>
-=======
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
-  <data name="rdo_TotalBranches.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 154</value>
-  </data>
-  <data name="rdo_TotalBranches.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 17</value>
-  </data>
-  <data name="rdo_TotalBranches.Text" xml:space="preserve">
-    <value>التقرير بااجمالي الفروع</value>
-  </data>
-  <data name="rdo_ByBranches.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 125</value>
-  </data>
-  <data name="rdo_ByBranches.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="rdo_ByBranches.Text" xml:space="preserve">
-    <value>التقرير بالفروع</value>
-  </data>
-  <data name="rdo_ByItemsAndBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 96</value>
-  </data>
-  <data name="rdo_ByItemsAndBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 17</value>
-  </data>
-  <data name="rdo_ByItemsAndBranch.Text" xml:space="preserve">
-    <value>التقرير بالفروع والاصناف</value>
-  </data>
-  <data name="rdo_ByGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 67</value>
-  </data>
-  <data name="rdo_ByGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 17</value>
-  </data>
-  <data name="rdo_ByGroup.Text" xml:space="preserve">
-    <value>التقرير بالمجموعات</value>
-  </data>
-  <data name="rdo_ByItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 38</value>
-  </data>
-  <data name="rdo_ByItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
-  </data>
-  <data name="rdo_ByItem.Text" xml:space="preserve">
-    <value>التقرير بالاصناف</value>
-  </data>
-<<<<<<< HEAD
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1345, 549</value>
-=======
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 26</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 195</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>نوع التقرير</value>
-  </data>
-  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>964, 169</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 20</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>الي سماكة</value>
-  </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 169</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>الي تاريخ</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 145</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>من تاريخ</value>
-  </data>
-  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 121</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>نوع المواد</value>
-  </data>
-  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 98</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>الحركة</value>
-  </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 74</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>الصنف</value>
-  </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 50</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>المجموعة</value>
-  </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1223, 26</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>الفرع</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>964, 145</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 20</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>من سماكة</value>
-  </data>
-  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>901, 195</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 86</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>التصنيف</value>
-  </data>
-  <data name="panelChoise.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 313</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 542</value>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>

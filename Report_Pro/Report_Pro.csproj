@@ -750,6 +750,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Group\rpt_inventory_Group.cs">
+      <DependentUpon>rpt_inventory_Group.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Lang\Langres.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2779,6 +2785,10 @@
     <EmbeddedResource Include="Group\rpt_elemenations_group.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_elemenations_group.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group\rpt_inventory_Group.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_inventory_Group.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Lang\Langres.ar.resx">
       <SubType>Designer</SubType>

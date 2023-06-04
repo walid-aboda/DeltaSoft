@@ -7,18 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Report_Pro.exe.manifest" size="79580">
+    <dependentAssembly dependencyType="install" codebase="Report_Pro.exe.manifest" size="175191">
       <assemblyIdentity name="Report_Pro.exe" version="1.0.0.17" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>z3fZ5TYr0uk0p7ZlpSCbfvixY+jcf61VV34sPtezIc0=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>fdIiTdxFi33sT2970FczOw0LGiiwoNAvBPSdmpAYids=</dsig:DigestValue>
->>>>>>> d61b8435f5a7ef40cf8ac83f104eb20be7f5d0eb
+        <dsig:DigestValue>SYoUk5F2GPBRohrISSMZYG03Sm4V0OlzNs1NVJowCd8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
