@@ -3942,3 +3942,6 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.Form3.resources
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_samples.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.ar.resources

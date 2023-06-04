@@ -86,11 +86,11 @@ namespace Report_Pro.RPT
                 " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
                 "%' and ISNULL (A.UnitDepth,'') BETWEEN '" + T1 + "' AND '" + T2 +
                 "' and Payment_Type like '" + pay_code +
-                "%' and C.Transaction_code Like '"+ OP.txtTransactionCode.Text +
-                "%' and c.acc_no like '" + OP.AccountID.Text +
+                "%' and C.Transaction_code Like '"+ OP.Transaction.ID.Text +
+                "%' and c.acc_no like '" + OP.Acc.ID.Text +
                 "%' and isnull(P2.SisterCompany,0) like '" + SC +
-                "%' and  H.Branch_code like '" + OP.StoreID.Text +
-                "%' and A.group_code  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) and D.Item_No like '" + OP.ItemID1.Text +
+                "%' and  H.Branch_code like '" + OP.Branch.ID.Text +
+                "%' and A.group_code  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) and D.Item_No like '" + OP.Items.ID.Text +
                 "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
                 " group by H.Branch_code,H.branch_name");
 
@@ -120,7 +120,7 @@ namespace Report_Pro.RPT
                 // dgvReport.DataSource = bs;
 
                 rpt.SetDataSource(dt_);
-                // rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.StoreID.Text, OP.AccountID.Text, db1, OP.GroupID1.Text,""));
+                // rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.Branch.ID.Text, OP.Acc.ID.Text, db1, OP.Group1.ID.Text,""));
                 crystalReportViewer1.ReportSource = rpt;
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("yyyy/MM/dd") + "'";
@@ -143,7 +143,7 @@ namespace Report_Pro.RPT
 
         private void frm_rpt_Sales_by_Br_Load(object sender, EventArgs e)
         {
-            dt_Bdata = dal.getDataTabl_1(@"select Costmers_acc_no,Bank_Cash_box,Cash_acc_no,Suppliers_acc_no,Expensive_Acc_no from wh_BRANCHES where Branch_code like  '" + OP.StoreID.Text + "%'");
+            dt_Bdata = dal.getDataTabl_1(@"select Costmers_acc_no,Bank_Cash_box,Cash_acc_no,Suppliers_acc_no,Expensive_Acc_no from wh_BRANCHES where Branch_code like  '" + OP.Branch.ID.Text + "%'");
             OP.txtMainAcc.Text = dt_Bdata.Rows[0]["Costmers_acc_no"].ToString();
 
 
@@ -192,17 +192,17 @@ namespace Report_Pro.RPT
                " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
                "%' and ISNULL (A.UnitDepth,'0') BETWEEN '" + T1 + "' AND '" + T2 +
                "' and Payment_Type like '" + pay_code +
-               "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-               "%' and c.acc_no like '" + OP.AccountID.Text +
+               "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+               "%' and c.acc_no like '" + OP.Acc.ID.Text +
                "%' and isnull(P2.SisterCompany,0) like '" + SC +
-               "%' and  H.Branch_code like '" + OP.StoreID.Text +
-               "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) and D.Item_No like '" + OP.ItemID1.Text +
+               "%' and  H.Branch_code like '" + OP.Branch.ID.Text +
+               "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) and D.Item_No like '" + OP.Items.ID.Text +
                "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
                 " group by   v.G_ID ,G.Group_name ,v.xe_");
 
                 rpt.SetDataSource(dt_);
 
-                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", db1, OP.AccountID.Text, OP.StoreID.Text, OP.GroupID1.Text,X,str_t));
+                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", db1, OP.Acc.ID.Text, OP.Branch.ID.Text, OP.Group1.ID.Text,X,str_t));
 
 
                 crystalReportViewer1.ReportSource = rpt;
@@ -267,11 +267,11 @@ namespace Report_Pro.RPT
                 " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
                 "%' and ISNULL (A.UnitDepth,'') BETWEEN '" + T1 + "' AND '" + T2 +
                 "' and C.Payment_Type like '" + pay_code +
-                "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-                "%' and c.acc_no like '" + OP.AccountID.Text +
+                "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+                "%' and c.acc_no like '" + OP.Acc.ID.Text +
                 "%' and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' and C.Branch_code like '" + OP.StoreID.Text +
-                "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) and D.item_no like '" + OP.ItemID1.Text +
+                "%' and C.Branch_code like '" + OP.Branch.ID.Text +
+                "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) and D.item_no like '" + OP.Items.ID.Text +
                 "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
                 " group by v.G_ID,G.Group_name,p.Payment_name");
 
@@ -279,7 +279,7 @@ namespace Report_Pro.RPT
 
 
 
-                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_Paytype_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.StoreID.Text, OP.AccountID.Text, db1));
+                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_Paytype_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.Branch.ID.Text, OP.Acc.ID.Text, db1));
                 crystalReportViewer1.ReportSource = rpt;
 
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
@@ -382,12 +382,12 @@ namespace Report_Pro.RPT
 
 
 
-            //lblBranch.Text = OP.StoreDesc.Text;
-            //lblAccount.Text = OP.AccountDesc.Text;
+            //lblBranch.Text = OP.Branch.Desc.Text;
+            //lblAccount.Text = OP.Acc.Desc.Text;
             //lblFromGroup.Text = OP.GroupDesc1.Text;
             //lblToGroup.Text = OP.GroupDesc2.Text;
             //lblItem.Text = OP.ItemDesc1.Text;
-            //lblLcAccount.Text = OP.LcAccountDesc.Text;
+            //lblLcAccount.Text = OP.LcAcc.Desc.Text;
             //lblToStore.Text = OP.toStoreDesc.Text;
             //lblPo.Text = OP.txtPO.Text;
             //lblFromDate.Text = OP.dTP1.Text;
@@ -431,15 +431,15 @@ namespace Report_Pro.RPT
                 where D.TRANSACTION_CODE like 'xs%'
                 and cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") + 
                 "' and A.Payment_Type like '" + pay_code +
-                 "%' and A.Transaction_code Like '" + OP.txtTransactionCode.Text +
+                 "%' and A.Transaction_code Like '" + OP.Transaction.ID.Text +
                  "%' and ISNULL (S.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + 
                  "') and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 + 
                  "' and ISNULL(S.Dim_category,'C') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) + 
-                 "%' and A.Branch_code like '" + OP.StoreID.Text + 
-                 "%' and A.acc_no like '" + OP.AccountID.Text +
+                 "%' and A.Branch_code like '" + OP.Branch.ID.Text + 
+                 "%' and A.acc_no like '" + OP.Acc.ID.Text +
                  "%' and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' and ISNULL(S.group_code,'0')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) " +
-                "and D.item_no like '" + OP.ItemID1.Text +
+                "%' and ISNULL(S.group_code,'0')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) " +
+                "and D.item_no like '" + OP.Items.ID.Text +
                 "%' group by d.ITEM_NO, s.descr,s.UnitDepth,s.group_code,s.Dim_category,s.Category,Descr_eng,S.UnitLenth");
                 //"%' and ISNULL(KM_CODE_ACC,'1') like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
 
@@ -455,8 +455,8 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["Type_"].Text = "'اجمالي المبيعات بالاصناف'";
-                rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.AccountID.Text + " - '+'" + OP.AccountDesc.Text + "'";
-                rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.StoreDesc.Text + "'";
+                rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.Acc.ID.Text + " - '+'" + OP.Acc.Desc.Text + "'";
+                rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
                 rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + OP.payment_type.Text + "'";
                 }
                 else
@@ -468,8 +468,8 @@ namespace Report_Pro.RPT
                     rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("dd/MM/yyyy") + "'";
                     rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("dd/MM/yyyy") + "'";
                     rpt.DataDefinition.FormulaFields["Type_"].Text = "'Total Sales By Item'";
-                    rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.AccountID.Text + " - '+'" + OP.AccountDesc.Text + "'";
-                    rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.StoreDesc.Text + "'";
+                    rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.Acc.ID.Text + " - '+'" + OP.Acc.Desc.Text + "'";
+                    rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
                     rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + OP.payment_type.Text + "'";
                 }
 
@@ -541,11 +541,11 @@ namespace Report_Pro.RPT
                 "and isnull(A.Dim_category,'C') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
                 "%' and isnull(A.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
                 "' and c.Payment_Type like '" + pay_code +
-                "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-                "%' and  H.Branch_code like '" + OP.StoreID.Text +
-                "%'  and C.Acc_no like '"+ OP.AccountID.Text +
-                "%' and  ISNULL(A.group_code, '')  between(CASE WHEN '" + OP.GroupID1.Text.Length + "' > 3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "' + '0' end) and(CASE WHEN '" + OP.GroupID2.Text.Length + "' > 3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "' + 'z' end)  " +
-                " and D.item_no like '" + OP.ItemID1.Text +
+                "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+                "%' and  H.Branch_code like '" + OP.Branch.ID.Text +
+                "%'  and C.Acc_no like '"+ OP.Acc.ID.Text +
+                "%' and  ISNULL(A.group_code, '')  between(CASE WHEN '" + OP.Group1.ID.Text.Length + "' > 3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "' + '0' end) and(CASE WHEN '" + OP.Group2.ID.Text.Length + "' > 3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "' + 'z' end)  " +
+                " and D.item_no like '" + OP.Items.ID.Text +
                 "%' and isnull(P2.SisterCompany, 0) like '" + SC +
                 "%' group by  A.Weight,a.item_no ,A.descr ,v.G_ID ,G.Group_name ,v.xe_ ,p.Payment_type ,p.Payment_name  order by   v.G_ID ");
 
@@ -699,7 +699,7 @@ namespace Report_Pro.RPT
 
 
 
-                //  dt1 = (dal.getDataTabl("Monthly_Sales_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, OP.StoreID.Text, "xs", db1,OP.GroupID1.Text, OP.GroupID2.Text));
+                //  dt1 = (dal.getDataTabl("Monthly_Sales_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, OP.Branch.ID.Text, "xs", db1,OP.Group1.ID.Text, OP.Group2.ID.Text));
 
                 dt1 = dal.getDataTabl_1(@"SELECT 
      FORMAT(C.g_date, 'MM-yyyy')  as Month_
@@ -726,9 +726,9 @@ namespace Report_Pro.RPT
         Inner Join Payer2 as P2 on P2.ACC_NO = C.Acc_no  and P2.BRANCH_code =C.Acc_Branch_code
 
 where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") +
-              "' and ISNULL(A.group_code,'0')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end)  " +
-              "  and C.Branch_code like '" + OP.StoreID.Text +
-              "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
+              "' and ISNULL(A.group_code,'0')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end)  " +
+              "  and C.Branch_code like '" + OP.Branch.ID.Text +
+              "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
               "%' and isnull(P2.SisterCompany,0) like '" + SC +
               "%' GROUP BY FORMAT(C.g_date, 'MM-yyyy') ");
 
@@ -793,7 +793,7 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
 
 
 
-            //    dt1 = (dal.getDataTabl("Monthly_Sales_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, OP.StoreID.Text, "xs", db1,OP.GroupID1.Text, OP.GroupID2.Text));
+            //    dt1 = (dal.getDataTabl("Monthly_Sales_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, OP.Branch.ID.Text, "xs", db1,OP.Group1.ID.Text, OP.Group2.ID.Text));
 
             //    ds.Tables.Add(dt1);
 
@@ -864,17 +864,17 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
             where D.TRANSACTION_CODE like 'xs%'
             and cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") + 
             "' and C.Payment_Type like '" + pay_code +
-            "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
+            "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
             "%' and isnull(A.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
             "' and A.Dim_category like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) + 
-            "%' and C.Branch_code like '" + OP.StoreID.Text + 
-            "%' and D.item_no like '" + OP.ItemID1.Text + 
-            "%' and C.acc_no like '" + OP.AccountID.Text +
+            "%' and C.Branch_code like '" + OP.Branch.ID.Text + 
+            "%' and D.item_no like '" + OP.Items.ID.Text + 
+            "%' and C.acc_no like '" + OP.Acc.ID.Text +
            "%' and isnull(P.SisterCompany, 0) like '" + SC +
                 "%' and isnull(A.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
-            " and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
+            " and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
             " group by C.acc_no, P.PAYER_NAME");
-               // dt1 = (dal.getDataTabl("sales_by_Acc_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.StoreID.Text, OP.AccountID.Text, db1, OP.GroupID1.Text));
+               // dt1 = (dal.getDataTabl("sales_by_Acc_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", OP.Branch.ID.Text, OP.Acc.ID.Text, db1, OP.Group1.ID.Text));
 
                 ds.Tables.Add(dt1);
 
@@ -913,7 +913,7 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
             Cursor.Current = Cursors.WaitCursor;
             choises();
             RPT.rpt_purchase rpt = new RPT.rpt_purchase();
-            //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.AccountID.Text,OP.StoreID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
+            //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.Acc.ID.Text,OP.Branch.ID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
 
             DataTable dt_ = dal.getDataTabl_1(@"SELECT A.Ser_no,B.branch_name,A.G_date,p.PAYER_NAME,sum(D.QTY_TAKE - D.QTY_ADD) As Qty_Add
             , ROUND(sum((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price) - sum(((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price * D.total_disc) / 100), 2) AS Value
@@ -934,15 +934,15 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
             where D.TRANSACTION_CODE like 'xs%'
             and cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") +
             "' and A.Payment_Type like '" + pay_code +
-            "%' and A.Transaction_code Like '" + OP.txtTransactionCode.Text +
+            "%' and A.Transaction_code Like '" + OP.Transaction.ID.Text +
             "%' and isnull(s.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
             " and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
             "' and isnull(S.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
-            "%' and A.Branch_code like '" + OP.StoreID.Text +
-            "%' and A.acc_no like '" + OP.AccountID.Text +
+            "%' and A.Branch_code like '" + OP.Branch.ID.Text +
+            "%' and A.acc_no like '" + OP.Acc.ID.Text +
             "%' and isnull(P2.SisterCompany, 0) like '" + SC +
                 "%' and isnull(S.Category,'Y') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
-            " and ISNULL(S.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end)  and D.Item_no like '" + OP.ItemID1.Text +
+            " and ISNULL(S.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end)  and D.Item_no like '" + OP.Items.ID.Text +
             "%' and isnull(KM_CODE_ACC,0) like case when '" + str_t + "'= 3 then '3%' else '%' end  and isnull(KM_CODE_ACC,0) not like case when '" + str_t + "'= 2 then '3%' else '' end " +
             "group by   A.Ser_no,B.branch_name,A.G_date,p.PAYER_NAME, A.Inv_no, A.Inv_date, p.COSTMER_K_M_NO, A.Transaction_code, A.Branch_code," +
             " A.Payment_Type, T.INV_NAME, A.acc_serial_no, p.payer_l_name, C.Payment_name, A.Acc_no order by a.Branch_code, A.Ser_no");
@@ -952,8 +952,8 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
             rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["Type_"].Text = "'اجمالي المبيعات بالفواتير'";
-            rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.AccountID.Text + " - '+'" + OP.AccountDesc.Text + "'";
-            rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.StoreDesc.Text + "'";
+            rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.Acc.ID.Text + " - '+'" + OP.Acc.Desc.Text + "'";
+            rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + OP.payment_type.Text + "'";
             OP.Visible = false;
             }
@@ -971,7 +971,7 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
             Cursor.Current = Cursors.WaitCursor;
             choises();
             RPT.rpt_Cut_Off rpt = new RPT.rpt_Cut_Off();
-            //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.AccountID.Text,OP.StoreID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
+            //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.Acc.ID.Text,OP.Branch.ID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
             DataSet1 ds = new DataSet1();
             DataTable dt_ = dal.getDataTabl_1(@" select X.* from (SELECT 
             ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE desc) AS ser
@@ -1003,8 +1003,8 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
                 //rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
                 //rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 //rpt.DataDefinition.FormulaFields["Type_"].Text = "'اجمالي المبيعات بالفواتير'";
-                //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.AccountID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
-                //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.StoreDesc.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.Acc.ID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
                OP.Visible = false;
             //}
@@ -1079,10 +1079,10 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
                 Inner Join Payer2 as P2 on P2.ACC_NO = C.Acc_no  and P2.BRANCH_code =C.Acc_Branch_code
                
 where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + OP.dTP2.Value.ToString("yyyy/MM/dd") +
-                "' and D.Item_no like '" +OP.ItemID1.Text + "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) " +
-                "And H.branch_code like '" + OP.StoreID.Text +
+                "' and D.Item_no like '" +OP.Items.ID.Text + "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) " +
+                "And H.branch_code like '" + OP.Branch.ID.Text +
                 "%' and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
+                "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
                 "%' and c.acc_no like '%'  GROUP BY H.branch_code,H.branch_name order by H.branch_code"));
 
                 ds.Tables.Add(dt1);
@@ -1173,10 +1173,10 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd") +
                 inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code	
                inner join payer2 As P on p.acc_no = C.acc_no and C.branch_code= P.branch_code
                 where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + OP.dTP2.Value.ToString("yyyy/MM/dd") +
-                "' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end)  and D.Item_no like '" + OP.ItemID1.Text +
+                "' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end)  and D.Item_no like '" + OP.Items.ID.Text +
               "%' and isnull(P.SisterCompany, 0) like '" + SC +
-              "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-                "%'  And H.branch_code like '" + OP.StoreID.Text + "%' and c.acc_no like '%'  " +
+              "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+                "%'  And H.branch_code like '" + OP.Branch.ID.Text + "%' and c.acc_no like '%'  " +
                 "GROUP BY C.Acc_no,p.Payer_Name order by C.Acc_no"));
 
                 ds.Tables.Add(dt1);
@@ -1231,18 +1231,18 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd") +
                " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
                "%' and ISNULL (A.UnitDepth,'0') BETWEEN '" + T1 + "' AND '" + T2 +
                "' and Payment_Type like '" + pay_code +
-               "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-               "%' and c.acc_no like '" + OP.AccountID.Text +
+               "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+               "%' and c.acc_no like '" + OP.Acc.ID.Text +
                "%' and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' and  H.Branch_code like '" + OP.StoreID.Text +
-               "%' and ISNULL(A.group_code,'') like '" + OP.GroupID1.Text +
-               "%' and D.Item_No like '" + OP.ItemID1.Text +
+                "%' and  H.Branch_code like '" + OP.Branch.ID.Text +
+               "%' and ISNULL(A.group_code,'') like '" + OP.Group1.ID.Text +
+               "%' and D.Item_No like '" + OP.Items.ID.Text +
                "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
                 " group by vM.group_code,VM.Group_name");
 
                 rpt.SetDataSource(dt_);
 
-                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", db1, OP.AccountID.Text, OP.StoreID.Text, OP.GroupID1.Text,X,str_t));
+                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", OP.dTP1.Value.Date, OP.dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(OP.cmb_DimCategory.SelectedValue), "xs", db1, OP.Acc.ID.Text, OP.Branch.ID.Text, OP.Group1.ID.Text,X,str_t));
 
 
                 crystalReportViewer1.ReportSource = rpt;
@@ -1273,7 +1273,7 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd") +
                 Cursor.Current = Cursors.WaitCursor;
                 choises();
                 RPT.rpt_Cut_Off rpt = new RPT.rpt_Cut_Off();
-                //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.AccountID.Text,OP.StoreID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
+                //  DataTable dt_ =dal.getDataTabl("Get_local_purchase_", FromDate.Value.Date, ToDate.Value.Date, P_Kind,OP.Acc.ID.Text,OP.Branch.ID.Text,UC_PayType.ID.Text,KM_Value,dal.db1);
                 DataSet1 ds = new DataSet1();
                 DataTable dt_ = dal.getDataTabl_1(@" select X.* from (SELECT 
 ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE ) AS ser
@@ -1305,8 +1305,8 @@ ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE ) AS ser
                 //rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + OP.dTP1.Value.ToString("yyyy/MM/dd") + "'";
                 //rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + OP.dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 //rpt.DataDefinition.FormulaFields["Type_"].Text = "'اجمالي المبيعات بالفواتير'";
-                //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.AccountID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
-                //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.StoreDesc.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + OP.Acc.ID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
                OP.Visible = false;
                 //}
@@ -1386,11 +1386,11 @@ ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE ) AS ser
                 Inner Join Payer2 as P2 on P2.ACC_NO = C.Acc_no  and P2.BRANCH_code =C.Acc_Branch_code
             
 where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd")+ "' and '" + OP.dTP2.Value.ToString("yyyy/MM/dd") +
-                "' and D.Item_no like '" + OP.ItemID1.Text +
-                "%' and C.Transaction_code Like '" + OP.txtTransactionCode.Text +
-                "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.GroupID1.Text.Length + "' >3  then  '" + OP.GroupID1.Text + "' else '" + OP.GroupID1.Text + "'+'0' end) and (CASE WHEN '" + OP.GroupID2.Text.Length + "' >3   then  '" + OP.GroupID2.Text + "' else  '" + OP.GroupID2.Text + "'+'z' end) " +
+                "' and D.Item_no like '" + OP.Items.ID.Text +
+                "%' and C.Transaction_code Like '" + OP.Transaction.ID.Text +
+                "%' and ISNULL(A.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end) " +
                 " and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' And H.branch_code like '" + OP.StoreID.Text+"%' and c.acc_no like '%'  GROUP BY H.branch_code,H.branch_name order by H.branch_code"));
+                "%' And H.branch_code like '" + OP.Branch.ID.Text+"%' and c.acc_no like '%'  GROUP BY H.branch_code,H.branch_name order by H.branch_code"));
 
                 ds.Tables.Add(dt1);
 
@@ -1424,7 +1424,7 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy/MM/dd")+ 
             {
                 PL.frm_search_items frm = new PL.frm_search_items();
                 frm.ShowDialog();
-                OP.ItemID1.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
+                OP.Items.ID.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
                 //get_balance();
             }
             catch { }

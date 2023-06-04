@@ -909,6 +909,12 @@
     <Compile Include="MyControls\UcJor.Designer.cs">
       <DependentUpon>UcJor.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\Uc_StoreOptions_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Uc_StoreOptions_1.Designer.cs">
+      <DependentUpon>Uc_StoreOptions_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\Uc_user.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1763,6 +1769,12 @@
     </Compile>
     <Compile Include="PL\frm_Sales_Invoice.designer.cs">
       <DependentUpon>frm_Sales_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_samples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_samples.Designer.cs">
+      <DependentUpon>frm_samples.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_ScanToPDF.cs">
       <SubType>Form</SubType>
@@ -2953,6 +2965,12 @@
     <EmbeddedResource Include="MyControls\UcJor.resx">
       <DependentUpon>UcJor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_StoreOptions_1.ar.resx">
+      <DependentUpon>Uc_StoreOptions_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_StoreOptions_1.resx">
+      <DependentUpon>Uc_StoreOptions_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Uc_user.ar.resx">
       <DependentUpon>Uc_user.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -3748,6 +3766,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Sales_Invoice.resx">
       <DependentUpon>frm_Sales_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_samples.resx">
+      <DependentUpon>frm_samples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_ScanToPDF.resx">
       <DependentUpon>frm_ScanToPDF.cs</DependentUpon>

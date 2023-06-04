@@ -150,8 +150,7 @@ namespace Report_Pro.RPT
 
 
                     DataSet ds = new DataSet();
-
-                    RPT.frm_Rpt_Pro_Frm frminv = new RPT.frm_Rpt_Pro_Frm();
+                 RPT.frm_Rpt_Pro_Frm frminv = new RPT.frm_Rpt_Pro_Frm();
 
                     string ser_1 = int32.ToString();
                     string text1 = Branch.ID.Text;
@@ -505,32 +504,30 @@ namespace Report_Pro.RPT
         }
 
 
-        private void getSalesInv(string ser_, string branch_, string transaction_, string cyear_)
+  private void getSalesInv(string ser_, string branch_, string transaction_, string cyear_)
 
         {
-            dt_inv = dal.getDataTabl_1(@"select A.ser_no,A.Branch_code,A.Cyear,A.Transaction_code,A.G_date,A.Acc_no,A.Payment_Type,A.Sales_man_Id,A.Inv_no,A.Inv_date,a.Inv_Notes,A.Phone,A.Adress,A.PROJECT_NO,A.Costmer_No,A.Cash_costomer_name,A.REQUIST_NO,A.acc_serial_no,A.Qutation_No,A.Po_no,A.Return_reson
-            ,B.modular,B.VAT_RATIO,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,M.Unit,B.Local_Price,isnull(B.TAX_IN,0)as TAX_IN ,isnull(B.TAX_OUT,0)as TAX_OUT 
-            , round(b.DISC_R*B.local_price*QTY_TAKE/100,2) as disc_R
-			, round(b.DISC_R2*B.local_price*QTY_TAKE/100,2) as disc_R2 
-			, round(b.DISC_R3*B.local_price*QTY_TAKE/100,2) as disc_R3
-			, round(b.total_disc*B.local_price*QTY_TAKE/100,2) as disc_ 
-            ,p.PAYER_NAME,isnull(p.payer_l_name,'') as payer_l_name,p2.PAYER_NAME as lc_name ,p2.payer_l_name as lc_L_Name,P.adress,P.adress_E ,P.phone_no,P.fax_no,P.E_MAIL,P.COSTMER_K_M_NO, P.SEGEL_NO,P.ZAKAH_NO,P.CREDIT_AGE,
-            M.descr,M.Descr_eng, br.branch_name,BR.WH_E_NAME,Br.Branch_Logo_A4,PT.Payment_name,U.unit_Description, U.unit_Description_E
-            ,(select top 1 vat_ratio from VAT_RATIO_MASTER where cast(A.G_date as date ) between date_of_vat and '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by date_of_vat desc) as VatRatio " +
-              "from wh_inv_data As A " +
-              "inner join wh_material_transaction As B on a.Ser_no = b.SER_NO and a.Cyear = b.Cyear and a.Transaction_code = b.TRANSACTION_CODE and a.Branch_code = b.Branch_code  " +
-              "inner join payer2 As P on a.Acc_no = p.ACC_NO and a.Acc_Branch_code = p.BRANCH_code  " +
-              "left join(select* from payer2)as p2 on p2.ACC_NO = a.LC_ACC_NO and a.Acc_Branch_code = p2.BRANCH_code  " +
-              "inner join wh_main_master as M on M.item_no=B.ITEM_NO  " +
-              "inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code  " +
-              "inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type  " +
-              "left join  Wh_Unit as U on U.Wh_Unit = B.unit " +
-              
-              "where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
-            //{ dt_inv = this.dal.getDataTabl_1("select a.*, b.*, round(b.total_disc*B.local_price*QTY_TAKE/100,2) as disc_ ,p.PAYER_NAME,p.payer_l_name,p2.PAYER_NAME as lc_name ,p2.payer_l_name as lc_L_Name,m.descr,m.Descr_eng,\r\n             br.branch_name,BR.WH_E_NAME,PT.Payment_name\r\n            from wh_inv_data As A inner join wh_material_transaction As B\r\n            on a.Ser_no = b.SER_NO and a.Cyear = b.Cyear and a.Transaction_code = b.TRANSACTION_CODE and a.Branch_code = b.Branch_code\r\n            inner join payer2 As P on a.Acc_no = p.ACC_NO and a.Acc_Branch_code = p.BRANCH_code\r\n            left join(select* from payer2)as p2 on p2.ACC_NO = a.LC_ACC_NO and a.Acc_Branch_code = p2.BRANCH_code\r\n            inner join wh_main_master as M on M.item_no = b.ITEM_NO\r\n            inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code\r\n            inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type\r\n           where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'"); }
-            //"left join Projects as J on J.ID = A.PROJECT_NO " +
+            dt_inv = this.dal.getDataTabl_1(@"select A.ser_no,A.Sanad_no,A.Branch_code,A.Cyear,A.Transaction_code,A.G_date,A.Acc_no,A.Payment_Type,A.Sales_man_Id,A.Inv_no,A.Inv_date,a.Inv_Notes,A.Phone,A.Adress,A.PROJECT_NO,A.Costmer_No,A.Cash_costomer_name,A.REQUIST_NO,A.Ref
+            ,A.acc_serial_no,A.QUOT_REF_NO,A.QUOT_REF_DATE,A.SO_no,A.Po_no,A.DelevryE,A.TermsOfPaymentE,BankNo
+            ,B.modular,B.VAT_RATIO,B.main_counter,B.DETAILS,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.Unit,B.Local_Price,isnull(B.TAX_IN,0)as TAX_IN ,isnull(B.TAX_OUT,0)as TAX_OUT , round(isnull(Nullif(b.total_disc,''),0)*QTY_TAKE/100,2) as disc_ ,B.Pice_Total_Cost,b.balance,B.K_M_TYPE_ITEMS,B.DeleveryNote
+            ,p.PAYER_NAME,p.payer_l_name,P.Max_Sales_Am,P.CREDIT_AGE,p2.PAYER_NAME as lc_name ,p2.payer_l_name as lc_L_Name,P.adress,P.adress_E ,P.phone_no,P.fax_no,P.E_MAIL,P.COSTMER_K_M_NO, P.SEGEL_NO,P.ZAKAH_NO,
+            M.descr,M.Descr_eng,m.Weight, br.branch_name,BR.Branch_Logo_Small ,BR.WH_E_NAME,Br.Branch_Logo_A4,PT.Payment_name,PT.Payment_name_E,U.unit_Description, U.unit_Description_E,cost.COST_name,cost.COST_E_NAME,SP.Payment_name,SP.Notes
+            ,(select top 1 vat_ratio from VAT_RATIO_MASTER where cast(A.G_date as date ) between date_of_vat and '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by date_of_vat desc) as VatRatio ,VAT.VAT_RATIO*100 as Acc_VatRAtio " +
+            "from wh_inv_data As A " +
+            "inner join wh_material_transaction As B on a.Ser_no = b.SER_NO and a.Cyear = b.Cyear and a.Transaction_code = b.TRANSACTION_CODE and a.Branch_code = b.Branch_code  " +
+            "inner join payer2 As P on a.Acc_no = p.ACC_NO and a.Acc_Branch_code = p.BRANCH_code  " +
+            "left join(select * from payer2)as p2 on p2.ACC_NO = a.LC_ACC_NO and a.Acc_Branch_code = p2.BRANCH_code  " +
+            "inner join wh_main_master as M on M.item_no=B.ITEM_NO  " +
+            "inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code  " +
+            "inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type  " +
+            "inner join  Wh_Unit as U on U.Wh_Unit = B.unit " +
+            "left join Sal_Pyment_type As SP on SP.Payment_type = A.TermsOfPaymentE " +
+            "inner join  COST_CENTER as cost on cost.COST_CODE = A.Sales_man_Id " +
+            " inner join VAT_ACC as VAT on VAT.VAT_ID = isnull(A.MAIN_KM_CODE,11)" +
+            "where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
         }
-            private void getDelevry(string ser_)
+        //(select case when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) between '2018-01-01' and '2020-06-30'   then 5  when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) > '2020-06-30' then 15  else 0 end)as VatRatio
+        private void getDelevry(string ser_)
         {
             dt_inv = dal.getDataTabl_1("select a.*, b.*, round(b.total_disc*B.local_price*QTY_TAKE/100,2) as disc_ ,p.PAYER_NAME,p.payer_l_name,p2.PAYER_NAME as lc_name ,p2.payer_l_name as lc_L_Name,m.descr,m.Descr_eng,\r\n             br.branch_name,BR.WH_E_NAME,PT.Payment_name\r\n            from production.dbo.wh_inv_data As A inner join production.dbo.wh_material_transaction As B\r\n            on a.Ser_no = b.SER_NO and a.Cyear = b.Cyear and a.Transaction_code = b.TRANSACTION_CODE and a.Branch_code = b.Branch_code\r\n            inner join production.dbo.payer2 As P on a.Acc_no = p.ACC_NO and a.Acc_Branch_code = p.BRANCH_code\r\n            left join(select* from production.dbo.payer2)as p2 on p2.ACC_NO = a.LC_ACC_NO and a.Acc_Branch_code = p2.BRANCH_code\r\n            inner join production.dbo.wh_main_master as M on M.item_no = b.ITEM_NO\r\n            inner join production.dbo.wh_BRANCHES As BR on BR.Branch_code = a.Branch_code\r\n            inner join production.dbo.wh_Payment_type as PT on A.Payment_Type=PT.Payment_type\r\n           where a.SER_NO = '" + ser_ + "' and a.Transaction_code = 'XSD' and a.Branch_code = 'A1113' and a.Cyear = '20'");
         }

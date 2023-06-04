@@ -42,10 +42,10 @@ namespace Report_Pro.RPT
                 inner join wh_main_master As C on A.ITEM_NO = c.item_no
                 inner join wh_BRANCHES as D on B.Branch_code = D.Branch_code 
                 inner join wh_BRANCHES as E on B.Acc_no = E.Branch_code 
-                where C.group_code  between(CASE WHEN '" + OS.GroupID1.Text.Length + "' > 3  then  '" + OS.GroupID1.Text + "' else '" + OS.GroupID1.Text + "' + '0' end) and " +
-               "(CASE WHEN '" + OS.GroupID2.Text.Length + "' >3   then  '" + OS.GroupID2.Text + "' else  '" + OS.GroupID2.Text + "'+'z' end) " +
+                where C.group_code  between(CASE WHEN '" + OS.Group1.ID.Text.Length + "' > 3  then  '" + OS.Group1.ID.Text + "' else '" + OS.Group1.ID.Text + "' + '0' end) and " +
+               "(CASE WHEN '" + OS.Group2.ID.Text.Length + "' >3   then  '" + OS.Group2.ID.Text + "' else  '" + OS.Group2.ID.Text + "'+'z' end) " +
                " and cast(A.G_date as date) between '" +OS.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OS.dTP2.Value.ToString("yyyy-MM-dd")+
-               "' and B.branch_code like '"+OS.StoreID.Text+ "%' and B.Acc_no like '"+OS.toStoreID.Text+"%'");
+               "' and B.branch_code like '"+OS.Branch.ID.Text+ "%' and B.Acc_no like '"+OS.Branch.ID.Text+"%'");
 
 
             dgv1.Rows.Clear();
