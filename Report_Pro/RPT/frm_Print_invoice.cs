@@ -255,7 +255,7 @@ namespace Report_Pro.RPT
                     string text2 = Transaction.ID.Text;
                     num1 = txtYear.Value - 2000;
                     string cyear_1 = num1.ToString();
-                    this.getSalesInv(ser_1, text1, text2, cyear_1);
+                    getSalesInv(ser_1, text1, text2, cyear_1);
                     dataSet.Tables.Add(dt_inv);
                     //dataSet.WriteXmlSchema("schema_rpt.xml");
                     printPurchaseInv.SetDataSource(dataSet);
@@ -596,7 +596,7 @@ namespace Report_Pro.RPT
             "inner join wh_main_master as M on M.item_no=B.ITEM_NO  " +
             "inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code  " +
             "inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type  " +
-            "inner join  Wh_Unit as U on U.Wh_Unit = B.unit " +
+            "left join  Wh_Unit as U on U.Wh_Unit = B.unit " +
             "left join Sal_Pyment_type As SP on SP.Payment_type = A.TermsOfPaymentE " +
             "inner join  COST_CENTER as cost on cost.COST_CODE = A.Sales_man_Id " +
             " inner join VAT_ACC as VAT on VAT.VAT_ID = isnull(A.MAIN_KM_CODE,11)" +

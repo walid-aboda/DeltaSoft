@@ -28,14 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnExportToBdf = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_getDataFromExcel = new DevComponents.DotNetBar.ButtonX();
             this.dgv_Inv = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this._colSer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._colBranch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._colBranchName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._colYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._colTransaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._colTransactionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this._serNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,13 +51,6 @@
             this._transaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._transactionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._po = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExportToBdf = new DevComponents.DotNetBar.ButtonX();
-            this._colSer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._colBranch = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._colBranchName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._colYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._colTransaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._colTransactionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Inv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
@@ -90,6 +90,17 @@
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
+            // btnExportToBdf
+            // 
+            this.btnExportToBdf.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnExportToBdf.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnExportToBdf.Location = new System.Drawing.Point(608, 3);
+            this.btnExportToBdf.Name = "btnExportToBdf";
+            this.btnExportToBdf.Size = new System.Drawing.Size(148, 33);
+            this.btnExportToBdf.TabIndex = 2;
+            this.btnExportToBdf.Text = "Export To Bdf";
+            this.btnExportToBdf.Click += new System.EventHandler(this.btnExportToBdf_Click);
+            // 
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -117,14 +128,14 @@
             this.dgv_Inv.AllowUserToAddRows = false;
             this.dgv_Inv.AllowUserToDeleteRows = false;
             this.dgv_Inv.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Inv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Inv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Inv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Inv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._colSer,
@@ -133,14 +144,14 @@
             this._colYear,
             this._colTransaction,
             this._colTransactionName});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Inv.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Inv.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Inv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Inv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgv_Inv.Location = new System.Drawing.Point(0, 53);
@@ -153,19 +164,58 @@
             this.dgv_Inv.TabIndex = 300;
             this.dgv_Inv.DoubleClick += new System.EventHandler(this.dgv_Inv_DoubleClick);
             // 
+            // _colSer
+            // 
+            this._colSer.HeaderText = "الرقم";
+            this._colSer.Name = "_colSer";
+            this._colSer.ReadOnly = true;
+            this._colSer.Width = 60;
+            // 
+            // _colBranch
+            // 
+            this._colBranch.HeaderText = "كود الفرع";
+            this._colBranch.Name = "_colBranch";
+            this._colBranch.ReadOnly = true;
+            // 
+            // _colBranchName
+            // 
+            this._colBranchName.HeaderText = "الفرع";
+            this._colBranchName.Name = "_colBranchName";
+            this._colBranchName.ReadOnly = true;
+            this._colBranchName.Width = 180;
+            // 
+            // _colYear
+            // 
+            this._colYear.HeaderText = "السنة";
+            this._colYear.Name = "_colYear";
+            this._colYear.ReadOnly = true;
+            // 
+            // _colTransaction
+            // 
+            this._colTransaction.HeaderText = "كود الحركة";
+            this._colTransaction.Name = "_colTransaction";
+            this._colTransaction.ReadOnly = true;
+            // 
+            // _colTransactionName
+            // 
+            this._colTransactionName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this._colTransactionName.HeaderText = "الحركة";
+            this._colTransactionName.Name = "_colTransactionName";
+            this._colTransactionName.ReadOnly = true;
+            // 
             // dgv1
             // 
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._serNo,
@@ -175,22 +225,23 @@
             this._transaction,
             this._transactionName,
             this._po});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgv1.Location = new System.Drawing.Point(0, 158);
+            this.dgv1.Location = new System.Drawing.Point(0, 53);
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
             this.dgv1.RowHeadersVisible = false;
             this.dgv1.RowHeadersWidth = 51;
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv1.Size = new System.Drawing.Size(1370, 364);
+            this.dgv1.Size = new System.Drawing.Size(1370, 469);
             this.dgv1.TabIndex = 301;
             this.dgv1.Visible = false;
             this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
@@ -239,56 +290,6 @@
             this._po.HeaderText = "طلب الشراء";
             this._po.Name = "_po";
             this._po.ReadOnly = true;
-            // 
-            // btnExportToBdf
-            // 
-            this.btnExportToBdf.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnExportToBdf.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnExportToBdf.Location = new System.Drawing.Point(608, 3);
-            this.btnExportToBdf.Name = "btnExportToBdf";
-            this.btnExportToBdf.Size = new System.Drawing.Size(148, 33);
-            this.btnExportToBdf.TabIndex = 2;
-            this.btnExportToBdf.Text = "Export To Bdf";
-            this.btnExportToBdf.Click += new System.EventHandler(this.btnExportToBdf_Click);
-            // 
-            // _colSer
-            // 
-            this._colSer.HeaderText = "الرقم";
-            this._colSer.Name = "_colSer";
-            this._colSer.ReadOnly = true;
-            this._colSer.Width = 60;
-            // 
-            // _colBranch
-            // 
-            this._colBranch.HeaderText = "كود الفرع";
-            this._colBranch.Name = "_colBranch";
-            this._colBranch.ReadOnly = true;
-            // 
-            // _colBranchName
-            // 
-            this._colBranchName.HeaderText = "الفرع";
-            this._colBranchName.Name = "_colBranchName";
-            this._colBranchName.ReadOnly = true;
-            this._colBranchName.Width = 180;
-            // 
-            // _colYear
-            // 
-            this._colYear.HeaderText = "السنة";
-            this._colYear.Name = "_colYear";
-            this._colYear.ReadOnly = true;
-            // 
-            // _colTransaction
-            // 
-            this._colTransaction.HeaderText = "كود الحركة";
-            this._colTransaction.Name = "_colTransaction";
-            this._colTransaction.ReadOnly = true;
-            // 
-            // _colTransactionName
-            // 
-            this._colTransactionName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this._colTransactionName.HeaderText = "الحركة";
-            this._colTransactionName.Name = "_colTransactionName";
-            this._colTransactionName.ReadOnly = true;
             // 
             // frm_samples
             // 

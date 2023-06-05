@@ -3317,6 +3317,68 @@ C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
 C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.Form3.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_samples.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.resources
+C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.ar.resources
+C:\DeltaSoft\Report_Pro\bin\Debug\DPDFViewerNative_x64.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\DPDFViewerNative_x86.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe.config
+C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe.manifest
+C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.application
+C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe
+C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.pdb
+C:\DeltaSoft\Report_Pro\bin\Debug\ar\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\aa\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\en\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\af-ZA\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\aa-ER\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\sq-AL\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\ar-EG\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\en-US\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\ar-DZ\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\sq\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\aa-DJ\Report_Pro.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\AdvancedDataGridView.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\BouncyCastle.Crypto.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.Shared.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\DynamicPDF.Viewer.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\itextsharp.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Compression.Base.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Licensing.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\FlashControlV71.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\ADODB.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\stdole.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\ShockwaveFlashObjects.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\AdvancedDataGridView.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\DynamicPDF.Viewer.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\itextsharp.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Compression.Base.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\DeltaSoft\Report_Pro\bin\Debug\fr\AdvancedDataGridView.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\ru\AdvancedDataGridView.resources.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Interop.AcroPDFLib.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\Interop.WIA.dll
+C:\DeltaSoft\Report_Pro\bin\Debug\AxInterop.AcroPDFLib.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\Interop.AcroPDFLib.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\Interop.WIA.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\AxInterop.AcroPDFLib.dll
@@ -3396,6 +3458,7 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.JorRow.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Row.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.mDouble.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UcJor.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_user.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_LastRecord.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Account.resources
@@ -3538,6 +3601,7 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_R_Matrails.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_R_Qutaion.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.FRM_SALESREPORTS.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_Sales_Invoice.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_samples.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_ScanToPDF.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_SearchClient.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_SearchAcc.resources
@@ -3728,6 +3792,7 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Row.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Row.en.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.LoanRow.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UcJor.ar.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_user.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_LastRecord.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Account.ar.resources
@@ -3832,6 +3897,7 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_GroupBalanceByBranches.
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_ItemBalanceByBranches.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_BalanceByBranch.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_TotalInventoryByBranch.ar.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Export_sales.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Inventory_Report_ByGroup.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frmAgeReport.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Compare_TB.ar.resources
@@ -3866,65 +3932,6 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_statment_Rpt.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.GenerateResource.cache
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe.licenses
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CoreCompileInputs.cache
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\DeltaSoft\Report_Pro\bin\Debug\DPDFViewerNative_x64.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\DPDFViewerNative_x86.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe.config
-C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe.manifest
-C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.application
-C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.exe
-C:\DeltaSoft\Report_Pro\bin\Debug\Report_Pro.pdb
-C:\DeltaSoft\Report_Pro\bin\Debug\ar\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\aa\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\en\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\af-ZA\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\aa-ER\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\sq-AL\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\ar-EG\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\en-US\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\ar-DZ\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\sq\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\aa-DJ\Report_Pro.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\AdvancedDataGridView.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\BouncyCastle.Crypto.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.Shared.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.Windows.Forms.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\DynamicPDF.Viewer.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\itextsharp.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Compression.Base.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Licensing.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Pdf.Base.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\FlashControlV71.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\ADODB.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\stdole.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\ShockwaveFlashObjects.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\AdvancedDataGridView.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\DynamicPDF.Viewer.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\itextsharp.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Compression.Base.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Pdf.Base.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
-C:\DeltaSoft\Report_Pro\bin\Debug\fr\AdvancedDataGridView.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\ru\AdvancedDataGridView.resources.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Interop.AcroPDFLib.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\Interop.WIA.dll
-C:\DeltaSoft\Report_Pro\bin\Debug\AxInterop.AcroPDFLib.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\ar\Report_Pro.resources.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\aa\Report_Pro.resources.dll
 C:\DeltaSoft\Report_Pro\obj\Debug\en\Report_Pro.resources.dll
@@ -3940,8 +3947,5 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.TrustInfo.xml
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe.manifest
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
-C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.Form3.resources
-C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
-C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.frm_samples.resources
-C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.resources
-C:\Delta Soft\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_StoreOptions_1.ar.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
