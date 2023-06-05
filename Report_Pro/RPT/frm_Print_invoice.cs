@@ -109,8 +109,136 @@ namespace Report_Pro.RPT
 
         {
 
+            exportInvoicesToBDF();
+            //    FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            //    if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
+            //        return;
+            //    string selectedPath = folderBrowserDialog.SelectedPath;
+            //    int num1;
+            //    for (int int32 = Convert.ToInt32(txtSer.Text); int32 <= Convert.ToInt32(txtSer_1.Text); ++int32)
+            //    {
+            //        if (this.Transaction.ID.Text == "xpc")
+            //        {
+            //            print_PurchaseInv printPurchaseInv = new print_PurchaseInv();
+            //            Form1 form1 = new Form1();
+            //            DataSet dataSet = new DataSet();
+            //            string ser_1 = int32.ToString();
+            //            string text1 = Branch.ID.Text;
+            //            string text2 = Transaction.ID.Text;
+            //            num1 = txtYear.Value - 2000;
+            //            string cyear_1 = num1.ToString();
+            //            this.getSalesInv(ser_1, text1, text2, cyear_1);
+            //            dataSet.Tables.Add(dt_inv);
+            //            //dataSet.WriteXmlSchema("schema_rpt.xml");
+            //            printPurchaseInv.SetDataSource(dataSet);
+            //            printPurchaseInv.DataDefinition.FormulaFields["Branch_"].Text = "'" + this.Branch.ID.Text + " - " + this.Branch.Desc.Text + "'";
+            //            string ser_2 = int32.ToString();
+            //            string text3 = Branch.ID.Text;
+            //            string text4 = Transaction.ID.Text;
+            //            num1 = txtYear.Value - 2000;
+            //            string cyear_2 = num1.ToString();
+            //            this.getInvoiceTotal(ser_2, text3, text4, cyear_2);
+            //            ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(this.dt_inv_total.Rows[0]["NetValuePurch"].ToString())), this.currencies[this.currencyNo]);
+            //            printPurchaseInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+            //            string str = int32.ToString();
+            //            printPurchaseInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
+            //            printPurchaseInv.Close();
+            //            printPurchaseInv.Dispose();
+            //        }
+            //        else
+            //        {
 
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+            //            DataSet ds = new DataSet();
+            //         RPT.frm_Rpt_Pro_Frm frminv = new RPT.frm_Rpt_Pro_Frm();
+
+            //            string ser_1 = int32.ToString();
+            //            string text1 = Branch.ID.Text;
+            //            string text2 = Transaction.ID.Text;
+            //            num1 = txtYear.Value - 2000;
+            //            string cyear_1 = num1.ToString();
+
+            //            getSalesInv(ser_1, text1, text2, cyear_1);
+
+            //            string printModel = Properties.Settings.Default.inv_print;
+
+
+            //            getInvoiceTotal(ser_1, text1, text2, cyear_1);
+            //            ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
+
+            //            DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where company_no = left('"+Branch.ID.Text+"',1)");
+
+            //            string vat_no = dt_Co.Rows[0]["Comp_Vat_no"].ToString();
+            //            string Co_Name = dt_Co.Rows[0]["Company_e_name"].ToString();
+            //            string invDate = Convert.ToDateTime(dt_inv.Rows[0]["G_date"]).ToString("yyyy-MM-dd hh:mm:ss");
+            //            string TotalInv = dt_inv_total.Rows[0]["NetValue"].ToString().ToDecimal().ToString("N2");
+            //            string TotalTax = dt_inv_total.Rows[0]["tax"].ToString();
+
+            //            PictureBox pic_ = new PictureBox();
+            //            dal.pic1 = pic_;
+            //            dal.GetImsge(Co_Name, vat_no, invDate, TotalInv, TotalTax);
+
+            //            DataTable dQR = new DataTable();
+            //            using (MemoryStream ms = new MemoryStream())
+            //            {
+            //                pic_.Image.Save(ms, ImageFormat.Bmp);
+
+            //                byte[] byteImage = ms.ToArray();
+            //                dQR.Columns.Add(new DataColumn("Barcode", typeof(byte[])));
+            //                dQR.Rows.Add(byteImage);
+            //            }
+
+
+
+            //            ds.Tables.Add(dt_inv);
+            //            ds.Tables.Add(dQR);
+            //            ds.Tables.Add(dt_Co);
+            //            ds.WriteXmlSchema("schema_rpt.xml");
+            //            string str = int32.ToString();
+            //            if (Program.PrintMode == "1") //english
+            //            {
+            //                RPT.Rpt_sales_Invoice_Portrait_total reportInv = new RPT.Rpt_sales_Invoice_Portrait_total();
+            //                reportInv.SetDataSource(ds);
+            //                reportInv.DataDefinition.FormulaFields["decimal_"].Text = "'" + Properties.Settings.Default.digitNo_ + "'";
+            //                reportInv.DataDefinition.FormulaFields["Currency_"].Text = "'" + Properties.Settings.Default.Currency + "'";
+            //                reportInv.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
+            //                reportInv.Close();
+            //                reportInv.Dispose();
+            //            }
+
+            //            else if (Program.PrintMode == "3") // both
+
+            //            {
+            //                RPT.Rpt_sales_Invoice_2 reportInv = new RPT.Rpt_sales_Invoice_2();
+            //                reportInv.SetDataSource(ds);
+
+            //                reportInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
+            //                reportInv.Close();
+            //                reportInv.Dispose();
+
+            //            }
+            //            else
+
+            //            {
+            //                RPT.Rpt_sales_Invoice_2 reportInv = new RPT.Rpt_sales_Invoice_2();
+            //                reportInv.DataDefinition.FormulaFields["tafqeet"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+            //                reportInv.DataDefinition.FormulaFields["tafqeet_E"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";
+
+            //                reportInv.SetDataSource(ds);
+
+            //                reportInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
+            //                reportInv.Close();
+            //                reportInv.Dispose();
+            //            }
+            //        }
+            //    }
+            //    int num2 = (int)MessageBox.Show("Invoices was Exprted ", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            //
+        }
+        
+        private void exportInvoicesToBDF()
+        {
+                        FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
             if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
                 return;
             string selectedPath = folderBrowserDialog.SelectedPath;
@@ -158,7 +286,6 @@ namespace Report_Pro.RPT
                     num1 = txtYear.Value - 2000;
                     string cyear_1 = num1.ToString();
 
-                    //DataTable dt_1 = dal.getDataTabl("get_invDetails", txt_InvNu.Text, Doc_Type.Text, txt_InvDate.Value.ToString("yy"), Properties.Settings.Default.BranchId);
                     getSalesInv(ser_1, text1, text2, cyear_1);
 
                     string printModel = Properties.Settings.Default.inv_print;
@@ -203,13 +330,8 @@ namespace Report_Pro.RPT
                         reportInv.DataDefinition.FormulaFields["decimal_"].Text = "'" + Properties.Settings.Default.digitNo_ + "'";
                         reportInv.DataDefinition.FormulaFields["Currency_"].Text = "'" + Properties.Settings.Default.Currency + "'";
                         reportInv.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
-                        // rptInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
                         reportInv.Close();
                         reportInv.Dispose();
-
-
-                        //    frminv.crystalReportViewer1.ReportSource = reportInv;
-                        //    frminv.ShowDialog();
                     }
 
                     else if (Program.PrintMode == "3") // both
@@ -219,14 +341,11 @@ namespace Report_Pro.RPT
                         reportInv.SetDataSource(ds);
 
                         reportInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
-                        // rptInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
                         reportInv.Close();
                         reportInv.Dispose();
 
-                        //frminv.crystalReportViewer1.ReportSource = reportInv;
-                        //frminv.ShowDialog();
                     }
-                    else 
+                    else
 
                     {
                         RPT.Rpt_sales_Invoice_2 reportInv = new RPT.Rpt_sales_Invoice_2();
@@ -236,58 +355,15 @@ namespace Report_Pro.RPT
                         reportInv.SetDataSource(ds);
 
                         reportInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
-                        // rptInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
                         reportInv.Close();
                         reportInv.Dispose();
-
-                        //frminv.crystalReportViewer1.ReportSource = reportInv;
-                        //frminv.ShowDialog();
                     }
-
-
-
-
-
-
-
-
-
-
-
-                    // Rpt_sales_Invoice_2 rptInv = new Rpt_sales_Invoice_2();
-
-                    //// Rpt_inv rptInv = new Rpt_inv();
-                    // Form1 form1 = new Form1();
-                    // DataSet dataSet = new DataSet();
-                    // string ser_1 = int32.ToString();
-                    // string text1 = Branch.ID.Text;
-                    // string text2 = Transaction.ID.Text;
-                    // num1 = txtYear.Value - 2000;
-                    // string cyear_1 = num1.ToString();
-                    // getSalesInv(ser_1, text1, text2, cyear_1);
-                    // dataSet.Tables.Add(dt_inv);
-                    // //dataSet.WriteXmlSchema("schema_rpt.xml");
-                    // rptInv.SetDataSource(dataSet);
-                    //// rptInv.DataDefinition.FormulaFields["Branch_"].Text = "'" + this.Branch.ID.Text + " - " + this.Branch.Desc.Text + "'";
-                    // string ser_2 = int32.ToString();
-                    // string text3 = Branch.ID.Text;
-                    // string text4 = Transaction.ID.Text;
-                    // num1 = txtYear.Value - 2000;
-                    // string cyear_2 = num1.ToString();
-                    // getInvoiceTotal(ser_2, text3, text4, cyear_2);
-                    // ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(this.dt_inv_total.Rows[0]["NetValue"].ToString())), this.currencies[this.currencyNo]);
-                    // rptInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
-                    // string str = int32.ToString();
-                    // rptInv.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
-                    //// rptInv.ExportToDisk(ExportFormatType.PortableDocFormat, folderBrowserDialog.SelectedPath + "\\" + str + ".pdf");
-                    // rptInv.Close();
-                    // rptInv.Dispose();
-                    // //rptInv.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, "Weaving Sales Pending Contract Register.pdf");
-
                 }
             }
             int num2 = (int)MessageBox.Show("Invoices was Exprted ", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
         }
+
 
         private void buttonX2_Click(object sender, EventArgs e)
 
@@ -526,6 +602,8 @@ namespace Report_Pro.RPT
             " inner join VAT_ACC as VAT on VAT.VAT_ID = isnull(A.MAIN_KM_CODE,11)" +
             "where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
         }
+   
+        
         //(select case when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) between '2018-01-01' and '2020-06-30'   then 5  when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) > '2020-06-30' then 15  else 0 end)as VatRatio
         private void getDelevry(string ser_)
         {

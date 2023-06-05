@@ -120,7 +120,7 @@ namespace Report_Pro.RPT
                     Program.userID = dt.Rows[0]["USER_ID"].ToString();
                     Program.userCostCode = dt.Rows[0][38].ToString();
 
-                    Program.PrintMode = dal.GetCell_1("select PRINTER_FORM from wh_BRANCHES where Branch_code = '" + Properties.Settings.Default.BranchId + "'").ToString();
+                    Program.PrintMode = dal.GetCell_1("select print_mode from wh_BRANCHES where Branch_code = '" + Properties.Settings.Default.BranchId + "'").ToString();
 
                     Properties.Settings.Default.C_year = dal.GetCell_1(@"SELECT Cyear FROM Wh_Configration").ToString();
 

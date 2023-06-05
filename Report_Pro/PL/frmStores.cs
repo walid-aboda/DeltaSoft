@@ -149,8 +149,8 @@ namespace Report_Pro.PL
                 ,CR                             = @CR
                 ,Website                        = @Website
                 ,downpayment_Acc                = @downpayment_Acc
-                ,PRINTER_FORM                   = @PRINTER_FORM
                 ,Ohad_Acc_No                    = @Ohad_Acc_No
+                ,print_mode                     = @print_mode
                 where Branch_code               = @Branch_code ";
             }
             else
@@ -196,7 +196,7 @@ namespace Report_Pro.PL
             ,CR
             ,Website
             ,downpayment_Acc
-            ,PRINTER_FORM)
+            ,print_mode)
             Values (
             @Branch_code 
             ,@branch_name 
@@ -239,7 +239,7 @@ namespace Report_Pro.PL
             ,@CR
             ,@Website
             ,@downpayment_Acc
-            ,@PRINTER_FORM)";
+            ,@print_mode)";
 
             }
 
@@ -279,6 +279,7 @@ namespace Report_Pro.PL
             cmd.Parameters.AddWithValue("@LONG_ADESS_A", TxtAddress.Text);
             cmd.Parameters.AddWithValue("@LONG_ADESS_E", TxtAddress_E.Text);
             cmd.Parameters.AddWithValue("@Ohad_Acc_No", txt_AdvanceAcc.ID.Text);
+
             if (pictureBox2.Image != null)
             {
                 cmd.Parameters.AddWithValue("@Branch_Logo", dal.ConvertImageToBytes(pictureBox2.Image));
@@ -302,7 +303,7 @@ namespace Report_Pro.PL
             cmd.Parameters.AddWithValue("@CR", txtCr.Text);
             cmd.Parameters.AddWithValue("@Website", txtWebSite.Text);
             cmd.Parameters.AddWithValue("@downpayment_Acc", downpayment_Acc.ID.Text);
-            cmd.Parameters.AddWithValue("@PRINTER_FORM", Convert.ToString(cmbPrintMode.SelectedValue));
+            cmd.Parameters.AddWithValue("@print_mode", Convert.ToString(cmbPrintMode.SelectedValue));
             cmd.ExecuteNonQuery();
            // MessageBox.Show(rm.GetString("msgSave"));
         }
@@ -520,7 +521,7 @@ namespace Report_Pro.PL
             txtCr.Text = r["CR"].ToString();
             txtWebSite.Text = r["Website"].ToString();
             txt_KM_No.Text = r["COMP_TAX_NO"].ToString();
-            cmbPrintMode.SelectedValue = r["PRINTER_FORM"].ToString();
+            cmbPrintMode.SelectedValue = r["print_mode"].ToString();
             txt_AdvanceAcc.ID.Text = r["Ohad_Acc_No"].ToString();
             //}
 

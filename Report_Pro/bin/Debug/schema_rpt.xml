@@ -52,7 +52,7 @@
               <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
               <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
               <xs:element name="Max_Sales_Am" type="xs:decimal" minOccurs="0" />
-              <xs:element name="CREDIT_AGE" type="xs:short" minOccurs="0" />
+              <xs:element name="CREDIT_AGE" type="xs:int" minOccurs="0" />
               <xs:element name="lc_name" type="xs:string" minOccurs="0" />
               <xs:element name="lc_L_Name" type="xs:string" minOccurs="0" />
               <xs:element name="adress1" type="xs:string" minOccurs="0" />
