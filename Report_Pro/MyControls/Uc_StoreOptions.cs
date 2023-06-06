@@ -663,9 +663,5 @@ namespace Report_Pro.MyControls
             uc_SearchItem1.Visible = false;
         }
 
-        private void Branch_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

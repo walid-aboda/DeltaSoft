@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelHeader;
         public System.Windows.Forms.Label headLbl;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;

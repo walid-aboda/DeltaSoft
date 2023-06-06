@@ -4075,6 +4075,9 @@
     <EmbeddedResource Include="RPT\frm_Inventory_Report_ByGroup.resx">
       <DependentUpon>frm_Inventory_Report_ByGroup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_Purchase_reports.ar.resx">
+      <DependentUpon>frm_Purchase_reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rptLastRecord.resx">
       <DependentUpon>frm_rptLastRecord.cs</DependentUpon>
     </EmbeddedResource>

@@ -346,7 +346,7 @@ namespace Report_Pro.RPT
             rpt.DataDefinition.FormulaFields["Lc_"].Text = " '" + OP.LcAcc.ID.Text + " - '+'" + OP.LcAcc.Desc.Text + "'";
 
             rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + OP.Branch.Desc.Text + "'";
-            rpt.DataDefinition.FormulaFields["PaymeOP.Branch.Desc.Textnt_"].Text = "'" + OP.payment_type.Text + "'";
+            rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + OP.payment_type.Text + "'";
 
         }
 

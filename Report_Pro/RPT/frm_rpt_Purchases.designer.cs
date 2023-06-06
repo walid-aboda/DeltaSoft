@@ -39,7 +39,6 @@
             this.button6 = new DevComponents.DotNetBar.ButtonX();
             this.btnOption = new DevComponents.DotNetBar.ButtonX();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.OP = new Report_Pro.MyControls.Uc_StoreOptions();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,17 +128,10 @@
             resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             // 
-            // OP
-            // 
-            this.OP.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.OP, "OP");
-            this.OP.Name = "OP";
-            // 
             // frm_rpt_Purchases
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.OP);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "frm_rpt_Purchases";

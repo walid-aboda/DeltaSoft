@@ -50,8 +50,6 @@
             this.itemPrice = new DevComponents.Editors.DoubleInput();
             this.txtMainLcAcc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLcAccFinal = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtItemVat = new Report_Pro.MyControls.decimalText();
-            this.txtKmItem = new Report_Pro.MyControls.decimalText();
             this.cachedrpt_BS_TB_Group1 = new Report_Pro.Group.Cachedrpt_BS_TB_Group();
             this.lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -94,16 +92,20 @@
             this.payment_type = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.uc_SearchItem1 = new Report_Pro.MyControls.Uc_SearchItem();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
-            this.Acc = new Report_Pro.MyControls.UC_Acc();
-            this.Group1 = new Report_Pro.MyControls.Uc_Group();
-            this.Group2 = new Report_Pro.MyControls.Uc_Group();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCost1 = new Report_Pro.MyControls.UC_cost();
             this.Transaction = new Report_Pro.MyControls.UC_Transaction();
             this.ToStore = new Report_Pro.MyControls.UC_Branch();
             this.LcAcc = new Report_Pro.MyControls.UC_Acc();
             this.Items = new Report_Pro.MyControls.UC_Items();
+            this.Group2 = new Report_Pro.MyControls.Uc_Group();
+            this.Group1 = new Report_Pro.MyControls.Uc_Group();
+            this.Acc = new Report_Pro.MyControls.UC_Acc();
+            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.uc_SearchItem1 = new Report_Pro.MyControls.Uc_SearchItem();
+            this.txtItemVat = new Report_Pro.MyControls.decimalText();
+            this.txtKmItem = new Report_Pro.MyControls.decimalText();
             ((System.ComponentModel.ISupportInitialize)(this.txtCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLenth)).BeginInit();
@@ -324,36 +326,6 @@
             this.txtLcAccFinal.Border.Class = "TextBoxBorder";
             resources.ApplyResources(this.txtLcAccFinal, "txtLcAccFinal");
             this.txtLcAccFinal.Name = "txtLcAccFinal";
-            // 
-            // txtItemVat
-            // 
-            this.txtItemVat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtItemVat.DicemalDigits = 0;
-            resources.ApplyResources(this.txtItemVat, "txtItemVat");
-            this.txtItemVat.maxmumNumber = 0D;
-            this.txtItemVat.minimumNumber = 0D;
-            this.txtItemVat.Name = "txtItemVat";
-            this.txtItemVat.ProgramDigits = false;
-            this.txtItemVat.Value = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            // 
-            // txtKmItem
-            // 
-            this.txtKmItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtKmItem.DicemalDigits = 0;
-            resources.ApplyResources(this.txtKmItem, "txtKmItem");
-            this.txtKmItem.maxmumNumber = 0D;
-            this.txtKmItem.minimumNumber = 0D;
-            this.txtKmItem.Name = "txtKmItem";
-            this.txtKmItem.ProgramDigits = false;
-            this.txtKmItem.Value = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             // 
             // lbl
             // 
@@ -748,42 +720,13 @@
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
             // 
-            // uc_SearchItem1
-            // 
-            resources.ApplyResources(this.uc_SearchItem1, "uc_SearchItem1");
-            this.uc_SearchItem1.BackColor = System.Drawing.Color.Linen;
-            this.uc_SearchItem1.Name = "uc_SearchItem1";
-            this.uc_SearchItem1.DoubleClick += new System.EventHandler(this.uc_SearchItem1_DoubleClick);
-            // 
-            // Branch
-            // 
-            this.Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.Branch, "Branch");
-            this.Branch.Name = "Branch";
-            this.Branch.Load += new System.EventHandler(this.Branch_Load);
-            // 
-            // Acc
-            // 
-            this.Acc.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Acc, "Acc");
-            this.Acc.Name = "Acc";
-            // 
-            // Group1
-            // 
-            resources.ApplyResources(this.Group1, "Group1");
-            this.Group1.Name = "Group1";
-            // 
-            // Group2
-            // 
-            resources.ApplyResources(this.Group2, "Group2");
-            this.Group2.Name = "Group2";
-            // 
             // groupPanel4
             // 
             this.groupPanel4.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.label15);
+            this.groupPanel4.Controls.Add(this.txtCost1);
             this.groupPanel4.Controls.Add(this.Transaction);
             this.groupPanel4.Controls.Add(this.ToStore);
             this.groupPanel4.Controls.Add(this.LcAcc);
@@ -841,6 +784,17 @@
             this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // label15
+            // 
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // txtCost1
+            // 
+            resources.ApplyResources(this.txtCost1, "txtCost1");
+            this.txtCost1.Name = "txtCost1";
+            // 
             // Transaction
             // 
             resources.ApplyResources(this.Transaction, "Transaction");
@@ -863,6 +817,66 @@
             // 
             resources.ApplyResources(this.Items, "Items");
             this.Items.Name = "Items";
+            // 
+            // Group2
+            // 
+            resources.ApplyResources(this.Group2, "Group2");
+            this.Group2.Name = "Group2";
+            // 
+            // Group1
+            // 
+            resources.ApplyResources(this.Group1, "Group1");
+            this.Group1.Name = "Group1";
+            // 
+            // Acc
+            // 
+            this.Acc.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.Acc, "Acc");
+            this.Acc.Name = "Acc";
+            // 
+            // Branch
+            // 
+            this.Branch.BackColor = System.Drawing.Color.Transparent;
+            this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.Branch, "Branch");
+            this.Branch.Name = "Branch";
+            // 
+            // uc_SearchItem1
+            // 
+            resources.ApplyResources(this.uc_SearchItem1, "uc_SearchItem1");
+            this.uc_SearchItem1.BackColor = System.Drawing.Color.Linen;
+            this.uc_SearchItem1.Name = "uc_SearchItem1";
+            this.uc_SearchItem1.DoubleClick += new System.EventHandler(this.uc_SearchItem1_DoubleClick);
+            // 
+            // txtItemVat
+            // 
+            this.txtItemVat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtItemVat.DicemalDigits = 0;
+            resources.ApplyResources(this.txtItemVat, "txtItemVat");
+            this.txtItemVat.maxmumNumber = 0D;
+            this.txtItemVat.minimumNumber = 0D;
+            this.txtItemVat.Name = "txtItemVat";
+            this.txtItemVat.ProgramDigits = false;
+            this.txtItemVat.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // txtKmItem
+            // 
+            this.txtKmItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtKmItem.DicemalDigits = 0;
+            resources.ApplyResources(this.txtKmItem, "txtKmItem");
+            this.txtKmItem.maxmumNumber = 0D;
+            this.txtKmItem.minimumNumber = 0D;
+            this.txtKmItem.Name = "txtKmItem";
+            this.txtKmItem.ProgramDigits = false;
+            this.txtKmItem.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // Uc_StoreOptions
             // 
@@ -992,5 +1006,7 @@
         public UC_Branch ToStore;
         public UC_Acc LcAcc;
         public UC_Items Items;
+        private System.Windows.Forms.Label label15;
+        public UC_cost txtCost1;
     }
 }

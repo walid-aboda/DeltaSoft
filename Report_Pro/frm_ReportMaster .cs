@@ -170,7 +170,7 @@ namespace Report_Pro
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ReportMaster));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btn_Option = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_preview = new System.Windows.Forms.ToolStripMenuItem();
@@ -180,17 +180,17 @@ namespace Report_Pro
             this.xToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cmbLanguh = new System.Windows.Forms.ToolStripComboBox();
             this.headLbl = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panelHeader.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelHeader
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Controls.Add(this.headLbl);
-            this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            resources.ApplyResources(this.panelHeader, "panelHeader");
+            this.panelHeader.Controls.Add(this.menuStrip1);
+            this.panelHeader.Controls.Add(this.headLbl);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // menuStrip1
             // 
@@ -273,11 +273,11 @@ namespace Report_Pro
             // 
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelHeader);
             this.Name = "frm_ReportMaster";
             this.Load += new System.EventHandler(this.frm_ReportMaster_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

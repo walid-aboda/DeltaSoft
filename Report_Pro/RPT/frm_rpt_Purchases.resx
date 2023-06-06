@@ -122,7 +122,7 @@
     <value>666, 11</value>
   </data>
   <data name="buttonX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonX5.TabIndex" type="System.Int32, mscorlib">
@@ -147,7 +147,7 @@
     <value>583, 11</value>
   </data>
   <data name="buttonX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <data name="buttonX4.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -171,7 +171,7 @@
     <value>500, 11</value>
   </data>
   <data name="buttonX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <data name="buttonX3.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -195,7 +195,7 @@
     <value>417, 11</value>
   </data>
   <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -219,7 +219,7 @@
     <value>306, 11</value>
   </data>
   <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 35</value>
+    <value>108, 35</value>
   </data>
   <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -243,7 +243,7 @@
     <value>223, 11</value>
   </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <data name="button9.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -267,7 +267,7 @@
     <value>140, 11</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+    <value>80, 35</value>
   </data>
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -365,30 +365,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="OP.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="OP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 56</value>
-  </data>
-  <data name="OP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1344, 498</value>
-  </data>
-  <data name="OP.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;OP.Name" xml:space="preserve">
-    <value>OP</value>
-  </data>
-  <data name="&gt;&gt;OP.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.Uc_StoreOptions, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;OP.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;OP.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -399,9 +375,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1344, 691</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Purchases Reports</value>

@@ -420,7 +420,7 @@ namespace Report_Pro.RPT
                 ,sum(D.QTY_TAKE - D.QTY_ADD) as Qty
                 ,ROUND(sum((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price) - sum(((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price * D.total_disc) / 100), 2) AS Value
                 ,sum(D.TAX_OUT - D.TAX_IN) As Vat
-                ,sum((D.QTY_TAKE - D.QTY_ADD) * s.Weight) as Weight
+                ,sum((D.QTY_TAKE - D.QTY_ADD) * isnull(nullif(s.Weight,''),0)) as Weight
 
                 FROM wh_inv_data as A
                 INNER JOIN wh_material_transaction As D ON A.Ser_no = D.SER_NO
@@ -432,7 +432,7 @@ namespace Report_Pro.RPT
                 and cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") + 
                 "' and A.Payment_Type like '" + pay_code +
                  "%' and A.Transaction_code Like '" + OP.Transaction.ID.Text +
-                 "%' and ISNULL (S.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + 
+                 "%' and ISNULL (nullif(S.Category,''),'Z') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + 
                  "') and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 + 
                  "' and ISNULL(S.Dim_category,'C') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) + 
                  "%' and A.Branch_code like '" + OP.Branch.ID.Text + 
@@ -933,16 +933,17 @@ where cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") +
 
             where D.TRANSACTION_CODE like 'xs%'
             and cast(D.G_date as date) between '" + OP.dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + OP.dTP2.Value.ToString("yyyy-MM-dd") +
-            "' and A.Payment_Type like '" + pay_code +
+            "'  and A.Payment_Type like '" + pay_code +
             "%' and A.Transaction_code Like '" + OP.Transaction.ID.Text +
             "%' and isnull(s.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
-            " and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
-            "' and isnull(S.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
+            "   and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
+            "'  and isnull(S.Dim_category,'') like '" + Convert.ToString(OP.cmb_DimCategory.SelectedValue) +
             "%' and A.Branch_code like '" + OP.Branch.ID.Text +
             "%' and A.acc_no like '" + OP.Acc.ID.Text +
             "%' and isnull(P2.SisterCompany, 0) like '" + SC +
-                "%' and isnull(S.Category,'Y') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
-            " and ISNULL(S.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end)  and D.Item_no like '" + OP.Items.ID.Text +
+            "%' and isnull(Sales_man_Id,'') like '"+OP.txtCost1.ID.Text+
+            "%' and isnull(S.Category,'Y') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "','" + B + "','" + N + "') " +
+            "   and ISNULL(S.group_code,'')  between (CASE WHEN '" + OP.Group1.ID.Text.Length + "' >3  then  '" + OP.Group1.ID.Text + "' else '" + OP.Group1.ID.Text + "'+'0' end) and (CASE WHEN '" + OP.Group2.ID.Text.Length + "' >3   then  '" + OP.Group2.ID.Text + "' else  '" + OP.Group2.ID.Text + "'+'z' end)  and D.Item_no like '" + OP.Items.ID.Text +
             "%' and isnull(KM_CODE_ACC,0) like case when '" + str_t + "'= 3 then '3%' else '%' end  and isnull(KM_CODE_ACC,0) not like case when '" + str_t + "'= 2 then '3%' else '' end " +
             "group by   A.Ser_no,B.branch_name,A.G_date,p.PAYER_NAME, A.Inv_no, A.Inv_date, p.COSTMER_K_M_NO, A.Transaction_code, A.Branch_code," +
             " A.Payment_Type, T.INV_NAME, A.acc_serial_no, p.payer_l_name, C.Payment_name, A.Acc_no order by a.Branch_code, A.Ser_no");

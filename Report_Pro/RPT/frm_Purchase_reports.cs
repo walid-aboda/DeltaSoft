@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Report_Pro.RPT
 {
-    public partial class frm_Purchase_reports : Form
+    public partial class frm_Purchase_reports : frm_ReportMaster
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string db1 = Properties.Settings.Default.Database_1;
@@ -18,30 +18,16 @@ namespace Report_Pro.RPT
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public override void preview()
         {
-
+            reportPreview();
+            base.preview();
         }
 
-        private void btn_Report_Click(object sender, EventArgs e)
+        private void reportPreview()
         {
-          
-        }
-
-        private void uC_Branch1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Report_btn_Click(object sender, EventArgs e)
-        {
-            this.Cursor = Cursors.WaitCursor;
-            groupPanel1.Visible = false;
+            Cursor = Cursors.WaitCursor;
+            panel2.Visible = false;
             DataSet ds = new DataSet();
             DataTable dt1 = new DataTable();
 
@@ -86,27 +72,23 @@ namespace Report_Pro.RPT
                 "order by X.ITEM_NO,X.Acc_no ");
             }
 
-           
+
 
             RPT.Get_Last_Purch rpt = new RPT.Get_Last_Purch();
-           
+
             //dt1 = (dal.getDataTabl("Get_last_purch_", FromDate_.Value.Date, ToDate_.Value.Date, "", UC_Branch.ID.Text, UC_Acc.ID.Text, "xp", db1));
-          
+
             ds.Tables.Add(dt1);
             ////ds.WriteXmlSchema("schema_rpt.xml");
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
-            this.Cursor = Cursors.Default;
-
-
-
-
-
+            Cursor = Cursors.Default;
         }
+
 
         private void btn_1_Click(object sender, EventArgs e)
         {
-            groupPanel1.Visible = true;
+            panel2.Visible = true;
         }
 
         private void UC_Branch_Load(object sender, EventArgs e)
@@ -114,10 +96,11 @@ namespace Report_Pro.RPT
             UC_Acc.branchID.Text = UC_Branch.ID.Text;
         }
 
-        private void Purchase_reports_Load(object sender, EventArgs e)
+
+        public override void Option()
         {
-
-
+            panel2.Visible = true;
+            base.Option();
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -129,7 +112,7 @@ namespace Report_Pro.RPT
             this.Cursor = Cursors.WaitCursor;
             DataSet ds = new DataSet();
             DataTable dt1 = new DataTable();
-            groupPanel1.Visible = false;
+            panel2.Visible = false;
             RPT.Get_Last_Purch_Item rpt = new RPT.Get_Last_Purch_Item();
             dt1 = dal.getDataTabl_1(@"select * from ( SELECT A.Ser_no,A.ITEM_NO,A.QTY_TAKE-A.QTY_ADD as Qty,A.Local_Price,a.G_DATE
                 ,B.Acc_no,p.PAYER_NAME,Forign_price,descr,a.Branch_code,x.branch_name,M.weight,a.TRANSACTION_CODE,IY.INV_NAME
@@ -156,7 +139,7 @@ namespace Report_Pro.RPT
         private void buttonX2_Click(object sender, EventArgs e)
         {
             this.Cursor = Cursors.WaitCursor;
-            groupPanel1.Visible = false;
+            panel2.Visible = false;
             DataSet ds = new DataSet();
             DataTable dt1 = new DataTable();
 
@@ -191,5 +174,7 @@ namespace Report_Pro.RPT
             this.Cursor = Cursors.Default;
 
         }
+
+        
     }
 }
