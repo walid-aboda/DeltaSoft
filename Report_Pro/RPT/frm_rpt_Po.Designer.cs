@@ -72,6 +72,9 @@
             this.txtTotalBalance = new Report_Pro.MyControls.decimalText();
             this.dgvPO = new ADGV.AdvancedDataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chActive = new System.Windows.Forms.CheckBox();
+            this.chCanceled = new System.Windows.Forms.CheckBox();
+            this.chClosed = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -88,7 +91,6 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -101,7 +103,6 @@
             this.txtPO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtPO, "txtPO");
             this.txtPO.Name = "txtPO";
-            this.txtPO.TextChanged += new System.EventHandler(this.txtPO_TextChanged);
             // 
             // label8
             // 
@@ -149,13 +150,11 @@
             // 
             resources.ApplyResources(this.txtToDate, "txtToDate");
             this.txtToDate.Name = "txtToDate";
-            this.txtToDate.ValueChanged += new System.EventHandler(this.txtToDate_ValueChanged);
             // 
             // txtFromDate
             // 
             resources.ApplyResources(this.txtFromDate, "txtFromDate");
             this.txtFromDate.Name = "txtFromDate";
-            this.txtFromDate.ValueChanged += new System.EventHandler(this.txtFromDate_ValueChanged);
             // 
             // label1
             // 
@@ -167,7 +166,6 @@
             // 
             resources.ApplyResources(this.txtItem, "txtItem");
             this.txtItem.Name = "txtItem";
-            this.txtItem.Load += new System.EventHandler(this.txtItem_Load);
             // 
             // txtGroup
             // 
@@ -186,7 +184,6 @@
             this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.Name = "txtBranch";
-            this.txtBranch.Load += new System.EventHandler(this.txtBranch_Load);
             // 
             // txtThick_2
             // 
@@ -256,7 +253,6 @@
             // 
             resources.ApplyResources(this.txtGroup1, "txtGroup1");
             this.txtGroup1.Name = "txtGroup1";
-            this.txtGroup1.Load += new System.EventHandler(this.txtGroup1_Load);
             // 
             // _PONo
             // 
@@ -373,6 +369,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.chClosed);
+            this.panel1.Controls.Add(this.chCanceled);
+            this.panel1.Controls.Add(this.chActive);
             this.panel1.Controls.Add(this.radioGroup1);
             this.panel1.Controls.Add(this.radioGroup2);
             this.panel1.Controls.Add(this.label8);
@@ -397,6 +396,26 @@
             this.panel1.Controls.Add(this.txtThick_1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // chActive
+            // 
+            resources.ApplyResources(this.chActive, "chActive");
+            this.chActive.Checked = true;
+            this.chActive.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chActive.Name = "chActive";
+            this.chActive.UseVisualStyleBackColor = true;
+            // 
+            // chCanceled
+            // 
+            resources.ApplyResources(this.chCanceled, "chCanceled");
+            this.chCanceled.Name = "chCanceled";
+            this.chCanceled.UseVisualStyleBackColor = true;
+            // 
+            // chClosed
+            // 
+            resources.ApplyResources(this.chClosed, "chClosed");
+            this.chClosed.Name = "chClosed";
+            this.chClosed.UseVisualStyleBackColor = true;
             // 
             // frm_rpt_Po
             // 
@@ -452,5 +471,8 @@
         private DevExpress.XtraEditors.RadioGroup radioGroup2;
         private ADGV.AdvancedDataGridView dgvPO;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chClosed;
+        private System.Windows.Forms.CheckBox chCanceled;
+        private System.Windows.Forms.CheckBox chActive;
     }
 }

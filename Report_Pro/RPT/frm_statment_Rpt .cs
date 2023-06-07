@@ -420,7 +420,7 @@ namespace Report_Pro.RPT
         " where A.ACC_NO = '" + _acc + "' and ISNULL(A.COST_CENTER, '') like '" + UC_cost1.ID.Text + "%' and ISNULL(A.CAT_CODE, '')  like '" + UC_Catogry1.ID.Text + "%' and  A.BRANCH_code like(CASE WHEN(select t_final  from BRANCHS where BRANCH_code = '" + UC_Branch.ID.Text + "') = '1' then '" + UC_Branch.ID.Text + "' else  '" + UC_Branch.ID.Text + "%' end)  " +
         "group by   A.ACC_NO");
 
-         dt3 = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No='" + dt1.Rows[0]["com_code"] + "'   ");
+         dt3 = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No=left('" + Properties.Settings.Default.BranchAccID+ "',1)   ");
 
           
         }

@@ -61,9 +61,10 @@
               <xs:element name="Comp_Email" type="xs:string" minOccurs="0" />
               <xs:element name="Comp_Web_Site" type="xs:string" minOccurs="0" />
               <xs:element name="Comp_Rc" type="xs:string" minOccurs="0" />
-              <xs:element name="stamp_pic" type="xs:base64Binary" minOccurs="0" />
               <xs:element name="h_pic" type="xs:base64Binary" minOccurs="0" />
               <xs:element name="f_pic" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="stamp_pic" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="PO_Box" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

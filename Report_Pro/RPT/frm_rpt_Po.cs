@@ -38,6 +38,7 @@ namespace Report_Pro.RPT
             dt_bs.Columns.Add("_acc", typeof(string));
             dt_bs.Columns.Add("_itemNo", typeof(string));
             dt_bs.Columns.Add("_item", typeof(string));
+            dt_bs.Columns.Add("_Weight", typeof(decimal));
             dt_bs.Columns.Add("_unit", typeof(string));
             dt_bs.Columns.Add("_qty", typeof(decimal));
             dt_bs.Columns.Add("_rQty", typeof(decimal));
@@ -54,20 +55,21 @@ namespace Report_Pro.RPT
         {
             int dgvWidth = dgvPO.Width - dgvPO.RowHeadersWidth;
             dgvPO.Columns[0].Width = (int)(dgvWidth * 0.04);
-            dgvPO.Columns[1].Width = (int)(dgvWidth * 0.10);
+            dgvPO.Columns[1].Width = (int)(dgvWidth * 0.09);
             dgvPO.Columns[2].Width = (int)(dgvWidth * 0.05);
-            dgvPO.Columns[3].Width = (int)(dgvWidth * 0.16);
+            dgvPO.Columns[3].Width = (int)(dgvWidth * 0.15);
             dgvPO.Columns[4].Width = (int)(dgvWidth * 0.05);
-            dgvPO.Columns[5].Width = (int)(dgvWidth * 0.21);
-            dgvPO.Columns[6].Width = (int)(dgvWidth * 0.06);
-            dgvPO.Columns[7].Width = (int)(dgvWidth * 0.07);
-            dgvPO.Columns[8].Width = (int)(dgvWidth * 0.07);
-            dgvPO.Columns[9].Width = (int)(dgvWidth * 0.07);
-            dgvPO.Columns[10].Width = (int)(dgvWidth * 0.06);
-            dgvPO.Columns[11].Width = (int)(dgvWidth * 0.06);
-            dgvPO.Columns[12].Visible = false;
+            dgvPO.Columns[5].Width = (int)(dgvWidth * 0.20);
+            dgvPO.Columns[6].Width = (int)(dgvWidth * 0.055);
+            dgvPO.Columns[7].Width = (int)(dgvWidth * 0.06);
+            dgvPO.Columns[8].Width = (int)(dgvWidth * 0.065);
+            dgvPO.Columns[9].Width = (int)(dgvWidth * 0.065);
+            dgvPO.Columns[10].Width = (int)(dgvWidth * 0.065);
+            dgvPO.Columns[11].Width = (int)(dgvWidth * 0.055);
+            dgvPO.Columns[12].Width = (int)(dgvWidth * 0.055);
             dgvPO.Columns[13].Visible = false;
             dgvPO.Columns[14].Visible = false;
+            dgvPO.Columns[15].Visible = false;
 
 
             if (languh == "0")
@@ -78,15 +80,16 @@ namespace Report_Pro.RPT
                 dgvPO.Columns[3].HeaderText = "المورد";
                 dgvPO.Columns[4].HeaderText = "كودالصنف";
                 dgvPO.Columns[5].HeaderText = "وصف الصنف";
-                dgvPO.Columns[6].HeaderText = "الوحدة";
-                dgvPO.Columns[7].HeaderText = "الكمية";
-                dgvPO.Columns[8].HeaderText = "المستلم";
-                dgvPO.Columns[9].HeaderText = "المتبقي";
-                dgvPO.Columns[10].HeaderText = "سعر الوحدة";
-                dgvPO.Columns[11].HeaderText = "سعر الطن";
-                dgvPO.Columns[12].HeaderText = "كود الفرع";
-                dgvPO.Columns[13].HeaderText = "رقم الحساب";
-                dgvPO.Columns[14].HeaderText = "السنة";
+                dgvPO.Columns[6].HeaderText = "الوزن";
+                dgvPO.Columns[7].HeaderText = "الوحدة";
+                dgvPO.Columns[8].HeaderText = "الكمية";
+                dgvPO.Columns[9].HeaderText = "المستلم";
+                dgvPO.Columns[10].HeaderText = "المتبقي";
+                dgvPO.Columns[11].HeaderText = "سعر الوحدة";
+                dgvPO.Columns[12].HeaderText = "سعر الطن";
+                dgvPO.Columns[13].HeaderText = "كود الفرع";
+                dgvPO.Columns[14].HeaderText = "رقم الحساب";
+                dgvPO.Columns[15].HeaderText = "السنة";
 
             }
             else
@@ -97,15 +100,16 @@ namespace Report_Pro.RPT
                 dgvPO.Columns[3].HeaderText = "Vendor";
                 dgvPO.Columns[4].HeaderText = "Item Code";
                 dgvPO.Columns[5].HeaderText = "Item Description";
-                dgvPO.Columns[6].HeaderText = "Unit";
-                dgvPO.Columns[7].HeaderText = "Quantity";
-                dgvPO.Columns[8].HeaderText = "Received";
-                dgvPO.Columns[9].HeaderText = "Balance";
-                dgvPO.Columns[10].HeaderText = "Unit Price";
-                dgvPO.Columns[11].HeaderText = "Ton Price";
-                dgvPO.Columns[12].HeaderText = "Branch Code";
-                dgvPO.Columns[13].HeaderText = "Account No";
-                dgvPO.Columns[14].HeaderText = "Year";
+                dgvPO.Columns[6].HeaderText = "Weight";
+                dgvPO.Columns[7].HeaderText = "Unit";
+                dgvPO.Columns[8].HeaderText = "Quantity";
+                dgvPO.Columns[9].HeaderText = "Received";
+                dgvPO.Columns[10].HeaderText= "Balance";
+                dgvPO.Columns[11].HeaderText = "Unit Price";
+                dgvPO.Columns[12].HeaderText = "Ton Price";
+                dgvPO.Columns[13].HeaderText = "Branch Code";
+                dgvPO.Columns[14].HeaderText = "Account No";
+                dgvPO.Columns[15].HeaderText = "Year";
 
             }
 
@@ -122,9 +126,9 @@ namespace Report_Pro.RPT
             decimal totBalance = 0;
             for (int s=1;s<dgvPO.Rows.Count;s++ )
             {
-                var value1 = dgvPO.Rows[s].Cells[7].Value;
-                var value2 = dgvPO.Rows[s].Cells[8].Value;
-                var value3 = dgvPO.Rows[s].Cells[9].Value;
+                var value1 = dgvPO.Rows[s].Cells[8].Value;
+                var value2 = dgvPO.Rows[s].Cells[9].Value;
+                var value3 = dgvPO.Rows[s].Cells[10].Value;
                 if (value1 != DBNull.Value)
                 {
                     totqty += Convert.ToDecimal(value1);
@@ -216,15 +220,16 @@ namespace Report_Pro.RPT
                     }
                     row[2] = Convert.ToDateTime(dt.Rows[ii]["G_Date"]).ToString("yyyy/MM/dd");
                     row[4] =  dt.Rows[ii]["item_no"];
-                    row[6] =  dt.Rows[ii]["Unit"];
-                    row[7] =  dt.Rows[ii]["qty_take"];
-                    row[8] =  dt.Rows[ii]["qty_Add"];
-                    row[9] =  dt.Rows[ii]["Po_balance"];
-                    row[10] = dt.Rows[ii]["Local_Price"];
-                    row[11] = dt.Rows[ii]["TonPrice"];
-                    row[12] = dt.Rows[ii]["branch_code"];
-                    row[13] = dt.Rows[ii]["Acc_no"];
-                    row[14] = dt.Rows[ii]["cyear"];
+                    row[6] = dt.Rows[ii]["weight"];
+                    row[7] =  dt.Rows[ii]["Unit"];
+                    row[8] =  dt.Rows[ii]["qty_take"];
+                    row[9] =  dt.Rows[ii]["qty_Add"];
+                    row[10] =  dt.Rows[ii]["Po_balance"];
+                    row[11] = dt.Rows[ii]["Local_Price"];
+                    row[12] = dt.Rows[ii]["TonPrice"];
+                    row[13] = dt.Rows[ii]["branch_code"];
+                    row[14] = dt.Rows[ii]["Acc_no"];
+                    row[15] = dt.Rows[ii]["cyear"];
 
                     dt_bs.Rows.Add(row);
                     ii = ii + 1;
@@ -322,7 +327,7 @@ namespace Report_Pro.RPT
           //  case when '" + radioGroup1.EditValue + "' = 1 then 0
 
 
-            dt = dal.getDataTabl_1(@"select x.ser_no,X.G_Date,X.Cyear,X.Acc_no,P.payer_name,P.payer_l_name,x.item_no,D.descr,D.Descr_eng ,X.branch_code,C.branch_name,C.WH_E_NAME,D.Unit,X.qty_take,Y.qty_Add ,X.qty_take-isnull(Y.qty_Add,0) as Po_balance,D.Weight,X.Local_Price, case when D.Weight>0 then X.Local_Price/D.Weight*1000 else 0 end as TonPrice from 
+            dt = dal.getDataTabl_1(@"select x.ser_no,X.G_Date,X.Cyear,X.Acc_no,P.payer_name,P.payer_l_name,x.item_no,D.descr,D.Descr_eng ,X.branch_code,C.branch_name,C.WH_E_NAME,D.Unit,D.weight,X.qty_take,Y.qty_Add ,X.qty_take-isnull(Y.qty_Add,0) as Po_balance,D.Weight,X.Local_Price, case when D.Weight>0 then X.Local_Price/D.Weight*1000 else 0 end as TonPrice from 
             (select S2.Acc_no,S1.ser_no,S1.Cyear,S1.G_Date ,S1.branch_code,item_no, qty_take,Local_Price 
             from wh_Po_Cot_MATERIAL_TRANSACTION as S1 
             inner join  wh_Po_Cot_inv_data as S2
@@ -387,7 +392,7 @@ namespace Report_Pro.RPT
                 // MessageBox.Show("statment");
                                
                     RPT.frm_statment_Rpt frm = new RPT.frm_statment_Rpt();
-                    frm.UC_Acc1.ID.Text = dgvPO.CurrentRow.Cells[13].Value.ToString();
+                    frm.UC_Acc1.ID.Text = dgvPO.CurrentRow.Cells[14].Value.ToString();
                    // frm.UC_Items.ID.Text = dgvPO.CurrentRow.Cells[4].Value.ToString();
                     frm.FromDate.Text = txtFromDate.Text;
                     frm.ToDate.Text = txtToDate.Text;
@@ -404,7 +409,7 @@ namespace Report_Pro.RPT
                 Cursor.Current = Cursors.WaitCursor;
 
                     RPT.frm_Item_Transaction frm = new RPT.frm_Item_Transaction();
-                    frm.UC_Branch.ID.Text = dgvPO.CurrentRow.Cells[12].Value.ToString();
+                    frm.UC_Branch.ID.Text = dgvPO.CurrentRow.Cells[13].Value.ToString();
                     frm.UC_Items.ID.Text = dgvPO.CurrentRow.Cells[4].Value.ToString();
                     frm.FromDate_.Text =  txtFromDate.Text;
                     frm.ToDate_.Text = txtToDate.Text;
@@ -413,16 +418,16 @@ namespace Report_Pro.RPT
                 
                 Cursor.Current = Cursors.Default;
             }
-            else if (e.ColumnIndex == 8)
+            else if (e.ColumnIndex == 9)
             {
                 Cursor.Current = Cursors.WaitCursor;
                 // MessageBox.Show("received qty");
-                if (dgvPO.CurrentRow.Cells[8].Value.ToString().ToDecimal() > 0)
+                if (dgvPO.CurrentRow.Cells[9].Value.ToString().ToDecimal() > 0)
                 {
                     RPT.frm_PO_Received frm = new RPT.frm_PO_Received();
-                    frm._branch = dgvPO.CurrentRow.Cells[12].Value.ToString();
+                    frm._branch = dgvPO.CurrentRow.Cells[13].Value.ToString();
                     frm._PO = dgvPO.CurrentRow.Cells[0].Value.ToString();
-                    frm._year = dgvPO.CurrentRow.Cells[14].Value.ToString();
+                    frm._year = dgvPO.CurrentRow.Cells[15].Value.ToString();
                     frm.ShowDialog();
                 }
 
@@ -492,25 +497,25 @@ namespace Report_Pro.RPT
                 (from DataGridViewRow row in dgvPO.Rows
                  where row.Cells[0].FormattedValue.ToString() != string.Empty
                  // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
-                 select (row.Cells[7].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
+               select (row.Cells[8].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
             txtTotalReceived.Text =
                 (from DataGridViewRow row in dgvPO.Rows
                  where row.Cells[0].FormattedValue.ToString() != string.Empty
                  // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
-                 select (row.Cells[8].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
+                 select (row.Cells[9].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
 
             txtTotalBalance.Text =
                 (from DataGridViewRow row in dgvPO.Rows
                  where row.Cells[0].FormattedValue.ToString() != string.Empty
                  // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
-                 select (row.Cells[9].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
+                 select (row.Cells[10].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
 
         }
 
 
         private void dgvReport_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if ( dgvPO.CurrentRow.Cells[13].Value.ToString() == null || dgvPO.CurrentRow.Cells[12].Value.ToString() == null || dgvPO.CurrentRow.Cells[0].Value.ToString() == null)
+            if ( dgvPO.CurrentRow.Cells[14].Value.ToString() == null || dgvPO.CurrentRow.Cells[13].Value.ToString() == null || dgvPO.CurrentRow.Cells[0].Value.ToString() == null)
             {
                 return;
             }
@@ -527,7 +532,7 @@ namespace Report_Pro.RPT
                 RPT.rpt_Purchase_Order reportInv = new RPT.rpt_Purchase_Order();
                 RPT.Form1 frminv = new RPT.Form1();
                 DataSet ds = new DataSet();
-                getPO(dgvPO.CurrentRow.Cells[0].Value.ToString(), dgvPO.CurrentRow.Cells[12].Value.ToString(), "PS", txtToDate.Value.ToString("yy"));
+                getPO(dgvPO.CurrentRow.Cells[0].Value.ToString(), dgvPO.CurrentRow.Cells[13].Value.ToString(), "PS", txtToDate.Value.ToString("yy"));
                 ds.Tables.Add(dt_Q);
                 ////ds.WriteXmlSchema("schema_rpt.xml");
                 reportInv.SetDataSource(ds);
@@ -544,7 +549,7 @@ namespace Report_Pro.RPT
                 // MessageBox.Show("statment");
 
                 RPT.frm_statment_Rpt frm = new RPT.frm_statment_Rpt();
-                frm.UC_Acc1.ID.Text = dgvPO.CurrentRow.Cells[13].Value.ToString();
+                frm.UC_Acc1.ID.Text = dgvPO.CurrentRow.Cells[14].Value.ToString();
                 // frm.UC_Items.ID.Text = dgvPO.CurrentRow.Cells[4].Value.ToString();
                 frm.FromDate.Text = txtFromDate.Text;
                 frm.ToDate.Text = txtToDate.Text;
@@ -561,7 +566,7 @@ namespace Report_Pro.RPT
                 Cursor.Current = Cursors.WaitCursor;
 
                 RPT.frm_Item_Transaction frm = new RPT.frm_Item_Transaction();
-                frm.UC_Branch.ID.Text = dgvPO.CurrentRow.Cells[12].Value.ToString();
+                frm.UC_Branch.ID.Text = dgvPO.CurrentRow.Cells[13].Value.ToString();
                 frm.UC_Items.ID.Text = dgvPO.CurrentRow.Cells[4].Value.ToString();
                 frm.FromDate_.Text = txtFromDate.Text;
                 frm.ToDate_.Text = txtToDate.Text;
@@ -570,16 +575,16 @@ namespace Report_Pro.RPT
 
                 Cursor.Current = Cursors.Default;
             }
-            else if (e.ColumnIndex == 8)
+            else if (e.ColumnIndex == 9)
             {
                 Cursor.Current = Cursors.WaitCursor;
                 // MessageBox.Show("received qty");
-                if (dgvPO.CurrentRow.Cells[8].Value.ToString().ToDecimal() > 0)
+                if (dgvPO.CurrentRow.Cells[9].Value.ToString().ToDecimal() > 0)
                 {
                     RPT.frm_PO_Received frm = new RPT.frm_PO_Received();
-                    frm._branch = dgvPO.CurrentRow.Cells[12].Value.ToString();
+                    frm._branch = dgvPO.CurrentRow.Cells[13].Value.ToString();
                     frm._PO = dgvPO.CurrentRow.Cells[0].Value.ToString();
-                    frm._year = dgvPO.CurrentRow.Cells[14].Value.ToString();
+                    frm._year = dgvPO.CurrentRow.Cells[15].Value.ToString();
                     frm.ShowDialog();
                 }
 
@@ -597,44 +602,6 @@ namespace Report_Pro.RPT
             bs.Filter = dgvPO.FilterString;
         }
 
-        private void groupControl2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtToDate_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFromDate_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPO_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtItem_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtGroup1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBranch_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
