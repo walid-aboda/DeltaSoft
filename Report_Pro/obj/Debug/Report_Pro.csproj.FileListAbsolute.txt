@@ -3899,6 +3899,7 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_BalanceByBranch.ar.reso
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_TotalInventoryByBranch.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Export_sales.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Inventory_Report_ByGroup.ar.resources
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Purchase_reports.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frmAgeReport.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Compare_TB.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Customers_TB.ar.resources
@@ -3950,4 +3951,3 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Purchase_reports.ar.resources

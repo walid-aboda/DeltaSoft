@@ -175,15 +175,15 @@ namespace Report_Pro.RPT
             dgvPO.DataSource = null;
             dgvPO.Rows.Clear();
             dgvPO.Visible = false;
-            groupControl2.Visible = true;
+            panel1.Visible = true;
 
             base.Option();
         }
 
         public override void Report()
         {
-            
-            groupControl2.Visible = false;
+
+            panel1.Visible = false;
             dgvPO.Visible = true;
             // dgvPO.Dock = DockStyle.Fill;
 
@@ -598,6 +598,41 @@ namespace Report_Pro.RPT
         }
 
         private void groupControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtToDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFromDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtItem_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGroup1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBranch_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

@@ -6,27 +6,68 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Ser_no" type="xs:int" minOccurs="0" />
-              <xs:element name="Transaction_code" type="xs:string" minOccurs="0" />
-              <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
-              <xs:element name="G_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Payment_Type" type="xs:string" minOccurs="0" />
-              <xs:element name="INV_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="Inv_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Inv_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="acc_serial_no" type="xs:int" minOccurs="0" />
+              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
+              <xs:element name="ser_no" type="xs:string" minOccurs="0" />
+              <xs:element name="sorting_ser" type="xs:int" minOccurs="0" />
+              <xs:element name="COST_CENTER" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="meno" type="xs:decimal" minOccurs="0" />
+              <xs:element name="loh" type="xs:decimal" minOccurs="0" />
+              <xs:element name="balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="h_date" type="xs:string" minOccurs="0" />
+              <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sanad_no" type="xs:string" minOccurs="0" />
+              <xs:element name="desc2" type="xs:string" minOccurs="0" />
+              <xs:element name="desc_E" type="xs:string" minOccurs="0" />
+              <xs:element name="Supplier_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="vat_amont" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vat_no" type="xs:string" minOccurs="0" />
+              <xs:element name="inv_date" type="xs:string" minOccurs="0" />
+              <xs:element name="vat_no1" type="xs:string" minOccurs="0" />
               <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
               <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
-              <xs:element name="adress" type="xs:string" minOccurs="0" />
-              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
-              <xs:element name="Payment_name" type="xs:string" minOccurs="0" />
-              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Qty" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Value" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Vat" type="xs:decimal" minOccurs="0" />
-              <xs:element name="CUSTOM_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="Storing_Expire_Date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="COSTMER_K_M_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_E_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_NAME_E" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_name" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_E_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
+              <xs:element name="ser_no" type="xs:string" minOccurs="0" />
+              <xs:element name="sorting_ser" type="xs:int" minOccurs="0" />
+              <xs:element name="COST_CENTER" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="meno" type="xs:decimal" minOccurs="0" />
+              <xs:element name="loh" type="xs:decimal" minOccurs="0" />
+              <xs:element name="balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="h_date" type="xs:string" minOccurs="0" />
+              <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sanad_no" type="xs:string" minOccurs="0" />
+              <xs:element name="desc2" type="xs:string" minOccurs="0" />
+              <xs:element name="desc_E" type="xs:string" minOccurs="0" />
+              <xs:element name="Supplier_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="vat_amont" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vat_no" type="xs:string" minOccurs="0" />
+              <xs:element name="inv_date" type="xs:string" minOccurs="0" />
+              <xs:element name="vat_no1" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_E_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_NAME_E" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_name" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_E_NAME" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

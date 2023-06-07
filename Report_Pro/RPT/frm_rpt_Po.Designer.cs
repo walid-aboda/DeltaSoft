@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_Po));
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem1 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem2 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem3 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem4 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem5 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem6 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem7 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
+            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem8 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -46,209 +54,209 @@
             this.txtToDate = new System.Windows.Forms.DateTimePicker();
             this.txtFromDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
-            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.txtItem = new Report_Pro.MyControls.UC_Items();
-            this.txtGroup1 = new Report_Pro.MyControls.Uc_Group();
             this.txtGroup = new Report_Pro.MyControls.Uc_Group();
             this.txtAcc = new Report_Pro.MyControls.UC_Acc();
             this.txtBranch = new Report_Pro.MyControls.UC_Branch();
             this.txtThick_2 = new Report_Pro.NumericTextBox();
             this.txtThick_1 = new Report_Pro.NumericTextBox();
+            this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            this.txtGroup1 = new Report_Pro.MyControls.Uc_Group();
             this._PONo = new DevExpress.XtraGrid.Columns.GridColumn();
             this._BranchName = new DevExpress.XtraGrid.Columns.GridColumn();
             this._PoDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvPO = new ADGV.AdvancedDataGridView();
             this.txtTotalReceived = new Report_Pro.MyControls.decimalText();
             this.txtTotalQty = new Report_Pro.MyControls.decimalText();
             this.txtTotalBalance = new Report_Pro.MyControls.decimalText();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
+            this.dgvPO = new ADGV.AdvancedDataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPO)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // headLbl
+            // 
+            resources.ApplyResources(this.headLbl, "headLbl");
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
             // txtPO
             // 
-            resources.ApplyResources(this.txtPO, "txtPO");
             this.txtPO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtPO, "txtPO");
             this.txtPO.Name = "txtPO";
+            this.txtPO.TextChanged += new System.EventHandler(this.txtPO_TextChanged);
             // 
             // label8
             // 
-            resources.ApplyResources(this.label8, "label8");
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // txtToDate
             // 
             resources.ApplyResources(this.txtToDate, "txtToDate");
             this.txtToDate.Name = "txtToDate";
+            this.txtToDate.ValueChanged += new System.EventHandler(this.txtToDate_ValueChanged);
             // 
             // txtFromDate
             // 
             resources.ApplyResources(this.txtFromDate, "txtFromDate");
             this.txtFromDate.Name = "txtFromDate";
+            this.txtFromDate.ValueChanged += new System.EventHandler(this.txtFromDate_ValueChanged);
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // groupControl2
-            // 
-            resources.ApplyResources(this.groupControl2, "groupControl2");
-            this.groupControl2.Appearance.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.groupControl2.Appearance.Options.UseBorderColor = true;
-            this.groupControl2.Controls.Add(this.radioGroup2);
-            this.groupControl2.Controls.Add(this.radioGroup1);
-            this.groupControl2.Controls.Add(this.label5);
-            this.groupControl2.Controls.Add(this.label10);
-            this.groupControl2.Controls.Add(this.txtItem);
-            this.groupControl2.Controls.Add(this.label4);
-            this.groupControl2.Controls.Add(this.txtGroup1);
-            this.groupControl2.Controls.Add(this.label8);
-            this.groupControl2.Controls.Add(this.txtGroup);
-            this.groupControl2.Controls.Add(this.label3);
-            this.groupControl2.Controls.Add(this.txtAcc);
-            this.groupControl2.Controls.Add(this.label9);
-            this.groupControl2.Controls.Add(this.txtBranch);
-            this.groupControl2.Controls.Add(this.label2);
-            this.groupControl2.Controls.Add(this.txtFromDate);
-            this.groupControl2.Controls.Add(this.txtThick_2);
-            this.groupControl2.Controls.Add(this.txtToDate);
-            this.groupControl2.Controls.Add(this.txtPO);
-            this.groupControl2.Controls.Add(this.label1);
-            this.groupControl2.Controls.Add(this.label7);
-            this.groupControl2.Controls.Add(this.txtThick_1);
-            this.groupControl2.Controls.Add(this.label6);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
-            // 
-            // radioGroup2
-            // 
-            resources.ApplyResources(this.radioGroup2, "radioGroup2");
-            this.radioGroup2.Name = "radioGroup2";
-            this.radioGroup2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioGroup2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup2.Properties.Appearance.Font")));
-            this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
-            this.radioGroup2.Properties.Appearance.Options.UseFont = true;
-            this.radioGroup2.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items"), resources.GetString("radioGroup2.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items2"), resources.GetString("radioGroup2.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items4"), resources.GetString("radioGroup2.Properties.Items5"))});
-            // 
-            // radioGroup1
-            // 
-            resources.ApplyResources(this.radioGroup1, "radioGroup1");
-            this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioGroup1.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup1.Properties.Appearance.Font")));
-            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
-            this.radioGroup1.Properties.Appearance.Options.UseFont = true;
-            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items"), resources.GetString("radioGroup1.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items2"), resources.GetString("radioGroup1.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items4"), resources.GetString("radioGroup1.Properties.Items5")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items6"), resources.GetString("radioGroup1.Properties.Items7")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items8"), resources.GetString("radioGroup1.Properties.Items9"))});
             // 
             // txtItem
             // 
             resources.ApplyResources(this.txtItem, "txtItem");
             this.txtItem.Name = "txtItem";
-            // 
-            // txtGroup1
-            // 
-            resources.ApplyResources(this.txtGroup1, "txtGroup1");
-            this.txtGroup1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGroup1.Name = "txtGroup1";
+            this.txtItem.Load += new System.EventHandler(this.txtItem_Load);
             // 
             // txtGroup
             // 
             resources.ApplyResources(this.txtGroup, "txtGroup");
-            this.txtGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGroup.Name = "txtGroup";
             // 
             // txtAcc
             // 
-            resources.ApplyResources(this.txtAcc, "txtAcc");
             this.txtAcc.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.txtAcc, "txtAcc");
             this.txtAcc.Name = "txtAcc";
             // 
             // txtBranch
             // 
-            resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.BackColor = System.Drawing.Color.Transparent;
             this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.Name = "txtBranch";
+            this.txtBranch.Load += new System.EventHandler(this.txtBranch_Load);
             // 
             // txtThick_2
             // 
-            resources.ApplyResources(this.txtThick_2, "txtThick_2");
             this.txtThick_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThick_2.decimaldigit = 2;
+            resources.ApplyResources(this.txtThick_2, "txtThick_2");
             this.txtThick_2.Name = "txtThick_2";
             // 
             // txtThick_1
             // 
-            resources.ApplyResources(this.txtThick_1, "txtThick_1");
             this.txtThick_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThick_1.decimaldigit = 2;
+            resources.ApplyResources(this.txtThick_1, "txtThick_1");
             this.txtThick_1.Name = "txtThick_1";
+            // 
+            // radioGroup2
+            // 
+            resources.ApplyResources(this.radioGroup2, "radioGroup2");
+            this.radioGroup2.Name = "radioGroup2";
+            // 
+            // 
+            // 
+            this.radioGroup2.Properties.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("radioGroup2.Properties.Appearance.BackColor")));
+            this.radioGroup2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup2.Properties.Appearance.Font")));
+            this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup2.Properties.Appearance.Options.UseFont = true;
+            resources.ApplyResources(radioGroupItem1, "radioGroupItem1");
+            radioGroupItem1.Value = "0";
+            resources.ApplyResources(radioGroupItem2, "radioGroupItem2");
+            radioGroupItem2.Value = "1";
+            resources.ApplyResources(radioGroupItem3, "radioGroupItem3");
+            radioGroupItem3.Value = "2";
+            this.radioGroup2.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            radioGroupItem1,
+            radioGroupItem2,
+            radioGroupItem3});
+            // 
+            // radioGroup1
+            // 
+            resources.ApplyResources(this.radioGroup1, "radioGroup1");
+            this.radioGroup1.Name = "radioGroup1";
+            // 
+            // 
+            // 
+            this.radioGroup1.Properties.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("radioGroup1.Properties.Appearance.BackColor")));
+            this.radioGroup1.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup1.Properties.Appearance.Font")));
+            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.Appearance.Options.UseFont = true;
+            resources.ApplyResources(radioGroupItem4, "radioGroupItem4");
+            radioGroupItem4.Value = "0";
+            resources.ApplyResources(radioGroupItem5, "radioGroupItem5");
+            radioGroupItem5.Value = "1";
+            resources.ApplyResources(radioGroupItem6, "radioGroupItem6");
+            radioGroupItem6.Value = "2";
+            resources.ApplyResources(radioGroupItem7, "radioGroupItem7");
+            radioGroupItem7.Value = "3";
+            resources.ApplyResources(radioGroupItem8, "radioGroupItem8");
+            radioGroupItem8.Value = "4";
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            radioGroupItem4,
+            radioGroupItem5,
+            radioGroupItem6,
+            radioGroupItem7,
+            radioGroupItem8});
+            // 
+            // txtGroup1
+            // 
+            resources.ApplyResources(this.txtGroup1, "txtGroup1");
+            this.txtGroup1.Name = "txtGroup1";
+            this.txtGroup1.Load += new System.EventHandler(this.txtGroup1_Load);
             // 
             // _PONo
             // 
@@ -268,55 +276,11 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.dgvPO, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTotalReceived, 9, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtTotalQty, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtTotalBalance, 10, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dgvPO, 0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // dgvPO
-            // 
-            resources.ApplyResources(this.dgvPO, "dgvPO");
-            this.dgvPO.AllowUserToAddRows = false;
-            this.dgvPO.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Info;
-            this.dgvPO.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPO.AutoGenerateContextFilters = true;
-            this.dgvPO.BackgroundColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dgvPO, 16);
-            this.dgvPO.DateWithTime = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPO.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPO.EnableHeadersVisualStyles = false;
-            this.dgvPO.Name = "dgvPO";
-            this.dgvPO.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPO.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvPO.TimeFilter = false;
-            this.dgvPO.SortStringChanged += new System.EventHandler(this.dgvPO_SortStringChanged);
-            this.dgvPO.FilterStringChanged += new System.EventHandler(this.dgvPO_FilterStringChanged);
-            this.dgvPO.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReport_CellDoubleClick);
             // 
             // txtTotalReceived
             // 
@@ -363,26 +327,94 @@
             0,
             0});
             // 
+            // dgvPO
+            // 
+            this.dgvPO.AllowUserToAddRows = false;
+            this.dgvPO.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Info;
+            this.dgvPO.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPO.AutoGenerateContextFilters = true;
+            this.dgvPO.BackgroundColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvPO, 16);
+            this.dgvPO.DateWithTime = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPO.DefaultCellStyle = dataGridViewCellStyle3;
+            resources.ApplyResources(this.dgvPO, "dgvPO");
+            this.dgvPO.EnableHeadersVisualStyles = false;
+            this.dgvPO.Name = "dgvPO";
+            this.dgvPO.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPO.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPO.TimeFilter = false;
+            this.dgvPO.SortStringChanged += new System.EventHandler(this.dgvPO_SortStringChanged);
+            this.dgvPO.FilterStringChanged += new System.EventHandler(this.dgvPO_FilterStringChanged);
+            this.dgvPO.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReport_CellDoubleClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioGroup1);
+            this.panel1.Controls.Add(this.radioGroup2);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtAcc);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtGroup);
+            this.panel1.Controls.Add(this.txtBranch);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtItem);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtGroup1);
+            this.panel1.Controls.Add(this.txtPO);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtFromDate);
+            this.panel1.Controls.Add(this.txtToDate);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtThick_2);
+            this.panel1.Controls.Add(this.txtThick_1);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // frm_rpt_Po
             // 
             resources.ApplyResources(this, "$this");
-            //this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            //this.Appearance.Options.UseBackColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.groupControl2);
             this.Name = "frm_rpt_Po";
             this.Load += new System.EventHandler(this.frm_rpt_Po_Load);
-            this.Controls.SetChildIndex(this.groupControl2, 0);
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            this.groupControl2.PerformLayout();
+            this.Controls.SetChildIndex(this.panel1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPO)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,7 +441,6 @@
         public NumericTextBox txtThick_1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
         private DevExpress.XtraGrid.Columns.GridColumn _PONo;
         private DevExpress.XtraGrid.Columns.GridColumn _BranchName;
@@ -420,5 +451,6 @@
         private MyControls.decimalText txtTotalBalance;
         private DevExpress.XtraEditors.RadioGroup radioGroup2;
         private ADGV.AdvancedDataGridView dgvPO;
+        private System.Windows.Forms.Panel panel1;
     }
 }
