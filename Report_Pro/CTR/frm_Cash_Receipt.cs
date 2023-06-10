@@ -67,6 +67,27 @@ namespace Report_Pro.CTR
             base.RefreshData();
         }
 
+        public override void Attachment()
+        {
+            DataTable dt_ = dal.getDataTabl_1(@"select ser_no from daily_transaction where Ser_no= '" + AccSer_No.TextS + "' and ACC_YEAR ='" + acc_year.Text + "' and Branch_code = '" + txtStore_ID.Text + "'");
+            if (dt_.Rows.Count > 0)
+            {
+                PL.Frm_uploadImage frmUpload = new PL.Frm_uploadImage();
+                frmUpload.p_id = AccSer_No.TextS;
+                frmUpload.docType = "JOR";
+                frmUpload.branchID = Properties.Settings.Default.BranchAccID;
+                frmUpload.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(dal.rm.GetString("msgSureSave"), dal.rm.GetString("msgSureSave_H"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+
+            base.Attachment();
+        }
 
         public override void Save()
         {
@@ -1975,8 +1996,9 @@ namespace Report_Pro.CTR
             }
         }
 
-
-
+        private void CashAcc_Load(object sender, EventArgs e)
+        {
 
         }
+    }
 }

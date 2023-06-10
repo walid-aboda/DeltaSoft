@@ -112,6 +112,7 @@ namespace Report_Pro.PL
                 PL.Frm_uploadImage frmUpload = new PL.Frm_uploadImage();
                 frmUpload.p_id = txt_InvNu.Text;
                 frmUpload.docType =Doc_Type.Text;
+                frmUpload.branchID = Properties.Settings.Default.BranchId;
                 frmUpload.ShowDialog();
             }
             else

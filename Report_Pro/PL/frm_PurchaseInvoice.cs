@@ -1787,6 +1787,7 @@ where X.Ser_no like '" + _ser + "%'  and X.Branch_code Like '" + _branch +
                 PL.Frm_uploadImage frmUpload = new PL.Frm_uploadImage();
                 frmUpload.p_id = txt_InvNu.Text;
                 frmUpload.docType = Doc_Type.Text;
+                frmUpload.branchID = Properties.Settings.Default.BranchId;
                 frmUpload.ShowDialog();
             }
             else

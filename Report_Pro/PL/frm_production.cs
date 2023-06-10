@@ -494,6 +494,7 @@ pOUT.clculat_amount(i);
                 PL.Frm_uploadImage frmUpload = new PL.Frm_uploadImage();
                 frmUpload.p_id = txtSer.Text;
                 frmUpload.docType = txtDocType.Text;
+                frmUpload.branchID = Properties.Settings.Default.BranchId;
                 frmUpload.ShowDialog();
             }
             else
