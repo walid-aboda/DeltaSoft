@@ -31,7 +31,7 @@ namespace Report_Pro.PL
 
         private void frm_AddClient_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
 
             //txtBranch.ID.Text = Properties.Settings.Default.BranchAccID;
             //txtStoreID.Text = Properties.Settings.Default.BranchId;

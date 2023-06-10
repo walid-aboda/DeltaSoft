@@ -729,7 +729,7 @@ namespace Report_Pro.PL
             private void invoice_frm_Load(object sender, EventArgs e)
         {
             
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+             btnPrint.Visible = true;
             
             //txt_Acc.txtMainAcc.Text = "123";
             //txt_Acc.txtFinal.Text = "1";

@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PurchaseOrder));
+            this.btn_Print = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_search = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_statment = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_Save = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_Delete = new DevExpress.XtraBars.BarButtonItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.تعديلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -149,13 +154,9 @@
             this.labelX14 = new DevComponents.DotNetBar.LabelX();
             this.tabItem7 = new DevComponents.DotNetBar.TabItem(this.components);
             this.txt_InvDate = new System.Windows.Forms.DateTimePicker();
-            this.last_ = new System.Windows.Forms.PictureBox();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.next_ = new System.Windows.Forms.PictureBox();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.first_ = new System.Windows.Forms.PictureBox();
             this.txt_InvNu = new System.Windows.Forms.TextBox();
-            this.previous_ = new System.Windows.Forms.PictureBox();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.Doc_Name = new System.Windows.Forms.Label();
             this.labelX15 = new DevComponents.DotNetBar.LabelX();
@@ -217,6 +218,10 @@
             this.btn_Srearch = new System.Windows.Forms.Button();
             this.btn_Cancl = new System.Windows.Forms.Button();
             this.labelX46 = new DevComponents.DotNetBar.LabelX();
+            this.last_ = new System.Windows.Forms.PictureBox();
+            this.next_ = new System.Windows.Forms.PictureBox();
+            this.previous_ = new System.Windows.Forms.PictureBox();
+            this.first_ = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -227,10 +232,6 @@
             this.tabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).BeginInit();
             this.tabControlPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.last_)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.next_)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.first_)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.previous_)).BeginInit();
             this.groupPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Price_ton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight_)).BeginInit();
@@ -239,7 +240,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtQty)).BeginInit();
             this.groupPanel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.last_)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.next_)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previous_)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.first_)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_Print
+            // 
+            resources.ApplyResources(this.btn_Print, "btn_Print");
+            this.btn_Print.Id = 3;
+            this.btn_Print.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Print.ImageOptions.SvgImage")));
+            this.btn_Print.Name = "btn_Print";
+            this.btn_Print.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btn_search
+            // 
+            resources.ApplyResources(this.btn_search, "btn_search");
+            this.btn_search.Id = 5;
+            this.btn_search.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_search.ImageOptions.SvgImage")));
+            this.btn_search.Name = "btn_search";
+            this.btn_search.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btn_statment
+            // 
+            resources.ApplyResources(this.btn_statment, "btn_statment");
+            this.btn_statment.Id = 8;
+            this.btn_statment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_statment.ImageOptions.Image")));
+            this.btn_statment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_statment.ImageOptions.LargeImage")));
+            this.btn_statment.Name = "btn_statment";
+            this.btn_statment.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_statment.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // btn_Save
+            // 
+            resources.ApplyResources(this.btn_Save, "btn_Save");
+            this.btn_Save.Id = 0;
+            this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // btn_Delete
+            // 
+            resources.ApplyResources(this.btn_Delete, "btn_Delete");
+            this.btn_Delete.Id = 2;
+            this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // headLbl
+            // 
+            resources.ApplyResources(this.headLbl, "headLbl");
             // 
             // contextMenuStrip1
             // 
@@ -1240,41 +1293,17 @@
             resources.ApplyResources(this.txt_InvDate, "txt_InvDate");
             this.txt_InvDate.Name = "txt_InvDate";
             // 
-            // last_
-            // 
-            resources.ApplyResources(this.last_, "last_");
-            this.last_.BackColor = System.Drawing.Color.MistyRose;
-            this.last_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.last_.Name = "last_";
-            this.last_.TabStop = false;
-            // 
             // labelX2
             // 
             resources.ApplyResources(this.labelX2, "labelX2");
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Name = "labelX2";
             // 
-            // next_
-            // 
-            resources.ApplyResources(this.next_, "next_");
-            this.next_.BackColor = System.Drawing.Color.MistyRose;
-            this.next_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.next_.Name = "next_";
-            this.next_.TabStop = false;
-            // 
             // labelX1
             // 
             resources.ApplyResources(this.labelX1, "labelX1");
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
             this.labelX1.Name = "labelX1";
-            // 
-            // first_
-            // 
-            resources.ApplyResources(this.first_, "first_");
-            this.first_.BackColor = System.Drawing.Color.MistyRose;
-            this.first_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.first_.Name = "first_";
-            this.first_.TabStop = false;
             // 
             // txt_InvNu
             // 
@@ -1284,14 +1313,6 @@
             this.txt_InvNu.Name = "txt_InvNu";
             this.txt_InvNu.ReadOnly = true;
             this.txt_InvNu.TabStop = false;
-            // 
-            // previous_
-            // 
-            resources.ApplyResources(this.previous_, "previous_");
-            this.previous_.BackColor = System.Drawing.Color.MistyRose;
-            this.previous_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.previous_.Name = "previous_";
-            this.previous_.TabStop = false;
             // 
             // labelX5
             // 
@@ -1903,10 +1924,42 @@
             this.labelX46.BackColor = System.Drawing.Color.Transparent;
             this.labelX46.Name = "labelX46";
             // 
+            // last_
+            // 
+            resources.ApplyResources(this.last_, "last_");
+            this.last_.BackColor = System.Drawing.Color.MistyRose;
+            this.last_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.last_.Name = "last_";
+            this.last_.TabStop = false;
+            // 
+            // next_
+            // 
+            resources.ApplyResources(this.next_, "next_");
+            this.next_.BackColor = System.Drawing.Color.MistyRose;
+            this.next_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.next_.Name = "next_";
+            this.next_.TabStop = false;
+            // 
+            // previous_
+            // 
+            resources.ApplyResources(this.previous_, "previous_");
+            this.previous_.BackColor = System.Drawing.Color.MistyRose;
+            this.previous_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.previous_.Name = "previous_";
+            this.previous_.TabStop = false;
+            // 
+            // first_
+            // 
+            resources.ApplyResources(this.first_, "first_");
+            this.first_.BackColor = System.Drawing.Color.MistyRose;
+            this.first_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.first_.Name = "first_";
+            this.first_.TabStop = false;
+            // 
             // frm_PurchaseOrder
             // 
-            //this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            //this.Appearance.Options.UseBackColor = true;
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("frm_PurchaseOrder.Appearance.BackColor")));
+            this.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dGV_Item);
@@ -1939,10 +1992,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).EndInit();
             this.tabControlPanel3.ResumeLayout(false);
             this.tabControlPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.last_)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.next_)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.first_)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.previous_)).EndInit();
             this.groupPanel7.ResumeLayout(false);
             this.groupPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Price_ton)).EndInit();
@@ -1953,6 +2002,10 @@
             this.groupPanel6.ResumeLayout(false);
             this.groupPanel6.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.last_)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.next_)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previous_)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.first_)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2055,13 +2108,9 @@
         private DevComponents.DotNetBar.LabelX labelX14;
         private DevComponents.DotNetBar.TabItem tabItem7;
         private System.Windows.Forms.DateTimePicker txt_InvDate;
-        internal System.Windows.Forms.PictureBox last_;
         private DevComponents.DotNetBar.LabelX labelX2;
-        internal System.Windows.Forms.PictureBox next_;
         private DevComponents.DotNetBar.LabelX labelX1;
-        internal System.Windows.Forms.PictureBox first_;
         private System.Windows.Forms.TextBox txt_InvNu;
-        internal System.Windows.Forms.PictureBox previous_;
         private DevComponents.DotNetBar.LabelX labelX5;
         private System.Windows.Forms.Label Doc_Name;
         private DevComponents.DotNetBar.LabelX labelX15;
@@ -2147,5 +2196,14 @@
         private System.Windows.Forms.Button btn_UpdateApproved;
         private System.Windows.Forms.CheckBox ch_Doublicate;
         private System.Windows.Forms.Button btnEnter;
+        private DevExpress.XtraBars.BarButtonItem btn_Print;
+        private DevExpress.XtraBars.BarButtonItem btn_search;
+        private DevExpress.XtraBars.BarButtonItem btn_statment;
+        private DevExpress.XtraBars.BarButtonItem btn_Save;
+        private DevExpress.XtraBars.BarButtonItem btn_Delete;
+        internal System.Windows.Forms.PictureBox previous_;
+        internal System.Windows.Forms.PictureBox first_;
+        internal System.Windows.Forms.PictureBox next_;
+        internal System.Windows.Forms.PictureBox last_;
     }
 }

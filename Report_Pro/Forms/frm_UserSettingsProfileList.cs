@@ -23,8 +23,8 @@ namespace Report_Pro.Forms
             gridView1.DoubleClick  += GridView1_Click;
             RefreshData();
             gridView1.Columns["ID"].Visible = false;
-            btn_Delete.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            btn_Save.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            btnDelete.Visible = false;
+            btnSave.Visible = false;
         }
         public override void RefreshData()
         {

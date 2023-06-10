@@ -715,7 +715,7 @@ namespace Report_Pro
             // 
             // frm_Master
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("frm_Master.Appearance.BackColor")));
             this.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;

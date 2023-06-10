@@ -213,7 +213,7 @@ namespace Report_Pro.PL
 
         private void frmProducts_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
             txtSalesGroup.txtFinal.Text = "1";
         }
 

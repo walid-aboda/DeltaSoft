@@ -748,8 +748,8 @@ namespace Report_Pro.PL
 
         private void frmQuotation_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
+             btnPrint.Visible = true;
             get_BasicData();
         }
 

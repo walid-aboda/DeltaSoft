@@ -347,13 +347,8 @@ namespace Report_Pro.PL
                         panel1.Visible = true;
                         panel2.Visible = true;
                         AccId.ReadOnly = false;
-                        MAccId.Text = r[1].ToString();
-                        ////MAccName.Text = r[7].ToString();
-                        ////MAccNameL.Text = r[8].ToString();
-                        //lvl_1.Text = r[40].ToString();
-                        //lvl_2.Text = r[41].ToString();
-                        //lvl_3.Text = r[42].ToString();
-                        //lvl_4.Text = r[43].ToString();
+                        CoId.Text = r["acc_type"].ToString();
+                        MAccId.Text = r["acc_no"].ToString();
                         AccLevel.Text = (Int32.Parse(r[23].ToString()) + 1).ToString();
 
                         string AccNo = string.Empty;

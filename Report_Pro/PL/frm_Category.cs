@@ -26,7 +26,7 @@ namespace Report_Pro.PL
 
         private void frm_Category_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
 
             tv1.Nodes.Clear();
             _acountsTb = dal.getDataTabl_1(@"SELECT CAT_CODE,CAT_NAME,IsNull(CAT_NAME_E,'') as CAT_NAME_E,isnull(NullIf(PREV_NO,''),0) AS PREV_NO,T_FINAL,T_LEVEL FROM CATEGORY");

@@ -443,7 +443,7 @@ namespace Report_Pro.PL
 
             txtLcAcc.txtMainAcc.Text = "125";
             txtLcAcc.txtFinal.Text = "0";
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
            // New();
 
             //DAL.BanksTbl bnk = db.BanksTbls.First();

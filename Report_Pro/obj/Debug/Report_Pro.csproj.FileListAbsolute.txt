@@ -3950,4 +3950,3 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

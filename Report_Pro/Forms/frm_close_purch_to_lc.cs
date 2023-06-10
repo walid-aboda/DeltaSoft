@@ -24,7 +24,7 @@ namespace Report_Pro.Forms
         private void frm_close_purch_to_lc_Load(object sender, EventArgs e)
         {
             Uc_AccBranch.ID.Text = Properties.Settings.Default.BranchAccID;
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+             btnPrint.Visible = true;
             getJorSer();
         }
 

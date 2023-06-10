@@ -769,9 +769,7 @@ namespace Report_Pro.PL
 
         private void frm_PurchaseOrder_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-
+          
             btn_UpdateApproved.Enabled = Session.UserSettings.General.CanChangeStore;
 
             PaymentTearms.DataSource = dal.getDataTabl_1("select Payment_type,Payment_name,Notes from Sal_Pyment_type");

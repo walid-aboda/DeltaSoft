@@ -1204,7 +1204,7 @@ namespace Report_Pro.PL
 
         private void frmJornal_Load(object sender, EventArgs e)
         {
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+             btnPrint.Visible = true;
                     
         }
 

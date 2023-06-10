@@ -1442,8 +1442,8 @@ namespace Report_Pro.PL
 
         private void frm_PurchaseOrder_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
+             btnPrint.Visible = true;
 
             Ch_Aprrove.Enabled = Session.UserSettings.General.CanChangeStore;
 

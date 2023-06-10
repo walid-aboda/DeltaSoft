@@ -159,13 +159,13 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            
             // headLbl
             // 
             resources.ApplyResources(this.headLbl, "headLbl");
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تعديلToolStripMenuItem,
@@ -173,60 +173,61 @@
             this.حذفالسطرالحاليToolStripMenuItem,
             this.حذفالكلToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // تعديلToolStripMenuItem
             // 
-            resources.ApplyResources(this.تعديلToolStripMenuItem, "تعديلToolStripMenuItem");
             this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
+            resources.ApplyResources(this.تعديلToolStripMenuItem, "تعديلToolStripMenuItem");
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // حذفالسطرالحاليToolStripMenuItem
             // 
-            resources.ApplyResources(this.حذفالسطرالحاليToolStripMenuItem, "حذفالسطرالحاليToolStripMenuItem");
             this.حذفالسطرالحاليToolStripMenuItem.Name = "حذفالسطرالحاليToolStripMenuItem";
+            resources.ApplyResources(this.حذفالسطرالحاليToolStripMenuItem, "حذفالسطرالحاليToolStripMenuItem");
             // 
             // حذفالكلToolStripMenuItem
             // 
-            resources.ApplyResources(this.حذفالكلToolStripMenuItem, "حذفالكلToolStripMenuItem");
             this.حذفالكلToolStripMenuItem.Name = "حذفالكلToolStripMenuItem";
+            resources.ApplyResources(this.حذفالكلToolStripMenuItem, "حذفالكلToolStripMenuItem");
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label31);
             this.panel2.Controls.Add(this.label30);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label17);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // label31
             // 
-            resources.ApplyResources(this.label31, "label31");
             this.label31.BackColor = System.Drawing.Color.Yellow;
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
             // 
             // label30
             // 
-            resources.ApplyResources(this.label30, "label30");
             this.label30.BackColor = System.Drawing.Color.Yellow;
+            resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
             // 
             // label29
             // 
-            resources.ApplyResources(this.label29, "label29");
             this.label29.BackColor = System.Drawing.Color.Yellow;
+            resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
             // 
             // label17
             // 
-            resources.ApplyResources(this.label17, "label17");
             this.label17.BackColor = System.Drawing.Color.Yellow;
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
             // 
             // Lbl_position
@@ -236,81 +237,81 @@
             // 
             // txt_CustEmail
             // 
-            resources.ApplyResources(this.txt_CustEmail, "txt_CustEmail");
             this.txt_CustEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_CustEmail, "txt_CustEmail");
             this.txt_CustEmail.Name = "txt_CustEmail";
             this.txt_CustEmail.TabStop = false;
             // 
             // txt_custTel
             // 
-            resources.ApplyResources(this.txt_custTel, "txt_custTel");
             this.txt_custTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_custTel, "txt_custTel");
             this.txt_custTel.Name = "txt_custTel";
             this.txt_custTel.TabStop = false;
             // 
             // txt_custFax
             // 
-            resources.ApplyResources(this.txt_custFax, "txt_custFax");
             this.txt_custFax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_custFax, "txt_custFax");
             this.txt_custFax.Name = "txt_custFax";
             this.txt_custFax.TabStop = false;
             // 
             // Cust_Vat_No
             // 
-            resources.ApplyResources(this.Cust_Vat_No, "Cust_Vat_No");
             this.Cust_Vat_No.BackColor = System.Drawing.SystemColors.Window;
             this.Cust_Vat_No.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Cust_Vat_No, "Cust_Vat_No");
             this.Cust_Vat_No.Name = "Cust_Vat_No";
             this.Cust_Vat_No.TabStop = false;
             // 
             // Vat_Class
             // 
-            resources.ApplyResources(this.Vat_Class, "Vat_Class");
             this.Vat_Class.BackColor = System.Drawing.SystemColors.Window;
             this.Vat_Class.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Vat_Class, "Vat_Class");
             this.Vat_Class.Name = "Vat_Class";
             this.Vat_Class.ReadOnly = true;
             this.Vat_Class.TabStop = false;
             // 
             // Cust_Vat_Rate
             // 
-            resources.ApplyResources(this.Cust_Vat_Rate, "Cust_Vat_Rate");
             this.Cust_Vat_Rate.BackColor = System.Drawing.SystemColors.Window;
             this.Cust_Vat_Rate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Cust_Vat_Rate, "Cust_Vat_Rate");
             this.Cust_Vat_Rate.Name = "Cust_Vat_Rate";
             this.Cust_Vat_Rate.ReadOnly = true;
             this.Cust_Vat_Rate.TabStop = false;
             // 
             // Vat_Class_Desc
             // 
-            resources.ApplyResources(this.Vat_Class_Desc, "Vat_Class_Desc");
             this.Vat_Class_Desc.BackColor = System.Drawing.SystemColors.Window;
             this.Vat_Class_Desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Vat_Class_Desc, "Vat_Class_Desc");
             this.Vat_Class_Desc.Name = "Vat_Class_Desc";
             this.Vat_Class_Desc.ReadOnly = true;
             this.Vat_Class_Desc.TabStop = false;
             // 
             // txt_address
             // 
-            resources.ApplyResources(this.txt_address, "txt_address");
             this.txt_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_address, "txt_address");
             this.txt_address.Name = "txt_address";
             this.txt_address.TabStop = false;
             // 
             // txt_area_code
             // 
-            resources.ApplyResources(this.txt_area_code, "txt_area_code");
             this.txt_area_code.BackColor = System.Drawing.SystemColors.Window;
             this.txt_area_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_area_code, "txt_area_code");
             this.txt_area_code.Name = "txt_area_code";
             this.txt_area_code.ReadOnly = true;
             this.txt_area_code.TabStop = false;
             // 
             // txt_BoBox
             // 
-            resources.ApplyResources(this.txt_BoBox, "txt_BoBox");
             this.txt_BoBox.BackColor = System.Drawing.SystemColors.Window;
             this.txt_BoBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_BoBox, "txt_BoBox");
             this.txt_BoBox.Name = "txt_BoBox";
             this.txt_BoBox.ReadOnly = true;
             this.txt_BoBox.TabStop = false;
@@ -332,7 +333,6 @@
             // 
             // tabControlPanel2
             // 
-            resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
             this.tabControlPanel2.Controls.Add(this.label37);
             this.tabControlPanel2.Controls.Add(this.label36);
             this.tabControlPanel2.Controls.Add(this.label35);
@@ -353,6 +353,7 @@
             this.tabControlPanel2.Controls.Add(this.Vat_Class_Desc);
             this.tabControlPanel2.Controls.Add(this.Vat_Class);
             this.tabControlPanel2.Controls.Add(this.Cust_Vat_Rate);
+            resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
             this.tabControlPanel2.Name = "tabControlPanel2";
             this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
@@ -365,63 +366,63 @@
             // 
             // label37
             // 
-            resources.ApplyResources(this.label37, "label37");
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label37, "label37");
             this.label37.Name = "label37";
             // 
             // label36
             // 
-            resources.ApplyResources(this.label36, "label36");
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
             // 
             // label35
             // 
-            resources.ApplyResources(this.label35, "label35");
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
             // 
             // label26
             // 
-            resources.ApplyResources(this.label26, "label26");
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
             // 
             // label34
             // 
-            resources.ApplyResources(this.label34, "label34");
             this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
             // 
             // label27
             // 
-            resources.ApplyResources(this.label27, "label27");
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
             // 
             // label28
             // 
-            resources.ApplyResources(this.label28, "label28");
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
             // 
             // label32
             // 
-            resources.ApplyResources(this.label32, "label32");
             this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
             // 
             // label33
             // 
-            resources.ApplyResources(this.label33, "label33");
             this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
             // 
             // txtKmCode
             // 
-            resources.ApplyResources(this.txtKmCode, "txtKmCode");
             this.txtKmCode.BackColor = System.Drawing.SystemColors.Window;
             this.txtKmCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtKmCode, "txtKmCode");
             this.txtKmCode.Name = "txtKmCode";
             this.txtKmCode.ReadOnly = true;
             this.txtKmCode.TabStop = false;
@@ -434,12 +435,12 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
@@ -450,7 +451,6 @@
             // 
             // tabControlPanel1
             // 
-            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
             this.tabControlPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.tabControlPanel1.Controls.Add(this.rdoBranchHeader);
             this.tabControlPanel1.Controls.Add(this.rdoCompanyHeader);
@@ -490,6 +490,7 @@
             this.tabControlPanel1.Controls.Add(this.txt_InvNot);
             this.tabControlPanel1.Controls.Add(this.txtBranch);
             this.tabControlPanel1.Controls.Add(this.txtSupplier);
+            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
@@ -518,92 +519,92 @@
             // 
             // label21
             // 
-            resources.ApplyResources(this.label21, "label21");
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
             // 
             // label19
             // 
-            resources.ApplyResources(this.label19, "label19");
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
             // 
             // label20
             // 
-            resources.ApplyResources(this.label20, "label20");
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
             // 
             // label13
             // 
-            resources.ApplyResources(this.label13, "label13");
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
             // 
             // label14
             // 
-            resources.ApplyResources(this.label14, "label14");
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
             // 
             // label15
             // 
-            resources.ApplyResources(this.label15, "label15");
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
             // 
             // label16
             // 
-            resources.ApplyResources(this.label16, "label16");
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
             // 
             // label18
             // 
-            resources.ApplyResources(this.label18, "label18");
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
             // 
             // label12
             // 
-            resources.ApplyResources(this.label12, "label12");
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
             // label8
             // 
-            resources.ApplyResources(this.label8, "label8");
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
             // btn_UpdateApproved
@@ -629,9 +630,9 @@
             // 
             // txt_Rate
             // 
-            resources.ApplyResources(this.txt_Rate, "txt_Rate");
             this.txt_Rate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Rate.DicemalDigits = 0;
+            resources.ApplyResources(this.txt_Rate, "txt_Rate");
             this.txt_Rate.maxmumNumber = 0D;
             this.txt_Rate.minimumNumber = 0D;
             this.txt_Rate.Name = "txt_Rate";
@@ -674,22 +675,7 @@
             // 
             // 
             this.ValidtyDays.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.ValidtyDays.ButtonClear.DisplayPosition = ((int)(resources.GetObject("ValidtyDays.ButtonClear.DisplayPosition")));
-            this.ValidtyDays.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("ValidtyDays.ButtonClear.Image")));
-            this.ValidtyDays.ButtonClear.Text = resources.GetString("ValidtyDays.ButtonClear.Text");
-            this.ValidtyDays.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ValidtyDays.ButtonCustom.DisplayPosition")));
-            this.ValidtyDays.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ValidtyDays.ButtonCustom.Image")));
-            this.ValidtyDays.ButtonCustom.Text = resources.GetString("ValidtyDays.ButtonCustom.Text");
-            this.ValidtyDays.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ValidtyDays.ButtonCustom2.DisplayPosition")));
-            this.ValidtyDays.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ValidtyDays.ButtonCustom2.Image")));
-            this.ValidtyDays.ButtonCustom2.Text = resources.GetString("ValidtyDays.ButtonCustom2.Text");
-            this.ValidtyDays.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("ValidtyDays.ButtonDropDown.DisplayPosition")));
-            this.ValidtyDays.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("ValidtyDays.ButtonDropDown.Image")));
-            this.ValidtyDays.ButtonDropDown.Text = resources.GetString("ValidtyDays.ButtonDropDown.Text");
-            this.ValidtyDays.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("ValidtyDays.ButtonFreeText.DisplayPosition")));
-            this.ValidtyDays.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("ValidtyDays.ButtonFreeText.Image")));
             this.ValidtyDays.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.ValidtyDays.ButtonFreeText.Text = resources.GetString("ValidtyDays.ButtonFreeText.Text");
             this.ValidtyDays.MaxValue = 10;
             this.ValidtyDays.MinValue = 0;
             this.ValidtyDays.Name = "ValidtyDays";
@@ -710,8 +696,8 @@
             // 
             // btnAddDelevery
             // 
-            resources.ApplyResources(this.btnAddDelevery, "btnAddDelevery");
             this.btnAddDelevery.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            resources.ApplyResources(this.btnAddDelevery, "btnAddDelevery");
             this.btnAddDelevery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnAddDelevery.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDelevery.Image")));
             this.btnAddDelevery.ImageFixedSize = new System.Drawing.Size(30, 20);
@@ -720,8 +706,8 @@
             // 
             // btnAddPayment
             // 
-            resources.ApplyResources(this.btnAddPayment, "btnAddPayment");
             this.btnAddPayment.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            resources.ApplyResources(this.btnAddPayment, "btnAddPayment");
             this.btnAddPayment.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnAddPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPayment.Image")));
             this.btnAddPayment.ImageFixedSize = new System.Drawing.Size(30, 20);
@@ -785,7 +771,6 @@
             // 
             // tabControlPanel3
             // 
-            resources.ApplyResources(this.tabControlPanel3, "tabControlPanel3");
             this.tabControlPanel3.Controls.Add(this.label22);
             this.tabControlPanel3.Controls.Add(this.label23);
             this.tabControlPanel3.Controls.Add(this.label24);
@@ -794,6 +779,7 @@
             this.tabControlPanel3.Controls.Add(this.txtCustAcc);
             this.tabControlPanel3.Controls.Add(this.txtCashAcc);
             this.tabControlPanel3.Controls.Add(this.txtAcc2);
+            resources.ApplyResources(this.tabControlPanel3, "tabControlPanel3");
             this.tabControlPanel3.Name = "tabControlPanel3";
             this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
@@ -806,50 +792,50 @@
             // 
             // label22
             // 
-            resources.ApplyResources(this.label22, "label22");
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
             // 
             // label23
             // 
-            resources.ApplyResources(this.label23, "label23");
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
             // 
             // label24
             // 
-            resources.ApplyResources(this.label24, "label24");
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
             // 
             // label25
             // 
-            resources.ApplyResources(this.label25, "label25");
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
             // 
             // txtVatAcc
             // 
-            resources.ApplyResources(this.txtVatAcc, "txtVatAcc");
             this.txtVatAcc.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.txtVatAcc, "txtVatAcc");
             this.txtVatAcc.Name = "txtVatAcc";
             // 
             // txtCustAcc
             // 
-            resources.ApplyResources(this.txtCustAcc, "txtCustAcc");
             this.txtCustAcc.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.txtCustAcc, "txtCustAcc");
             this.txtCustAcc.Name = "txtCustAcc";
             // 
             // txtCashAcc
             // 
-            resources.ApplyResources(this.txtCashAcc, "txtCashAcc");
             this.txtCashAcc.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.txtCashAcc, "txtCashAcc");
             this.txtCashAcc.Name = "txtCashAcc";
             // 
             // txtAcc2
             // 
-            resources.ApplyResources(this.txtAcc2, "txtAcc2");
             this.txtAcc2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.txtAcc2, "txtAcc2");
             this.txtAcc2.Name = "txtAcc2";
             // 
             // tabItem7
@@ -865,9 +851,9 @@
             // 
             // txt_InvNu
             // 
-            resources.ApplyResources(this.txt_InvNu, "txt_InvNu");
             this.txt_InvNu.BackColor = System.Drawing.SystemColors.Window;
             this.txt_InvNu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_InvNu, "txt_InvNu");
             this.txt_InvNu.Name = "txt_InvNu";
             this.txt_InvNu.ReadOnly = true;
             this.txt_InvNu.TabStop = false;
@@ -886,35 +872,35 @@
             // 
             // txtStore_ID
             // 
-            resources.ApplyResources(this.txtStore_ID, "txtStore_ID");
             this.txtStore_ID.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.txtStore_ID, "txtStore_ID");
             this.txtStore_ID.Name = "txtStore_ID";
             // 
             // txtBranch_Id
             // 
-            resources.ApplyResources(this.txtBranch_Id, "txtBranch_Id");
             this.txtBranch_Id.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.txtBranch_Id, "txtBranch_Id");
             this.txtBranch_Id.Name = "txtBranch_Id";
             // 
             // acc_year
             // 
-            resources.ApplyResources(this.acc_year, "acc_year");
             this.acc_year.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.acc_year, "acc_year");
             this.acc_year.Name = "acc_year";
             this.acc_year.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // txtSer_code
             // 
-            resources.ApplyResources(this.txtSer_code, "txtSer_code");
             this.txtSer_code.BackColor = System.Drawing.Color.MistyRose;
+            resources.ApplyResources(this.txtSer_code, "txtSer_code");
             this.txtSer_code.Name = "txtSer_code";
             this.txtSer_code.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // txtMainSer
             // 
-            resources.ApplyResources(this.txtMainSer, "txtMainSer");
             this.txtMainSer.BackColor = System.Drawing.SystemColors.Window;
             this.txtMainSer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtMainSer, "txtMainSer");
             this.txtMainSer.Name = "txtMainSer";
             this.txtMainSer.ReadOnly = true;
             this.txtMainSer.TabStop = false;
@@ -936,7 +922,6 @@
             // 
             // groupPanel6
             // 
-            resources.ApplyResources(this.groupPanel6, "groupPanel6");
             this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel6.Controls.Add(this.txt_InvSM);
@@ -962,6 +947,7 @@
             this.groupPanel6.Controls.Add(this.txt_InvNu);
             this.groupPanel6.Controls.Add(this.txt_InvDate);
             this.groupPanel6.Controls.Add(this.tabControl1);
+            resources.ApplyResources(this.groupPanel6, "groupPanel6");
             this.groupPanel6.Name = "groupPanel6";
             // 
             // 
@@ -986,65 +972,65 @@
             // 
             // txt_InvSM
             // 
-            resources.ApplyResources(this.txt_InvSM, "txt_InvSM");
             this.txt_InvSM.BackColor = System.Drawing.Color.MistyRose;
             this.txt_InvSM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_InvSM, "txt_InvSM");
             this.txt_InvSM.Name = "txt_InvSM";
             // 
             // userID
             // 
-            resources.ApplyResources(this.userID, "userID");
             this.userID.BackColor = System.Drawing.Color.MistyRose;
             this.userID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.userID, "userID");
             this.userID.Name = "userID";
             // 
             // txt_Cyear
             // 
-            resources.ApplyResources(this.txt_Cyear, "txt_Cyear");
             this.txt_Cyear.BackColor = System.Drawing.Color.MistyRose;
             this.txt_Cyear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_Cyear, "txt_Cyear");
             this.txt_Cyear.Name = "txt_Cyear";
             // 
             // txt_transaction_code
             // 
-            resources.ApplyResources(this.txt_transaction_code, "txt_transaction_code");
             this.txt_transaction_code.BackColor = System.Drawing.Color.MistyRose;
             this.txt_transaction_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_transaction_code, "txt_transaction_code");
             this.txt_transaction_code.Name = "txt_transaction_code";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
             // ch_Doublicate
@@ -1056,7 +1042,6 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.Yellow;
             this.groupBox1.Controls.Add(this.label39);
             this.groupBox1.Controls.Add(this.txtsearch);
@@ -1064,30 +1049,31 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.btn_Srearch);
             this.groupBox1.Controls.Add(this.btn_Cancl);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // label39
             // 
-            resources.ApplyResources(this.label39, "label39");
             this.label39.BackColor = System.Drawing.SystemColors.Control;
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
             // 
             // txtsearch
             // 
-            resources.ApplyResources(this.txtsearch, "txtsearch");
             this.txtsearch.BackColor = System.Drawing.SystemColors.Window;
             this.txtsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txtsearch, "txtsearch");
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.TabStop = false;
             this.txtsearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsearch_KeyDown);
             // 
             // label38
             // 
-            resources.ApplyResources(this.label38, "label38");
             this.label38.BackColor = System.Drawing.SystemColors.Control;
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
             // 
             // comboBox1
@@ -1123,9 +1109,9 @@
             // 
             // frm_PurchaseOrder_1
             // 
-            resources.ApplyResources(this, "$this");
-            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("frm_PurchaseOrder_1.Appearance.BackColor")));
             this.Appearance.Options.UseBackColor = true;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.invGrid1);
             this.Controls.Add(this.groupPanel6);
@@ -1277,5 +1263,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.RadioButton rdoBranchHeader;
         private System.Windows.Forms.RadioButton rdoCompanyHeader;
+   
     }
 }

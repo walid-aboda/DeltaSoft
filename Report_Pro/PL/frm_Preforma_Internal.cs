@@ -721,9 +721,9 @@ namespace Report_Pro.PL
 
         private void frmLcs_Load(object sender, EventArgs e)
         {
-            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_statment.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+            btnSearch.Visible = true;
+             btnPrint.Visible = true;
+            btnStatment.Visible = true;
 
             txtBranch.ID.Text = Properties.Settings.Default.BranchId;
             txtLcAcc.branchID.Text = txtBranch.txtAccBranch.Text;

@@ -168,7 +168,7 @@ namespace Report_Pro.Forms
         RepositoryItemCheckEdit repoCheck;
         private void frm_AccessProfile_Load(object sender, EventArgs e)
         {
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+             btnPrint.Visible = true;
 
             textEdit1.Text = profile.Name;
             treeList1.CustomNodeCellEdit += TreeList1_CustomNodeCellEdit;

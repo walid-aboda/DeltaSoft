@@ -311,8 +311,8 @@ namespace Report_Pro.CTR
 
             //New();
 
-            btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_statment.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+             btnPrint.Visible = true;
+            btnPrint.Visible = true;
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Syria));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.UAE));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.S));
