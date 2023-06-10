@@ -648,7 +648,7 @@ namespace Report_Pro.PL
             DataSet ds = new DataSet();
             getQuotation(txt_InvNu.Text, txtStore_ID.Text, txt_transaction_code.Text, txt_Cyear.Text);
 
-            DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No=left('" + dt_Q.Rows[0]["Branch_code"] + "',1)  ");
+            DataTable dt_Co = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No=left('" +Properties.Settings.Default.BranchId + "',1)  ");
 
 
             ds.Tables.Add(dt_Q);
@@ -1309,7 +1309,7 @@ namespace Report_Pro.PL
             "Left join CATEGORY as C1 on C1.CAT_CODE = A.RECEVEDby "+
             "Left join CATEGORY as C2 on C2.CAT_CODE = A.aprovedBY "+
             "Left join CATEGORY as C3 on C3.CAT_CODE = A.requstedBy "+
-            "inner join Wh_Oiner_Comp As co on co.Company_No = left(BR.Branch_code,1) " +
+            "inner join Wh_Oiner_Comp As co on co.Company_No = left('"+Properties.Settings.Default.BranchId+"',1) " +
             "Left join COST_CENTER as cost on cost.COST_CODE = A.Sales_man_Id "+
             "where A.Ser_no = '" + ser_ + "'  and A.Branch_code = '" + branch_ + "'  and A.transaction_code = '" + transaction_ + "'  and A.cyear = '" + cyear_ + "' order by B.main_counter");
             //}
