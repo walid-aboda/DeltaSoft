@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Inventory_Report));
             this.btn_preview1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
@@ -90,26 +86,7 @@
             this.btn_preview1.Name = "btn_preview1";
             this.btn_preview1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
-            // 
+            
             // headLbl
             // 
             resources.ApplyResources(this.headLbl, "headLbl");
@@ -529,10 +506,6 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frm_Inventory_Report";
             this.Load += new System.EventHandler(this.frm_Inventory_Report_Load);
-            this.Controls.SetChildIndex(this.barDockControlTop, 0);
-            this.Controls.SetChildIndex(this.barDockControlBottom, 0);
-            this.Controls.SetChildIndex(this.barDockControlRight, 0);
-            this.Controls.SetChildIndex(this.barDockControlLeft, 0);
             this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panelEx1.ResumeLayout(false);
@@ -588,9 +561,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraBars.BarButtonItem btn_preview1;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+
     }
 }

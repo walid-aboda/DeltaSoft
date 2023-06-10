@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Cash_Receipt));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this._InvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,6 +124,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.ChAllAccount = new System.Windows.Forms.CheckBox();
+            this.Project = new Report_Pro.MyControls.UC_Project();
+            this.label23 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).BeginInit();
@@ -138,6 +140,7 @@
             // 
             // dgv1
             // 
+            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -152,16 +155,15 @@
             this._Paid,
             this._balance,
             this._transaction_Code});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle19;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
             this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
@@ -193,27 +195,27 @@
             // 
             // _amount
             // 
-            dataGridViewCellStyle1.Format = "N3";
-            dataGridViewCellStyle1.NullValue = "0";
-            this._amount.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.Format = "N3";
+            dataGridViewCellStyle15.NullValue = "0";
+            this._amount.DefaultCellStyle = dataGridViewCellStyle15;
             resources.ApplyResources(this._amount, "_amount");
             this._amount.Name = "_amount";
             this._amount.ReadOnly = true;
             // 
             // _return
             // 
-            dataGridViewCellStyle2.Format = "N3";
-            dataGridViewCellStyle2.NullValue = "0";
-            this._return.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Format = "N3";
+            dataGridViewCellStyle16.NullValue = "0";
+            this._return.DefaultCellStyle = dataGridViewCellStyle16;
             resources.ApplyResources(this._return, "_return");
             this._return.Name = "_return";
             this._return.ReadOnly = true;
             // 
             // _Paid
             // 
-            dataGridViewCellStyle3.Format = "N3";
-            dataGridViewCellStyle3.NullValue = "0";
-            this._Paid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Format = "N3";
+            dataGridViewCellStyle17.NullValue = "0";
+            this._Paid.DefaultCellStyle = dataGridViewCellStyle17;
             resources.ApplyResources(this._Paid, "_Paid");
             this._Paid.Name = "_Paid";
             this._Paid.ReadOnly = true;
@@ -221,9 +223,9 @@
             // _balance
             // 
             this._balance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Format = "N3";
-            dataGridViewCellStyle4.NullValue = "0";
-            this._balance.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Format = "N3";
+            dataGridViewCellStyle18.NullValue = "0";
+            this._balance.DefaultCellStyle = dataGridViewCellStyle18;
             resources.ApplyResources(this._balance, "_balance");
             this._balance.Name = "_balance";
             this._balance.ReadOnly = true;
@@ -241,90 +243,91 @@
             // 
             // label17
             // 
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label17, "label17");
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Name = "label17";
             // 
             // label16
             // 
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label16, "label16");
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Name = "label16";
             // 
             // label15
             // 
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label15, "label15");
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Name = "label15";
             // 
             // label14
             // 
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label14, "label14");
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Name = "label14";
             // 
             // label13
             // 
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label13, "label13");
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Name = "label13";
             // 
             // label12
             // 
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label12, "label12");
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Name = "label12";
             // 
             // label10
             // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label10, "label10");
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Name = "label10";
             // 
             // label9
             // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label9, "label9");
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Name = "label9";
             // 
             // label8
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Name = "label8";
             // 
             // label7
             // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label7, "label7");
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Name = "label7";
             // 
             // label6
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label6, "label6");
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Name = "label6";
             // 
             // label11
             // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label11, "label11");
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Name = "label11";
             // 
             // txtSpecialNo
             // 
-            this.txtSpecialNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtSpecialNo, "txtSpecialNo");
+            this.txtSpecialNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSpecialNo.Name = "txtSpecialNo";
             // 
             // txtDescr_E
             // 
-            this.txtDescr_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtDescr_E, "txtDescr_E");
+            this.txtDescr_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescr_E.Name = "txtDescr_E";
             // 
             // txt_sandNo
             // 
+            resources.ApplyResources(this.txt_sandNo, "txt_sandNo");
             this.txt_sandNo.buttonImage = global::Report_Pro.Properties.Resources.find_32x32;
             this.txt_sandNo.buttonVisable = true;
             this.txt_sandNo.LabelAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -334,7 +337,6 @@
             this.txt_sandNo.LabelSize = new System.Drawing.Size(100, 20);
             this.txt_sandNo.LabelText = "Sanad No";
             this.txt_sandNo.labelVisable = false;
-            resources.ApplyResources(this.txt_sandNo, "txt_sandNo");
             this.txt_sandNo.Name = "txt_sandNo";
             this.txt_sandNo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_sandNo.TextBackColor = System.Drawing.SystemColors.Window;
@@ -342,12 +344,13 @@
             this.txt_sandNo.textEnabal = true;
             this.txt_sandNo.TextlFont = new System.Drawing.Font("Tahoma", 8F);
             this.txt_sandNo.TextS = "";
-            this.txt_sandNo.TextSize = new System.Drawing.Size(171, 20);
+            this.txt_sandNo.TextSize = new System.Drawing.Size(134, 20);
             this.txt_sandNo.Click += new System.EventHandler(this.search_1_Click);
             this.txt_sandNo.Paint += new System.Windows.Forms.PaintEventHandler(this.txt_sandNo_Paint);
             // 
             // Btn_NonPayInvoice
             // 
+            resources.ApplyResources(this.Btn_NonPayInvoice, "Btn_NonPayInvoice");
             this.Btn_NonPayInvoice.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("Btn_NonPayInvoice.Appearance.Font")));
             this.Btn_NonPayInvoice.Appearance.FontStyleDelta = ((System.Drawing.FontStyle)(resources.GetObject("Btn_NonPayInvoice.Appearance.FontStyleDelta")));
             this.Btn_NonPayInvoice.Appearance.Options.UseFont = true;
@@ -356,12 +359,12 @@
             this.Btn_NonPayInvoice.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
             this.Btn_NonPayInvoice.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Btn_NonPayInvoice.ImageOptions.SvgImage")));
             this.Btn_NonPayInvoice.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            resources.ApplyResources(this.Btn_NonPayInvoice, "Btn_NonPayInvoice");
             this.Btn_NonPayInvoice.Name = "Btn_NonPayInvoice";
             this.Btn_NonPayInvoice.Click += new System.EventHandler(this.Btn_NonPayInvoice_Click);
             // 
             // AccSer_No
             // 
+            resources.ApplyResources(this.AccSer_No, "AccSer_No");
             this.AccSer_No.buttonImage = global::Report_Pro.Properties.Resources.find_32x32;
             this.AccSer_No.buttonVisable = true;
             this.AccSer_No.LabelAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -371,7 +374,6 @@
             this.AccSer_No.LabelSize = new System.Drawing.Size(100, 20);
             this.AccSer_No.LabelText = "Jornal No";
             this.AccSer_No.labelVisable = false;
-            resources.ApplyResources(this.AccSer_No, "AccSer_No");
             this.AccSer_No.Name = "AccSer_No";
             this.AccSer_No.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AccSer_No.TextBackColor = System.Drawing.SystemColors.Window;
@@ -379,23 +381,24 @@
             this.AccSer_No.textEnabal = true;
             this.AccSer_No.TextlFont = new System.Drawing.Font("Tahoma", 8F);
             this.AccSer_No.TextS = "";
-            this.AccSer_No.TextSize = new System.Drawing.Size(171, 20);
+            this.AccSer_No.TextSize = new System.Drawing.Size(134, 20);
             this.AccSer_No.Click += new System.EventHandler(this.search_2_Click);
             // 
             // txtDescr
             // 
-            this.txtDescr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtDescr, "txtDescr");
+            this.txtDescr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescr.Name = "txtDescr";
             // 
             // txtCust
             // 
-            this.txtCust.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtCust, "txtCust");
+            this.txtCust.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCust.Name = "txtCust";
             // 
             // txt_sandDate
             // 
+            resources.ApplyResources(this.txt_sandDate, "txt_sandDate");
             // 
             // 
             // 
@@ -410,9 +413,23 @@
             this.txt_sandDate.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txt_sandDate.BackgroundStyle.BorderTopWidth = 1;
             this.txt_sandDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txt_sandDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonClear.DisplayPosition")));
+            this.txt_sandDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonClear.Image")));
+            this.txt_sandDate.ButtonClear.Text = resources.GetString("txt_sandDate.ButtonClear.Text");
+            this.txt_sandDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonCustom.DisplayPosition")));
+            this.txt_sandDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonCustom.Image")));
+            this.txt_sandDate.ButtonCustom.Text = resources.GetString("txt_sandDate.ButtonCustom.Text");
+            this.txt_sandDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonCustom2.DisplayPosition")));
+            this.txt_sandDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonCustom2.Image")));
+            this.txt_sandDate.ButtonCustom2.Text = resources.GetString("txt_sandDate.ButtonCustom2.Text");
+            this.txt_sandDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonDropDown.DisplayPosition")));
+            this.txt_sandDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonDropDown.Image")));
             this.txt_sandDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.txt_sandDate.ButtonDropDown.Text = resources.GetString("txt_sandDate.ButtonDropDown.Text");
             this.txt_sandDate.ButtonDropDown.Visible = true;
-            resources.ApplyResources(this.txt_sandDate, "txt_sandDate");
+            this.txt_sandDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonFreeText.DisplayPosition")));
+            this.txt_sandDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonFreeText.Image")));
+            this.txt_sandDate.ButtonFreeText.Text = resources.GetString("txt_sandDate.ButtonFreeText.Text");
             // 
             // 
             // 
@@ -421,7 +438,9 @@
             // 
             // 
             this.txt_sandDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_sandDate.MonthCalendar.Category = resources.GetString("txt_sandDate.MonthCalendar.Category");
             this.txt_sandDate.MonthCalendar.ClearButtonVisible = true;
+            this.txt_sandDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("txt_sandDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -431,6 +450,8 @@
             this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.txt_sandDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("txt_sandDate.MonthCalendar.DayNames")));
+            this.txt_sandDate.MonthCalendar.Description = resources.GetString("txt_sandDate.MonthCalendar.Description");
             this.txt_sandDate.MonthCalendar.DisplayMonth = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
             this.txt_sandDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("txt_sandDate.MonthCalendar.MarkedDates")));
             this.txt_sandDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("txt_sandDate.MonthCalendar.MonthlyMarkedDates")));
@@ -440,12 +461,16 @@
             this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.txt_sandDate.MonthCalendar.Tag = resources.GetString("txt_sandDate.MonthCalendar.Tag");
+            this.txt_sandDate.MonthCalendar.Text = resources.GetString("txt_sandDate.MonthCalendar.Text");
             this.txt_sandDate.MonthCalendar.TodayButtonVisible = true;
+            this.txt_sandDate.MonthCalendar.Tooltip = resources.GetString("txt_sandDate.MonthCalendar.Tooltip");
             this.txt_sandDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("txt_sandDate.MonthCalendar.WeeklyMarkedDays")));
             this.txt_sandDate.Name = "txt_sandDate";
             // 
             // Check_Date
             // 
+            resources.ApplyResources(this.Check_Date, "Check_Date");
             // 
             // 
             // 
@@ -456,9 +481,23 @@
             this.Check_Date.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Check_Date.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Check_Date.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Check_Date.ButtonClear.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonClear.DisplayPosition")));
+            this.Check_Date.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonClear.Image")));
+            this.Check_Date.ButtonClear.Text = resources.GetString("Check_Date.ButtonClear.Text");
+            this.Check_Date.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonCustom.DisplayPosition")));
+            this.Check_Date.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonCustom.Image")));
+            this.Check_Date.ButtonCustom.Text = resources.GetString("Check_Date.ButtonCustom.Text");
+            this.Check_Date.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonCustom2.DisplayPosition")));
+            this.Check_Date.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonCustom2.Image")));
+            this.Check_Date.ButtonCustom2.Text = resources.GetString("Check_Date.ButtonCustom2.Text");
+            this.Check_Date.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonDropDown.DisplayPosition")));
+            this.Check_Date.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonDropDown.Image")));
             this.Check_Date.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.Check_Date.ButtonDropDown.Text = resources.GetString("Check_Date.ButtonDropDown.Text");
             this.Check_Date.ButtonDropDown.Visible = true;
-            resources.ApplyResources(this.Check_Date, "Check_Date");
+            this.Check_Date.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonFreeText.DisplayPosition")));
+            this.Check_Date.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonFreeText.Image")));
+            this.Check_Date.ButtonFreeText.Text = resources.GetString("Check_Date.ButtonFreeText.Text");
             // 
             // 
             // 
@@ -467,7 +506,9 @@
             // 
             // 
             this.Check_Date.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.Check_Date.MonthCalendar.Category = resources.GetString("Check_Date.MonthCalendar.Category");
             this.Check_Date.MonthCalendar.ClearButtonVisible = true;
+            this.Check_Date.MonthCalendar.CommandParameter = ((object)(resources.GetObject("Check_Date.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -477,6 +518,8 @@
             this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.Check_Date.MonthCalendar.DayNames = ((string[])(resources.GetObject("Check_Date.MonthCalendar.DayNames")));
+            this.Check_Date.MonthCalendar.Description = resources.GetString("Check_Date.MonthCalendar.Description");
             this.Check_Date.MonthCalendar.DisplayMonth = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
             this.Check_Date.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("Check_Date.MonthCalendar.MarkedDates")));
             this.Check_Date.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("Check_Date.MonthCalendar.MonthlyMarkedDates")));
@@ -486,28 +529,31 @@
             this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.Check_Date.MonthCalendar.Tag = resources.GetString("Check_Date.MonthCalendar.Tag");
+            this.Check_Date.MonthCalendar.Text = resources.GetString("Check_Date.MonthCalendar.Text");
             this.Check_Date.MonthCalendar.TodayButtonVisible = true;
+            this.Check_Date.MonthCalendar.Tooltip = resources.GetString("Check_Date.MonthCalendar.Tooltip");
             this.Check_Date.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("Check_Date.MonthCalendar.WeeklyMarkedDays")));
             this.Check_Date.Name = "Check_Date";
             // 
             // txt_Check
             // 
-            this.txt_Check.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txt_Check, "txt_Check");
+            this.txt_Check.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Check.Name = "txt_Check";
             // 
             // cmb_Pay
             // 
-            this.cmb_Pay.FormattingEnabled = true;
             resources.ApplyResources(this.cmb_Pay, "cmb_Pay");
+            this.cmb_Pay.FormattingEnabled = true;
             this.cmb_Pay.Name = "cmb_Pay";
             this.cmb_Pay.SelectedIndexChanged += new System.EventHandler(this.cmb_Pay_SelectedIndexChanged);
             // 
             // paied_amount
             // 
+            resources.ApplyResources(this.paied_amount, "paied_amount");
             this.paied_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.paied_amount.DicemalDigits = 0;
-            resources.ApplyResources(this.paied_amount, "paied_amount");
             this.paied_amount.maxmumNumber = 0D;
             this.paied_amount.minimumNumber = 0D;
             this.paied_amount.Name = "paied_amount";
@@ -521,6 +567,7 @@
             // 
             // emptySpaceItem3
             // 
+            resources.ApplyResources(this.emptySpaceItem3, "emptySpaceItem3");
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 242);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
@@ -529,16 +576,17 @@
             // 
             // dgv2
             // 
+            resources.ApplyResources(this.dgv2, "dgv2");
             this.dgv2.AllowUserToAddRows = false;
             this.dgv2.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_invNo,
@@ -553,25 +601,24 @@
             this.col_newBalance,
             this.col_sanadBalance,
             this.col_transactionCode});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv2.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv2.DefaultCellStyle = dataGridViewCellStyle27;
             this.dgv2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            resources.ApplyResources(this.dgv2, "dgv2");
             this.dgv2.Name = "dgv2";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dgv2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellDoubleClick);
             this.dgv2.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellEndEdit);
@@ -601,54 +648,54 @@
             // 
             // col_invAmount
             // 
-            dataGridViewCellStyle7.Format = "N3";
-            dataGridViewCellStyle7.NullValue = null;
-            this.col_invAmount.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle21.Format = "N3";
+            dataGridViewCellStyle21.NullValue = null;
+            this.col_invAmount.DefaultCellStyle = dataGridViewCellStyle21;
             resources.ApplyResources(this.col_invAmount, "col_invAmount");
             this.col_invAmount.Name = "col_invAmount";
             this.col_invAmount.ReadOnly = true;
             // 
             // col_retruned
             // 
-            dataGridViewCellStyle8.Format = "N3";
-            dataGridViewCellStyle8.NullValue = "0";
-            this.col_retruned.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle22.Format = "N3";
+            dataGridViewCellStyle22.NullValue = "0";
+            this.col_retruned.DefaultCellStyle = dataGridViewCellStyle22;
             resources.ApplyResources(this.col_retruned, "col_retruned");
             this.col_retruned.Name = "col_retruned";
             this.col_retruned.ReadOnly = true;
             // 
             // col_oldPaid
             // 
-            dataGridViewCellStyle9.Format = "N3";
-            dataGridViewCellStyle9.NullValue = "0";
-            this.col_oldPaid.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle23.Format = "N3";
+            dataGridViewCellStyle23.NullValue = "0";
+            this.col_oldPaid.DefaultCellStyle = dataGridViewCellStyle23;
             resources.ApplyResources(this.col_oldPaid, "col_oldPaid");
             this.col_oldPaid.Name = "col_oldPaid";
             // 
             // col_oldBalance
             // 
             this.col_oldBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle10.Format = "N3";
-            dataGridViewCellStyle10.NullValue = "0";
-            this.col_oldBalance.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle24.Format = "N3";
+            dataGridViewCellStyle24.NullValue = "0";
+            this.col_oldBalance.DefaultCellStyle = dataGridViewCellStyle24;
             resources.ApplyResources(this.col_oldBalance, "col_oldBalance");
             this.col_oldBalance.Name = "col_oldBalance";
             this.col_oldBalance.ReadOnly = true;
             // 
             // col_currentPaid
             // 
-            dataGridViewCellStyle11.Format = "N3";
-            dataGridViewCellStyle11.NullValue = "0";
-            this.col_currentPaid.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle25.Format = "N3";
+            dataGridViewCellStyle25.NullValue = "0";
+            this.col_currentPaid.DefaultCellStyle = dataGridViewCellStyle25;
             resources.ApplyResources(this.col_currentPaid, "col_currentPaid");
             this.col_currentPaid.Name = "col_currentPaid";
             // 
             // col_newBalance
             // 
             this.col_newBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.Format = "N3";
-            dataGridViewCellStyle12.NullValue = "0";
-            this.col_newBalance.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle26.Format = "N3";
+            dataGridViewCellStyle26.NullValue = "0";
+            this.col_newBalance.DefaultCellStyle = dataGridViewCellStyle26;
             resources.ApplyResources(this.col_newBalance, "col_newBalance");
             this.col_newBalance.Name = "col_newBalance";
             // 
@@ -664,21 +711,21 @@
             // 
             // label3
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label3, "label3");
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Name = "label3";
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Name = "label2";
             // 
             // txtTotalChoseInvoices
             // 
+            resources.ApplyResources(this.txtTotalChoseInvoices, "txtTotalChoseInvoices");
             this.txtTotalChoseInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalChoseInvoices.DicemalDigits = 0;
-            resources.ApplyResources(this.txtTotalChoseInvoices, "txtTotalChoseInvoices");
             this.txtTotalChoseInvoices.maxmumNumber = 0D;
             this.txtTotalChoseInvoices.minimumNumber = 0D;
             this.txtTotalChoseInvoices.Name = "txtTotalChoseInvoices";
@@ -691,9 +738,9 @@
             // 
             // txtTotalInvoices
             // 
+            resources.ApplyResources(this.txtTotalInvoices, "txtTotalInvoices");
             this.txtTotalInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalInvoices.DicemalDigits = 0;
-            resources.ApplyResources(this.txtTotalInvoices, "txtTotalInvoices");
             this.txtTotalInvoices.maxmumNumber = 0D;
             this.txtTotalInvoices.minimumNumber = 0D;
             this.txtTotalInvoices.Name = "txtTotalInvoices";
@@ -706,15 +753,15 @@
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Name = "label1";
             // 
             // txtNoOfInvoices
             // 
+            resources.ApplyResources(this.txtNoOfInvoices, "txtNoOfInvoices");
             this.txtNoOfInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNoOfInvoices.DicemalDigits = 0;
-            resources.ApplyResources(this.txtNoOfInvoices, "txtNoOfInvoices");
             this.txtNoOfInvoices.maxmumNumber = 0D;
             this.txtNoOfInvoices.minimumNumber = 0D;
             this.txtNoOfInvoices.Name = "txtNoOfInvoices";
@@ -727,15 +774,15 @@
             // 
             // label4
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label4, "label4");
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Name = "label4";
             // 
             // txtTotalPaid
             // 
+            resources.ApplyResources(this.txtTotalPaid, "txtTotalPaid");
             this.txtTotalPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalPaid.DicemalDigits = 0;
-            resources.ApplyResources(this.txtTotalPaid, "txtTotalPaid");
             this.txtTotalPaid.maxmumNumber = 0D;
             this.txtTotalPaid.minimumNumber = 0D;
             this.txtTotalPaid.Name = "txtTotalPaid";
@@ -748,15 +795,15 @@
             // 
             // label5
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Name = "label5";
             // 
             // txtBalance
             // 
+            resources.ApplyResources(this.txtBalance, "txtBalance");
             this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBalance.DicemalDigits = 0;
-            resources.ApplyResources(this.txtBalance, "txtBalance");
             this.txtBalance.maxmumNumber = 0D;
             this.txtBalance.minimumNumber = 0D;
             this.txtBalance.Name = "txtBalance";
@@ -769,6 +816,7 @@
             // 
             // cheuqeOrCash
             // 
+            resources.ApplyResources(this.cheuqeOrCash, "cheuqeOrCash");
             this.cheuqeOrCash.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
@@ -783,62 +831,61 @@
             this.cheuqeOrCash.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.cheuqeOrCash.BackgroundStyle.BorderTopWidth = 1;
             this.cheuqeOrCash.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.cheuqeOrCash, "cheuqeOrCash");
             this.cheuqeOrCash.Name = "cheuqeOrCash";
             // 
             // Account
             // 
-            this.Account.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.Account, "Account");
+            this.Account.BackColor = System.Drawing.Color.Transparent;
             this.Account.Name = "Account";
             this.Account.Load += new System.EventHandler(this.Account_Load);
             // 
             // CashAcc
             // 
-            this.CashAcc.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.CashAcc, "CashAcc");
+            this.CashAcc.BackColor = System.Drawing.Color.Transparent;
             this.CashAcc.Name = "CashAcc";
             // 
             // acc_year
             // 
-            this.acc_year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.acc_year, "acc_year");
+            this.acc_year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.acc_year.Name = "acc_year";
             // 
             // txt_sanad_type2
             // 
-            this.txt_sanad_type2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txt_sanad_type2, "txt_sanad_type2");
+            this.txt_sanad_type2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_sanad_type2.Name = "txt_sanad_type2";
             // 
             // Payment_Type
             // 
-            this.Payment_Type.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.Payment_Type, "Payment_Type");
+            this.Payment_Type.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Payment_Type.Name = "Payment_Type";
             // 
             // txtStore_ID
             // 
-            this.txtStore_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtStore_ID, "txtStore_ID");
+            this.txtStore_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStore_ID.Name = "txtStore_ID";
             // 
             // txt_source_code
             // 
-            this.txt_source_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txt_source_code, "txt_source_code");
+            this.txt_source_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_source_code.Name = "txt_source_code";
             // 
             // user_id
             // 
-            this.user_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.user_id, "user_id");
+            this.user_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.user_id.Name = "user_id";
             // 
             // button1
             // 
-            this.button1.Image = global::Report_Pro.Properties.Resources.Add_Icon3;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::Report_Pro.Properties.Resources.Add_Icon3;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -850,16 +897,16 @@
             // 
             // label18
             // 
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label18, "label18");
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Name = "label18";
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // accountBalance
             // 
+            resources.ApplyResources(this.accountBalance, "accountBalance");
             this.accountBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.accountBalance.DicemalDigits = 0;
-            resources.ApplyResources(this.accountBalance, "accountBalance");
             this.accountBalance.maxmumNumber = 0D;
             this.accountBalance.minimumNumber = 0D;
             this.accountBalance.Name = "accountBalance";
@@ -872,6 +919,7 @@
             // 
             // simpleButton1
             // 
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.FontStyleDelta = ((System.Drawing.FontStyle)(resources.GetObject("simpleButton1.Appearance.FontStyleDelta")));
             this.simpleButton1.Appearance.Options.UseFont = true;
@@ -879,25 +927,25 @@
             this.simpleButton1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // label19
             // 
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label19, "label19");
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Name = "label19";
             // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Name = "textBox1";
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // simpleButton2
             // 
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.FontStyleDelta = ((System.Drawing.FontStyle)(resources.GetObject("simpleButton2.Appearance.FontStyleDelta")));
             this.simpleButton2.Appearance.Options.UseFont = true;
@@ -905,26 +953,25 @@
             this.simpleButton2.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // label20
             // 
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label20, "label20");
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Name = "label20";
             // 
             // label21
             // 
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label21, "label21");
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.Name = "label21";
             // 
             // label22
             // 
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label22, "label22");
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Name = "label22";
             // 
             // ChAllAccount
@@ -934,14 +981,28 @@
             this.ChAllAccount.UseVisualStyleBackColor = true;
             this.ChAllAccount.CheckedChanged += new System.EventHandler(this.ChAllAccount_CheckedChanged);
             // 
+            // Project
+            // 
+            resources.ApplyResources(this.Project, "Project");
+            this.Project.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Project.Name = "Project";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Name = "label23";
+            // 
             // frm_Cash_Receipt
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            resources.ApplyResources(this, "$this");
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("frm_Cash_Receipt.Appearance.BackColor")));
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseTextOptions = true;
             this.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.Project);
             this.Controls.Add(this.ChAllAccount);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
@@ -1062,6 +1123,8 @@
             this.Controls.SetChildIndex(this.label21, 0);
             this.Controls.SetChildIndex(this.label22, 0);
             this.Controls.SetChildIndex(this.ChAllAccount, 0);
+            this.Controls.SetChildIndex(this.Project, 0);
+            this.Controls.SetChildIndex(this.label23, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).EndInit();
@@ -1154,5 +1217,7 @@
         public System.Windows.Forms.Label label21;
         public System.Windows.Forms.Label label22;
         private System.Windows.Forms.CheckBox ChAllAccount;
+        private MyControls.UC_Project Project;
+        public System.Windows.Forms.Label label23;
     }
 }

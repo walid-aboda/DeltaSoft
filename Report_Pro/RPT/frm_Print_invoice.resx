@@ -182,6 +182,10 @@
   <data name="&gt;&gt;buttonX4.Name" xml:space="preserve">
     <value>buttonX4</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>613, 231</value>
+  </data>
   <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -191,22 +195,21 @@
   <data name="&gt;&gt;txtYear.Name" xml:space="preserve">
     <value>txtYear</value>
   </data>
-  <data name="&gt;&gt;labelX1.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
   <data name="txtSer_1.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtYear.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txtYear.ButtonCustom2.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>frm_Print_invoice</value>
   </data>
+  <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
   <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Branch.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 28</value>
   </data>
@@ -228,11 +231,14 @@
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
+  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
   <data name="buttonX4.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 255</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Type" xml:space="preserve">
+    <value>DevComponents.Editors.IntegerInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -279,7 +285,7 @@
   <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="txtYear.ButtonCustom2.Text" xml:space="preserve">
+  <data name="txtYear.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;Transaction.ZOrder" xml:space="preserve">
@@ -312,9 +318,6 @@
   <data name="&gt;&gt;txtSer_1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="txtYear.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="&gt;&gt;Branch.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
@@ -327,8 +330,8 @@
   <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
-    <value>buttonX2</value>
+  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 45</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 17</value>
@@ -381,17 +384,11 @@
   <data name="txtYear.Location" type="System.Drawing.Point, System.Drawing">
     <value>352, 78</value>
   </data>
-  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
-  </data>
   <data name="&gt;&gt;txtSer_1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="&gt;&gt;txtSer_1.Parent" xml:space="preserve">
     <value>groupPanel1</value>
-  </data>
-  <data name="txtSer_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 103</value>
   </data>
   <data name="txtSer_1.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -420,6 +417,9 @@
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
+  <data name="&gt;&gt;buttonX4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnPrint.Text" xml:space="preserve">
     <value>Print Imprted Invoices</value>
   </data>
@@ -441,14 +441,11 @@
   <data name="txtYear.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 53</value>
-  </data>
-  <data name="txtYear.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="labelX2.Text" xml:space="preserve">
     <value>Transaction</value>
@@ -474,6 +471,9 @@
   <data name="txtSer_1.ButtonCustom2.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 17</value>
   </data>
@@ -482,9 +482,6 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtYear.ButtonDropDown.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -534,11 +531,11 @@
   <data name="txtSer.ButtonCustom2.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="Branch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
   </data>
   <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -552,8 +549,8 @@
   <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
     <value>labelX6</value>
   </data>
-  <data name="Branch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;labelX1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
   </data>
   <data name="txtYear.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -564,20 +561,23 @@
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 17</value>
   </data>
+  <data name="txtYear.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;labelX2.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;buttonX3.Name" xml:space="preserve">
     <value>buttonX3</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>613, 231</value>
+  <data name="txtYear.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtYear.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 45</value>
+  <data name="txtSer_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 103</value>
   </data>
   <data name="&gt;&gt;buttonX4.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -591,14 +591,11 @@
   <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;buttonX3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;buttonX4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
+    <value>buttonX2</value>
   </data>
   <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -624,8 +621,11 @@
   <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;txtYear.Type" xml:space="preserve">
-    <value>DevComponents.Editors.IntegerInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtYear.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

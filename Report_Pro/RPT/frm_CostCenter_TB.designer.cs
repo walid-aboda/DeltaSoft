@@ -141,42 +141,37 @@
             // 
             // UC_Catogry
             // 
-            this.UC_Catogry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Catogry.Location = new System.Drawing.Point(506, 89);
             this.UC_Catogry.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Catogry.Name = "UC_Catogry";
-            this.UC_Catogry.Size = new System.Drawing.Size(310, 23);
+            this.UC_Catogry.Size = new System.Drawing.Size(310, 20);
             this.UC_Catogry.TabIndex = 300;
             // 
             // UC_cost
             // 
-            this.UC_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_cost.Location = new System.Drawing.Point(506, 63);
             this.UC_cost.Margin = new System.Windows.Forms.Padding(0);
             this.UC_cost.Name = "UC_cost";
-            this.UC_cost.Size = new System.Drawing.Size(310, 23);
+            this.UC_cost.Size = new System.Drawing.Size(310, 20);
             this.UC_cost.TabIndex = 299;
             // 
             // UC_Acc
             // 
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Acc.Location = new System.Drawing.Point(506, 36);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(310, 24);
+            this.UC_Acc.Size = new System.Drawing.Size(310, 20);
             this.UC_Acc.TabIndex = 298;
             // 
             // UC_Branch
             // 
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.UC_Branch.Location = new System.Drawing.Point(506, 10);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(310, 24);
+            this.UC_Branch.Size = new System.Drawing.Size(310, 20);
             this.UC_Branch.TabIndex = 297;
             // 
             // labelX5
@@ -186,7 +181,7 @@
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
             this.labelX5.Location = new System.Drawing.Point(819, 14);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(43, 24);
+            this.labelX5.Size = new System.Drawing.Size(29, 17);
             this.labelX5.TabIndex = 296;
             this.labelX5.Text = "الفرع";
             // 
@@ -197,7 +192,7 @@
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             this.labelX4.Location = new System.Drawing.Point(819, 92);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(63, 24);
+            this.labelX4.Size = new System.Drawing.Size(43, 17);
             this.labelX4.TabIndex = 283;
             this.labelX4.Text = "التصنيف";
             // 
@@ -208,7 +203,7 @@
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
             this.labelX3.Location = new System.Drawing.Point(819, 66);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(92, 24);
+            this.labelX3.Size = new System.Drawing.Size(62, 17);
             this.labelX3.TabIndex = 282;
             this.labelX3.Text = "مركز التكلفة";
             // 
@@ -219,7 +214,7 @@
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
             this.labelX6.Location = new System.Drawing.Point(819, 40);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(65, 24);
+            this.labelX6.Size = new System.Drawing.Size(44, 17);
             this.labelX6.TabIndex = 281;
             this.labelX6.Text = "الحساب";
             // 
@@ -228,7 +223,7 @@
             this.ToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ToDate.Location = new System.Drawing.Point(535, 117);
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(97, 27);
+            this.ToDate.Size = new System.Drawing.Size(97, 21);
             this.ToDate.TabIndex = 292;
             // 
             // FromDate
@@ -236,7 +231,7 @@
             this.FromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FromDate.Location = new System.Drawing.Point(717, 117);
             this.FromDate.Name = "FromDate";
-            this.FromDate.Size = new System.Drawing.Size(97, 27);
+            this.FromDate.Size = new System.Drawing.Size(97, 21);
             this.FromDate.TabIndex = 291;
             // 
             // labelX2
@@ -246,7 +241,7 @@
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Location = new System.Drawing.Point(630, 119);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(72, 24);
+            this.labelX2.Size = new System.Drawing.Size(49, 17);
             this.labelX2.TabIndex = 268;
             this.labelX2.Text = "الي تاريخ";
             // 
@@ -257,7 +252,7 @@
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
             this.labelX1.Location = new System.Drawing.Point(816, 119);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(67, 24);
+            this.labelX1.Size = new System.Drawing.Size(46, 17);
             this.labelX1.TabIndex = 267;
             this.labelX1.Text = "من تاريخ";
             // 
@@ -277,7 +272,7 @@
             // 
             // frm_CostCenter_TB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 472);
             this.Controls.Add(this.crystalReportViewer1);

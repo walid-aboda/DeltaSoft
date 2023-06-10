@@ -172,7 +172,7 @@
             this.rdoNotPaid.AutoSize = true;
             this.rdoNotPaid.BackColor = System.Drawing.Color.Transparent;
             this.rdoNotPaid.Location = new System.Drawing.Point(555, 63);
-            this.rdoNotPaid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoNotPaid.Margin = new System.Windows.Forms.Padding(2);
             this.rdoNotPaid.Name = "rdoNotPaid";
             this.rdoNotPaid.Size = new System.Drawing.Size(70, 17);
             this.rdoNotPaid.TabIndex = 15;
@@ -186,7 +186,7 @@
             this.rdoAll.BackColor = System.Drawing.Color.Transparent;
             this.rdoAll.Checked = true;
             this.rdoAll.Location = new System.Drawing.Point(651, 63);
-            this.rdoAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoAll.Margin = new System.Windows.Forms.Padding(2);
             this.rdoAll.Name = "rdoAll";
             this.rdoAll.Size = new System.Drawing.Size(55, 17);
             this.rdoAll.TabIndex = 14;
@@ -202,7 +202,7 @@
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
             this.labelX3.Location = new System.Drawing.Point(709, 12);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(24, 15);
+            this.labelX3.Size = new System.Drawing.Size(29, 17);
             this.labelX3.TabIndex = 13;
             this.labelX3.Text = "الفرع";
             // 
@@ -213,7 +213,7 @@
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Location = new System.Drawing.Point(505, 37);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(42, 15);
+            this.labelX2.Size = new System.Drawing.Size(47, 17);
             this.labelX2.TabIndex = 12;
             this.labelX2.Text = "الي تاريخ";
             // 
@@ -224,18 +224,17 @@
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
             this.labelX1.Location = new System.Drawing.Point(710, 37);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 15);
+            this.labelX1.Size = new System.Drawing.Size(44, 17);
             this.labelX1.TabIndex = 11;
             this.labelX1.Text = "من تاريخ";
             // 
             // Branch_
             // 
             this.Branch_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Branch_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Branch_.Location = new System.Drawing.Point(397, 9);
             this.Branch_.Margin = new System.Windows.Forms.Padding(0);
             this.Branch_.Name = "Branch_";
-            this.Branch_.Size = new System.Drawing.Size(310, 23);
+            this.Branch_.Size = new System.Drawing.Size(310, 20);
             this.Branch_.TabIndex = 10;
             this.Branch_.Load += new System.EventHandler(this.uC_AccBranch1_Load);
             // 

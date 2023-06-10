@@ -209,7 +209,7 @@ namespace Report_Pro.CTR
                     sheek_date = dal.IsDateTime(Check_Date.Text.ToString()) ? Check_Date.Value.Date : (DateTime)System.Data.SqlTypes.SqlDateTime.Null,
                     notes = txtCust.Text,
                     shequeBank_no = CustBank.ID.Text,
-
+                    PROJECT_NO = Project.ID.Text
                 });
 
 
@@ -244,6 +244,7 @@ namespace Report_Pro.CTR
                     sheek_date = /*cheuqeOrCash.Text == "S" */dal.IsDateTime(Check_Date.Text.ToString()) ? Check_Date.Value.Date : (DateTime)System.Data.SqlTypes.SqlDateTime.Null,
                     notes = txtCust.Text,
                     shequeBank_no = CustBank.ID.Text,
+                    PROJECT_NO = Project.ID.Text
                 });
 
                 sdb.serial_nos.Where(p => p.ACC_YEAR == acc_year.Text && p.BRANCH_CODE == txtStore_ID.Text)
@@ -338,6 +339,7 @@ namespace Report_Pro.CTR
                    sheek_date = dal.IsDateTime(Check_Date.Text.ToString()) ? Check_Date.Value.Date : (DateTime)System.Data.SqlTypes.SqlDateTime.Null,
                     notes = txtCust.Text,
                     shequeBank_no = CustBank.ID.Text,
+                    PROJECT_NO = Project.ID.Text
 
                 });
 
@@ -373,6 +375,7 @@ namespace Report_Pro.CTR
                    sheek_date = /*cheuqeOrCash.Text == "S" */dal.IsDateTime(Check_Date.Text.ToString()) ? Check_Date.Value.Date : (DateTime)System.Data.SqlTypes.SqlDateTime.Null,
                     notes = txtCust.Text,
                     shequeBank_no = CustBank.ID.Text,
+                    PROJECT_NO = Project.ID.Text
                 });
             }
 
@@ -1217,7 +1220,7 @@ namespace Report_Pro.CTR
 
             DataTable dt_ = dal.getDataTabl_1(@" select * from (SELECT ACC_YEAR,ACC_NO,BRANCH_code,ser_no,COST_CENTER,meno,g_date,sanad_no,SANAD_TYPE,sp_ser_no
             ,user_name,desc2,sheek_no,sheek_bank,sheek_date,sheek_or_cash,notes,SOURCE_CODE,Wh_Branch_Code,Sheek,payType_No,shequeBank_no
-            ,Dafter_no,Dafter_ser,SANAD_TYPE2,desc_E  FROM daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + txtStore_ID.Text + "' and  ser_no ='" + frm.txtSearch.t.Text + "' and  meno>0) as A , (select acc_no as acc_cr,desc2 as desc_cr   from daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + txtStore_ID.Text + "' and  ser_no ='" + frm.txtSearch.t.Text + "' and loh>0)  as cr_acc ");
+            ,Dafter_no,Dafter_ser,SANAD_TYPE2,desc_E,PROJECT_NO  FROM daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + txtStore_ID.Text + "' and  ser_no ='" + frm.txtSearch.t.Text + "' and  meno>0) as A , (select acc_no as acc_cr,desc2 as desc_cr   from daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + txtStore_ID.Text + "' and  ser_no ='" + frm.txtSearch.t.Text + "' and loh>0)  as cr_acc ");
 
             ClearTextBoxes();
             //G_Search.Visible = false;
@@ -1244,6 +1247,7 @@ namespace Report_Pro.CTR
                 txtCust.Text = dt_.Rows[0]["notes"].ToString();
                 txtDescr_E.Text = dt_.Rows[0]["desc_E"].ToString();
                 cheuqeOrCash.Text = dt_.Rows[0]["sheek_or_cash"].ToString();
+                Project.ID.Text = dt_.Rows[0]["PROJECT_NO"].ToString();
                 LoadSanad(txt_sandNo.TextS, acc_year.Text, txtStore_ID.Text, txt_source_code.Text);
 
             }

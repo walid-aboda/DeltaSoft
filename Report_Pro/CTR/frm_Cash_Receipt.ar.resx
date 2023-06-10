@@ -119,13 +119,16 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="headLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1454, 35</value>
+    <value>1468, 35</value>
   </data>
   <data name="headLbl.Text" xml:space="preserve">
     <value>سند قبض</value>
   </data>
   <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 108</value>
+    <value>524, 108</value>
+  </data>
+  <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>825, 332</value>
   </data>
   <data name="Cost.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 441</value>
@@ -152,13 +155,13 @@
     <value>البنك</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 317</value>
+    <value>11, 316</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>رقم الشيك</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 292</value>
+    <value>286, 316</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>تاريخ الشيك</value>
@@ -301,7 +304,7 @@
     <value>164, 20</value>
   </data>
   <data name="Check_Date.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 292</value>
+    <value>357, 316</value>
   </data>
   <data name="Check_Date.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -316,13 +319,13 @@
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="txt_Check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 317</value>
+    <value>110, 316</value>
   </data>
   <data name="cmb_Pay.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 243</value>
   </data>
   <data name="cmb_Pay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 21</value>
+    <value>349, 21</value>
   </data>
   <data name="paied_amount.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 195</value>
@@ -385,7 +388,7 @@
     <value>110, 219</value>
   </data>
   <data name="Account.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 20</value>
+    <value>349, 20</value>
   </data>
   <data name="CashAcc.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 417</value>
@@ -553,10 +556,40 @@
     <value>11, 147</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ChAllAccount.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ChAllAccount.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="ChAllAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 220</value>
+  </data>
+  <data name="ChAllAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 45</value>
+  </data>
+  <data name="ChAllAccount.Text" xml:space="preserve">
+    <value>كل الحسابات</value>
+  </data>
+  <data name="ChAllAccount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Project.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 292</value>
+  </data>
+  <data name="Project.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 20</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 292</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>المشروع</value>
+  </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1454, 754</value>
+    <value>1468, 761</value>
   </data>
 </root>

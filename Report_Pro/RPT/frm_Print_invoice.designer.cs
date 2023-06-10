@@ -235,14 +235,12 @@
             // Transaction
             // 
             resources.ApplyResources(this.Transaction, "Transaction");
-            this.Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Transaction.Name = "Transaction";
             // 
             // Branch
             // 
             resources.ApplyResources(this.Branch, "Branch");
             this.Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.Branch.Name = "Branch";
             // 

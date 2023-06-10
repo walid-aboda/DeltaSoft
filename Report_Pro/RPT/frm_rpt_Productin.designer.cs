@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_Productin));
             this.btn_preview1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.label5 = new System.Windows.Forms.Label();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -94,24 +94,24 @@
             // 
             // barDockControlTop
             // 
-            this.barDockControlTop.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
-            // 
+            //this.barDockControlTop.CausesValidation = false;
+            //resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            //// 
+            //// barDockControlBottom
+            //// 
+            //this.barDockControlBottom.CausesValidation = false;
+            //resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            //// 
+            //// barDockControlLeft
+            //// 
+            //this.barDockControlLeft.CausesValidation = false;
+            //resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            //// 
+            //// barDockControlRight
+            //// 
+            //this.barDockControlRight.CausesValidation = false;
+            //resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
+            //// 
             // headLbl
             // 
             resources.ApplyResources(this.headLbl, "headLbl");
@@ -527,10 +527,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frm_rpt_Productin";
-            this.Controls.SetChildIndex(this.barDockControlTop, 0);
-            this.Controls.SetChildIndex(this.barDockControlBottom, 0);
-            this.Controls.SetChildIndex(this.barDockControlRight, 0);
-            this.Controls.SetChildIndex(this.barDockControlLeft, 0);
+            //this.Controls.SetChildIndex(this.barDockControlTop, 0);
+            //this.Controls.SetChildIndex(this.barDockControlBottom, 0);
+            //this.Controls.SetChildIndex(this.barDockControlRight, 0);
+            //this.Controls.SetChildIndex(this.barDockControlLeft, 0);
             this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.groupBox1.ResumeLayout(false);
@@ -590,9 +590,9 @@
         private System.Windows.Forms.TextBox txtcoileCod;
         private System.Windows.Forms.Label label6;
         private DevExpress.XtraBars.BarButtonItem btn_preview1;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        //private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        ////private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        ////private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        ////private DevExpress.XtraBars.BarDockControl barDockControlRight;
     }
 }

@@ -81,7 +81,7 @@
             // 
             // headLbl
             // 
-            this.headLbl.Size = new System.Drawing.Size(1000, 35);
+            this.headLbl.Size = new System.Drawing.Size(1014, 35);
             this.headLbl.Tag = "Coils Report";
             // 
             // groupBox1
@@ -109,9 +109,9 @@
             this.groupBox1.Controls.Add(this.txtMaterialID);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 94);
+            this.groupBox1.Location = new System.Drawing.Point(0, 62);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1000, 276);
+            this.groupBox1.Size = new System.Drawing.Size(1014, 276);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -500,7 +500,6 @@
             // 
             // txtGroup
             // 
-            this.txtGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGroup.Location = new System.Drawing.Point(103, 42);
             this.txtGroup.Margin = new System.Windows.Forms.Padding(0);
             this.txtGroup.Name = "txtGroup";
@@ -688,9 +687,9 @@
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 370);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 338);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1000, 272);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1014, 311);
             this.crystalReportViewer1.TabIndex = 10;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -700,7 +699,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 642);
+            this.ClientSize = new System.Drawing.Size(1014, 649);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_Rpt_Coils";

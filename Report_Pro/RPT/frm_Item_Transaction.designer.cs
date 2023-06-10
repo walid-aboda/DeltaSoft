@@ -330,18 +330,17 @@
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
             this.labelX9.Location = new System.Drawing.Point(915, 116);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(45, 15);
+            this.labelX9.Size = new System.Drawing.Size(50, 17);
             this.labelX9.TabIndex = 313;
             this.labelX9.Text = "المجموعة";
             // 
             // Uc_Group1
             // 
             this.Uc_Group1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Uc_Group1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uc_Group1.Location = new System.Drawing.Point(586, 113);
+            this.Uc_Group1.Location = new System.Drawing.Point(524, 113);
             this.Uc_Group1.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Group1.Name = "Uc_Group1";
-            this.Uc_Group1.Size = new System.Drawing.Size(322, 23);
+            this.Uc_Group1.Size = new System.Drawing.Size(384, 20);
             this.Uc_Group1.TabIndex = 311;
             // 
             // labelX6
@@ -351,18 +350,17 @@
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
             this.labelX6.Location = new System.Drawing.Point(915, 92);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(49, 15);
+            this.labelX6.Size = new System.Drawing.Size(53, 17);
             this.labelX6.TabIndex = 310;
             this.labelX6.Text = "نوع الحركة";
             // 
             // UC_Transaction
             // 
             this.UC_Transaction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UC_Transaction.Location = new System.Drawing.Point(586, 88);
+            this.UC_Transaction.Location = new System.Drawing.Point(524, 88);
             this.UC_Transaction.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Transaction.Name = "UC_Transaction";
-            this.UC_Transaction.Size = new System.Drawing.Size(322, 23);
+            this.UC_Transaction.Size = new System.Drawing.Size(384, 20);
             this.UC_Transaction.TabIndex = 309;
             // 
             // UC_Items
@@ -371,7 +369,7 @@
             this.UC_Items.Location = new System.Drawing.Point(524, 62);
             this.UC_Items.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Items.Name = "UC_Items";
-            this.UC_Items.Size = new System.Drawing.Size(384, 23);
+            this.UC_Items.Size = new System.Drawing.Size(384, 20);
             this.UC_Items.TabIndex = 308;
             // 
             // labelX3
@@ -381,7 +379,7 @@
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
             this.labelX3.Location = new System.Drawing.Point(915, 65);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(30, 15);
+            this.labelX3.Size = new System.Drawing.Size(34, 17);
             this.labelX3.TabIndex = 303;
             this.labelX3.Text = "الصنف";
             // 
@@ -392,7 +390,7 @@
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Location = new System.Drawing.Point(915, 39);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(28, 15);
+            this.labelX2.Size = new System.Drawing.Size(32, 17);
             this.labelX2.TabIndex = 298;
             this.labelX2.Text = "المورد";
             // 
@@ -403,8 +401,7 @@
             this.UC_Acc.Location = new System.Drawing.Point(524, 35);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(384, 25);
+            this.UC_Acc.Size = new System.Drawing.Size(384, 20);
             this.UC_Acc.TabIndex = 306;
             // 
             // labelX4
@@ -414,7 +411,7 @@
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             this.labelX4.Location = new System.Drawing.Point(915, 11);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(24, 15);
+            this.labelX4.Size = new System.Drawing.Size(29, 17);
             this.labelX4.TabIndex = 296;
             this.labelX4.Text = "الفرع";
             // 
@@ -426,7 +423,7 @@
             this.UC_Branch.Location = new System.Drawing.Point(524, 5);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(384, 24);
+            this.UC_Branch.Size = new System.Drawing.Size(384, 20);
             this.UC_Branch.TabIndex = 305;
             // 
             // ToDate_
@@ -452,7 +449,7 @@
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
             this.labelX7.Location = new System.Drawing.Point(439, 35);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(42, 15);
+            this.labelX7.Size = new System.Drawing.Size(47, 17);
             this.labelX7.TabIndex = 268;
             this.labelX7.Text = "الي تاريخ";
             // 
@@ -463,7 +460,7 @@
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
             this.labelX8.Location = new System.Drawing.Point(439, 7);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(40, 15);
+            this.labelX8.Size = new System.Drawing.Size(44, 17);
             this.labelX8.TabIndex = 267;
             this.labelX8.Text = "من تاريخ";
             // 

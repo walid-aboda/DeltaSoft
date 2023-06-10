@@ -53,9 +53,8 @@
             this.groupPanel1.Controls.Add(this.btnOption);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1200, 73);
+            this.groupPanel1.Size = new System.Drawing.Size(800, 50);
             // 
             // 
             // 
@@ -82,10 +81,9 @@
             // 
             this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReport.Location = new System.Drawing.Point(885, 13);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReport.Location = new System.Drawing.Point(590, 9);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(124, 47);
+            this.btnReport.Size = new System.Drawing.Size(83, 32);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "التقرير";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
@@ -94,10 +92,9 @@
             // 
             this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnOption.Location = new System.Drawing.Point(1018, 13);
-            this.btnOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOption.Location = new System.Drawing.Point(679, 9);
             this.btnOption.Name = "btnOption";
-            this.btnOption.Size = new System.Drawing.Size(124, 47);
+            this.btnOption.Size = new System.Drawing.Size(83, 32);
             this.btnOption.TabIndex = 0;
             this.btnOption.Text = "خيارات";
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
@@ -108,10 +105,9 @@
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 73);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 50);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1200, 585);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 400);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -129,10 +125,9 @@
             this.groupPanel2.Controls.Add(this.labelX1);
             this.groupPanel2.Controls.Add(this.Branch_);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel2.Location = new System.Drawing.Point(0, 73);
-            this.groupPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanel2.Location = new System.Drawing.Point(0, 50);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1200, 231);
+            this.groupPanel2.Size = new System.Drawing.Size(800, 158);
             // 
             // 
             // 
@@ -161,22 +156,19 @@
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(1077, 63);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX4.Location = new System.Drawing.Point(718, 43);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(63, 24);
+            this.labelX4.Size = new System.Drawing.Size(43, 17);
             this.labelX4.TabIndex = 299;
             this.labelX4.Text = "الحساب";
             // 
             // Acc_
             // 
             this.Acc_.BackColor = System.Drawing.Color.Transparent;
-            this.Acc_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Acc_.Location = new System.Drawing.Point(606, 54);
+            this.Acc_.Location = new System.Drawing.Point(404, 37);
             this.Acc_.Margin = new System.Windows.Forms.Padding(0);
             this.Acc_.Name = "Acc_";
-            this.Acc_.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.Acc_.Size = new System.Drawing.Size(462, 32);
+            this.Acc_.Size = new System.Drawing.Size(309, 20);
             this.Acc_.TabIndex = 298;
             // 
             // labelX3
@@ -184,29 +176,26 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(1077, 22);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX3.Location = new System.Drawing.Point(718, 15);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(42, 24);
+            this.labelX3.Size = new System.Drawing.Size(29, 17);
             this.labelX3.TabIndex = 297;
             this.labelX3.Text = "الفرع";
             // 
             // ToDate
             // 
             this.ToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ToDate.Location = new System.Drawing.Point(606, 92);
-            this.ToDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ToDate.Location = new System.Drawing.Point(404, 63);
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(144, 27);
+            this.ToDate.Size = new System.Drawing.Size(97, 20);
             this.ToDate.TabIndex = 296;
             // 
             // FromDate
             // 
             this.FromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FromDate.Location = new System.Drawing.Point(924, 92);
-            this.FromDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FromDate.Location = new System.Drawing.Point(616, 63);
             this.FromDate.Name = "FromDate";
-            this.FromDate.Size = new System.Drawing.Size(144, 27);
+            this.FromDate.Size = new System.Drawing.Size(97, 20);
             this.FromDate.TabIndex = 295;
             // 
             // labelX2
@@ -214,10 +203,9 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(758, 95);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX2.Location = new System.Drawing.Point(505, 65);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(70, 24);
+            this.labelX2.Size = new System.Drawing.Size(47, 17);
             this.labelX2.TabIndex = 294;
             this.labelX2.Text = "الي تاريخ";
             // 
@@ -226,10 +214,9 @@
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(1077, 95);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX1.Location = new System.Drawing.Point(718, 65);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(65, 24);
+            this.labelX1.Size = new System.Drawing.Size(44, 17);
             this.labelX1.TabIndex = 293;
             this.labelX1.Text = "من تاريخ";
             // 
@@ -237,23 +224,21 @@
             // 
             this.Branch_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Branch_.BackColor = System.Drawing.Color.Transparent;
-            this.Branch_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Branch_.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Branch_.Location = new System.Drawing.Point(606, 18);
+            this.Branch_.Location = new System.Drawing.Point(404, 12);
             this.Branch_.Margin = new System.Windows.Forms.Padding(0);
             this.Branch_.Name = "Branch_";
-            this.Branch_.Size = new System.Drawing.Size(462, 32);
+            this.Branch_.Size = new System.Drawing.Size(309, 20);
             this.Branch_.TabIndex = 0;
             // 
             // frm_rpt_Galvanaize
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 658);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupPanel2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.groupPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_rpt_Galvanaize";
             this.Text = "frm_rpt_Galvanaize";
             this.groupPanel1.ResumeLayout(false);

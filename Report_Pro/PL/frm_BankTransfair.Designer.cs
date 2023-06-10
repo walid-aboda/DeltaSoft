@@ -38,10 +38,10 @@
             DevExpress.XtraReports.UserDesigner.XRDesignPanelListener xrDesignPanelListener1 = new DevExpress.XtraReports.UserDesigner.XRDesignPanelListener();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_BankTransfair));
             this.xrDesignBarManager1 = new DevExpress.XtraReports.UserDesigner.XRDesignBarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            //this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.recentlyUsedItemsComboBox1 = new DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox();
             this.designRepositoryItemComboBox1 = new DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -127,10 +127,10 @@
             // 
             // xrDesignBarManager1
             // 
-            this.xrDesignBarManager1.DockControls.Add(this.barDockControlTop);
-            this.xrDesignBarManager1.DockControls.Add(this.barDockControlBottom);
-            this.xrDesignBarManager1.DockControls.Add(this.barDockControlLeft);
-            this.xrDesignBarManager1.DockControls.Add(this.barDockControlRight);
+            //this.xrDesignBarManager1.DockControls.Add(this.barDockControlTop);
+            //this.xrDesignBarManager1.DockControls.Add(this.barDockControlBottom);
+            //this.xrDesignBarManager1.DockControls.Add(this.barDockControlLeft);
+            //this.xrDesignBarManager1.DockControls.Add(this.barDockControlRight);
             this.xrDesignBarManager1.FontNameBox = this.recentlyUsedItemsComboBox1;
             this.xrDesignBarManager1.FontNameEdit = null;
             this.xrDesignBarManager1.FontSizeBox = this.designRepositoryItemComboBox1;
@@ -148,37 +148,37 @@
             this.xrDesignBarManager1.ZoomItem = null;
             // 
             // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.xrDesignBarManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1106, 0);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 492);
-            this.barDockControlBottom.Manager = this.xrDesignBarManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1106, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Manager = this.xrDesignBarManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 492);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1106, 0);
-            this.barDockControlRight.Manager = this.xrDesignBarManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 492);
-            // 
+            //// 
+            //this.barDockControlTop.CausesValidation = false;
+            //this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            //this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            //this.barDockControlTop.Manager = this.xrDesignBarManager1;
+            //this.barDockControlTop.Size = new System.Drawing.Size(1106, 0);
+            //// 
+            //// barDockControlBottom
+            //// 
+            //this.barDockControlBottom.CausesValidation = false;
+            //this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            //this.barDockControlBottom.Location = new System.Drawing.Point(0, 492);
+            //this.barDockControlBottom.Manager = this.xrDesignBarManager1;
+            //this.barDockControlBottom.Size = new System.Drawing.Size(1106, 0);
+            //// 
+            //// barDockControlLeft
+            //// 
+            //this.barDockControlLeft.CausesValidation = false;
+            //this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            //this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            //this.barDockControlLeft.Manager = this.xrDesignBarManager1;
+            //this.barDockControlLeft.Size = new System.Drawing.Size(0, 492);
+            //// 
+            //// barDockControlRight
+            //// 
+            //this.barDockControlRight.CausesValidation = false;
+            //this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            //this.barDockControlRight.Location = new System.Drawing.Point(1106, 0);
+            //this.barDockControlRight.Manager = this.xrDesignBarManager1;
+            //this.barDockControlRight.Size = new System.Drawing.Size(0, 492);
+            //// 
             // recentlyUsedItemsComboBox1
             // 
             this.recentlyUsedItemsComboBox1.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 11.25F);
@@ -1026,10 +1026,10 @@
             this.ClientSize = new System.Drawing.Size(1106, 492);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.barDockControlLeft);
-            this.Controls.Add(this.barDockControlRight);
-            this.Controls.Add(this.barDockControlBottom);
-            this.Controls.Add(this.barDockControlTop);
+            //this.Controls.Add(this.barDockControlLeft);
+            //this.Controls.Add(this.barDockControlRight);
+            //this.Controls.Add(this.barDockControlBottom);
+            //this.Controls.Add(this.barDockControlTop);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frm_BankTransfair.IconOptions.SvgImage")));
             this.Name = "frm_BankTransfair";
             this.Text = "Bank Transfer";
@@ -1100,10 +1100,10 @@
         private DevExpress.XtraReports.UserDesigner.Native.StandardReportDesigner standardReportDesigner1;
         private DevExpress.XtraReports.UserDesigner.XRDesignMdiController reportDesigner1;
         private DevExpress.XtraReports.UserDesigner.XRDesignBarManager xrDesignBarManager1;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+       // private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        //private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        //private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        //private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox recentlyUsedItemsComboBox1;
         private DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox designRepositoryItemComboBox1;
         private MyControls.decimalText txtAmount;

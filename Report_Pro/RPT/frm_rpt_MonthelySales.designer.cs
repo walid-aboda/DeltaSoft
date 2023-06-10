@@ -56,9 +56,8 @@
             this.groupPanel1.Controls.Add(this.btnOption);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1200, 54);
+            this.groupPanel1.Size = new System.Drawing.Size(800, 37);
             // 
             // 
             // 
@@ -87,10 +86,9 @@
             this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReport.Location = new System.Drawing.Point(944, 4);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReport.Location = new System.Drawing.Point(629, 3);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(112, 34);
+            this.btnReport.Size = new System.Drawing.Size(75, 23);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "التقرير";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
@@ -100,10 +98,9 @@
             this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnOption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnOption.Location = new System.Drawing.Point(1065, 4);
-            this.btnOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOption.Location = new System.Drawing.Point(710, 3);
             this.btnOption.Name = "btnOption";
-            this.btnOption.Size = new System.Drawing.Size(112, 34);
+            this.btnOption.Size = new System.Drawing.Size(75, 23);
             this.btnOption.TabIndex = 0;
             this.btnOption.Text = "خيارات";
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
@@ -114,10 +111,9 @@
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 54);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 37);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1200, 604);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 413);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -138,10 +134,9 @@
             this.groupPanel2.Controls.Add(this.label7);
             this.groupPanel2.Controls.Add(this.UC_Branch);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel2.Location = new System.Drawing.Point(0, 54);
-            this.groupPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanel2.Location = new System.Drawing.Point(0, 37);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1200, 187);
+            this.groupPanel2.Size = new System.Drawing.Size(800, 128);
             // 
             // 
             // 
@@ -169,10 +164,9 @@
             this.rBtnS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rBtnS.AutoSize = true;
             this.rBtnS.BackColor = System.Drawing.Color.Transparent;
-            this.rBtnS.Location = new System.Drawing.Point(463, 80);
-            this.rBtnS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBtnS.Location = new System.Drawing.Point(305, 55);
             this.rBtnS.Name = "rBtnS";
-            this.rBtnS.Size = new System.Drawing.Size(147, 23);
+            this.rBtnS.Size = new System.Drawing.Size(102, 17);
             this.rBtnS.TabIndex = 45;
             this.rBtnS.Text = "الشركات الشقية";
             this.rBtnS.UseVisualStyleBackColor = false;
@@ -182,10 +176,9 @@
             this.rBtnWithoutS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rBtnWithoutS.AutoSize = true;
             this.rBtnWithoutS.BackColor = System.Drawing.Color.Transparent;
-            this.rBtnWithoutS.Location = new System.Drawing.Point(419, 47);
-            this.rBtnWithoutS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBtnWithoutS.Location = new System.Drawing.Point(275, 32);
             this.rBtnWithoutS.Name = "rBtnWithoutS";
-            this.rBtnWithoutS.Size = new System.Drawing.Size(191, 23);
+            this.rBtnWithoutS.Size = new System.Drawing.Size(132, 17);
             this.rBtnWithoutS.TabIndex = 44;
             this.rBtnWithoutS.Text = "بدون الشركات الشقيقة";
             this.rBtnWithoutS.UseVisualStyleBackColor = false;
@@ -196,10 +189,9 @@
             this.rBtnAll.AutoSize = true;
             this.rBtnAll.BackColor = System.Drawing.Color.Transparent;
             this.rBtnAll.Checked = true;
-            this.rBtnAll.Location = new System.Drawing.Point(531, 15);
-            this.rBtnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBtnAll.Location = new System.Drawing.Point(352, 10);
             this.rBtnAll.Name = "rBtnAll";
-            this.rBtnAll.Size = new System.Drawing.Size(79, 23);
+            this.rBtnAll.Size = new System.Drawing.Size(55, 17);
             this.rBtnAll.TabIndex = 43;
             this.rBtnAll.TabStop = true;
             this.rBtnAll.Text = "الجميع";
@@ -213,10 +205,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(782, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(521, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 19);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 42;
             this.label2.Text = "الي تاريخ";
             // 
@@ -227,29 +218,26 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(1116, 104);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(744, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 19);
+            this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 41;
             this.label1.Text = "من تاريخ";
             // 
             // dTP1
             // 
             this.dTP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dTP1.Location = new System.Drawing.Point(972, 98);
-            this.dTP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dTP1.Location = new System.Drawing.Point(648, 67);
             this.dTP1.Name = "dTP1";
-            this.dTP1.Size = new System.Drawing.Size(132, 27);
+            this.dTP1.Size = new System.Drawing.Size(89, 20);
             this.dTP1.TabIndex = 39;
             // 
             // dTP2
             // 
             this.dTP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dTP2.Location = new System.Drawing.Point(644, 94);
-            this.dTP2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dTP2.Location = new System.Drawing.Point(429, 64);
             this.dTP2.Name = "dTP2";
-            this.dTP2.Size = new System.Drawing.Size(132, 27);
+            this.dTP2.Size = new System.Drawing.Size(89, 20);
             this.dTP2.TabIndex = 40;
             // 
             // label9
@@ -259,10 +247,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(1114, 60);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(743, 41);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 19);
+            this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 38;
             this.label9.Text = "الحساب";
             // 
@@ -270,12 +257,10 @@
             // 
             this.Uc_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Acc.Location = new System.Drawing.Point(644, 54);
+            this.Uc_Acc.Location = new System.Drawing.Point(429, 37);
             this.Uc_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Acc.Name = "Uc_Acc";
-            this.Uc_Acc.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.Uc_Acc.Size = new System.Drawing.Size(463, 33);
+            this.Uc_Acc.Size = new System.Drawing.Size(310, 20);
             this.Uc_Acc.TabIndex = 37;
             // 
             // label7
@@ -285,10 +270,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(1114, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(743, 14);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 19);
+            this.label7.Size = new System.Drawing.Size(31, 13);
             this.label7.TabIndex = 36;
             this.label7.Text = "الفرع";
             // 
@@ -296,23 +280,21 @@
             // 
             this.UC_Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(644, 13);
+            this.UC_Branch.Location = new System.Drawing.Point(429, 9);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(463, 35);
+            this.UC_Branch.Size = new System.Drawing.Size(310, 20);
             this.UC_Branch.TabIndex = 35;
             // 
             // frm_rpt_MonthelySales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 658);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupPanel2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.groupPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_rpt_MonthelySales";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;

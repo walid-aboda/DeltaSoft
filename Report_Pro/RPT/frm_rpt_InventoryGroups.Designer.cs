@@ -39,8 +39,20 @@
             this.btnReport = new System.Windows.Forms.Button();
             this.btnOption = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.totBalance = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totSales = new System.Windows.Forms.Label();
             this.thick_2 = new Report_Pro.NumericTextBox();
+            this.totMonthelySales = new System.Windows.Forms.Label();
             this.thick_1 = new Report_Pro.NumericTextBox();
+            this.totBalancePeriod = new System.Windows.Forms.Label();
             this.dTP2 = new System.Windows.Forms.DateTimePicker();
             this.dTP1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -67,24 +79,12 @@
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.label1 = new System.Windows.Forms.Label();
-            this.totBalance = new System.Windows.Forms.Label();
-            this.totSales = new System.Windows.Forms.Label();
-            this.totMonthelySales = new System.Windows.Forms.Label();
-            this.totBalancePeriod = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -191,6 +191,127 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(2, 790);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(404, 30);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Total";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totBalance
+            // 
+            this.totBalance.BackColor = System.Drawing.SystemColors.Highlight;
+            this.totBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totBalance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totBalance.ForeColor = System.Drawing.SystemColors.Window;
+            this.totBalance.Location = new System.Drawing.Point(406, 790);
+            this.totBalance.Name = "totBalance";
+            this.totBalance.Size = new System.Drawing.Size(150, 30);
+            this.totBalance.TabIndex = 4;
+            this.totBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeight = 40;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column6,
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(1, 177);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 20;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(984, 610);
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Group #";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 120;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Group Name";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 250;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column3.HeaderText = "Balance (KG)";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle3.Format = "N0";
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column6.HeaderText = "Sales (KG)";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 150;
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle4.Format = "N0";
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column4.HeaderText = "Monthely Sales (KG)";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column5.HeaderText = "Balance Period (Month)";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 110;
+            // 
+            // totSales
+            // 
+            this.totSales.BackColor = System.Drawing.SystemColors.Highlight;
+            this.totSales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totSales.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totSales.ForeColor = System.Drawing.SystemColors.Window;
+            this.totSales.Location = new System.Drawing.Point(556, 790);
+            this.totSales.Name = "totSales";
+            this.totSales.Size = new System.Drawing.Size(150, 30);
+            this.totSales.TabIndex = 4;
+            this.totSales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // thick_2
             // 
             this.thick_2.decimaldigit = 2;
@@ -198,6 +319,18 @@
             this.thick_2.Name = "thick_2";
             this.thick_2.Size = new System.Drawing.Size(64, 20);
             this.thick_2.TabIndex = 91;
+            // 
+            // totMonthelySales
+            // 
+            this.totMonthelySales.BackColor = System.Drawing.SystemColors.Highlight;
+            this.totMonthelySales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totMonthelySales.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totMonthelySales.ForeColor = System.Drawing.SystemColors.Window;
+            this.totMonthelySales.Location = new System.Drawing.Point(706, 790);
+            this.totMonthelySales.Name = "totMonthelySales";
+            this.totMonthelySales.Size = new System.Drawing.Size(150, 30);
+            this.totMonthelySales.TabIndex = 4;
+            this.totMonthelySales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // thick_1
             // 
@@ -207,6 +340,18 @@
             this.thick_1.Size = new System.Drawing.Size(64, 20);
             this.thick_1.TabIndex = 90;
             this.thick_1.TextChanged += new System.EventHandler(this.thick_1_TextChanged);
+            // 
+            // totBalancePeriod
+            // 
+            this.totBalancePeriod.BackColor = System.Drawing.SystemColors.Highlight;
+            this.totBalancePeriod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totBalancePeriod.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totBalancePeriod.ForeColor = System.Drawing.SystemColors.Window;
+            this.totBalancePeriod.Location = new System.Drawing.Point(856, 790);
+            this.totBalancePeriod.Name = "totBalancePeriod";
+            this.totBalancePeriod.Size = new System.Drawing.Size(110, 30);
+            this.totBalancePeriod.TabIndex = 4;
+            this.totBalancePeriod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dTP2
             // 
@@ -329,17 +474,16 @@
             this.labelX10.BackColor = System.Drawing.Color.Transparent;
             this.labelX10.Location = new System.Drawing.Point(63, 75);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(46, 15);
+            this.labelX10.Size = new System.Drawing.Size(51, 17);
             this.labelX10.TabIndex = 77;
             this.labelX10.Text = "To Group";
             // 
             // Group1
             // 
-            this.Group1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Group1.Location = new System.Drawing.Point(123, 72);
             this.Group1.Margin = new System.Windows.Forms.Padding(0);
             this.Group1.Name = "Group1";
-            this.Group1.Size = new System.Drawing.Size(321, 22);
+            this.Group1.Size = new System.Drawing.Size(321, 20);
             this.Group1.TabIndex = 76;
             // 
             // labelX9
@@ -348,17 +492,16 @@
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
             this.labelX9.Location = new System.Drawing.Point(483, 47);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(57, 15);
+            this.labelX9.Size = new System.Drawing.Size(62, 17);
             this.labelX9.TabIndex = 75;
             this.labelX9.Text = "Transaction";
             // 
             // Uc_Transaction
             // 
-            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Uc_Transaction.Location = new System.Drawing.Point(554, 45);
             this.Uc_Transaction.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Transaction.Name = "Uc_Transaction";
-            this.Uc_Transaction.Size = new System.Drawing.Size(321, 21);
+            this.Uc_Transaction.Size = new System.Drawing.Size(321, 20);
             this.Uc_Transaction.TabIndex = 74;
             // 
             // labelX1
@@ -367,7 +510,7 @@
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
             this.labelX1.Location = new System.Drawing.Point(57, 126);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(52, 15);
+            this.labelX1.Size = new System.Drawing.Size(57, 17);
             this.labelX1.TabIndex = 73;
             this.labelX1.Text = "From Date";
             // 
@@ -377,7 +520,7 @@
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
             this.labelX8.Location = new System.Drawing.Point(305, 100);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(64, 15);
+            this.labelX8.Size = new System.Drawing.Size(69, 17);
             this.labelX8.TabIndex = 70;
             this.labelX8.Text = "To Thickness";
             // 
@@ -387,7 +530,7 @@
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
             this.labelX7.Location = new System.Drawing.Point(32, 100);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(76, 15);
+            this.labelX7.Size = new System.Drawing.Size(82, 17);
             this.labelX7.TabIndex = 69;
             this.labelX7.Text = "From Thickness";
             // 
@@ -397,19 +540,18 @@
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
             this.labelX6.Location = new System.Drawing.Point(74, 18);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(35, 15);
+            this.labelX6.Size = new System.Drawing.Size(40, 17);
             this.labelX6.TabIndex = 66;
             this.labelX6.Text = "Branch";
             // 
             // Branch
             // 
             this.Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.Branch.Location = new System.Drawing.Point(123, 16);
             this.Branch.Margin = new System.Windows.Forms.Padding(0);
             this.Branch.Name = "Branch";
-            this.Branch.Size = new System.Drawing.Size(321, 22);
+            this.Branch.Size = new System.Drawing.Size(321, 20);
             this.Branch.TabIndex = 65;
             // 
             // labelX3
@@ -418,7 +560,7 @@
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
             this.labelX3.Location = new System.Drawing.Point(516, 18);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(25, 15);
+            this.labelX3.Size = new System.Drawing.Size(29, 17);
             this.labelX3.TabIndex = 62;
             this.labelX3.Text = "Item";
             // 
@@ -428,28 +570,26 @@
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Location = new System.Drawing.Point(50, 47);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(59, 15);
+            this.labelX2.Size = new System.Drawing.Size(64, 17);
             this.labelX2.TabIndex = 61;
             this.labelX2.Text = "From Group";
             // 
             // Item
             // 
-            this.Item.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Item.Location = new System.Drawing.Point(554, 16);
             this.Item.Margin = new System.Windows.Forms.Padding(0);
             this.Item.MaximumSize = new System.Drawing.Size(1000, 800);
             this.Item.MinimumSize = new System.Drawing.Size(320, 20);
             this.Item.Name = "Item";
-            this.Item.Size = new System.Drawing.Size(321, 22);
+            this.Item.Size = new System.Drawing.Size(321, 20);
             this.Item.TabIndex = 60;
             // 
             // Group
             // 
-            this.Group.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Group.Location = new System.Drawing.Point(123, 44);
             this.Group.Margin = new System.Windows.Forms.Padding(0);
             this.Group.Name = "Group";
-            this.Group.Size = new System.Drawing.Size(321, 22);
+            this.Group.Size = new System.Drawing.Size(321, 20);
             this.Group.TabIndex = 59;
             // 
             // labelX5
@@ -458,7 +598,7 @@
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
             this.labelX5.Location = new System.Drawing.Point(468, 75);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(71, 15);
+            this.labelX5.Size = new System.Drawing.Size(77, 17);
             this.labelX5.TabIndex = 64;
             this.labelX5.Text = "Materials Type";
             // 
@@ -477,154 +617,9 @@
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             this.labelX4.Location = new System.Drawing.Point(283, 126);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(40, 15);
+            this.labelX4.Size = new System.Drawing.Size(45, 17);
             this.labelX4.TabIndex = 58;
             this.labelX4.Text = "To Date";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(2, 790);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Total";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totBalance
-            // 
-            this.totBalance.BackColor = System.Drawing.SystemColors.Highlight;
-            this.totBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totBalance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totBalance.ForeColor = System.Drawing.SystemColors.Window;
-            this.totBalance.Location = new System.Drawing.Point(406, 790);
-            this.totBalance.Name = "totBalance";
-            this.totBalance.Size = new System.Drawing.Size(150, 30);
-            this.totBalance.TabIndex = 4;
-            this.totBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totSales
-            // 
-            this.totSales.BackColor = System.Drawing.SystemColors.Highlight;
-            this.totSales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totSales.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totSales.ForeColor = System.Drawing.SystemColors.Window;
-            this.totSales.Location = new System.Drawing.Point(556, 790);
-            this.totSales.Name = "totSales";
-            this.totSales.Size = new System.Drawing.Size(150, 30);
-            this.totSales.TabIndex = 4;
-            this.totSales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totMonthelySales
-            // 
-            this.totMonthelySales.BackColor = System.Drawing.SystemColors.Highlight;
-            this.totMonthelySales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totMonthelySales.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totMonthelySales.ForeColor = System.Drawing.SystemColors.Window;
-            this.totMonthelySales.Location = new System.Drawing.Point(706, 790);
-            this.totMonthelySales.Name = "totMonthelySales";
-            this.totMonthelySales.Size = new System.Drawing.Size(150, 30);
-            this.totMonthelySales.TabIndex = 4;
-            this.totMonthelySales.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totBalancePeriod
-            // 
-            this.totBalancePeriod.BackColor = System.Drawing.SystemColors.Highlight;
-            this.totBalancePeriod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totBalancePeriod.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totBalancePeriod.ForeColor = System.Drawing.SystemColors.Window;
-            this.totBalancePeriod.Location = new System.Drawing.Point(856, 790);
-            this.totBalancePeriod.Name = "totBalancePeriod";
-            this.totBalancePeriod.Size = new System.Drawing.Size(110, 30);
-            this.totBalancePeriod.TabIndex = 4;
-            this.totBalancePeriod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 40;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column6,
-            this.Column4,
-            this.Column5});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 177);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 20;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(984, 610);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Group #";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Group Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 250;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column3.HeaderText = "Balance (KG)";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle3.Format = "N0";
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column6.HeaderText = "Sales (KG)";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 150;
-            // 
-            // Column4
-            // 
-            dataGridViewCellStyle4.Format = "N0";
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column4.HeaderText = "Monthely Sales (KG)";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            dataGridViewCellStyle5.Format = "N2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column5.HeaderText = "Balance Period (Month)";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 110;
             // 
             // printDocument1
             // 
@@ -653,9 +648,9 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

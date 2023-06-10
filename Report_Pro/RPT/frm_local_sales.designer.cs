@@ -68,35 +68,31 @@
             // UC_PayType
             // 
             this.UC_PayType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_PayType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_PayType.Location = new System.Drawing.Point(569, 65);
+            this.UC_PayType.Location = new System.Drawing.Point(567, 65);
             this.UC_PayType.Margin = new System.Windows.Forms.Padding(0);
             this.UC_PayType.Name = "UC_PayType";
-            this.UC_PayType.Size = new System.Drawing.Size(310, 23);
+            this.UC_PayType.Size = new System.Drawing.Size(310, 20);
             this.UC_PayType.TabIndex = 311;
             // 
             // UC_Acc
             // 
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Acc.Location = new System.Drawing.Point(567, 39);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.UC_Acc.Size = new System.Drawing.Size(310, 25);
+            this.UC_Acc.Size = new System.Drawing.Size(310, 20);
             this.UC_Acc.TabIndex = 310;
             // 
             // UC_Branch
             // 
             this.UC_Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.UC_Branch.Location = new System.Drawing.Point(567, 11);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(310, 24);
+            this.UC_Branch.Size = new System.Drawing.Size(310, 20);
             this.UC_Branch.TabIndex = 309;
             // 
             // labelX6

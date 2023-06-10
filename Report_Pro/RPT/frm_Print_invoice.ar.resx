@@ -165,7 +165,7 @@
     <value>600, 105</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 15</value>
+    <value>51, 17</value>
   </data>
   <data name="labelX6.Text" xml:space="preserve">
     <value>الي فاتورة</value>
@@ -189,7 +189,7 @@
     <value>357, 79</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 15</value>
+    <value>34, 17</value>
   </data>
   <data name="labelX4.Text" xml:space="preserve">
     <value>السنة</value>
@@ -213,7 +213,7 @@
     <value>600, 77</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 15</value>
+    <value>57, 17</value>
   </data>
   <data name="labelX3.Text" xml:space="preserve">
     <value>رقم الفاتورة</value>
@@ -225,7 +225,7 @@
     <value>600, 53</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 15</value>
+    <value>35, 17</value>
   </data>
   <data name="labelX2.Text" xml:space="preserve">
     <value>الحركة</value>
@@ -237,7 +237,7 @@
     <value>600, 27</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 15</value>
+    <value>29, 17</value>
   </data>
   <data name="labelX1.Text" xml:space="preserve">
     <value>الفرع</value>
@@ -263,20 +263,23 @@
   <data name="Transaction.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 53</value>
   </data>
+  <data name="Transaction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 20</value>
+  </data>
   <data name="Branch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Branch.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 27</value>
   </data>
+  <data name="Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 20</value>
+  </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>689, 355</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>689, 355</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>

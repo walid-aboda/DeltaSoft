@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace Report_Pro.RPT
 {
     public partial class frm_Inventory_Report : frm_ReportMaster
+
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string R, F, C, P, S, Z, X;
