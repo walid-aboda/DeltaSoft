@@ -34,6 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Project = new Report_Pro.MyControls.UC_Project();
             this.button1 = new System.Windows.Forms.Button();
             this.minimumDate = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -96,6 +98,8 @@
             resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.label7);
+            this.groupPanel1.Controls.Add(this.Project);
             this.groupPanel1.Controls.Add(this.button1);
             this.groupPanel1.Controls.Add(this.minimumDate);
             this.groupPanel1.Controls.Add(this.groupBox2);
@@ -135,6 +139,17 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Name = "label7";
+            // 
+            // Project
+            // 
+            resources.ApplyResources(this.Project, "Project");
+            this.Project.Name = "Project";
             // 
             // button1
             // 
@@ -519,5 +534,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn _accNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn _accName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private MyControls.UC_Project Project;
     }
 }

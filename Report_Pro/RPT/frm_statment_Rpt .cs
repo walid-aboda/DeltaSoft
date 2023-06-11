@@ -390,7 +390,9 @@ namespace Report_Pro.RPT
                where cast(A.g_date as date) between '" + FromDate.Value.ToString("yyyy-MM-dd") + "' AND '" + ToDate.Value.ToString("yyyy-MM-dd") +
                "'and  A.ACC_NO = '" + _acc + "' and ISNULL(A.COST_CENTER,'') like '" + UC_cost1.ID.Text +
               "%'and ISNULL(A.CAT_CODE,'')  like '" + UC_Catogry1.ID.Text + "%' and  A.BRANCH_code like (CASE WHEN (select t_final  from BRANCHS where BRANCH_code='" + UC_Branch.ID.Text +
-              "')='1' then '" + UC_Branch.ID.Text + "' else  '" + UC_Branch.ID.Text + "%' end) order by A.G_date ");
+              "')='1' then '" + UC_Branch.ID.Text + "' else  '" + UC_Branch.ID.Text + "%' end) " +
+              "and isnull(A.PROJECT_NO ,'') like (CASE WHEN '" + Project.ID.Text +"'<>'' then '" + Project.ID.Text + "' else  '" + Project.ID.Text + "%' end)" +
+              "order by A.G_date ");
 
 
 

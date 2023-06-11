@@ -1316,7 +1316,10 @@ namespace Report_Pro.PL
             //catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
-        
+        private void groupPanel6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

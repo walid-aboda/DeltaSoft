@@ -147,6 +147,7 @@
             this.btn_Srearch = new System.Windows.Forms.Button();
             this.btn_Cancl = new System.Windows.Forms.Button();
             this.invGrid1 = new Report_Pro.MyControls.InvGrid();
+            this.chCanceled = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControlPanel2.SuspendLayout();
@@ -159,7 +160,6 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            
             // headLbl
             // 
             resources.ApplyResources(this.headLbl, "headLbl");
@@ -924,6 +924,7 @@
             // 
             this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel6.Controls.Add(this.chCanceled);
             this.groupPanel6.Controls.Add(this.txt_InvSM);
             this.groupPanel6.Controls.Add(this.userID);
             this.groupPanel6.Controls.Add(this.txt_Cyear);
@@ -969,6 +970,7 @@
             this.groupPanel6.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel6.Click += new System.EventHandler(this.groupPanel6_Click);
             // 
             // txt_InvSM
             // 
@@ -1106,6 +1108,13 @@
             // 
             resources.ApplyResources(this.invGrid1, "invGrid1");
             this.invGrid1.Name = "invGrid1";
+            // 
+            // chCanceled
+            // 
+            resources.ApplyResources(this.chCanceled, "chCanceled");
+            this.chCanceled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.chCanceled.Name = "chCanceled";
+            this.chCanceled.UseVisualStyleBackColor = false;
             // 
             // frm_PurchaseOrder_1
             // 
@@ -1263,6 +1272,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.RadioButton rdoBranchHeader;
         private System.Windows.Forms.RadioButton rdoCompanyHeader;
-   
+        private System.Windows.Forms.CheckBox chCanceled;
     }
 }

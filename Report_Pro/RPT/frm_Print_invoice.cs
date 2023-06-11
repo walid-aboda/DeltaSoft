@@ -238,14 +238,14 @@ namespace Report_Pro.RPT
         
         private void exportInvoicesToBDF()
         {
-                        FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
             if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
-                return;
+            return;
             string selectedPath = folderBrowserDialog.SelectedPath;
             int num1;
             for (int int32 = Convert.ToInt32(txtSer.Text); int32 <= Convert.ToInt32(txtSer_1.Text); ++int32)
             {
-                if (this.Transaction.ID.Text == "xpc")
+                if (Transaction.ID.Text == "xpc")
                 {
                     print_PurchaseInv printPurchaseInv = new print_PurchaseInv();
                     Form1 form1 = new Form1();
@@ -265,7 +265,7 @@ namespace Report_Pro.RPT
                     string text4 = Transaction.ID.Text;
                     num1 = txtYear.Value - 2000;
                     string cyear_2 = num1.ToString();
-                    this.getInvoiceTotal(ser_2, text3, text4, cyear_2);
+                    getInvoiceTotal(ser_2, text3, text4, cyear_2);
                     ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(this.dt_inv_total.Rows[0]["NetValuePurch"].ToString())), this.currencies[this.currencyNo]);
                     printPurchaseInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
                     string str = int32.ToString();
