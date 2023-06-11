@@ -493,7 +493,7 @@ namespace Report_Pro.MyControls
 
                 dgv1.Rows[_rowIndex].Cells["_total"].Value = (qty_ * pric_).ToString("N3");
                 dgv1.Rows[_rowIndex].Cells["_netValue"].Value = (Convert.ToDouble(dgv1.Rows[_rowIndex].Cells["_total"].Value) - _disc).ToString("N3");
-                dgv1.Rows[_rowIndex].Cells["_vat"].Value = ((dgv1.Rows[_rowIndex].Cells["_vatRatio"].Value.ToString().ToDecimal() <= txtAccVat_Rate.Text.ToDecimal() ? dgv1.Rows[_rowIndex].Cells["_vatRatio"].Value.ToString().ToDecimal() : txtAccVat_Rate.Text.ToDecimal()) * (dgv1.Rows[_rowIndex].Cells["_netValue"].Value.ToString().ToDecimal()) / 100).ToString("N3");
+                dgv1.Rows[_rowIndex].Cells["_vat"].Value = ((dgv1.Rows[_rowIndex].Cells["_vatRatio"].FormattedValue.ToString().ToDecimal() <= txtAccVat_Rate.Text.ToDecimal() ? dgv1.Rows[_rowIndex].Cells["_vatRatio"].FormattedValue.ToString().ToDecimal() : txtAccVat_Rate.Text.ToDecimal()) * (dgv1.Rows[_rowIndex].Cells["_netValue"].Value.ToString().ToDecimal()) / 100).ToString("N3");
                 if(docType == "IN")
                 {
                     double itemTotalQty = (from DataGridViewRow row in dgv1.Rows
@@ -506,7 +506,7 @@ namespace Report_Pro.MyControls
 
 
 
-                    dgv1.Rows[_rowIndex].Cells["_balance"].Value = dgv1.Rows[_rowIndex].Cells[_stockType.Name].Value.ToString()=="0"?(_old_balance + itemTotalQty).ToString("N0"):"0";
+                    dgv1.Rows[_rowIndex].Cells["_balance"].Value = dgv1.Rows[_rowIndex].Cells[_stockType.Name].FormattedValue.ToString()=="0"?(_old_balance + itemTotalQty).ToString("N0"):"0";
 
 
 
@@ -538,8 +538,7 @@ namespace Report_Pro.MyControls
             }
             catch 
             {
-
-                
+     
             }
 
         }

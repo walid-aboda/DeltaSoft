@@ -133,88 +133,71 @@
   <data name="ribbonBar7.Text" xml:space="preserve">
     <value>التقارير</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="barStaticItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnBackup.Text" xml:space="preserve">
+    <value>النسخ الاحتياطي</value>
   </data>
-  <data name="barStaticItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnRestor.Text" xml:space="preserve">
+    <value>استعادة من نسخة احتياطية</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="barStaticItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="btnScan.Text" xml:space="preserve">
+    <value>مسح ضوئي</value>
   </data>
-  <data name="btnChangeStore.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 0</value>
   </data>
-  <data name="btnChangeStore.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 94</value>
   </data>
-  <data name="btnChangeStore.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ribbonBar9.Text" xml:space="preserve">
+    <value>.</value>
   </data>
-  <data name="barButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnCofig.Text" xml:space="preserve">
+    <value>الاعدادات</value>
   </data>
-  <data name="barButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnCompanyData.Text" xml:space="preserve">
+    <value>بيانات الشركات</value>
   </data>
-  <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="btnStores.Text" xml:space="preserve">
+    <value>المستودعات</value>
   </data>
-  <data name="barButtonItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnBanks.Text" xml:space="preserve">
+    <value>البنوك</value>
   </data>
-  <data name="barButtonItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 94</value>
   </data>
-  <data name="barButtonItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ribbonBar1.Text" xml:space="preserve">
+    <value>البيانات الاساسية</value>
   </data>
-  <data name="barEditItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1198, 97</value>
   </data>
-  <data name="barEditItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnCoilReport.Text" xml:space="preserve">
+    <value>تقرير الكويل</value>
   </data>
-  <data name="barEditItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="btnProductionRpt.Text" xml:space="preserve">
+    <value>تقارير الانتاج</value>
   </data>
-  <data name="btnChangeBranch.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 0</value>
   </data>
-  <data name="btnChangeBranch.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 94</value>
   </data>
-  <data name="btnChangeBranch.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ribbonBar6.Text" xml:space="preserve">
+    <value>التقارير</value>
   </data>
-  <data name="barStaticItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="buttonItem16.Text" xml:space="preserve">
+    <value>الانتاج </value>
   </data>
-  <data name="barStaticItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="btnCoilClose.Text" xml:space="preserve">
+    <value>تسوية رصيد كويل</value>
   </data>
-  <data name="barStaticItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ribbonBar5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 94</value>
   </data>
-  <data name="barEditItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barEditItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barEditItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barButtonItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ribbonBar5.Text" xml:space="preserve">
+    <value>الحركة</value>
   </data>
   <data name="btnItems.Text" xml:space="preserve">
     <value>الاصناف</value>
@@ -606,35 +589,9 @@
   <data name="ribbonPanel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>1198, 97</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ribbonPanel7.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="btnCoilReport.Text" xml:space="preserve">
-    <value>تقرير الكويل</value>
-  </data>
-  <data name="btnProductionRpt.Text" xml:space="preserve">
-    <value>تقارير الانتاج</value>
-  </data>
-  <data name="ribbonBar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 0</value>
-  </data>
-  <data name="ribbonBar6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 94</value>
-  </data>
-  <data name="ribbonBar6.Text" xml:space="preserve">
-    <value>التقارير</value>
-  </data>
-  <data name="buttonItem16.Text" xml:space="preserve">
-    <value>الانتاج </value>
-  </data>
-  <data name="btnCoilClose.Text" xml:space="preserve">
-    <value>تسوية رصيد كويل</value>
-  </data>
-  <data name="ribbonBar5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 94</value>
-  </data>
-  <data name="ribbonBar5.Text" xml:space="preserve">
-    <value>الحركة</value>
   </data>
   <data name="buttonItem17.Text" xml:space="preserve">
     <value>كشف حساب</value>
@@ -1228,45 +1185,6 @@
   <data name="ribbonPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1198, 97</value>
   </data>
-  <data name="btnBackup.Text" xml:space="preserve">
-    <value>النسخ الاحتياطي</value>
-  </data>
-  <data name="btnRestor.Text" xml:space="preserve">
-    <value>استعادة من نسخة احتياطية</value>
-  </data>
-  <data name="btnScan.Text" xml:space="preserve">
-    <value>مسح ضوئي</value>
-  </data>
-  <data name="ribbonBar9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 0</value>
-  </data>
-  <data name="ribbonBar9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 94</value>
-  </data>
-  <data name="ribbonBar9.Text" xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="btnCofig.Text" xml:space="preserve">
-    <value>الاعدادات</value>
-  </data>
-  <data name="btnCompanyData.Text" xml:space="preserve">
-    <value>بيانات الشركات</value>
-  </data>
-  <data name="btnStores.Text" xml:space="preserve">
-    <value>المستودعات</value>
-  </data>
-  <data name="btnBanks.Text" xml:space="preserve">
-    <value>البنوك</value>
-  </data>
-  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 94</value>
-  </data>
-  <data name="ribbonBar1.Text" xml:space="preserve">
-    <value>البيانات الاساسية</value>
-  </data>
-  <data name="ribbonPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1198, 97</value>
-  </data>
   <data name="rb_MainData.Text" xml:space="preserve">
     <value>البيانات الاساسية</value>
   </data>
@@ -1302,51 +1220,6 @@
   </data>
   <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1198, 140</value>
-  </data>
-  <data name="ribbonControl1.SystemText.MaximizeRibbonText" xml:space="preserve">
-    <value>&amp;Maximize the Ribbon</value>
-  </data>
-  <data name="ribbonControl1.SystemText.MinimizeRibbonText" xml:space="preserve">
-    <value>Mi&amp;nimize the Ribbon</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatAddItemText" xml:space="preserve">
-    <value>&amp;Add to Quick Access Toolbar</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatCustomizeMenuLabel" xml:space="preserve">
-    <value>&lt;b&gt;Customize Quick Access Toolbar&lt;/b&gt;</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatCustomizeText" xml:space="preserve">
-    <value>&amp;Customize Quick Access Toolbar...</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogAddButton" xml:space="preserve">
-    <value>&amp;Add &gt;&gt;</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogCancelButton" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogCaption" xml:space="preserve">
-    <value>Customize Quick Access Toolbar</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogCategoriesLabel" xml:space="preserve">
-    <value>&amp;Choose commands from:</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogOkButton" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogPlacementCheckbox" xml:space="preserve">
-    <value>&amp;Place Quick Access Toolbar below the Ribbon</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogRemoveButton" xml:space="preserve">
-    <value>&amp;Remove</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatPlaceAboveRibbonText" xml:space="preserve">
-    <value>&amp;Place Quick Access Toolbar above the Ribbon</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatPlaceBelowRibbonText" xml:space="preserve">
-    <value>&amp;Place Quick Access Toolbar below the Ribbon</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatRemoveItemText" xml:space="preserve">
-    <value>&amp;Remove from Quick Access Toolbar</value>
   </data>
   <data name="buttonItem27.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1399,6 +1272,7 @@
         5QAAAABJRU5ErkJggg==
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>

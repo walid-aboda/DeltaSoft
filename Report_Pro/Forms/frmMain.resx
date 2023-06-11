@@ -139,6 +139,9 @@
   <data name="ribbonPanel10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="&gt;&gt;btnItemCard.Name" xml:space="preserve">
+    <value>btnItemCard</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="fluentDesignFormControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1198, 0</value>
@@ -148,10 +151,6 @@
   </data>
   <data name="buttonItem8.Text" xml:space="preserve">
     <value>&amp;1. Short News 5-7.rtf</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="barButtonItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
   </data>
   <data name="&gt;&gt;ribbonBar13.Name" xml:space="preserve">
     <value>ribbonBar13</value>
@@ -181,6 +180,7 @@
   <data name="&gt;&gt;rb_Contracting.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonTabItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ribbonPanel2.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -192,6 +192,9 @@
   </data>
   <data name="&gt;&gt;buttonItem20.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;ribbonPanel1.Name" xml:space="preserve">
+    <value>ribbonPanel1</value>
   </data>
   <data name="ribbonBar13.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -220,9 +223,6 @@
   <data name="rb_FixedAssets.Text" xml:space="preserve">
     <value>Fixed Assets</value>
   </data>
-  <data name="ribbonBar13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>457, 102</value>
-  </data>
   <data name="ribbonBar3.Text" xml:space="preserve">
     <value>Transaction</value>
   </data>
@@ -232,8 +232,8 @@
   <data name="&gt;&gt;btnProductionRpt.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="ribbonPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1198, 105</value>
+  <data name="&gt;&gt;btnCompanyData.Name" xml:space="preserve">
+    <value>btnCompanyData</value>
   </data>
   <data name="&gt;&gt;ribbonBar14.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -257,7 +257,7 @@
     <value>btnPurchaseReports</value>
   </data>
   <data name="&gt;&gt;ribbonPanel7.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="ribbonBar8.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 102</value>
@@ -277,11 +277,14 @@
   <data name="&gt;&gt;ribbonPanel9.Parent" xml:space="preserve">
     <value>ribbonControl1</value>
   </data>
+  <data name="&gt;&gt;btnInvoice.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
   <data name="&gt;&gt;ribbonPanel1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1198, 533</value>
+  <data name="rb_Purchase.Text" xml:space="preserve">
+    <value>Purchase</value>
   </data>
   <data name="ribbonBar3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -300,9 +303,6 @@
   </data>
   <data name="&gt;&gt;btnInventoryReportByGroups.Name" xml:space="preserve">
     <value>btnInventoryReportByGroups</value>
-  </data>
-  <data name="btnItems.Text" xml:space="preserve">
-    <value>Items</value>
   </data>
   <data name="&gt;&gt;btnStores.Name" xml:space="preserve">
     <value>btnStores</value>
@@ -362,6 +362,9 @@
   <data name="btnSalesQuotation.Text" xml:space="preserve">
     <value>Sales Quotation</value>
   </data>
+  <data name="&gt;&gt;rb_Production.Name" xml:space="preserve">
+    <value>rb_Production</value>
+  </data>
   <data name="btnProductionRpt.Text" xml:space="preserve">
     <value>Production Reports</value>
   </data>
@@ -386,9 +389,6 @@
   <data name="btnTransferAccountTransaction.Text" xml:space="preserve">
     <value>Transfer Account Transaction</value>
   </data>
-  <data name="&gt;&gt;btnProjects.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;btnTaxPurchaseReports.Name" xml:space="preserve">
     <value>btnTaxPurchaseReports</value>
   </data>
@@ -402,7 +402,7 @@
     <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;ribbonPanel5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;buttonItem16.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -488,9 +488,6 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="ribbonBar8.Text" xml:space="preserve">
-    <value>Transaction</value>
-  </data>
   <data name="ribbonBar7.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -524,7 +521,7 @@
   <data name="&gt;&gt;buttonItem3.Name" xml:space="preserve">
     <value>buttonItem3</value>
   </data>
-  <data name="ribbonBar2.Text" xml:space="preserve">
+  <data name="ribbonBar14.Text" xml:space="preserve">
     <value>Transaction</value>
   </data>
   <data name="&gt;&gt;buttonItem18.Type" xml:space="preserve">
@@ -605,8 +602,8 @@
   <data name="ribbonPanel10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
   </data>
-  <data name="&gt;&gt;btnCoseStore.Name" xml:space="preserve">
-    <value>btnCoseStore</value>
+  <data name="&gt;&gt;ribbonPanel8.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="buttonItem27.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -713,6 +710,9 @@
   <data name="ribbonBar5.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 94</value>
   </data>
+  <data name="&gt;&gt;btnPurchaseReports.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
   <data name="&gt;&gt;btnCoilReport.Name" xml:space="preserve">
     <value>btnCoilReport</value>
   </data>
@@ -743,8 +743,8 @@
   <data name="&gt;&gt;galleryContainer1.Name" xml:space="preserve">
     <value>galleryContainer1</value>
   </data>
-  <data name="btnChoseBranch.Text" xml:space="preserve">
-    <value>Accounting Branches</value>
+  <data name="barStaticItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="ribbonPanel7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -805,6 +805,9 @@
   </data>
   <data name="btnCashVoucher.Text" xml:space="preserve">
     <value>Receipt Voucher</value>
+  </data>
+  <data name="ribbonBar7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 0</value>
   </data>
   <data name="btnPoReport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -867,11 +870,11 @@
   <data name="fluentDesignFormControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="ribbonControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="ribbonControl1.SystemText.QatDialogCancelButton" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="ribbonBar14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+  <data name="ribbonControl1.SystemText.QatDialogCategoriesLabel" xml:space="preserve">
+    <value>&amp;Choose commands from:</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -891,8 +894,8 @@
   <data name="btnPurchaseReports.Text" xml:space="preserve">
     <value>Purchase Reports</value>
   </data>
-  <data name="ribbonBar4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="&gt;&gt;btnCoilClose.Name" xml:space="preserve">
+    <value>btnCoilClose</value>
   </data>
   <data name="ribbonControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -1079,8 +1082,8 @@
   <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
     <value>ribbonControl1</value>
   </data>
-  <data name="ribbonPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1198, 105</value>
+  <data name="ribbonBar4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
   <data name="ribbonControl1.SystemText.QatDialogCaption" xml:space="preserve">
     <value>Customize Quick Access Toolbar</value>
@@ -1151,11 +1154,8 @@
   <data name="buttonItem5.Text" xml:space="preserve">
     <value>S&amp;hare...</value>
   </data>
-  <data name="ribbonBar14.Text" xml:space="preserve">
-    <value>Transaction</value>
-  </data>
-  <data name="&gt;&gt;ribbonTabItem1.Name" xml:space="preserve">
-    <value>ribbonTabItem1</value>
+  <data name="&gt;&gt;buttonItem7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;ribbonPanel2.Parent" xml:space="preserve">
     <value>ribbonControl1</value>
@@ -1163,8 +1163,8 @@
   <data name="barButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="barEditItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="ribbonBar8.Text" xml:space="preserve">
+    <value>Transaction</value>
   </data>
   <data name="&gt;&gt;ribbonPanel4.Name" xml:space="preserve">
     <value>ribbonPanel4</value>
@@ -1178,8 +1178,8 @@
   <data name="&gt;&gt;rb_Inventory.Name" xml:space="preserve">
     <value>rb_Inventory</value>
   </data>
-  <data name="&gt;&gt;rb_Production.Name" xml:space="preserve">
-    <value>rb_Production</value>
+  <data name="&gt;&gt;btnProjects.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;barStaticItem2.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -1199,9 +1199,6 @@
   <data name="&gt;&gt;btnBankDeposit.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="barButtonItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
   <data name="barEditItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
@@ -1213,6 +1210,9 @@
   </data>
   <data name="&gt;&gt;ribbonBar15.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;ribbonPanel6.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ribbonPanel7.Name" xml:space="preserve">
     <value>ribbonPanel7</value>
@@ -1313,8 +1313,8 @@
   <data name="&gt;&gt;ribbonBar13.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ribbonPanel6.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="ribbonPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1198, 105</value>
   </data>
   <data name="btn_AccessProfileList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1410,8 +1410,8 @@
   <data name="ribbonControl1.SystemText.QatPlaceAboveRibbonText" xml:space="preserve">
     <value>&amp;Place Quick Access Toolbar above the Ribbon</value>
   </data>
-  <data name="barButtonItem3.Caption" xml:space="preserve">
-    <value>barButtonItem3</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1198, 533</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1427,9 +1427,6 @@
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1198, 37</value>
-  </data>
-  <data name="barStaticItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
   </data>
   <data name="&gt;&gt;btnCashClientSalesRpt.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1522,6 +1519,9 @@
   <data name="&gt;&gt;ribbonPanel7.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <data name="ribbonPanel4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="ribbonBar13.Text" xml:space="preserve">
     <value>Transaction</value>
   </data>
@@ -1530,9 +1530,6 @@
   </data>
   <data name="&gt;&gt;buttonItem18.Name" xml:space="preserve">
     <value>buttonItem18</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogCancelButton" xml:space="preserve">
-    <value>Cancel</value>
   </data>
   <data name="buttonItem4.Text" xml:space="preserve">
     <value>&amp;Save...</value>
@@ -1546,9 +1543,6 @@
   <data name="buttonItem9.Text" xml:space="preserve">
     <value>&amp;2. Prospect Email.rtf</value>
   </data>
-  <data name="&gt;&gt;btnCoilReport.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;btn_UserList.Name" xml:space="preserve">
     <value>btn_UserList</value>
   </data>
@@ -1561,14 +1555,11 @@
   <data name="&gt;&gt;ribbonBar6.Parent" xml:space="preserve">
     <value>ribbonPanel5</value>
   </data>
-  <data name="btnCoseStore.Text" xml:space="preserve">
-    <value>Stores</value>
-  </data>
   <data name="&gt;&gt;repositoryItemComboBox1.Name" xml:space="preserve">
     <value>repositoryItemComboBox1</value>
   </data>
-  <data name="ribbonPanel4.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="ribbonPanel7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
   </data>
   <data name="ribbonPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1578,15 +1569,6 @@
   </data>
   <data name="btnChangeStore.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
-  </data>
-  <data name="rb_Purchase.Text" xml:space="preserve">
-    <value>Purchase</value>
-  </data>
-  <data name="&gt;&gt;buttonItem7.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnCoilClose.Name" xml:space="preserve">
-    <value>btnCoilClose</value>
   </data>
   <data name="btnPurchaseInvoice.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1655,8 +1637,8 @@
   <data name="&gt;&gt;Reports.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;barStaticItem2.Name" xml:space="preserve">
-    <value>barStaticItem2</value>
+  <data name="barButtonItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="buttonItem6.Text" xml:space="preserve">
     <value>&amp;Print...</value>
@@ -1672,6 +1654,9 @@
   </data>
   <data name="&gt;&gt;repositoryItemComboBox1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ribbonBar14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
   </data>
   <data name="&gt;&gt;ribbonPanel3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1785,8 +1770,8 @@
   <data name="&gt;&gt;btnSalesReturn.Name" xml:space="preserve">
     <value>btnSalesReturn</value>
   </data>
-  <data name="ribbonPanel1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="ribbonBar13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 102</value>
   </data>
   <data name="buttonItem15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1828,16 +1813,13 @@
 </value>
   </data>
   <data name="&gt;&gt;ribbonPanel4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="ribbonBar4.Text" xml:space="preserve">
     <value>Transactions</value>
   </data>
   <data name="&gt;&gt;btnUpdateAccData.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="ribbonPanel7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 3</value>
   </data>
   <data name="btnVendors.Text" xml:space="preserve">
     <value>Vendors</value>
@@ -1911,6 +1893,9 @@
   <data name="&gt;&gt;btn_SalesInvoice.Name" xml:space="preserve">
     <value>btn_SalesInvoice</value>
   </data>
+  <data name="&gt;&gt;btnItemQuery.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
   <data name="&gt;&gt;buttonItem4.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
@@ -1939,7 +1924,7 @@
     <value>DevComponents.DotNetBar.QatCustomizeItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;ribbonPanel2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="ribbonPanel8.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 41</value>
@@ -1970,6 +1955,9 @@
   </data>
   <data name="ribbonPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="ribbonControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="ribbonBar11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -2002,7 +1990,7 @@
     <value>Invoice</value>
   </data>
   <data name="&gt;&gt;ribbonPanel10.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="ribbonPanel8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2012,6 +2000,9 @@
   </data>
   <data name="&gt;&gt;btnCashVoucher.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="barButtonItem3.Caption" xml:space="preserve">
+    <value>barButtonItem3</value>
   </data>
   <data name="&gt;&gt;btnDailyEntry.Name" xml:space="preserve">
     <value>btnDailyEntry</value>
@@ -2028,8 +2019,8 @@
   <data name="&gt;&gt;ribbonBar4.Parent" xml:space="preserve">
     <value>ribbonPanel4</value>
   </data>
-  <data name="ribbonControl1.SystemText.QatCustomizeText" xml:space="preserve">
-    <value>&amp;Customize Quick Access Toolbar...</value>
+  <data name="ribbonControl1.SystemText.QatDialogAddButton" xml:space="preserve">
+    <value>&amp;Add &gt;&gt;</value>
   </data>
   <data name="&gt;&gt;ribbonBar2.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2067,9 +2058,6 @@
   <data name="ribbonBar15.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>20, 0, 20, 0</value>
   </data>
-  <data name="btnStores.Text" xml:space="preserve">
-    <value>Stores</value>
-  </data>
   <data name="ribbonBar7.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 102</value>
   </data>
@@ -2078,6 +2066,9 @@
   </data>
   <data name="ribbonPanel9.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem2.Name" xml:space="preserve">
+    <value>barStaticItem2</value>
   </data>
   <data name="btnChoseBranch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2088,11 +2079,14 @@
   <data name="&gt;&gt;barEditItem1.Name" xml:space="preserve">
     <value>barEditItem1</value>
   </data>
+  <data name="ribbonControl1.SystemText.QatCustomizeText" xml:space="preserve">
+    <value>&amp;Customize Quick Access Toolbar...</value>
+  </data>
   <data name="btnChangeStore.Caption" xml:space="preserve">
     <value>Chose Store</value>
   </data>
-  <data name="&gt;&gt;ribbonPanel1.Name" xml:space="preserve">
-    <value>ribbonPanel1</value>
+  <data name="ribbonPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1198, 105</value>
   </data>
   <data name="&gt;&gt;rb_Sales.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.RibbonTabItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -2106,8 +2100,8 @@
   <data name="&gt;&gt;repositoryItemColorPickEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit, DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btnItemQuery.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="cmbYear.Items3" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;rb_Permitions.Name" xml:space="preserve">
     <value>rb_Permitions</value>
@@ -2190,7 +2184,7 @@
   <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
     <value>barButtonItem2</value>
   </data>
-  <data name="&gt;&gt;btnInvoice.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnItems.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="Reports.Size" type="System.Drawing.Size, System.Drawing">
@@ -2266,8 +2260,8 @@
   <data name="rb_Account.Text" xml:space="preserve">
     <value>Accounting</value>
   </data>
-  <data name="&gt;&gt;btnItemCard.Name" xml:space="preserve">
-    <value>btnItemCard</value>
+  <data name="&gt;&gt;ribbonTabItem1.Name" xml:space="preserve">
+    <value>ribbonTabItem1</value>
   </data>
   <data name="&gt;&gt;buttonItem20.Name" xml:space="preserve">
     <value>buttonItem20</value>
@@ -2299,7 +2293,7 @@
   <data name="&gt;&gt;btnChangeBranch.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btnReportDailyEntry.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCoilReport.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="ribbonBar6.Size" type="System.Drawing.Size, System.Drawing">
@@ -2340,9 +2334,6 @@
   </data>
   <data name="buttonItem2.Text" xml:space="preserve">
     <value>&amp;New</value>
-  </data>
-  <data name="ribbonControl1.SystemText.QatDialogCategoriesLabel" xml:space="preserve">
-    <value>&amp;Choose commands from:</value>
   </data>
   <data name="btnSalesReturn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2542,13 +2533,10 @@
   <data name="&gt;&gt;btnRestor.Name" xml:space="preserve">
     <value>btnRestor</value>
   </data>
-  <data name="ribbonControl1.SystemText.QatDialogAddButton" xml:space="preserve">
-    <value>&amp;Add &gt;&gt;</value>
-  </data>
   <data name="Reports.Location" type="System.Drawing.Point, System.Drawing">
     <value>478, 0</value>
   </data>
-  <data name="&gt;&gt;btnPurchaseReports.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonItem6.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;buttonItem17.Name" xml:space="preserve">
@@ -2573,7 +2561,7 @@
     <value>10</value>
   </data>
   <data name="&gt;&gt;ribbonPanel3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="cmbYear.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2593,6 +2581,9 @@
   <data name="cmbYear.Items4" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="btnChoseBranch.Text" xml:space="preserve">
+    <value>Accounting Branches</value>
+  </data>
   <data name="&gt;&gt;buttonItem27.Name" xml:space="preserve">
     <value>buttonItem27</value>
   </data>
@@ -2608,8 +2599,8 @@
   <data name="ribbonBar9.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 0</value>
   </data>
-  <data name="cmbYear.Items3" xml:space="preserve">
-    <value>22</value>
+  <data name="btnCoseStore.Text" xml:space="preserve">
+    <value>Stores</value>
   </data>
   <data name="&gt;&gt;itemContainer3.Name" xml:space="preserve">
     <value>itemContainer3</value>
@@ -2617,8 +2608,8 @@
   <data name="buttonItem12.Text" xml:space="preserve">
     <value>Opt&amp;ions</value>
   </data>
-  <data name="ribbonBar7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 0</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ribbonControl1.SystemText.QatCustomizeMenuLabel" xml:space="preserve">
     <value>&lt;b&gt;Customize Quick Access Toolbar&lt;/b&gt;</value>
@@ -2641,8 +2632,8 @@
   <data name="btnCoilReport.Text" xml:space="preserve">
     <value>Coil Report</value>
   </data>
-  <data name="&gt;&gt;buttonItem6.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;btnCoseStore.Name" xml:space="preserve">
+    <value>btnCoseStore</value>
   </data>
   <data name="&gt;&gt;buttonItem10.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -2650,8 +2641,8 @@
   <data name="&gt;&gt;barEditItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;ribbonPanel8.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="barButtonItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;ribbonBar12.Parent" xml:space="preserve">
     <value>ribbonPanel7</value>
@@ -2660,7 +2651,10 @@
     <value>btnVendors</value>
   </data>
   <data name="&gt;&gt;ribbonPanel1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnReportDailyEntry.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;ribbonBar9.Name" xml:space="preserve">
     <value>ribbonBar9</value>
@@ -2668,8 +2662,11 @@
   <data name="ribbonBar10.Text" xml:space="preserve">
     <value>Reports</value>
   </data>
-  <data name="&gt;&gt;rb_Sales.Name" xml:space="preserve">
-    <value>rb_Sales</value>
+  <data name="ribbonBar2.Text" xml:space="preserve">
+    <value>Transaction</value>
+  </data>
+  <data name="&gt;&gt;galleryContainer1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.GalleryContainer, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;ribbonBar12.Name" xml:space="preserve">
     <value>ribbonBar12</value>
@@ -2698,14 +2695,17 @@
   <data name="&gt;&gt;btnPurchaseInvoice.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <data name="ribbonPanel1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="btn_AssetesGroup.Text" xml:space="preserve">
     <value>Assetes Group</value>
   </data>
-  <data name="&gt;&gt;galleryContainer1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.GalleryContainer, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="btnStores.Text" xml:space="preserve">
+    <value>Stores</value>
   </data>
   <data name="&gt;&gt;ribbonPanel9.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btnCashClientSalesRpt.Name" xml:space="preserve">
     <value>btnCashClientSalesRpt</value>
@@ -2766,6 +2766,9 @@
   </data>
   <data name="&gt;&gt;btnClientTB.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="barEditItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;ribbonBar11.Parent" xml:space="preserve">
     <value>ribbonPanel3</value>
@@ -2828,11 +2831,11 @@
   <data name="&gt;&gt;ribbonBar11.Name" xml:space="preserve">
     <value>ribbonBar11</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btn_AssetAdditions.Text" xml:space="preserve">
     <value>Asset Additions</value>
+  </data>
+  <data name="&gt;&gt;rb_Sales.Name" xml:space="preserve">
+    <value>rb_Sales</value>
   </data>
   <data name="&gt;&gt;ribbonPanel3.Name" xml:space="preserve">
     <value>ribbonPanel3</value>
@@ -2873,9 +2876,6 @@
   <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btnCompanyData.Name" xml:space="preserve">
-    <value>btnCompanyData</value>
-  </data>
   <data name="&gt;&gt;ribbonBar15.Parent" xml:space="preserve">
     <value>ribbonPanel10</value>
   </data>
@@ -2894,8 +2894,8 @@
   <data name="btnPurchaseInvoice.Text" xml:space="preserve">
     <value>Purchase Invoice</value>
   </data>
-  <data name="&gt;&gt;btnItems.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="btnItems.Text" xml:space="preserve">
+    <value>Items</value>
   </data>
   <data name="ribbonPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

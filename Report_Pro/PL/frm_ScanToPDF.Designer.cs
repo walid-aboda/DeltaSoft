@@ -192,6 +192,7 @@
             this.btn_About.Size = new System.Drawing.Size(49, 33);
             this.btn_About.Text = "About";
             this.btn_About.ToolTipText = "حول البرنامج";
+            this.btn_About.Click += new System.EventHandler(this.btn_About_Click);
             // 
             // Panel2
             // 

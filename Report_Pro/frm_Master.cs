@@ -320,6 +320,10 @@ namespace Report_Pro
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Master));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btn_Save = new DevExpress.XtraBars.BarButtonItem();
             this.btn_New = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Delete = new DevExpress.XtraBars.BarButtonItem();
@@ -336,10 +340,6 @@ namespace Report_Pro
             this.btn_GoNext = new DevExpress.XtraBars.BarButtonItem();
             this.btnGoLast = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Attachment = new DevExpress.XtraBars.BarButtonItem();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.panel_head = new System.Windows.Forms.Panel();
             this.headLbl = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -389,6 +389,30 @@ namespace Report_Pro
             this.btnGoLast,
             this.btn_Attachment});
             this.barManager1.MaxItemId = 16;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            this.barDockControlTop.Manager = this.barManager1;
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            this.barDockControlBottom.Manager = this.barManager1;
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            this.barDockControlLeft.Manager = this.barManager1;
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
+            this.barDockControlRight.Manager = this.barManager1;
             // 
             // btn_Save
             // 
@@ -532,30 +556,6 @@ namespace Report_Pro
             this.btn_Attachment.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btn_Attachment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Attachment_ItemClick);
             // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
-            this.barDockControlTop.Manager = this.barManager1;
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
-            this.barDockControlBottom.Manager = this.barManager1;
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
-            this.barDockControlLeft.Manager = this.barManager1;
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
-            this.barDockControlRight.Manager = this.barManager1;
-            // 
             // panel_head
             // 
             resources.ApplyResources(this.panel_head, "panel_head");
@@ -572,6 +572,7 @@ namespace Report_Pro
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(0);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnSave,
@@ -715,11 +716,15 @@ namespace Report_Pro
             // 
             // frm_Master
             // 
-            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("frm_Master.Appearance.BackColor")));
+            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.panel_head);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Master";
