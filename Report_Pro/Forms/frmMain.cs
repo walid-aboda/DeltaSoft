@@ -75,6 +75,8 @@ namespace Report_Pro.Forms
            
         }
 
+
+
         public void OpenFormByName(string name)
         {
 
@@ -83,19 +85,22 @@ namespace Report_Pro.Forms
             var ins = Assembly.GetExecutingAssembly().GetTypes().FirstOrDefault(x => x.Name == name);
             if (ins != null)
             {
+               // frm = Application.OpenForms[frm.Name];
+               
                 frm = Activator.CreateInstance(ins) as Form;
                 if (Application.OpenForms[frm.Name] != null)
                 {
-                    frm = Application.OpenForms[frm.Name];
-                    frm.WindowState = FormWindowState.Maximized;
+                    
+                   
+                   frm.WindowState = FormWindowState.Maximized;
                 }
                 else
                 {
                     //    frm.Show();
                 }
 
-                frm.WindowState = FormWindowState.Maximized;
-                frm.BringToFront();
+                 frm.WindowState = FormWindowState.Maximized;
+                 frm.BringToFront();
 
             }
 

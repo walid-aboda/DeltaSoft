@@ -48,6 +48,13 @@
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
+            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnCoilReport = new DevComponents.DotNetBar.ButtonItem();
+            this.btnProductionRpt = new DevComponents.DotNetBar.ButtonItem();
+            this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnCoilClose = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel6 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar8 = new DevComponents.DotNetBar.RibbonBar();
             this.btnItems = new DevComponents.DotNetBar.ButtonItem();
@@ -71,13 +78,6 @@
             this.ribbonPanel7 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar12 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem21 = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnCoilReport = new DevComponents.DotNetBar.ButtonItem();
-            this.btnProductionRpt = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnCoilClose = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel4 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar10 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
@@ -172,12 +172,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.fluentDesignFormControl1.SuspendLayout();
             this.ribbonControl1.SuspendLayout();
+            this.ribbonPanel5.SuspendLayout();
             this.ribbonPanel6.SuspendLayout();
             this.ribbonPanel10.SuspendLayout();
             this.ribbonPanel9.SuspendLayout();
             this.ribbonPanel8.SuspendLayout();
             this.ribbonPanel7.SuspendLayout();
-            this.ribbonPanel5.SuspendLayout();
             this.ribbonPanel4.SuspendLayout();
             this.ribbonPanel3.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
@@ -363,16 +363,16 @@
             // ribbonControl1
             // 
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
+            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
             this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Controls.Add(this.ribbonPanel10);
             this.ribbonControl1.Controls.Add(this.ribbonPanel9);
             this.ribbonControl1.Controls.Add(this.ribbonPanel8);
             this.ribbonControl1.Controls.Add(this.ribbonPanel7);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.rb_MainData,
             this.rb_Sales,
@@ -408,6 +408,83 @@
             this.ribbonControl1.SystemText.QatPlaceBelowRibbonText = resources.GetString("ribbonControl1.SystemText.QatPlaceBelowRibbonText");
             this.ribbonControl1.SystemText.QatRemoveItemText = resources.GetString("ribbonControl1.SystemText.QatRemoveItemText");
             this.ribbonControl1.TabGroupHeight = 40;
+            // 
+            // ribbonPanel5
+            // 
+            resources.ApplyResources(this.ribbonPanel5, "ribbonPanel5");
+            this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel5.Controls.Add(this.ribbonBar6);
+            this.ribbonPanel5.Controls.Add(this.ribbonBar5);
+            this.ribbonPanel5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ribbonPanel5.Name = "ribbonPanel5";
+            // 
+            // ribbonBar6
+            // 
+            resources.ApplyResources(this.ribbonBar6, "ribbonBar6");
+            this.ribbonBar6.AutoOverflowEnabled = true;
+            this.ribbonBar6.ContainerControlProcessDialogKey = true;
+            this.ribbonBar6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnCoilReport,
+            this.btnProductionRpt});
+            this.ribbonBar6.ItemSpacing = 5;
+            this.ribbonBar6.Name = "ribbonBar6";
+            this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            // 
+            // btnCoilReport
+            // 
+            resources.ApplyResources(this.btnCoilReport, "btnCoilReport");
+            this.btnCoilReport.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnCoilReport.Image = global::Report_Pro.Properties.Resources.report;
+            this.btnCoilReport.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnCoilReport.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnCoilReport.Name = "btnCoilReport";
+            this.btnCoilReport.SubItemsExpandWidth = 14;
+            this.btnCoilReport.Click += new System.EventHandler(this.btnCoilReport_Click);
+            // 
+            // btnProductionRpt
+            // 
+            resources.ApplyResources(this.btnProductionRpt, "btnProductionRpt");
+            this.btnProductionRpt.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnProductionRpt.Image = global::Report_Pro.Properties.Resources.report_32x32;
+            this.btnProductionRpt.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnProductionRpt.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnProductionRpt.Name = "btnProductionRpt";
+            this.btnProductionRpt.SubItemsExpandWidth = 14;
+            this.btnProductionRpt.Click += new System.EventHandler(this.btnProductionRpt_Click);
+            // 
+            // ribbonBar5
+            // 
+            resources.ApplyResources(this.ribbonBar5, "ribbonBar5");
+            this.ribbonBar5.AutoOverflowEnabled = false;
+            this.ribbonBar5.ContainerControlProcessDialogKey = true;
+            this.ribbonBar5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem16,
+            this.btnCoilClose});
+            this.ribbonBar5.ItemSpacing = 5;
+            this.ribbonBar5.Name = "ribbonBar5";
+            this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            // 
+            // buttonItem16
+            // 
+            resources.ApplyResources(this.buttonItem16, "buttonItem16");
+            this.buttonItem16.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem16.Image = global::Report_Pro.Properties.Resources.Projects;
+            this.buttonItem16.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem16.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem16.Name = "buttonItem16";
+            this.buttonItem16.SubItemsExpandWidth = 14;
+            this.buttonItem16.Click += new System.EventHandler(this.buttonItem16_Click);
+            // 
+            // btnCoilClose
+            // 
+            resources.ApplyResources(this.btnCoilClose, "btnCoilClose");
+            this.btnCoilClose.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnCoilClose.Image = global::Report_Pro.Properties.Resources.Projects;
+            this.btnCoilClose.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnCoilClose.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnCoilClose.Name = "btnCoilClose";
+            this.btnCoilClose.SubItemsExpandWidth = 14;
+            this.btnCoilClose.Click += new System.EventHandler(this.btnCoilClose_Click);
             // 
             // ribbonPanel6
             // 
@@ -651,83 +728,6 @@
             this.buttonItem21.Name = "buttonItem21";
             this.buttonItem21.SubItemsExpandWidth = 14;
             this.buttonItem21.Click += new System.EventHandler(this.buttonItem21_Click_1);
-            // 
-            // ribbonPanel5
-            // 
-            resources.ApplyResources(this.ribbonPanel5, "ribbonPanel5");
-            this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel5.Controls.Add(this.ribbonBar6);
-            this.ribbonPanel5.Controls.Add(this.ribbonBar5);
-            this.ribbonPanel5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ribbonPanel5.Name = "ribbonPanel5";
-            // 
-            // ribbonBar6
-            // 
-            resources.ApplyResources(this.ribbonBar6, "ribbonBar6");
-            this.ribbonBar6.AutoOverflowEnabled = true;
-            this.ribbonBar6.ContainerControlProcessDialogKey = true;
-            this.ribbonBar6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnCoilReport,
-            this.btnProductionRpt});
-            this.ribbonBar6.ItemSpacing = 5;
-            this.ribbonBar6.Name = "ribbonBar6";
-            this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            // 
-            // btnCoilReport
-            // 
-            resources.ApplyResources(this.btnCoilReport, "btnCoilReport");
-            this.btnCoilReport.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnCoilReport.Image = global::Report_Pro.Properties.Resources.report;
-            this.btnCoilReport.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnCoilReport.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnCoilReport.Name = "btnCoilReport";
-            this.btnCoilReport.SubItemsExpandWidth = 14;
-            this.btnCoilReport.Click += new System.EventHandler(this.btnCoilReport_Click);
-            // 
-            // btnProductionRpt
-            // 
-            resources.ApplyResources(this.btnProductionRpt, "btnProductionRpt");
-            this.btnProductionRpt.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnProductionRpt.Image = global::Report_Pro.Properties.Resources.report_32x32;
-            this.btnProductionRpt.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnProductionRpt.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnProductionRpt.Name = "btnProductionRpt";
-            this.btnProductionRpt.SubItemsExpandWidth = 14;
-            this.btnProductionRpt.Click += new System.EventHandler(this.btnProductionRpt_Click);
-            // 
-            // ribbonBar5
-            // 
-            resources.ApplyResources(this.ribbonBar5, "ribbonBar5");
-            this.ribbonBar5.AutoOverflowEnabled = false;
-            this.ribbonBar5.ContainerControlProcessDialogKey = true;
-            this.ribbonBar5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem16,
-            this.btnCoilClose});
-            this.ribbonBar5.ItemSpacing = 5;
-            this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            // 
-            // buttonItem16
-            // 
-            resources.ApplyResources(this.buttonItem16, "buttonItem16");
-            this.buttonItem16.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem16.Image = global::Report_Pro.Properties.Resources.Projects;
-            this.buttonItem16.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem16.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem16.Name = "buttonItem16";
-            this.buttonItem16.SubItemsExpandWidth = 14;
-            this.buttonItem16.Click += new System.EventHandler(this.buttonItem16_Click);
-            // 
-            // btnCoilClose
-            // 
-            resources.ApplyResources(this.btnCoilClose, "btnCoilClose");
-            this.btnCoilClose.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnCoilClose.Image = global::Report_Pro.Properties.Resources.Projects;
-            this.btnCoilClose.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnCoilClose.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnCoilClose.Name = "btnCoilClose";
-            this.btnCoilClose.SubItemsExpandWidth = 14;
-            this.btnCoilClose.Click += new System.EventHandler(this.btnCoilClose_Click);
             // 
             // ribbonPanel4
             // 
@@ -1326,6 +1326,7 @@
             // rb_MainData
             // 
             resources.ApplyResources(this.rb_MainData, "rb_MainData");
+            this.rb_MainData.Checked = true;
             this.rb_MainData.FontBold = true;
             this.rb_MainData.Name = "rb_MainData";
             this.rb_MainData.PaddingHorizontal = 5;
@@ -1368,7 +1369,6 @@
             // rb_Inventory
             // 
             resources.ApplyResources(this.rb_Inventory, "rb_Inventory");
-            this.rb_Inventory.Checked = true;
             this.rb_Inventory.FontBold = true;
             this.rb_Inventory.Name = "rb_Inventory";
             this.rb_Inventory.PaddingHorizontal = 5;
@@ -1667,12 +1667,12 @@
             this.fluentDesignFormControl1.ResumeLayout(false);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
+            this.ribbonPanel5.ResumeLayout(false);
             this.ribbonPanel6.ResumeLayout(false);
             this.ribbonPanel10.ResumeLayout(false);
             this.ribbonPanel9.ResumeLayout(false);
             this.ribbonPanel8.ResumeLayout(false);
             this.ribbonPanel7.ResumeLayout(false);
-            this.ribbonPanel5.ResumeLayout(false);
             this.ribbonPanel4.ResumeLayout(false);
             this.ribbonPanel3.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);

@@ -385,6 +385,7 @@ namespace Report_Pro.PL
         {
             Frm_uploadImage frmUpload = new Frm_uploadImage();
             frmUpload.p_id = txtLcNo.Text;
+            frmUpload.branchID = Properties.Settings.Default.BranchId;
             frmUpload.ShowDialog();
             base.Attachment();
         }

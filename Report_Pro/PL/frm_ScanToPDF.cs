@@ -347,6 +347,13 @@ namespace Report_Pro.PL
             //}
         }
 
+        private void btn_About_Click(object sender, EventArgs e)
+        {
+            int screenwidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenhight = Screen.PrimaryScreen.Bounds.Height;
+            MessageBox.Show("width: " + screenwidth + " hight: " + screenhight);
+        }
+
         private void ListBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             try

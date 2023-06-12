@@ -876,8 +876,8 @@
             // 
             this.tabControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel4);
+            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             resources.ApplyResources(this.tabControl1, "tabControl1");

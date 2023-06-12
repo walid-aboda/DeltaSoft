@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_Po));
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem1 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem2 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem3 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem4 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem5 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem6 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem7 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
-            DevExpress.XtraEditors.Controls.RadioGroupItem radioGroupItem8 = new DevExpress.XtraEditors.Controls.RadioGroupItem();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -72,9 +64,9 @@
             this.txtTotalBalance = new Report_Pro.MyControls.decimalText();
             this.dgvPO = new ADGV.AdvancedDataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chActive = new System.Windows.Forms.CheckBox();
-            this.chCanceled = new System.Windows.Forms.CheckBox();
             this.chClosed = new System.Windows.Forms.CheckBox();
+            this.chCanceled = new System.Windows.Forms.CheckBox();
+            this.chActive = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -88,62 +80,62 @@
             // 
             // label10
             // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label10, "label10");
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Name = "label10";
             // 
             // label9
             // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label9, "label9");
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Name = "label9";
             // 
             // txtPO
             // 
-            this.txtPO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtPO, "txtPO");
+            this.txtPO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPO.Name = "txtPO";
             // 
             // label8
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Name = "label8";
             // 
             // label6
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label6, "label6");
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Name = "label6";
             // 
             // label7
             // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label7, "label7");
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Name = "label7";
             // 
             // label5
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Name = "label5";
             // 
             // label4
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label4, "label4");
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Name = "label4";
             // 
             // label3
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label3, "label3");
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Name = "label3";
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Name = "label2";
             // 
             // txtToDate
@@ -158,8 +150,8 @@
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Name = "label1";
             // 
             // txtItem
@@ -174,80 +166,58 @@
             // 
             // txtAcc
             // 
-            this.txtAcc.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.txtAcc, "txtAcc");
+            this.txtAcc.BackColor = System.Drawing.Color.Transparent;
             this.txtAcc.Name = "txtAcc";
             // 
             // txtBranch
             // 
+            resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.BackColor = System.Drawing.Color.Transparent;
             this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.Name = "txtBranch";
             // 
             // txtThick_2
             // 
+            resources.ApplyResources(this.txtThick_2, "txtThick_2");
             this.txtThick_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThick_2.decimaldigit = 2;
-            resources.ApplyResources(this.txtThick_2, "txtThick_2");
             this.txtThick_2.Name = "txtThick_2";
             // 
             // txtThick_1
             // 
+            resources.ApplyResources(this.txtThick_1, "txtThick_1");
             this.txtThick_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThick_1.decimaldigit = 2;
-            resources.ApplyResources(this.txtThick_1, "txtThick_1");
             this.txtThick_1.Name = "txtThick_1";
             // 
             // radioGroup2
             // 
             resources.ApplyResources(this.radioGroup2, "radioGroup2");
             this.radioGroup2.Name = "radioGroup2";
-            // 
-            // 
-            // 
-            this.radioGroup2.Properties.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("radioGroup2.Properties.Appearance.BackColor")));
+            this.radioGroup2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.radioGroup2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup2.Properties.Appearance.Font")));
             this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
             this.radioGroup2.Properties.Appearance.Options.UseFont = true;
-            resources.ApplyResources(radioGroupItem1, "radioGroupItem1");
-            radioGroupItem1.Value = "0";
-            resources.ApplyResources(radioGroupItem2, "radioGroupItem2");
-            radioGroupItem2.Value = "1";
-            resources.ApplyResources(radioGroupItem3, "radioGroupItem3");
-            radioGroupItem3.Value = "2";
             this.radioGroup2.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            radioGroupItem1,
-            radioGroupItem2,
-            radioGroupItem3});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items"), resources.GetString("radioGroup2.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items2"), resources.GetString("radioGroup2.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup2.Properties.Items4"), resources.GetString("radioGroup2.Properties.Items5"))});
             // 
             // radioGroup1
             // 
             resources.ApplyResources(this.radioGroup1, "radioGroup1");
             this.radioGroup1.Name = "radioGroup1";
-            // 
-            // 
-            // 
-            this.radioGroup1.Properties.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("radioGroup1.Properties.Appearance.BackColor")));
+            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.radioGroup1.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("radioGroup1.Properties.Appearance.Font")));
             this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
             this.radioGroup1.Properties.Appearance.Options.UseFont = true;
-            resources.ApplyResources(radioGroupItem4, "radioGroupItem4");
-            radioGroupItem4.Value = "0";
-            resources.ApplyResources(radioGroupItem5, "radioGroupItem5");
-            radioGroupItem5.Value = "1";
-            resources.ApplyResources(radioGroupItem6, "radioGroupItem6");
-            radioGroupItem6.Value = "2";
-            resources.ApplyResources(radioGroupItem7, "radioGroupItem7");
-            radioGroupItem7.Value = "3";
-            resources.ApplyResources(radioGroupItem8, "radioGroupItem8");
-            radioGroupItem8.Value = "4";
             this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            radioGroupItem4,
-            radioGroupItem5,
-            radioGroupItem6,
-            radioGroupItem7,
-            radioGroupItem8});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items"), resources.GetString("radioGroup1.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items2"), resources.GetString("radioGroup1.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items4"), resources.GetString("radioGroup1.Properties.Items5")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items6"), resources.GetString("radioGroup1.Properties.Items7")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("radioGroup1.Properties.Items8"), resources.GetString("radioGroup1.Properties.Items9"))});
             // 
             // txtGroup1
             // 
@@ -325,6 +295,7 @@
             // 
             // dgvPO
             // 
+            resources.ApplyResources(this.dgvPO, "dgvPO");
             this.dgvPO.AllowUserToAddRows = false;
             this.dgvPO.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Info;
@@ -350,7 +321,6 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPO.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.dgvPO, "dgvPO");
             this.dgvPO.EnableHeadersVisualStyles = false;
             this.dgvPO.Name = "dgvPO";
             this.dgvPO.ReadOnly = true;
@@ -369,6 +339,7 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.chClosed);
             this.panel1.Controls.Add(this.chCanceled);
             this.panel1.Controls.Add(this.chActive);
@@ -394,8 +365,19 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtThick_2);
             this.panel1.Controls.Add(this.txtThick_1);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // chClosed
+            // 
+            resources.ApplyResources(this.chClosed, "chClosed");
+            this.chClosed.Name = "chClosed";
+            this.chClosed.UseVisualStyleBackColor = true;
+            // 
+            // chCanceled
+            // 
+            resources.ApplyResources(this.chCanceled, "chCanceled");
+            this.chCanceled.Name = "chCanceled";
+            this.chCanceled.UseVisualStyleBackColor = true;
             // 
             // chActive
             // 
@@ -404,18 +386,6 @@
             this.chActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chActive.Name = "chActive";
             this.chActive.UseVisualStyleBackColor = true;
-            // 
-            // chCanceled
-            // 
-            resources.ApplyResources(this.chCanceled, "chCanceled");
-            this.chCanceled.Name = "chCanceled";
-            this.chCanceled.UseVisualStyleBackColor = true;
-            // 
-            // chClosed
-            // 
-            resources.ApplyResources(this.chClosed, "chClosed");
-            this.chClosed.Name = "chClosed";
-            this.chClosed.UseVisualStyleBackColor = true;
             // 
             // frm_rpt_Po
             // 

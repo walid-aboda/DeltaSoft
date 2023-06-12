@@ -73,7 +73,7 @@ namespace Report_Pro.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".")]
+        [global::System.Configuration.DefaultSettingValueAttribute("server")]
         public string Server {
             get {
                 return ((string)(this["Server"]));
@@ -145,7 +145,7 @@ namespace Report_Pro.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("وتام للصناعات الحديدية")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string head_txt {
             get {
                 return ((string)(this["head_txt"]));
@@ -181,7 +181,7 @@ namespace Report_Pro.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Watam Steel Industries")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string head_txt_EN {
             get {
                 return ((string)(this["head_txt_EN"]));

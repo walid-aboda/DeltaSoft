@@ -29,5 +29,6 @@
         public System.Windows.Forms.ToolStripMenuItem btn_Option;
         public System.Windows.Forms.ToolStripMenuItem btn_Report;
         public System.Windows.Forms.ToolStripMenuItem btn_preview;
+        public System.Windows.Forms.ToolStripMenuItem btn_exportToExcel;
     }
 }

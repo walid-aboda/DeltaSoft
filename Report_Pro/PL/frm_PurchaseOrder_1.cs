@@ -176,7 +176,7 @@ namespace Report_Pro.PL
                 ,PRINTING_SECURTY,TermsOfPaymentE,PREPAREDby,RECEVEDby,TO_BRANCH
                 ,CANCELED,aprovedBY,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX
                 ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT
-                ,requstedBy)
+                ,requstedBy,Po_Status)
                 values
                 ('" + txt_InvNu.Text +
                 "', '" + txtStore_ID.Text +
@@ -208,7 +208,7 @@ namespace Report_Pro.PL
                 "','" + Confirm_Persson.ID.Text +
                 "','" + txtBranch.ID.Text +
 
-                "','" + (chStop.Checked ? "C" : "") +
+                "','" + (chCanceled.Checked ? "C" : "") +
                 "','" + Authorized_Persson.ID.Text +
                 "', '" + txtVatAcc.ID.Text +
                 "','0','" +
@@ -218,7 +218,8 @@ namespace Report_Pro.PL
                 txtKmCode.Text +
                 "','" + Vat_Class.Text +
                 "','" + (chVAT.Checked ? "1" : "0") +
-                "','" + Requst_Persson.ID.Text + "')";
+                "','" + Requst_Persson.ID.Text + 
+                "','" + (chStop.Checked ? "S" : "") + "')";
                 cmd.ExecuteNonQuery();
 
 
@@ -310,7 +311,7 @@ namespace Report_Pro.PL
                 ,PRINTING_SECURTY,TermsOfPaymentE,PREPAREDby,RECEVEDby,TO_BRANCH
                 ,CANCELED,aprovedBY,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX
                 ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT
-                ,requstedBy)
+                ,requstedBy,Po_Status)
                 values
                 ('" + txt_InvNu.Text +
                 "', '" + txtStore_ID.Text +
@@ -342,7 +343,7 @@ namespace Report_Pro.PL
                 "','" + Confirm_Persson.ID.Text +
                 "','" + txtBranch.ID.Text +
 
-                "','" + (chStop.Checked ? "C" : "") +
+                "','" + (chCanceled.Checked ? "C" : "") +
                 "','" + Authorized_Persson.ID.Text +
                 "', '" + txtVatAcc.ID.Text +
                 "','0','" +
@@ -352,7 +353,8 @@ namespace Report_Pro.PL
                 txtKmCode.Text +
                 "','" + Vat_Class.Text +
                 "','" + (chVAT.Checked ? "1" : "0") +
-                "','" + Requst_Persson.ID.Text + "')";
+                "','" + Requst_Persson.ID.Text + 
+                "','" + (chStop.Checked ? "S" : "") +"')";
                 cmd.ExecuteNonQuery();
 
 

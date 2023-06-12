@@ -6361,6 +6361,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="report_SsV_icon.ico" />
+    <None Include="Resources\excel.png" />
     <None Include="Resources\payment.png" />
     <None Include="Resources\Recepit.png" />
     <None Include="Resources\bo_security_permission.svg" />

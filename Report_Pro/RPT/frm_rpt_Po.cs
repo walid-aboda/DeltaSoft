@@ -323,17 +323,43 @@ namespace Report_Pro.RPT
             else if (radioGroup2.EditValue.Equals("2"))
             { stockItem = "1"; }
 
+            string canceld = "";
+            if (chCanceled.Checked)
+            { canceld = "C"; }
+            else
+            {
+                canceld = "N";
+            }
+            string closed = "";
+            if (chClosed.Checked)
+            { closed = "S"; }
+            else
+            {
+                closed = "N";
+            }
 
-          //  case when '" + radioGroup1.EditValue + "' = 1 then 0
+            string active = "";
+            if (chActive.Checked)
+            {
+              active = "";
+              
+            }
+            else
+            {
+              active = "N";
+            }
+
+
+            //  case when '" + radioGroup1.EditValue + "' = 1 then 0
 
 
             dt = dal.getDataTabl_1(@"select x.ser_no,X.G_Date,X.Cyear,X.Acc_no,P.payer_name,P.payer_l_name,x.item_no,D.descr,D.Descr_eng ,X.branch_code,C.branch_name,C.WH_E_NAME,D.Unit,D.weight,X.qty_take,Y.qty_Add ,X.qty_take-isnull(Y.qty_Add,0) as Po_balance,D.Weight,X.Local_Price, case when D.Weight>0 then X.Local_Price/D.Weight*1000 else 0 end as TonPrice from 
-            (select S2.Acc_no,S1.ser_no,S1.Cyear,S1.G_Date ,S1.branch_code,item_no, qty_take,Local_Price 
+            (select S2.Acc_no,S1.ser_no,S1.Cyear,S1.G_Date ,S1.branch_code,item_no, qty_take,Local_Price ,S2.CANCELED,S2.Po_Status
             from wh_Po_Cot_MATERIAL_TRANSACTION as S1 
             inner join  wh_Po_Cot_inv_data as S2
             on S1.ser_no = S2.ser_no and S1.branch_code =S2.branch_code and S1.cyear= S2.cyear and S1.transaction_code = S2.transaction_code
-            where S1.TRANSACTION_CODE='ps' 
-           and cast(S1.G_date as date) between '" + txtFromDate.Value.ToString("yyyy-MM-dd") + "' and '" + txtToDate.Value.ToString("yyyy-MM-dd")
+            where S1.TRANSACTION_CODE='ps' AND (S2.CANCELED = '"+canceld+"'  or S2.Po_Status = '"+closed+
+           "' or (ISNULL(S2.CANCELED,'')='"+active+"' and isnull(S2.Po_Status,'')='"+active+"')) and cast(S1.G_date as date) between '" + txtFromDate.Value.ToString("yyyy-MM-dd") + "' and '" + txtToDate.Value.ToString("yyyy-MM-dd")
             +"' and S1.branch_code like '"+txtBranch.ID.Text+"%') as X " +
             "left join  (select A.item_no,A.Branch_code,A.Cyear,B.po_no,sum(qty_add-qty_take) as qty_Add   from wh_material_transaction as A inner join wh_inv_data As B on "+
             "A.ser_no = B.ser_no and A.branch_code =B.branch_code and A.cyear= B.cyear and A.transaction_code = B.transaction_code where A.transaction_code like 'xp%'   group by A.item_no,A.Branch_code,A.Cyear,B.po_no ) as Y "+
@@ -350,8 +376,8 @@ namespace Report_Pro.RPT
           "or (X.qty_take-isnull(Y.qty_Add,0))=case when '" + radioGroup1.EditValue + "'=2 then 0 end " +
           "or isnull(Y.qty_Add,0)= case when '" + radioGroup1.EditValue + "'=3 then 0 end " +
           "or X.qty_take > case when '" + radioGroup1.EditValue + "'=0 then 0 end) " +
-         " or (X.qty_take - isnull(Y.qty_Add, 0)) > case when '" + radioGroup1.EditValue + "' = 4 then 0  end "+
-          "order by X.branch_code,x.ser_no");
+          "or (X.qty_take - isnull(Y.qty_Add, 0)) > case when '" + radioGroup1.EditValue + "' = 4 then 0  end "+
+          "  order by X.branch_code,x.ser_no");
 
             return dt;
         }
@@ -468,13 +494,41 @@ namespace Report_Pro.RPT
 
         private void frm_rpt_Po_Load(object sender, EventArgs e)
         {
-          btn_Report.Visible = true;
-
+            btn_Report.Visible = true;
+            btn_preview.Visible = false;
+            btn_exportToExcel.Visible = true;
             createDattable();
             dgvPO.DataSource = dt_bs;
             resaizeDGV();
         }
 
+
+        public override void exportToExcel()
+        {
+
+            Microsoft.Office.Interop.Excel.Application exlApp = new Microsoft.Office.Interop.Excel.Application();
+            exlApp.Application.Workbooks.Add(Type.Missing);
+            for (int i = 0; i < dgvPO.ColumnCount; i++)
+            {
+                exlApp.Cells[1, i + 1] = dgvPO.Columns[i].HeaderText.ToString();
+            }
+
+            for (int i = 0; i < dgvPO.RowCount; i++)
+            {
+
+                for (int j = 0; j < dgvPO.ColumnCount; j++)
+                {
+                    exlApp.Cells[i + 2, j + 1] = dgvPO.Rows[i].Cells[j].Value;
+                }
+            }
+            exlApp.Columns.AutoFit();
+            exlApp.Visible = true;
+
+
+            base.exportToExcel();
+        }
+       
+        
    
     
 

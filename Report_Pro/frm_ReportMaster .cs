@@ -178,6 +178,7 @@ namespace Report_Pro
             this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.xToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_exportToExcel = new System.Windows.Forms.ToolStripMenuItem();
             this.cmbLanguh = new System.Windows.Forms.ToolStripComboBox();
             this.headLbl = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
@@ -202,6 +203,7 @@ namespace Report_Pro
             this.xToolStripMenuItem,
             this.xToolStripMenuItem1,
             this.xToolStripMenuItem2,
+            this.btn_exportToExcel,
             this.cmbLanguh});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -253,6 +255,13 @@ namespace Report_Pro
             this.xToolStripMenuItem2.Name = "xToolStripMenuItem2";
             resources.ApplyResources(this.xToolStripMenuItem2, "xToolStripMenuItem2");
             this.xToolStripMenuItem2.Click += new System.EventHandler(this.xToolStripMenuItem2_Click);
+            // 
+            // btn_exportToExcel
+            // 
+            this.btn_exportToExcel.Image = global::Report_Pro.Properties.Resources.excel;
+            this.btn_exportToExcel.Name = "btn_exportToExcel";
+            resources.ApplyResources(this.btn_exportToExcel, "btn_exportToExcel");
+            this.btn_exportToExcel.Click += new System.EventHandler(this.btn_exportToExcel_Click);
             // 
             // cmbLanguh
             // 
@@ -398,6 +407,19 @@ namespace Report_Pro
         private void xToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             MinForm(this);
+        }
+
+        private void btn_exportToExcel_Click(object sender, EventArgs e)
+        {
+            if (CheckActionAuthorization(this.Name, Master.Actions.Print))
+
+                exportToExcel();
+        }
+
+      
+        public virtual void exportToExcel()
+        {
+
         }
     }
     }

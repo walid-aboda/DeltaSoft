@@ -1702,16 +1702,20 @@ where X.Ser_no like '" + _ser + "%'  and X.Branch_code Like '" + _branch +
                     invGrid1.dgv1.Rows[n1].Cells["_weight"].Value = dt_D_add.Rows[ii]["weight"].ToString();
                     invGrid1.dgv1.Rows[n1].Cells["_qty"].Value = dt_D_add.Rows[ii]["balanceQty"].ToString();
                     invGrid1.dgv1.Rows[n1].Cells["_price"].Value = dt_D_add.Rows[ii]["Local_Price"].ToString();
-                    invGrid1.dgv1.Rows[n1].Cells["_vatRatio"].Value = dt_D_add.Rows[ii]["VatRatio"].ToString();
+                    invGrid1.dgv1.Rows[n1].Cells["_vatRatio"].Value = dt_D_add.Rows[ii]["VatRatio"].ToString().ToDecimal();
                     invGrid1.dgv1.Rows[n1].Cells["_balance"].Value = dt_D_add.Rows[ii]["Balance"].ToString();
                     invGrid1.dgv1.Rows[n1].Cells["_oldCost"].Value = dt_D_add.Rows[ii]["local_cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
                     invGrid1.dgv1.Rows[n1].Cells["_oldbalance"].Value = dt_D_add.Rows[ii]["Balance"].ToString();
-                   // invGrid1.dgv1.Rows[n1].Cells["_cost"].Value = dt_D_add.Rows[ii]["local_cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
+
+                   // invGrid1.dgv1.Rows[n1].Cells["_cost"].Value = Math.Round(((dt_D_add.Rows[ii]["Balance"].ToString().ToDecimal() * dt_D_add.Rows[ii]["local_cost"].ToString().ToDecimal()) + itemTotalAmount) / (_old_balance + itemTotalQty), 4);
+
+                    // invGrid1.dgv1.Rows[n1].Cells["_cost"].Value = dt_D_add.Rows[ii]["local_cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
 
                     // invGrid1.dgv1.Rows[n1].Cells["_documentNo"].Value = dt_D_add.Rows[ii]["Ser_no"].ToString();
                 }
                 dgvPO.Rows.RemoveAt(this.dgvPO.CurrentRow.Index);
 
+            }
                 for (int r = 0; r < invGrid1.dgv1.Rows.Count; r++)
                 {
 
@@ -1721,7 +1725,6 @@ where X.Ser_no like '" + _ser + "%'  and X.Branch_code Like '" + _branch +
                 }
                 invGrid1.total_inv();
 
-            }
 
 
         }
@@ -1787,6 +1790,7 @@ where X.Ser_no like '" + _ser + "%'  and X.Branch_code Like '" + _branch +
                 PL.Frm_uploadImage frmUpload = new PL.Frm_uploadImage();
                 frmUpload.p_id = txt_InvNu.Text;
                 frmUpload.docType = Doc_Type.Text;
+                frmUpload.branchID = Properties.Settings.Default.BranchId;
                 frmUpload.ShowDialog();
             }
             else

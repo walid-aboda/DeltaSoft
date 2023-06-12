@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btn_searchProdction = new System.Windows.Forms.Button();
             this.btn_FillData = new System.Windows.Forms.Button();
             this.AccType = new System.Windows.Forms.Label();
             this.txtBranch_Id = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.txtGenralSer = new System.Windows.Forms.TextBox();
             this.pIN = new Report_Pro.MyControls.ProductinGridIN();
             this.pOUT = new Report_Pro.MyControls.ProductinGridOUT();
-            this.btn_searchProdction = new System.Windows.Forms.Button();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductionDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate)).BeginInit();
@@ -74,7 +74,7 @@
             // 
             // headLbl
             // 
-            this.headLbl.Size = new System.Drawing.Size(1316, 35);
+            this.headLbl.Size = new System.Drawing.Size(1330, 35);
             this.headLbl.Text = "Production";
             // 
             // groupPanel1
@@ -121,7 +121,7 @@
             this.groupPanel1.Location = new System.Drawing.Point(0, 74);
             this.groupPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1316, 145);
+            this.groupPanel1.Size = new System.Drawing.Size(1330, 145);
             // 
             // 
             // 
@@ -144,6 +144,17 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabIndex = 340;
             // 
+            // btn_searchProdction
+            // 
+            this.btn_searchProdction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_searchProdction.Image = global::Report_Pro.Properties.Resources.Search_icon11;
+            this.btn_searchProdction.Location = new System.Drawing.Point(1078, 30);
+            this.btn_searchProdction.Name = "btn_searchProdction";
+            this.btn_searchProdction.Size = new System.Drawing.Size(36, 25);
+            this.btn_searchProdction.TabIndex = 407;
+            this.btn_searchProdction.UseVisualStyleBackColor = false;
+            this.btn_searchProdction.Click += new System.EventHandler(this.btn_searchProdction_Click);
+            // 
             // btn_FillData
             // 
             this.btn_FillData.Location = new System.Drawing.Point(202, 112);
@@ -160,7 +171,7 @@
             this.AccType.BackColor = System.Drawing.Color.MistyRose;
             this.AccType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AccType.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.AccType.Location = new System.Drawing.Point(1171, 82);
+            this.AccType.Location = new System.Drawing.Point(1185, 82);
             this.AccType.Name = "AccType";
             this.AccType.Size = new System.Drawing.Size(86, 20);
             this.AccType.TabIndex = 405;
@@ -172,7 +183,7 @@
             this.txtBranch_Id.BackColor = System.Drawing.Color.MistyRose;
             this.txtBranch_Id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBranch_Id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtBranch_Id.Location = new System.Drawing.Point(1171, 57);
+            this.txtBranch_Id.Location = new System.Drawing.Point(1185, 57);
             this.txtBranch_Id.Name = "txtBranch_Id";
             this.txtBranch_Id.Size = new System.Drawing.Size(86, 20);
             this.txtBranch_Id.TabIndex = 344;
@@ -184,7 +195,7 @@
             this.txt_cyear.BackColor = System.Drawing.Color.MistyRose;
             this.txt_cyear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_cyear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_cyear.Location = new System.Drawing.Point(1171, 9);
+            this.txt_cyear.Location = new System.Drawing.Point(1185, 9);
             this.txt_cyear.Name = "txt_cyear";
             this.txt_cyear.Size = new System.Drawing.Size(86, 20);
             this.txt_cyear.TabIndex = 403;
@@ -196,7 +207,7 @@
             this.txtStore_ID.BackColor = System.Drawing.Color.MistyRose;
             this.txtStore_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStore_ID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtStore_ID.Location = new System.Drawing.Point(1171, 34);
+            this.txtStore_ID.Location = new System.Drawing.Point(1185, 34);
             this.txtStore_ID.Name = "txtStore_ID";
             this.txtStore_ID.Size = new System.Drawing.Size(86, 20);
             this.txtStore_ID.TabIndex = 343;
@@ -554,7 +565,7 @@
             this.pIN.Location = new System.Drawing.Point(0, 219);
             this.pIN.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pIN.Name = "pIN";
-            this.pIN.Size = new System.Drawing.Size(1316, 269);
+            this.pIN.Size = new System.Drawing.Size(1330, 243);
             this.pIN.TabIndex = 341;
             this.pIN.Load += new System.EventHandler(this.pIN_Load);
             // 
@@ -562,22 +573,11 @@
             // 
             this.pOUT.AutoScroll = true;
             this.pOUT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pOUT.Location = new System.Drawing.Point(0, 488);
+            this.pOUT.Location = new System.Drawing.Point(0, 462);
             this.pOUT.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pOUT.Name = "pOUT";
-            this.pOUT.Size = new System.Drawing.Size(1316, 306);
+            this.pOUT.Size = new System.Drawing.Size(1330, 251);
             this.pOUT.TabIndex = 342;
-            // 
-            // btn_searchProdction
-            // 
-            this.btn_searchProdction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn_searchProdction.Image = global::Report_Pro.Properties.Resources.Search_icon11;
-            this.btn_searchProdction.Location = new System.Drawing.Point(1078, 30);
-            this.btn_searchProdction.Name = "btn_searchProdction";
-            this.btn_searchProdction.Size = new System.Drawing.Size(36, 25);
-            this.btn_searchProdction.TabIndex = 407;
-            this.btn_searchProdction.UseVisualStyleBackColor = false;
-            this.btn_searchProdction.Click += new System.EventHandler(this.btn_searchProdction_Click);
             // 
             // frm_production
             // 
@@ -585,7 +585,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1316, 846);
+            this.ClientSize = new System.Drawing.Size(1330, 718);
             this.Controls.Add(this.pOUT);
             this.Controls.Add(this.pIN);
             this.Controls.Add(this.groupPanel1);
