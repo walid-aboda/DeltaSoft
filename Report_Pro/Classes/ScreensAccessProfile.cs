@@ -671,6 +671,9 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile InventoryReportByGroup = new ScreensAccessProfile(nameof(RPT.frm_Inventory_Report_ByGroup), Inventory)
         { ScreenCaption = " تقرير المخزون بالمجموعات", ScreenCaption_E = "Inventory Report By Group" };
 
+        public static ScreensAccessProfile PoApproved = new ScreensAccessProfile(nameof(PL.frm_PoApproved),Purchases)
+        { ScreenCaption = " موافقات طلبات ", ScreenCaption_E = "Po Approved" };
+
 
 
 

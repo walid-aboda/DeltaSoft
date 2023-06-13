@@ -176,7 +176,7 @@ namespace Report_Pro.PL
                 ,PRINTING_SECURTY,TermsOfPaymentE,PREPAREDby,RECEVEDby,TO_BRANCH
                 ,CANCELED,aprovedBY,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX
                 ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT
-                ,requstedBy,Po_Status)
+                ,requstedBy)
                 values
                 ('" + txt_InvNu.Text +
                 "', '" + txtStore_ID.Text +
@@ -190,7 +190,8 @@ namespace Report_Pro.PL
                 "', '" + Convert.ToString(Payment_Type.SelectedValue) +
                 "', '" + Uc_Cost.ID.Text +
                 "' , '" + userID.Text +
-                "', '','" + txtSuppContact.Text +
+                "','" + (chStop.Checked ? "S" : "") + 
+                "','" + txtSuppContact.Text +
                 "','" + txt_InvNot.Text +
                 "', '" + txt_address.Text +
                 "', '" + txt_custTel.Text +
@@ -207,19 +208,17 @@ namespace Report_Pro.PL
                 "','" + userID.Text +
                 "','" + Confirm_Persson.ID.Text +
                 "','" + txtBranch.ID.Text +
-
                 "','" + (chCanceled.Checked ? "C" : "") +
                 "','" + Authorized_Persson.ID.Text +
                 "', '" + txtVatAcc.ID.Text +
                 "','0','" +
-               invGrid1.txtTotalVAT.Text.ToDecimal() +
+                invGrid1.txtTotalVAT.Text.ToDecimal() +
                 "', '" + Cust_Vat_No.Text +
                 "', '1','" +
                 txtKmCode.Text +
                 "','" + Vat_Class.Text +
                 "','" + (chVAT.Checked ? "1" : "0") +
-                "','" + Requst_Persson.ID.Text + 
-                "','" + (chStop.Checked ? "S" : "") + "')";
+                "','" + Requst_Persson.ID.Text + "')";
                 cmd.ExecuteNonQuery();
 
 
@@ -311,7 +310,7 @@ namespace Report_Pro.PL
                 ,PRINTING_SECURTY,TermsOfPaymentE,PREPAREDby,RECEVEDby,TO_BRANCH
                 ,CANCELED,aprovedBY,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX
                 ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT
-                ,requstedBy,Po_Status)
+                ,requstedBy)
                 values
                 ('" + txt_InvNu.Text +
                 "', '" + txtStore_ID.Text +
@@ -325,7 +324,8 @@ namespace Report_Pro.PL
                 "', '" + Convert.ToString(Payment_Type.SelectedValue) +
                 "', '" + Uc_Cost.ID.Text +
                 "' , '" + userID.Text +
-                "', '','" + txtSuppContact.Text +
+                "','" + (chStop.Checked ? "S" : "") + 
+                "','" + txtSuppContact.Text +
                 "','" + txt_InvNot.Text +
                 "', '" + txt_address.Text +
                 "', '" + txt_custTel.Text +
@@ -354,7 +354,7 @@ namespace Report_Pro.PL
                 "','" + Vat_Class.Text +
                 "','" + (chVAT.Checked ? "1" : "0") +
                 "','" + Requst_Persson.ID.Text + 
-                "','" + (chStop.Checked ? "S" : "") +"')";
+                "')";
                 cmd.ExecuteNonQuery();
 
 
