@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Report_Pro.exe.manifest" size="79481">
+    <dependentAssembly dependencyType="install" codebase="Report_Pro.exe.manifest" size="175092">
       <assemblyIdentity name="Report_Pro.exe" version="1.0.0.17" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HtpiJGQvYunE2L+jlJXFqm/qiXk1NbJ1xH4Iyz3Zcmc=</dsig:DigestValue>
+        <dsig:DigestValue>7JVwKjq7y06qgOsBf8sKZwALFU07AH5BsHb0YnmkTxc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

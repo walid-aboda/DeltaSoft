@@ -1205,7 +1205,7 @@ namespace Report_Pro.PL
             "inner join wh_main_master as M on M.item_no=B.ITEM_NO  " +
             "inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code  " +
             "inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type  " +
-            "inner join  Wh_Unit as U on U.Wh_Unit = B.unit "+
+            "left join  Wh_Unit as U on U.Wh_Unit = B.unit "+
             "left join Projects as J on J.PROJ_CODE = A.PROJECT_NO " +
             "where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
         }

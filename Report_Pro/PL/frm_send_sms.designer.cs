@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtUser = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.btn_Send = new DevComponents.DotNetBar.ButtonX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtPass = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtPhone = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtMessage = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.txtPhone = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.txtPass = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtUser = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btn_Send = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,82 @@
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
+            // labelX4
+            // 
+            this.labelX4.AutoSize = true;
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            this.labelX4.Location = new System.Drawing.Point(27, 95);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(72, 15);
+            this.labelX4.TabIndex = 8;
+            this.labelX4.Text = "Phone Number";
+            // 
+            // txtMessage
+            // 
+            // 
+            // 
+            // 
+            this.txtMessage.Border.Class = "TextBoxBorder";
+            this.txtMessage.Location = new System.Drawing.Point(27, 118);
+            this.txtMessage.MaxLength = 200;
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(467, 144);
+            this.txtMessage.TabIndex = 7;
+            // 
+            // labelX3
+            // 
+            this.labelX3.AutoSize = true;
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.Location = new System.Drawing.Point(27, 69);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(72, 15);
+            this.labelX3.TabIndex = 6;
+            this.labelX3.Text = "Phone Number";
+            // 
+            // txtPhone
+            // 
+            // 
+            // 
+            // 
+            this.txtPhone.Border.Class = "TextBoxBorder";
+            this.txtPhone.Location = new System.Drawing.Point(112, 67);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(273, 20);
+            this.txtPhone.TabIndex = 5;
+            // 
+            // labelX2
+            // 
+            this.labelX2.AutoSize = true;
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            this.labelX2.Location = new System.Drawing.Point(35, 44);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(65, 15);
+            this.labelX2.TabIndex = 4;
+            this.labelX2.Text = "sender Name";
+            this.labelX2.Click += new System.EventHandler(this.labelX2_Click);
+            // 
+            // txtPass
+            // 
+            // 
+            // 
+            // 
+            this.txtPass.Border.Class = "TextBoxBorder";
+            this.txtPass.Location = new System.Drawing.Point(112, 42);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(273, 20);
+            this.txtPass.TabIndex = 3;
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.labelX1.Location = new System.Drawing.Point(46, 19);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(54, 15);
+            this.labelX1.TabIndex = 2;
+            this.labelX1.Text = "User Name";
+            // 
             // txtUser
             // 
             // 
@@ -105,82 +181,6 @@
             this.btn_Send.Text = "Send";
             this.btn_Send.Click += new System.EventHandler(this.btn_Send_Click);
             // 
-            // labelX1
-            // 
-            this.labelX1.AutoSize = true;
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(46, 19);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(59, 17);
-            this.labelX1.TabIndex = 2;
-            this.labelX1.Text = "User Name";
-            // 
-            // labelX2
-            // 
-            this.labelX2.AutoSize = true;
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(35, 44);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(70, 17);
-            this.labelX2.TabIndex = 4;
-            this.labelX2.Text = "sender Name";
-            this.labelX2.Click += new System.EventHandler(this.labelX2_Click);
-            // 
-            // txtPass
-            // 
-            // 
-            // 
-            // 
-            this.txtPass.Border.Class = "TextBoxBorder";
-            this.txtPass.Location = new System.Drawing.Point(112, 42);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(273, 20);
-            this.txtPass.TabIndex = 3;
-            // 
-            // labelX3
-            // 
-            this.labelX3.AutoSize = true;
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(27, 69);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(78, 17);
-            this.labelX3.TabIndex = 6;
-            this.labelX3.Text = "Phone Number";
-            // 
-            // txtPhone
-            // 
-            // 
-            // 
-            // 
-            this.txtPhone.Border.Class = "TextBoxBorder";
-            this.txtPhone.Location = new System.Drawing.Point(112, 67);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(273, 20);
-            this.txtPhone.TabIndex = 5;
-            // 
-            // labelX4
-            // 
-            this.labelX4.AutoSize = true;
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(27, 95);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(78, 17);
-            this.labelX4.TabIndex = 8;
-            this.labelX4.Text = "Phone Number";
-            // 
-            // txtMessage
-            // 
-            // 
-            // 
-            // 
-            this.txtMessage.Border.Class = "TextBoxBorder";
-            this.txtMessage.Location = new System.Drawing.Point(27, 118);
-            this.txtMessage.MaxLength = 200;
-            this.txtMessage.Multiline = true;
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(467, 144);
-            this.txtMessage.TabIndex = 7;
-            // 
             // frm_send_sms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +189,7 @@
             this.Controls.Add(this.groupPanel1);
             this.Name = "frm_send_sms";
             this.Text = "frm_send_sms";
+            this.Load += new System.EventHandler(this.frm_send_sms_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             this.ResumeLayout(false);

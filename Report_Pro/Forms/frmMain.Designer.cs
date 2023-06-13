@@ -48,6 +48,17 @@
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
+            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar9 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnBackup = new DevComponents.DotNetBar.ButtonItem();
+            this.btnRestor = new DevComponents.DotNetBar.ButtonItem();
+            this.btnScan = new DevComponents.DotNetBar.ButtonItem();
+            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnCofig = new DevComponents.DotNetBar.ButtonItem();
+            this.btnCompanyData = new DevComponents.DotNetBar.ButtonItem();
+            this.btnStores = new DevComponents.DotNetBar.ButtonItem();
+            this.btnBanks = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
             this.btnCoilReport = new DevComponents.DotNetBar.ButtonItem();
@@ -118,17 +129,6 @@
             this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
             this.btn_SalesInvoice = new DevComponents.DotNetBar.ButtonItem();
             this.btnSalesReturn = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonBar9 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnBackup = new DevComponents.DotNetBar.ButtonItem();
-            this.btnRestor = new DevComponents.DotNetBar.ButtonItem();
-            this.btnScan = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnCofig = new DevComponents.DotNetBar.ButtonItem();
-            this.btnCompanyData = new DevComponents.DotNetBar.ButtonItem();
-            this.btnStores = new DevComponents.DotNetBar.ButtonItem();
-            this.btnBanks = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
             this.rb_MainData = new DevComponents.DotNetBar.RibbonTabItem();
             this.rb_Sales = new DevComponents.DotNetBar.RibbonTabItem();
             this.rb_Purchase = new DevComponents.DotNetBar.RibbonTabItem();
@@ -172,6 +172,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.fluentDesignFormControl1.SuspendLayout();
             this.ribbonControl1.SuspendLayout();
+            this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
             this.ribbonPanel6.SuspendLayout();
             this.ribbonPanel10.SuspendLayout();
@@ -181,7 +182,6 @@
             this.ribbonPanel4.SuspendLayout();
             this.ribbonPanel3.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
-            this.ribbonPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -408,6 +408,127 @@
             this.ribbonControl1.SystemText.QatPlaceBelowRibbonText = resources.GetString("ribbonControl1.SystemText.QatPlaceBelowRibbonText");
             this.ribbonControl1.SystemText.QatRemoveItemText = resources.GetString("ribbonControl1.SystemText.QatRemoveItemText");
             this.ribbonControl1.TabGroupHeight = 40;
+            // 
+            // ribbonPanel1
+            // 
+            resources.ApplyResources(this.ribbonPanel1, "ribbonPanel1");
+            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel1.Controls.Add(this.ribbonBar9);
+            this.ribbonPanel1.Controls.Add(this.ribbonBar1);
+            this.ribbonPanel1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            // 
+            // ribbonBar9
+            // 
+            resources.ApplyResources(this.ribbonBar9, "ribbonBar9");
+            this.ribbonBar9.AutoOverflowEnabled = true;
+            this.ribbonBar9.ContainerControlProcessDialogKey = true;
+            this.ribbonBar9.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnBackup,
+            this.btnRestor,
+            this.btnScan});
+            this.ribbonBar9.ItemSpacing = 5;
+            this.ribbonBar9.Name = "ribbonBar9";
+            this.ribbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            // 
+            // btnBackup
+            // 
+            resources.ApplyResources(this.btnBackup, "btnBackup");
+            this.btnBackup.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnBackup.Image = global::Report_Pro.Properties.Resources.report;
+            this.btnBackup.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnBackup.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.SubItemsExpandWidth = 14;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            // 
+            // btnRestor
+            // 
+            resources.ApplyResources(this.btnRestor, "btnRestor");
+            this.btnRestor.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnRestor.Image = global::Report_Pro.Properties.Resources.report_32x32;
+            this.btnRestor.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnRestor.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnRestor.Name = "btnRestor";
+            this.btnRestor.SubItemsExpandWidth = 14;
+            this.btnRestor.Click += new System.EventHandler(this.btnRestor_Click);
+            // 
+            // btnScan
+            // 
+            resources.ApplyResources(this.btnScan, "btnScan");
+            this.btnScan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnScan.Image = global::Report_Pro.Properties.Resources.report_32x32;
+            this.btnScan.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnScan.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnScan.Name = "btnScan";
+            this.btnScan.SubItemsExpandWidth = 14;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
+            // ribbonBar1
+            // 
+            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
+            this.ribbonBar1.AutoOverflowEnabled = true;
+            this.ribbonBar1.ContainerControlProcessDialogKey = true;
+            this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnCofig,
+            this.btnCompanyData,
+            this.btnStores,
+            this.btnBanks,
+            this.buttonItem22});
+            this.ribbonBar1.ItemSpacing = 5;
+            this.ribbonBar1.Name = "ribbonBar1";
+            this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            // 
+            // btnCofig
+            // 
+            resources.ApplyResources(this.btnCofig, "btnCofig");
+            this.btnCofig.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnCofig.Image = global::Report_Pro.Properties.Resources.Setting21;
+            this.btnCofig.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnCofig.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnCofig.Name = "btnCofig";
+            this.btnCofig.SubItemsExpandWidth = 14;
+            this.btnCofig.Click += new System.EventHandler(this.btnCofig_Click);
+            // 
+            // btnCompanyData
+            // 
+            resources.ApplyResources(this.btnCompanyData, "btnCompanyData");
+            this.btnCompanyData.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnCompanyData.Image = global::Report_Pro.Properties.Resources.department;
+            this.btnCompanyData.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnCompanyData.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnCompanyData.Name = "btnCompanyData";
+            this.btnCompanyData.SubItemsExpandWidth = 14;
+            this.btnCompanyData.Click += new System.EventHandler(this.btnCompanyData_Click);
+            // 
+            // btnStores
+            // 
+            resources.ApplyResources(this.btnStores, "btnStores");
+            this.btnStores.Image = global::Report_Pro.Properties.Resources.inventory;
+            this.btnStores.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnStores.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnStores.Name = "btnStores";
+            this.btnStores.SubItemsExpandWidth = 14;
+            this.btnStores.Click += new System.EventHandler(this.btnStores_Click);
+            // 
+            // btnBanks
+            // 
+            resources.ApplyResources(this.btnBanks, "btnBanks");
+            this.btnBanks.Image = global::Report_Pro.Properties.Resources.inventory;
+            this.btnBanks.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnBanks.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnBanks.Name = "btnBanks";
+            this.btnBanks.SubItemsExpandWidth = 14;
+            // 
+            // buttonItem22
+            // 
+            resources.ApplyResources(this.buttonItem22, "buttonItem22");
+            this.buttonItem22.Image = global::Report_Pro.Properties.Resources.inventory;
+            this.buttonItem22.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem22.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem22.Name = "buttonItem22";
+            this.buttonItem22.SubItemsExpandWidth = 14;
+            this.buttonItem22.Click += new System.EventHandler(this.buttonItem22_Click);
             // 
             // ribbonPanel5
             // 
@@ -1203,126 +1324,6 @@
             this.btnSalesReturn.SubItemsExpandWidth = 14;
             this.btnSalesReturn.Click += new System.EventHandler(this.btnSalesReturn_Click);
             // 
-            // ribbonPanel1
-            // 
-            resources.ApplyResources(this.ribbonPanel1, "ribbonPanel1");
-            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel1.Controls.Add(this.ribbonBar9);
-            this.ribbonPanel1.Controls.Add(this.ribbonBar1);
-            this.ribbonPanel1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            // 
-            // ribbonBar9
-            // 
-            resources.ApplyResources(this.ribbonBar9, "ribbonBar9");
-            this.ribbonBar9.AutoOverflowEnabled = true;
-            this.ribbonBar9.ContainerControlProcessDialogKey = true;
-            this.ribbonBar9.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnBackup,
-            this.btnRestor,
-            this.btnScan});
-            this.ribbonBar9.ItemSpacing = 5;
-            this.ribbonBar9.Name = "ribbonBar9";
-            this.ribbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            // 
-            // btnBackup
-            // 
-            resources.ApplyResources(this.btnBackup, "btnBackup");
-            this.btnBackup.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnBackup.Image = global::Report_Pro.Properties.Resources.report;
-            this.btnBackup.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnBackup.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.SubItemsExpandWidth = 14;
-            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
-            // 
-            // btnRestor
-            // 
-            resources.ApplyResources(this.btnRestor, "btnRestor");
-            this.btnRestor.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnRestor.Image = global::Report_Pro.Properties.Resources.report_32x32;
-            this.btnRestor.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnRestor.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnRestor.Name = "btnRestor";
-            this.btnRestor.SubItemsExpandWidth = 14;
-            this.btnRestor.Click += new System.EventHandler(this.btnRestor_Click);
-            // 
-            // btnScan
-            // 
-            resources.ApplyResources(this.btnScan, "btnScan");
-            this.btnScan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnScan.Image = global::Report_Pro.Properties.Resources.report_32x32;
-            this.btnScan.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnScan.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnScan.Name = "btnScan";
-            this.btnScan.SubItemsExpandWidth = 14;
-            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
-            // 
-            // ribbonBar1
-            // 
-            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
-            this.ribbonBar1.AutoOverflowEnabled = true;
-            this.ribbonBar1.ContainerControlProcessDialogKey = true;
-            this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnCofig,
-            this.btnCompanyData,
-            this.btnStores,
-            this.btnBanks,
-            this.buttonItem22});
-            this.ribbonBar1.ItemSpacing = 5;
-            this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            // 
-            // btnCofig
-            // 
-            resources.ApplyResources(this.btnCofig, "btnCofig");
-            this.btnCofig.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnCofig.Image = global::Report_Pro.Properties.Resources.Setting21;
-            this.btnCofig.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnCofig.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnCofig.Name = "btnCofig";
-            this.btnCofig.SubItemsExpandWidth = 14;
-            this.btnCofig.Click += new System.EventHandler(this.btnCofig_Click);
-            // 
-            // btnCompanyData
-            // 
-            resources.ApplyResources(this.btnCompanyData, "btnCompanyData");
-            this.btnCompanyData.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnCompanyData.Image = global::Report_Pro.Properties.Resources.department;
-            this.btnCompanyData.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnCompanyData.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnCompanyData.Name = "btnCompanyData";
-            this.btnCompanyData.SubItemsExpandWidth = 14;
-            this.btnCompanyData.Click += new System.EventHandler(this.btnCompanyData_Click);
-            // 
-            // btnStores
-            // 
-            resources.ApplyResources(this.btnStores, "btnStores");
-            this.btnStores.Image = global::Report_Pro.Properties.Resources.inventory;
-            this.btnStores.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnStores.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnStores.Name = "btnStores";
-            this.btnStores.SubItemsExpandWidth = 14;
-            this.btnStores.Click += new System.EventHandler(this.btnStores_Click);
-            // 
-            // btnBanks
-            // 
-            resources.ApplyResources(this.btnBanks, "btnBanks");
-            this.btnBanks.Image = global::Report_Pro.Properties.Resources.inventory;
-            this.btnBanks.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnBanks.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnBanks.Name = "btnBanks";
-            this.btnBanks.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem22
-            // 
-            resources.ApplyResources(this.buttonItem22, "buttonItem22");
-            this.buttonItem22.Image = global::Report_Pro.Properties.Resources.inventory;
-            this.buttonItem22.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonItem22.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem22.Name = "buttonItem22";
-            this.buttonItem22.SubItemsExpandWidth = 14;
-            // 
             // rb_MainData
             // 
             resources.ApplyResources(this.rb_MainData, "rb_MainData");
@@ -1667,6 +1668,7 @@
             this.fluentDesignFormControl1.ResumeLayout(false);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
+            this.ribbonPanel1.ResumeLayout(false);
             this.ribbonPanel5.ResumeLayout(false);
             this.ribbonPanel6.ResumeLayout(false);
             this.ribbonPanel10.ResumeLayout(false);
@@ -1676,7 +1678,6 @@
             this.ribbonPanel4.ResumeLayout(false);
             this.ribbonPanel3.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
-            this.ribbonPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

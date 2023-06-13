@@ -683,5 +683,11 @@ namespace Report_Pro.Forms
         {
             OpenFormByName(nameof(RPT.frm_Inventory_Report_ByGroup));
         }
+
+        private void buttonItem22_Click(object sender, EventArgs e)
+        {
+            OpenFormByName(nameof(PL.frm_send_sms));
+
+        }
     }
 }

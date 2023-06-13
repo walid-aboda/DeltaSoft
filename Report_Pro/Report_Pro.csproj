@@ -340,8 +340,7 @@
     </Reference>
     <Reference Include="UIAutomationClient" />
     <Reference Include="WhatsAppApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\reprot_pro Packup\WalidPro\Report_Pro\bin\Debug\WhatsAppApi.dll</HintPath>
+      <HintPath>..\packages\WhatsAppAPI.15.4.29\lib\net40\WhatsAppApi.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WTools">
