@@ -4185,7 +4185,6 @@ C:\DeltaSoft\Report_Pro\bin\Debug\en\jorRow.resources.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\ar\projectTools.resources.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\en\projectTools.resources.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\ar\WTools.resources.dll
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
 C:\DeltaSoft\Report_Pro\obj\Debug\Interop.Acrobat.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\WhatsAppApi.dll
 >>>>>>> 86d7b06291e2b41b340bad5154a4f24edc90add9
