@@ -34,7 +34,7 @@ namespace Report_Pro.RPT
         {
             InitializeComponent();
            
-            OP.cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select * FROM Wh_Unit_dim");
+            OP.cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select Wh_Unit_dim FROM Wh_Unit_dim");
             OP.cmb_DimCategory.DisplayMember = "Wh_Unit_dim";
             OP.cmb_DimCategory.ValueMember = "Wh_Unit_dim";
             OP.cmb_DimCategory.SelectedIndex = -1;

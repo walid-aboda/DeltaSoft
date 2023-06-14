@@ -52,6 +52,17 @@ namespace Report_Pro.PL
             RefreshData();
         }
 
+        public frm_PurchaseOrder_1(string ser, string branch, string transaction, string year)
+        {
+            InitializeComponent();
+
+            getPO(ser, branch, transaction, year);
+            IsNew = false;
+
+        }
+
+
+       
 
 
         public override void New()
@@ -1152,8 +1163,13 @@ namespace Report_Pro.PL
        
         private void btn_Srearch_Click(object sender, EventArgs e)
         {
+            getPO(txtsearch.Text, txtStore_ID.Text, txt_transaction_code.Text, comboBox1.Text.Substring(comboBox1.Text.Length - 2));
+        }
+
+        private void getPO(string _ser, string _branch, string _transaction, string _year)
+        {
             txtBranch.Enabled = false;
-            getQuotation(txtsearch.Text, txtStore_ID.Text, txt_transaction_code.Text, comboBox1.Text.Substring(comboBox1.Text.Length - 2));
+            getQuotation(_ser, _branch, _transaction, _year);
             if (dt_Q.Rows.Count > 0)
             {
                 txtBranch.ID.Text = dt_Q.Rows[0]["Branch_code"].ToString();
@@ -1234,11 +1250,11 @@ namespace Report_Pro.PL
                         {
                             invGrid1.dgv1.Rows[i].Cells["_itemDesription"].Value = dt_Q.Rows[i]["Descr_eng"].ToString();
                         }
-                        invGrid1.dgv1.Rows[i].Cells["_addDescription"].Value   = dt_Q.Rows[i]["DETAILS"].ToString();
-                        invGrid1.dgv1.Rows[i].Cells["_unit"].Value             = dt_Q.Rows[i]["Unit"].ToString();
-                        invGrid1.dgv1.Rows[i].Cells["_weight"].Value           = dt_Q.Rows[i]["Weight"].ToString().ToDecimal().ToString("N3");
-                        invGrid1.dgv1.Rows[i].Cells["_qty"].Value              = dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal().ToString("N2");
-                        invGrid1.dgv1.Rows[i].Cells["_price"].Value            = dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal().ToString("N" + dal.digits_);
+                        invGrid1.dgv1.Rows[i].Cells["_addDescription"].Value = dt_Q.Rows[i]["DETAILS"].ToString();
+                        invGrid1.dgv1.Rows[i].Cells["_unit"].Value = dt_Q.Rows[i]["Unit"].ToString();
+                        invGrid1.dgv1.Rows[i].Cells["_weight"].Value = dt_Q.Rows[i]["Weight"].ToString().ToDecimal().ToString("N3");
+                        invGrid1.dgv1.Rows[i].Cells["_qty"].Value = dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal().ToString("N2");
+                        invGrid1.dgv1.Rows[i].Cells["_price"].Value = dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal().ToString("N" + dal.digits_);
                         if (dt_Q.Rows[i]["Weight"].ToString().ToDecimal() > 0)
                         {
                             invGrid1.dgv1.Rows[i].Cells["_tonPrice"].Value = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() / dt_Q.Rows[i]["Weight"].ToString().ToDecimal() * 1000).ToString("N0");
@@ -1250,8 +1266,8 @@ namespace Report_Pro.PL
                         invGrid1.dgv1.Rows[i].Cells["_vat"].Value = dt_Q.Rows[i]["TAX_IN"].ToString().ToDecimal().ToString("N" + dal.digits_);
                         invGrid1.dgv1.Rows[i].Cells["_totalWeight"].Value = (dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
                         invGrid1.dgv1.Rows[i].Cells["_balance"].Value = dt_Q.Rows[i]["BALANCE"].ToString().ToDecimal().ToString("N0");
-                        invGrid1.dgv1.Rows[i].Cells["_cost"].Value    = (dt_Q.Rows[i]["COST_PRICE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
-                        invGrid1.dgv1.Rows[i].Cells["_KmCode"].Value  = dt_Q.Rows[i]["K_M_TYPE_ITEMS"].ToString().ToDecimal().ToString("N0");
+                        invGrid1.dgv1.Rows[i].Cells["_cost"].Value = (dt_Q.Rows[i]["COST_PRICE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
+                        invGrid1.dgv1.Rows[i].Cells["_KmCode"].Value = dt_Q.Rows[i]["K_M_TYPE_ITEMS"].ToString().ToDecimal().ToString("N0");
                     }
                 }
                 invGrid1.total_inv();

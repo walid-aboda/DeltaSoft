@@ -79,7 +79,10 @@ C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Compression.Base.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Licensing.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\Syncfusion.Pdf.Base.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\WhatsAppApi.dll
+<<<<<<< HEAD
+=======
 C:\DeltaSoft\Report_Pro\bin\Debug\WTools.dll
+>>>>>>> e3eaa7e5c40edc871790e687383ba8655ec9f35a
 C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\DeltaSoft\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
