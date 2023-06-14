@@ -19,6 +19,8 @@ namespace Report_Pro.PL
             InitializeComponent();
         }
 
+       
+
         private void getData()
         {
             string approve = "";
@@ -42,8 +44,8 @@ namespace Report_Pro.PL
             inner join payer2 as P  on p.ACC_NO = A.Acc_no and P.BRANCH_code = A.Acc_Branch_code
             inner join wh_BRANCHES as WB  on A.Branch_code = WB.Branch_code
             inner join wh_USERS as U on A.User_id = U.USER_ID
-            where A.Transaction_code = 'PS'
-            and CASt(A.G_DAte as date) between '"+txtFromDate.Value.ToString("yyyy-MM-dd")+ "' and '" + txtToDate.Value.ToString("yyyy-MM-dd") +
+            where A.Transaction_code = 'PS' and isnull(A.Po_Status,'') <> 'S' and isnull(A.CANCELED,'') <>'C'
+            and CASt(A.G_DAte as date) between '" + txtFromDate.Value.ToString("yyyy-MM-dd")+ "' and '" + txtToDate.Value.ToString("yyyy-MM-dd") +
             "' and A.Branch_code like '"+txtBranch.ID.Text+
             "%' and a.Acc_no like '"+txtAcc.ID.Text+
             "%' and (isnull(A.Confermed,'') ='"+approve+ "' or isnull(A.Confermed,'') ='" + notApprove + 
@@ -85,5 +87,19 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void dgv1_DoubleClick(object sender, EventArgs e)
+        {
+         
+            string _ser = dgv1.CurrentRow.Cells[colSerNo.Name].Value.ToString();
+            string _branch = dgv1.CurrentRow.Cells[colBranchCode.Name].Value.ToString();
+            string _transaction = dgv1.CurrentRow.Cells[colTransactionCode.Name].Value.ToString();
+            string _year = dgv1.CurrentRow.Cells[colYear.Name].Value.ToString();
+            var frm = new PL.frm_PurchaseOrder_1(_ser, _branch, _transaction, _year);
+            Forms.frm_Main.OpenForm(frm, true);
+
+        }
+
+       
     }
 }

@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv1 = new System.Windows.Forms.DataGridView();
-            this.chNotApproved = new System.Windows.Forms.CheckBox();
-            this.chApproved = new System.Windows.Forms.CheckBox();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFromDate = new System.Windows.Forms.DateTimePicker();
-            this.txtToDate = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txtUser = new Report_Pro.MyControls.Uc_user();
-            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtToDate = new System.Windows.Forms.DateTimePicker();
+            this.txtFromDate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.chApproved = new System.Windows.Forms.CheckBox();
+            this.chNotApproved = new System.Windows.Forms.CheckBox();
+            this.dgv1 = new System.Windows.Forms.DataGridView();
             this.colSerNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBranchCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBranch = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +51,9 @@
             this.colUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colConfirmed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txtUser = new Report_Pro.MyControls.Uc_user();
+            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,102 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Location = new System.Drawing.Point(35, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Vendor";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Location = new System.Drawing.Point(35, 57);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "User";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Location = new System.Drawing.Point(35, 108);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "To Date";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(35, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "From Date";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtToDate
+            // 
+            this.txtToDate.Location = new System.Drawing.Point(100, 108);
+            this.txtToDate.Name = "txtToDate";
+            this.txtToDate.Size = new System.Drawing.Size(106, 20);
+            this.txtToDate.TabIndex = 6;
+            // 
+            // txtFromDate
+            // 
+            this.txtFromDate.Location = new System.Drawing.Point(100, 82);
+            this.txtFromDate.Name = "txtFromDate";
+            this.txtFromDate.Size = new System.Drawing.Size(106, 20);
+            this.txtFromDate.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Location = new System.Drawing.Point(35, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Branch";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnReport
+            // 
+            this.btnReport.Location = new System.Drawing.Point(590, 28);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(111, 28);
+            this.btnReport.TabIndex = 2;
+            this.btnReport.Text = "Report";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // chApproved
+            // 
+            this.chApproved.AutoSize = true;
+            this.chApproved.Location = new System.Drawing.Point(456, 12);
+            this.chApproved.Name = "chApproved";
+            this.chApproved.Size = new System.Drawing.Size(73, 17);
+            this.chApproved.TabIndex = 1;
+            this.chApproved.Text = "Approved";
+            this.chApproved.UseVisualStyleBackColor = true;
+            // 
+            // chNotApproved
+            // 
+            this.chNotApproved.AutoSize = true;
+            this.chNotApproved.Checked = true;
+            this.chNotApproved.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chNotApproved.Location = new System.Drawing.Point(456, 35);
+            this.chNotApproved.Name = "chNotApproved";
+            this.chNotApproved.Size = new System.Drawing.Size(90, 17);
+            this.chNotApproved.TabIndex = 1;
+            this.chNotApproved.Text = "NotApproved";
+            this.chNotApproved.UseVisualStyleBackColor = true;
+            // 
             // dgv1
             // 
             this.dgv1.AllowUserToAddRows = false;
@@ -105,129 +201,7 @@
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv1.Size = new System.Drawing.Size(1102, 363);
             this.dgv1.TabIndex = 1;
-            // 
-            // chNotApproved
-            // 
-            this.chNotApproved.AutoSize = true;
-            this.chNotApproved.Checked = true;
-            this.chNotApproved.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chNotApproved.Location = new System.Drawing.Point(435, 39);
-            this.chNotApproved.Name = "chNotApproved";
-            this.chNotApproved.Size = new System.Drawing.Size(90, 17);
-            this.chNotApproved.TabIndex = 1;
-            this.chNotApproved.Text = "NotApproved";
-            this.chNotApproved.UseVisualStyleBackColor = true;
-            // 
-            // chApproved
-            // 
-            this.chApproved.AutoSize = true;
-            this.chApproved.Location = new System.Drawing.Point(435, 16);
-            this.chApproved.Name = "chApproved";
-            this.chApproved.Size = new System.Drawing.Size(73, 17);
-            this.chApproved.TabIndex = 1;
-            this.chApproved.Text = "Approved";
-            this.chApproved.UseVisualStyleBackColor = true;
-            // 
-            // btnReport
-            // 
-            this.btnReport.Location = new System.Drawing.Point(569, 32);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(111, 28);
-            this.btnReport.TabIndex = 2;
-            this.btnReport.Text = "Report";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // label1
-            // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(14, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Branch";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtFromDate
-            // 
-            this.txtFromDate.Location = new System.Drawing.Point(79, 86);
-            this.txtFromDate.Name = "txtFromDate";
-            this.txtFromDate.Size = new System.Drawing.Size(106, 20);
-            this.txtFromDate.TabIndex = 5;
-            // 
-            // txtToDate
-            // 
-            this.txtToDate.Location = new System.Drawing.Point(79, 112);
-            this.txtToDate.Name = "txtToDate";
-            this.txtToDate.Size = new System.Drawing.Size(106, 20);
-            this.txtToDate.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(14, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "From Date";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(14, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "To Date";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(14, 61);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "User";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(14, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Vendor";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtAcc
-            // 
-            this.txtAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txtAcc.Location = new System.Drawing.Point(79, 37);
-            this.txtAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txtAcc.Name = "txtAcc";
-            this.txtAcc.Size = new System.Drawing.Size(343, 20);
-            this.txtAcc.TabIndex = 11;
-            // 
-            // txtUser
-            // 
-            this.txtUser.Location = new System.Drawing.Point(79, 61);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(0);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(343, 20);
-            this.txtUser.TabIndex = 9;
-            // 
-            // txtBranch
-            // 
-            this.txtBranch.BackColor = System.Drawing.Color.Transparent;
-            this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtBranch.Location = new System.Drawing.Point(79, 13);
-            this.txtBranch.Margin = new System.Windows.Forms.Padding(0);
-            this.txtBranch.Name = "txtBranch";
-            this.txtBranch.Size = new System.Drawing.Size(343, 20);
-            this.txtBranch.TabIndex = 3;
+            this.dgv1.DoubleClick += new System.EventHandler(this.dgv1_DoubleClick);
             // 
             // colSerNo
             // 
@@ -308,6 +282,33 @@
             this.colConfirmed.Name = "colConfirmed";
             this.colConfirmed.ReadOnly = true;
             this.colConfirmed.Width = 60;
+            // 
+            // txtAcc
+            // 
+            this.txtAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txtAcc.Location = new System.Drawing.Point(100, 33);
+            this.txtAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txtAcc.Name = "txtAcc";
+            this.txtAcc.Size = new System.Drawing.Size(343, 20);
+            this.txtAcc.TabIndex = 11;
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(100, 57);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(0);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(343, 20);
+            this.txtUser.TabIndex = 9;
+            // 
+            // txtBranch
+            // 
+            this.txtBranch.BackColor = System.Drawing.Color.Transparent;
+            this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtBranch.Location = new System.Drawing.Point(100, 9);
+            this.txtBranch.Margin = new System.Windows.Forms.Padding(0);
+            this.txtBranch.Name = "txtBranch";
+            this.txtBranch.Size = new System.Drawing.Size(343, 20);
+            this.txtBranch.TabIndex = 3;
             // 
             // frm_PoApproved
             // 

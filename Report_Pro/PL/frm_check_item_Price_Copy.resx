@@ -292,10 +292,10 @@
     <value>Tahoma, 8.25pt</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 242</value>
+    <value>319, 242</value>
   </data>
   <data name="labelX17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 16</value>
+    <value>78, 17</value>
   </data>
   <data name="labelX17.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -1946,10 +1946,10 @@
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
   <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 242</value>
+    <value>3, 241</value>
   </data>
   <data name="labelX16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
+    <value>99, 18</value>
   </data>
   <data name="labelX16.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1979,10 +1979,10 @@
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
   <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 424</value>
+    <value>3, 423</value>
   </data>
   <data name="labelX21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>69, 18</value>
   </data>
   <data name="labelX21.TabIndex" type="System.Int32, mscorlib">
     <value>298</value>
@@ -2366,7 +2366,7 @@
     <value>127, 178</value>
   </data>
   <data name="labelX13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>72, 17</value>
   </data>
   <data name="labelX13.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
