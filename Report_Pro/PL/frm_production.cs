@@ -257,7 +257,7 @@ pIN.clculat_amount(i);
                 pIN.total_inv();
             }
 
-            DataTable dt_out = dal.getDataTabl_1(@"select * from VIEW_PRODUCTION where IN_OUT_TYPE = 'O' and  (ser_no = '" + Sh_ser + "'or isnull(Inv_no,'')='" + Sh_ser + "')");
+            DataTable dt_out = dal.getDataTabl_1(@"select * from VIEW_PRODUCTION where IN_OUT_TYPE = 'O' and ser_no = '" + Sh_ser + "'");
 int cr_rowscount = dt_out.Rows.Count;
 
             if (cr_rowscount > 0)
@@ -344,7 +344,7 @@ pOUT.clculat_amount(i);
                 pIN.total_inv();
             }
 
-            DataTable dt_out = dal.getDataTabl_1(@"select * from VIEW_PRODUCTION where IN_OUT_TYPE = 'O' and  (ser_no = '" + Sh_ser + "'or isnull(Inv_no,'')='" + Sh_ser + "')");
+            DataTable dt_out = dal.getDataTabl_1(@"select * from VIEW_PRODUCTION where IN_OUT_TYPE = 'O' and   isnull(Inv_no,'')='" + Sh_ser + "'");
             int cr_rowscount = dt_out.Rows.Count;
 
             if (cr_rowscount > 0)

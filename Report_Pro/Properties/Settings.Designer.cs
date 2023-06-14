@@ -73,7 +73,7 @@ namespace Report_Pro.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("server")]
+        [global::System.Configuration.DefaultSettingValueAttribute(".")]
         public string Server {
             get {
                 return ((string)(this["Server"]));

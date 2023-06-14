@@ -379,82 +379,14 @@
         UgRPKE+e/AAf4+WTZ2V4hgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Check_Date.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Check_Date.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Check_Date.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Check_Date.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Check_Date.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Check_Date.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="Check_Date.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="Check_Date.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Check_Date.MonthCalendar.Description" xml:space="preserve">
-    <value />
   </data>
   <data name="Check_Date.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="Check_Date.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="Check_Date.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Check_Date.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="Check_Date.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -536,36 +468,17 @@
         WZ2goL8BRgokxbgLIrAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txt_DP_Ratio.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txt_DP_Ratio.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txt_DP_Ratio.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txt_DP_Ratio.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txt_DP_Ratio.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txt_DP_Ratio.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="inv_Grid1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1604, 478</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1604, 748</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
