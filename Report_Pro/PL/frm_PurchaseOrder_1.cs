@@ -44,7 +44,7 @@ namespace Report_Pro.PL
                 invGrid1.dgv1.EnableHeadersVisualStyles = false;
             }
 
-            FillComboCurrency();
+            
 
 
            
@@ -55,7 +55,7 @@ namespace Report_Pro.PL
         public frm_PurchaseOrder_1(string ser, string branch, string transaction, string year)
         {
             InitializeComponent();
-
+            New();
             getPO(ser, branch, transaction, year);
             IsNew = false;
 
@@ -67,8 +67,22 @@ namespace Report_Pro.PL
 
         public override void New()
         {
+
             ClearTextBoxes();
+            btn_UpdateApproved.Enabled = Session.UserSettings.General.CanChangeStore;
+            txtStore_ID.Text = Properties.Settings.Default.BranchId;
+            txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
+            userID.Text = Program.userID;
+
+            FillComboCurrency();
+            fillDelevryTearms();
+            fillPaymentTearms();
             get_invSer();
+            txt_InvSM.Text = Program.salesman;
+            txtSupplier.txtMainAcc.Text = "234";
+            txtSupplier.txtFinal.Text = "1";
+            txtSupplier.branchID.Text = txtBranch.txtAccBranch.Text;
+
             invGrid1.dgv1.Rows.Clear();
             tabControlPanel1.Enabled = true;
             tabControlPanel2.Enabled = true;
@@ -119,11 +133,7 @@ namespace Report_Pro.PL
             }
         }
 
-        private void Payment_Type_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            get_invSer();
-            invGrid1.total_inv();
-        }
+       
  
         bool IsGridValid()
         {
@@ -198,7 +208,7 @@ namespace Report_Pro.PL
                 "','A', '" +
                 txtSupplier.ID.Text +
                 "', '" + txtBranch_Id.Text +
-                "', '" + Convert.ToString(Payment_Type.SelectedValue) +
+                "', '" + Payment.ID.Text +
                 "', '" + Uc_Cost.ID.Text +
                 "' , '" + userID.Text +
                 "','" + (chStop.Checked ? "S" : "") + 
@@ -209,7 +219,7 @@ namespace Report_Pro.PL
                 "','" + txt_custFax.Text +
                 "','" + txtRefrance.Text +
                 "','" + txt_CustEmail.Text +
-                "','" + Payment_Type.Text +
+                "','" + Payment.Desc.Text +
                 "','" + ValidtyDays.Text +
                 "','" + Convert.ToString(DelevryTearms.SelectedValue) +
                 "','0','" +
@@ -332,7 +342,7 @@ namespace Report_Pro.PL
                 "','A', '" +
                 txtSupplier.ID.Text +
                 "', '" + txtBranch_Id.Text +
-                "', '" + Convert.ToString(Payment_Type.SelectedValue) +
+                "', '" + Payment.ID.Text +
                 "', '" + Uc_Cost.ID.Text +
                 "' , '" + userID.Text +
                 "','" + (chStop.Checked ? "S" : "") + 
@@ -343,7 +353,7 @@ namespace Report_Pro.PL
                 "','" + txt_custFax.Text +
                 "','" + txtRefrance.Text +
                 "','" + txt_CustEmail.Text +
-                "','" + Payment_Type.Text +
+                "','" + Payment.Desc.Text +
                 "','" + ValidtyDays.Text +
                 "','" + Convert.ToString(DelevryTearms.SelectedValue) +
                 "','0','" +
@@ -564,7 +574,7 @@ namespace Report_Pro.PL
                 return;
             }
 
-            if (Payment_Type.SelectedIndex < 0)
+            if (Payment.ID.Text.Trim()=="")
             {
                 MessageBox.Show("فضلا.. تاكد من نوع الفاتورة", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -780,63 +790,78 @@ namespace Report_Pro.PL
             txtcurrency.SelectedIndex = -1;
         }
 
-        private void frm_PurchaseOrder_Load(object sender, EventArgs e)
+       private void fillPaymentTearms()
         {
-          
-            btn_UpdateApproved.Enabled = Session.UserSettings.General.CanChangeStore;
-
             PaymentTearms.DataSource = dal.getDataTabl_1("select Payment_type,Payment_name,Notes from Sal_Pyment_type");
             PaymentTearms.ValueMember = "Payment_type";
-           
+            if (Properties.Settings.Default.lungh == "0")
+            {
+                PaymentTearms.DisplayMember = "Payment_name";
+            }
+            else
+            {
+                PaymentTearms.DisplayMember = "Notes";
+            }
+            PaymentTearms.SelectedIndex = -1;
 
+        }
+
+        private void fillDelevryTearms()
+        {
             DelevryTearms.DataSource = dal.getDataTabl_1("select DeLEVRY_CODE ,DeLEVRY_Name,DELEVER_NAME_E from WH_PO_DELEVRY_CODE");
             DelevryTearms.ValueMember = "DeLEVRY_CODE";
-            if (Properties.Settings.Default.lungh=="0")
+            if (Properties.Settings.Default.lungh == "0")
             {
-            DelevryTearms.DisplayMember = "DeLEVRY_Name";
-            PaymentTearms.DisplayMember = "Payment_name";
+                DelevryTearms.DisplayMember = "DeLEVRY_Name";
             }
             else
             {
                 DelevryTearms.DisplayMember = "DELEVER_NAME_E";
-                PaymentTearms.DisplayMember = "Notes";
             }
-            PaymentTearms.SelectedIndex = -1;
             DelevryTearms.SelectedIndex = -1;
+        }
+
+        private void frm_PurchaseOrder_Load(object sender, EventArgs e)
+        {
 
 
-
-            txt_InvSM.Text = Program.salesman;
-            txtStore_ID.Text = Properties.Settings.Default.BranchId;
-            txtBranch.ID.Text = Properties.Settings.Default.BranchId;
-            txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
-            txtSupplier.branchID.Text = txtBranch.txtAccBranch.Text;
-
-            userID.Text = Program.userID;
-            txt_Cyear.Text = Properties.Settings.Default.C_year;
-
-            Payment_Type.DataSource = dal.getDataTabl_1("SELECT * FROM wh_Payment_type");
-
-            if (Properties.Settings.Default.lungh == "0")
-            {
-                Payment_Type.DisplayMember = "Payment_name";
-            }
-            else
-            {
-                Payment_Type.DisplayMember = "Payment_name";
-            }
-            Payment_Type.ValueMember = "Payment_type";
-            Payment_Type.SelectedIndex = -1;
-
-            
+            //PaymentTearms.DataSource = dal.getDataTabl_1("select Payment_type,Payment_name,Notes from Sal_Pyment_type");
+            //PaymentTearms.ValueMember = "Payment_type";
 
 
+            //DelevryTearms.DataSource = dal.getDataTabl_1("select DeLEVRY_CODE ,DeLEVRY_Name,DELEVER_NAME_E from WH_PO_DELEVRY_CODE");
+            //DelevryTearms.ValueMember = "DeLEVRY_CODE";
+            //if (Properties.Settings.Default.lungh=="0")
+            //{
+            //DelevryTearms.DisplayMember = "DeLEVRY_Name";
+            //PaymentTearms.DisplayMember = "Payment_name";
+            //}
+            //else
+            //{
+            //    DelevryTearms.DisplayMember = "DELEVER_NAME_E";
+            //    PaymentTearms.DisplayMember = "Notes";
+            //}
+            //PaymentTearms.SelectedIndex = -1;
+            //DelevryTearms.SelectedIndex = -1;
 
-            get_invSer();
-            txtSupplier.txtMainAcc.Text = "234";
-            txtSupplier.txtFinal.Text = "1";
+            //btn_UpdateApproved.Enabled = Session.UserSettings.General.CanChangeStore;
 
-            GetBranchData(txtBranch.ID.Text);
+            //fillDelevryTearms();
+            //fillPaymentTearms();
+            //txt_InvSM.Text = Program.salesman;
+            //txtStore_ID.Text = Properties.Settings.Default.BranchId;
+            //txtBranch.ID.Text = Properties.Settings.Default.BranchId;
+            //txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
+            //txtSupplier.branchID.Text = txtBranch.txtAccBranch.Text;
+
+            //userID.Text = Program.userID;
+            //txt_Cyear.Text = Properties.Settings.Default.C_year;
+
+            //get_invSer();
+            //txtSupplier.txtMainAcc.Text = "234";
+            //txtSupplier.txtFinal.Text = "1";
+
+            //GetBranchData(txtBranch.ID.Text);
 
         }
 
@@ -858,8 +883,8 @@ namespace Report_Pro.PL
                     if (txtSupplier.ID.Text == Acc_cash)
                     {
 
-                        Payment_Type.SelectedValue = "11";
-                        Payment_Type.Enabled = false;
+                        Payment.ID.Text = "11";
+                        Payment.Enabled = false;
 
                     //  invGrid1.txtAccVat_Rate.Text = txtSupplier.KM_Ratio_Purch.Text;
 
@@ -867,8 +892,8 @@ namespace Report_Pro.PL
                     else
                     {
 
-                        Payment_Type.SelectedValue = "2";
-                        Payment_Type.Enabled = true;
+                        Payment.ID.Text = "2";
+                        Payment.Enabled = true;
 
 
                     }
@@ -1064,7 +1089,7 @@ namespace Report_Pro.PL
                 txt_Cyear.Text = dt_Q.Rows[0]["Cyear"].ToString();
                 txt_InvDate.Text = dt_Q.Rows[0]["G_date"].ToString();
                 txtSupplier.ID.Text = dt_Q.Rows[0]["Acc_no"].ToString();
-                Payment_Type.SelectedValue = dt_Q.Rows[0]["Payment_Type"].ToString();
+                Payment.ID.Text = dt_Q.Rows[0]["Payment_Type"].ToString();
                 Uc_Cost.ID.Text = dt_Q.Rows[0]["Sales_man_Id"].ToString();
                 //txt_address.Text = dt_Q.Rows[0]["Costomer_adress"].ToString();
                 // txt_custTel.Text = dt_Q.Rows[0]["Costomer_Phone"].ToString();
@@ -1179,7 +1204,7 @@ namespace Report_Pro.PL
                 txt_Cyear.Text = dt_Q.Rows[0]["Cyear"].ToString();
                 txt_InvDate.Text = dt_Q.Rows[0]["G_date"].ToString();
                 txtSupplier.ID.Text = dt_Q.Rows[0]["Acc_no"].ToString();
-                Payment_Type.SelectedValue = dt_Q.Rows[0]["Payment_Type"].ToString();
+                Payment.ID.Text = dt_Q.Rows[0]["Payment_Type"].ToString();
                 Uc_Cost.ID.Text = dt_Q.Rows[0]["Sales_man_Id"].ToString();
                 //txt_address.Text = dt_Q.Rows[0]["Costomer_adress"].ToString();
                 // txt_custTel.Text = dt_Q.Rows[0]["Costomer_Phone"].ToString();
@@ -1337,6 +1362,12 @@ namespace Report_Pro.PL
         private void groupPanel6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Payment_Load(object sender, EventArgs e)
+        {
+            get_invSer();
+            invGrid1.total_inv();
         }
     }
 }
