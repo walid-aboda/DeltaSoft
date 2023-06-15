@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Report_Pro.RPT
 {
-    public partial class frmAgeReport : Form
+    public partial class frmAgeReport : frm_ReportMaster
     {
 
         string btn_name;
@@ -28,9 +28,78 @@ namespace Report_Pro.RPT
 
         }
 
+
+
+        public override void preview()
+        {
+            Cursor = Cursors.WaitCursor;
+
+            if (rAll.Checked == true)
+            { M_than = "0"; }
+            else if (rM_30.Checked == true)
+            { M_than = "30"; }
+            else if (rM_60.Checked == true)
+            { M_than = "60"; }
+            else if (rM_90.Checked == true)
+            { M_than = "90"; }
+            else if (rM_120.Checked == true)
+            { M_than = "120"; }
+            else if (rM_150.Checked == true)
+            { M_than = "150"; }
+            else if (rM_180.Checked == true)
+            { M_than = "180"; }
+
+
+            RPT.AgeReport rpt = new RPT.AgeReport();
+            DataTable dtMainAcc = dal.getDataTabl_1(@"SELECT DISTINCT acc_no,PAYER_NAME,payer_l_name from payer2 where ACC_NO='"+ Uc_Acc.ID.Text+"'");
+
+            DataTable dt_age = dal.getDataTabl_1(@"select a.acc_no,b.PAYER_NAME,b.payer_l_name,a.BRANCH_code,c.BRANCH_name,C.BRANCH_E_NAME
+		,SUM(CASE WHEN cast(A.g_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' THEN meno - loh ELSE 0 END) AS Ending_balance " +
+        ", SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=0 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=30  THEN meno    ELSE 0 END) AS '1-30' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=31 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=60  THEN meno    ELSE 0 END) AS '31-60' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=61 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=90  THEN meno    ELSE 0 END) AS '61-90' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=91 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=120  THEN meno    ELSE 0 END) AS '91-120' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=121 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=150  THEN meno    ELSE 0 END) AS '121-250' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=151 and DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')<=180  THEN meno    ELSE 0 END) AS '151-180' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd") + "')>=181  THEN meno    ELSE 0 END) AS more180    " +
+        "from daily_transaction as A  " +
+        "inner join payer2 as B on A.ACC_NO=b.ACC_NO and a.BRANCH_code=b.BRANCH_code " +
+        "inner join BRANCHS as C on A.BRANCH_code=c.BRANCH_code " +
+        "where A.ACC_NO like '" + Uc_Acc.ID.Text + "%' and ISNULL(A.COST_CENTER,'') like '%'  and a.BRANCH_code like '%' " +
+        "group by a.acc_no,b.PAYER_NAME,b.payer_l_name,a.BRANCH_code,c.BRANCH_name,C.BRANCH_E_NAME");
+            DataSet ds = new DataSet();
+            ds.Tables.Add(dt_age);
+            ds.WriteXmlSchema("schema_rpt.xml");
+            rpt.SetDataSource(ds);
+            crystalReportViewer1.ReportSource = rpt;
+            rpt.DataDefinition.FormulaFields["M_"].Text = "'" + M_than + "'";
+            rpt.SetParameterValue("EnterLanguh", cmbLanguh.SelectedIndex.ToString());
+            if (cmbLanguh.SelectedIndex == 1)
+            {
+                rpt.DataDefinition.FormulaFields["Date_"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["Acc_"].Text = " '" + dtMainAcc.Rows[0]["PAYER_NAME"].ToString() + "'";
+                rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";
+                rpt.DataDefinition.FormulaFields["Branch_Name"].Text = "'" + Properties.Settings.Default.Branch_txt + "'";
+            }
+            else
+            {
+                rpt.DataDefinition.FormulaFields["Date_"].Text = "'" + ToDate.Value.ToString("dd/MM/yyyy") + "'";
+                rpt.DataDefinition.FormulaFields["Acc_"].Text = " '" + dtMainAcc.Rows[0]["payer_l_name"].ToString() + "'";
+                rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt_EN + "'";
+                rpt.DataDefinition.FormulaFields["Branch_Name"].Text = "'" + Properties.Settings.Default.Branch_txt_EN + "'";
+            }
+
+            groupPanel1.Visible = false;
+            Cursor = Cursors.Default;
+
+
+            base.preview();
+        }
+
+
         private void Report_btn_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
+            Cursor = Cursors.WaitCursor;
 
             if (rAll.Checked == true)
             { M_than = "0"; }
@@ -74,7 +143,7 @@ namespace Report_Pro.RPT
             rpt.DataDefinition.FormulaFields["Date_"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["Acc_"].Text = " '" + Uc_Acc.Desc.Text + "'";
             groupPanel1.Visible = false;
-            this.Cursor = Cursors.Default;
+            Cursor = Cursors.Default;
         }
 
         private void buttonX6_Click(object sender, EventArgs e)
@@ -132,9 +201,11 @@ namespace Report_Pro.RPT
             this.Close();
         }
 
+
+        // vendors aging
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
+            Cursor = Cursors.WaitCursor;
 
             if (rAll.Checked == true)
             { M_than = "0"; }
@@ -177,7 +248,7 @@ namespace Report_Pro.RPT
             rpt.DataDefinition.FormulaFields["Date_"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["Acc_"].Text = " '" + Uc_Acc.Desc.Text + "'";
             groupPanel1.Visible = false;
-            this.Cursor = Cursors.Default;
+            Cursor = Cursors.Default;
 
 
         }
