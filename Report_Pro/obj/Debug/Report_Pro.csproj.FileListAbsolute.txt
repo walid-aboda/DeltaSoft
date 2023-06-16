@@ -539,7 +539,6 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.invoice_frm_copy.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.invoice_frm.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.list_H_price.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.OpenedForms.resources
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.order_list_frm.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.Prepaid_expenses.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.restor_Frm.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.scanFrm.resources
@@ -730,7 +729,6 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_ItemType.sq-AL.resour
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_ItemCategory.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_ItemCategory.sq-AL.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_KM_Item.ar.resources
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Project.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_SalesGroup.ar.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_SalesGroup.sq-AL.resources
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Items.ar.resources
@@ -860,4 +858,4 @@ C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.application
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.exe
 C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+C:\DeltaSoft\Report_Pro\obj\Debug\Report_Pro.PL.invoice_list_frm.resources

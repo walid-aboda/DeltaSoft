@@ -25,6 +25,9 @@
               <xs:element name="CAT_NAME_E" type="xs:string" minOccurs="0" />
               <xs:element name="COST_name" type="xs:string" minOccurs="0" />
               <xs:element name="COST_E_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJECT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJ_name" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJ_E_NAME" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

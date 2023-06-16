@@ -36,8 +36,15 @@ namespace Report_Pro.MyControls
                 dgv1.Visible = true;
                 this.Height = 130;
                 this.BringToFront();
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                    dgv1.DataSource = dal.getDataTabl_1("SELECT PROJ_CODE,PROJ_name FROM PROJECTS where PROJ_name like '%" + Desc.Text + "%' or isnull(PROJ_E_NAME,'') like '%" + Desc.Text + "%'");
+                }
+                else
+                {
+                    dgv1.DataSource = dal.getDataTabl_1("SELECT PROJ_CODE,PROJ_E_NAME FROM PROJECTS where PROJ_name like '%" + Desc.Text + "%' or isnull(PROJ_E_NAME,'') like '%" + Desc.Text + "%'");
 
-                dgv1.DataSource = dal.getDataTabl_1("SELECT PROJ_CODE,PROJ_name,PROJ_E_NAME FROM PROJECTS where PROJ_name like '" + Desc.Text+ "%' or PROJ_E_NAME like '" + Desc.Text + "%'");
+                }
                 dgv1.Columns[0].Width = 50;
             }
             catch { }

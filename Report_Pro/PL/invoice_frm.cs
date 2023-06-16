@@ -752,7 +752,7 @@ getSalesInv(Sh_ser, txtStore_ID.Text, sh_transaction, Properties.Settings.Defaul
         private void BSearch_Click(object sender, EventArgs e)
         {
 
-            PL.order_list_frm ord = new PL.order_list_frm();
+            PL.invoice_list_frm ord = new PL.invoice_list_frm();
             ord.trans_code = "xsc";
             ord.trans_code_1 = "xsd";
             ord.ShowDialog();

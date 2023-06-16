@@ -382,11 +382,13 @@ namespace Report_Pro.RPT
 				,B.branch_name,ISNULL(B.BRANCH_E_NAME,B.branch_name) AS BRANCH_E_NAME
 				,C.CAT_NAME,ISNULL(C.CAT_NAME_E,C.CAT_NAME) AS CAT_NAME_E
 				,S.COST_name,ISNULL(S.COST_E_NAME,s.COST_name) AS COST_E_NAME
+                ,A.PROJECT_NO,j.PROJ_name ,ISNULL(nullif(j.PROJ_E_NAME,''),J.PROJ_name) as PROJ_E_NAME
                 from daily_transaction as A
                 inner join  payer2 as P on P.ACC_NO = A.ACC_NO and P.BRANCH_code=A.BRANCH_code
                 inner join  BRANCHS as B on  B.BRANCH_code=A.BRANCH_code
                 left join  CATEGORY As C on  C.CAT_CODE=A.CAT_CODE
                 left join  COST_CENTER as S on S.COST_CODE=A.COST_CENTER
+                left join PROJECTS as J on ISNULL(A.PROJECT_NO,'') =J.PROJ_CODE
                where cast(A.g_date as date) between '" + FromDate.Value.ToString("yyyy-MM-dd") + "' AND '" + ToDate.Value.ToString("yyyy-MM-dd") +
                "'and  A.ACC_NO = '" + _acc + "' and ISNULL(A.COST_CENTER,'') like '" + UC_cost1.ID.Text +
               "%'and ISNULL(A.CAT_CODE,'')  like '" + UC_Catogry1.ID.Text + "%' and  A.BRANCH_code like (CASE WHEN (select t_final  from BRANCHS where BRANCH_code='" + UC_Branch.ID.Text +
@@ -419,7 +421,9 @@ namespace Report_Pro.RPT
         ", SUM(CASE WHEN  DATEDIFF(Day, CAST(g_date as date), '" + ToDate.Value.ToString("yyyy-MM-dd") + "') >= 181  THEN meno    ELSE 0 END) AS 'more180' " +
         ", ReportDB.dbo.Tafkeet(ABS(SUM(CASE WHEN cast(A.g_date as date) >= '" + miniDate.Date.ToString("yyyy-MM-dd") + "' and cast(A.g_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' THEN meno - loh ELSE 0 END)), '" + Properties.Settings.Default.Currency + "') " +
         " from daily_transaction as A " +
-        " where A.ACC_NO = '" + _acc + "' and ISNULL(A.COST_CENTER, '') like '" + UC_cost1.ID.Text + "%' and ISNULL(A.CAT_CODE, '')  like '" + UC_Catogry1.ID.Text + "%' and  A.BRANCH_code like(CASE WHEN(select t_final  from BRANCHS where BRANCH_code = '" + UC_Branch.ID.Text + "') = '1' then '" + UC_Branch.ID.Text + "' else  '" + UC_Branch.ID.Text + "%' end)  " +
+        " where A.ACC_NO = '" + _acc + "' and ISNULL(A.COST_CENTER, '') like '" + UC_cost1.ID.Text + "%' and ISNULL(A.CAT_CODE, '')  like '" + UC_Catogry1.ID.Text + 
+        "%' and  A.BRANCH_code like(CASE WHEN(select t_final  from BRANCHS where BRANCH_code = '" + UC_Branch.ID.Text + "') = '1' then '" + UC_Branch.ID.Text + "' else  '" + UC_Branch.ID.Text + "%' end)  " +
+       " and isnull(A.PROJECT_NO ,'') like (CASE WHEN '" + Project.ID.Text + "'<>'' then '" + Project.ID.Text + "' else  '" + Project.ID.Text + "%' end) "+
         "group by   A.ACC_NO");
 
          dt3 = dal.getDataTabl_1(@"select * from Wh_Oiner_Comp where Company_No=left('" + Properties.Settings.Default.BranchAccID+ "',1)   ");

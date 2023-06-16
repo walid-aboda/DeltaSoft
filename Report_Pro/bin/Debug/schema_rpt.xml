@@ -6,20 +6,27 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Ser_no" type="xs:int" minOccurs="0" />
+              <xs:element name="Transaction_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="G_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Payment_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="INV_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="acc_serial_no" type="xs:int" minOccurs="0" />
               <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
               <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_name" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_E_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="Ending_balance" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_-30" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0033_1-60" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0036_1-90" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0039_1-120" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_21-250" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_51-180" type="xs:decimal" minOccurs="0" />
-              <xs:element name="more180" type="xs:decimal" minOccurs="0" />
+              <xs:element name="adress" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUSTOM_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="Storing_Expire_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COSTMER_K_M_NO" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -1101,7 +1101,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;last_.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1131,7 +1131,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="next_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1176,7 +1176,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;next_.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1206,7 +1206,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="first_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1258,7 +1258,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;first_.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="txt_InvNu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1285,7 +1285,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvNu.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="previous_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1332,7 +1332,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;previous_.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1362,7 +1362,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="labelX46.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2092,7 +2092,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="AccSer_No.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2119,7 +2119,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;AccSer_No.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="Doc_Name.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2155,7 +2155,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;Doc_Name.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="labelX15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2185,7 +2185,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX15.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="labelX40.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2215,7 +2215,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX40.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="groupPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2479,7 +2479,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="txt_sandNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2506,7 +2506,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_sandNo.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="labelX50.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2536,7 +2536,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX50.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="txtStore_ID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2560,7 +2560,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtStore_ID.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="txtBranch_Id.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2584,7 +2584,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtBranch_Id.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="txt_InvSM.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2608,7 +2608,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvSM.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="acc_year.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2635,7 +2635,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;acc_year.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="txtSer_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2662,7 +2662,61 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtSer_code.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
+  </data>
+  <data name="txtcyear.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtcyear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 133</value>
+  </data>
+  <data name="txtcyear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="txtcyear.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="&gt;&gt;txtcyear.Name" xml:space="preserve">
+    <value>txtcyear</value>
+  </data>
+  <data name="&gt;&gt;txtcyear.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtcyear.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;txtcyear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelX24.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 134</value>
+  </data>
+  <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 15</value>
+  </data>
+  <data name="labelX24.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="labelX24.Text" xml:space="preserve">
+    <value>العام</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Name" xml:space="preserve">
+    <value>labelX24</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;labelX24.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2692,7 +2746,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2739,7 +2793,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2791,7 +2845,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="pictureBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2836,7 +2890,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="pictureBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2889,7 +2943,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btn_Search_Cash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2919,7 +2973,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;btn_Search_Cash.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btn_Search_Credit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2949,7 +3003,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;btn_Search_Credit.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="Main_AccSer_No.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2976,7 +3030,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;Main_AccSer_No.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="labelX21.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3006,7 +3060,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX21.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Doc_Type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3030,7 +3084,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;Doc_Type.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="M_Doc_Type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3054,7 +3108,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;M_Doc_Type.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="labelX16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3084,7 +3138,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX16.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="txtMainSer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3111,7 +3165,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtMainSer.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="chb1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3144,7 +3198,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;chb1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="userID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3168,7 +3222,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;userID.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="labelX51.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3198,7 +3252,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX51.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="txt_InvDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3222,7 +3276,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvDate.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3687,7 +3741,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="groupPanel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 29</value>
@@ -3748,6 +3802,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1604, 722</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

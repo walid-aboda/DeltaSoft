@@ -153,11 +153,6 @@
             this.labelX19 = new DevComponents.DotNetBar.LabelX();
             this.labelX18 = new DevComponents.DotNetBar.LabelX();
             this.labelX17 = new DevComponents.DotNetBar.LabelX();
-            this.txt_DP_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.Uc_Project = new Report_Pro.MyControls.UC_Project();
-            this.Uc_Customer = new Report_Pro.MyControls.UC_Acc();
-            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
-            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
             this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.txtKmCode = new System.Windows.Forms.TextBox();
@@ -165,6 +160,13 @@
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.tabItem7 = new DevComponents.DotNetBar.TabItem(this.components);
             this.inv_Grid1 = new Report_Pro.MyControls.Con_Inv_Grid();
+            this.txt_DP_Acc = new Report_Pro.MyControls.UC_Acc();
+            this.Uc_Project = new Report_Pro.MyControls.UC_Project();
+            this.Uc_Customer = new Report_Pro.MyControls.UC_Acc();
+            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
+            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
+            this.txtcyear = new DevComponents.DotNetBar.LabelX();
+            this.labelX24 = new DevComponents.DotNetBar.LabelX();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.last_)).BeginInit();
@@ -920,6 +922,8 @@
             // 
             this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel6.Controls.Add(this.txtcyear);
+            this.groupPanel6.Controls.Add(this.labelX24);
             this.groupPanel6.Controls.Add(this.buttonX1);
             this.groupPanel6.Controls.Add(this.pictureBox2);
             this.groupPanel6.Controls.Add(this.pictureBox3);
@@ -1205,38 +1209,6 @@
             this.labelX17.BackColor = System.Drawing.Color.Transparent;
             this.labelX17.Name = "labelX17";
             // 
-            // txt_DP_Acc
-            // 
-            resources.ApplyResources(this.txt_DP_Acc, "txt_DP_Acc");
-            this.txt_DP_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_DP_Acc.Name = "txt_DP_Acc";
-            // 
-            // Uc_Project
-            // 
-            this.Uc_Project.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.Uc_Project, "Uc_Project");
-            this.Uc_Project.Name = "Uc_Project";
-            this.Uc_Project.Load += new System.EventHandler(this.Uc_Project_Load);
-            // 
-            // Uc_Customer
-            // 
-            resources.ApplyResources(this.Uc_Customer, "Uc_Customer");
-            this.Uc_Customer.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Customer.Name = "Uc_Customer";
-            this.Uc_Customer.Load += new System.EventHandler(this.Uc_Customer_Load);
-            // 
-            // cashCustomer
-            // 
-            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.cashCustomer, "cashCustomer");
-            this.cashCustomer.Name = "cashCustomer";
-            // 
-            // Uc_Cost
-            // 
-            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
-            this.Uc_Cost.Name = "Uc_Cost";
-            // 
             // tabItem5
             // 
             this.tabItem5.AttachedControl = this.tabControlPanel1;
@@ -1326,6 +1298,50 @@
             // 
             resources.ApplyResources(this.inv_Grid1, "inv_Grid1");
             this.inv_Grid1.Name = "inv_Grid1";
+            // 
+            // txt_DP_Acc
+            // 
+            resources.ApplyResources(this.txt_DP_Acc, "txt_DP_Acc");
+            this.txt_DP_Acc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_DP_Acc.Name = "txt_DP_Acc";
+            // 
+            // Uc_Project
+            // 
+            this.Uc_Project.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Uc_Project, "Uc_Project");
+            this.Uc_Project.Name = "Uc_Project";
+            this.Uc_Project.Load += new System.EventHandler(this.Uc_Project_Load);
+            // 
+            // Uc_Customer
+            // 
+            resources.ApplyResources(this.Uc_Customer, "Uc_Customer");
+            this.Uc_Customer.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Customer.Name = "Uc_Customer";
+            this.Uc_Customer.Load += new System.EventHandler(this.Uc_Customer_Load);
+            // 
+            // cashCustomer
+            // 
+            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.cashCustomer, "cashCustomer");
+            this.cashCustomer.Name = "cashCustomer";
+            // 
+            // Uc_Cost
+            // 
+            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
+            this.Uc_Cost.Name = "Uc_Cost";
+            // 
+            // txtcyear
+            // 
+            resources.ApplyResources(this.txtcyear, "txtcyear");
+            this.txtcyear.BackColor = System.Drawing.Color.MistyRose;
+            this.txtcyear.Name = "txtcyear";
+            // 
+            // labelX24
+            // 
+            resources.ApplyResources(this.labelX24, "labelX24");
+            this.labelX24.BackColor = System.Drawing.Color.Transparent;
+            this.labelX24.Name = "labelX24";
             // 
             // frm_Con_Invoice
             // 
@@ -1509,5 +1525,7 @@
         private DevComponents.DotNetBar.LabelX labelX22;
         private System.Windows.Forms.TextBox txt_Refrance;
         private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.LabelX txtcyear;
+        private DevComponents.DotNetBar.LabelX labelX24;
     }
 }

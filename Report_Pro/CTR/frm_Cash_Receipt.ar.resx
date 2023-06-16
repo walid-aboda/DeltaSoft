@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="headLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1482, 35</value>
+    <value>1496, 35</value>
   </data>
   <data name="headLbl.Text" xml:space="preserve">
     <value>سند قبض</value>
@@ -259,7 +259,7 @@
 </value>
   </data>
   <data name="Btn_NonPayInvoice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 130</value>
+    <value>338, 127</value>
   </data>
   <data name="Btn_NonPayInvoice.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 84</value>
@@ -590,6 +590,6 @@
     <value>False</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1482, 768</value>
+    <value>1496, 775</value>
   </data>
 </root>

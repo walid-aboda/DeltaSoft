@@ -12,13 +12,13 @@ using System.IO;
 
 namespace Report_Pro.PL
 {
-    public partial class order_list_frm : Form
+    public partial class invoice_list_frm : Form
     {
         //BL.Cls_orders ord = new BL.Cls_orders();
         public string trans_code, trans_code_1;
-        string cy=  DateTime.Now.ToString("yyyy");
+        string cy=  Properties.Settings.Default.C_year;
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
-        public order_list_frm()
+        public invoice_list_frm()
 
         {
             InitializeComponent();
@@ -36,7 +36,19 @@ namespace Report_Pro.PL
 
         private void search_()
         {
-            this.dg_orders_list.DataSource = dal.getDataTabl("serch_orders", txtSrch.Text.ToString(), trans_code, trans_code_1, cy);
+            //this.dg_orders_list.DataSource = dal.getDataTabl("serch_orders", txtSrch.Text.ToString(), trans_code, trans_code_1, cy);
+            dg_orders_list.DataSource = dal.getDataTabl_1(@"SELECT Ser_no,G_date,PAYER_NAME,Inv_Notes,NetAmount,Payment_name,Sales_man_Id,Transaction_code,Cyear	  
+FROM wh_inv_data as A
+inner join payer2 as B
+on B.ACC_NO=A.Acc_no and b.BRANCH_code=A.Branch_code
+inner join wh_Payment_type As C on  A.Payment_Type=C.Payment_type
+
+where Ser_no like  (CASE WHEN '" + txtSrch.Text.ToString() + "'<>'' then '" + txtSrch.Text.ToString() + "' else  '" + txtSrch.Text.ToString() + "%' end) " +
+"and PAYER_NAME like '" + txtSearch2.Text.ToString() +
+"%' and Cyear='"+cmbYear.SelectedValue+
+"'  and (Transaction_code='" + trans_code+"' or Transaction_code='"+ trans_code_1+"')  and A.Branch_code='"+Properties.Settings.Default.BranchId+"' ");
+
+
             this.dg_orders_list.Columns[0].Width = 50;
             this.dg_orders_list.Columns[1].Width = 120;
             this.dg_orders_list.Columns[2].Width = 150;
@@ -164,11 +176,17 @@ namespace Report_Pro.PL
 
         private void btnSrch_Click(object sender, EventArgs e)
         {
-
+            search_();
         }
 
         private void order_list_frm_Load(object sender, EventArgs e)
         {
+
+            cmbYear.DataSource = dal.getDataTabl_1(@"select DISTINCT Cyear from wh_inv_data");
+
+            cmbYear.DisplayMember = "Cyear";
+            cmbYear.ValueMember = "Cyear";
+            cmbYear.SelectedValue = Properties.Settings.Default.C_year;
             //if (checkBox1.Checked == true)
             //{
 
@@ -186,14 +204,29 @@ namespace Report_Pro.PL
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                cy = DateTime.Now.ToString("yyyy");
-            }
-            else
-            {
-                cy = "";
-            }
+            //if (checkBox1.Checked)
+            //{
+            //    cy = Properties.Settings.Default.C_year;
+            //}
+            //else
+            //{
+            //    cy = "";
+            //}
+            //search_();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtSearch2_TextChanged(object sender, EventArgs e)
+        {
+            search_();
+        }
+
+        private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
             search_();
         }
 

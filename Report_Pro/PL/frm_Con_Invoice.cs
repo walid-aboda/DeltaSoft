@@ -225,6 +225,7 @@ namespace Report_Pro.PL
             dt.Clear();
             BSave.Enabled = true;
             Payment_Type.Enabled = true;
+            txtcyear.Text = Properties.Settings.Default.C_year;
             txt_InvNot.Focus();
             IsNew = true;
 
@@ -319,163 +320,7 @@ namespace Report_Pro.PL
             }
 
 
-            //      dal.Execute_1(@"iF NOT EXISTS " +
-            //       "(select Branch_code,Cyear  from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "') BEGIN INSERT INTO wh_Serial (Branch_code,Cyear) VALUES('" + txtStore_ID.Text + "','" + txt_InvDate.Value.Date.ToString("yy") + "') end");
-
-
-
-            //if (Convert.ToString(Payment_Type.SelectedValue) == "2")
-            //    {
-            //        Doc_Type.Text = "XSD";
-            //        txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '"+txtStore_ID.Text+"' and Cyear='"+ txt_InvDate.Value.Date.ToString("yy")+"'").Rows[0][0].ToString();
-            //    }
-            //    else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
-            //    {
-            //        Doc_Type.Text = "XSC";
-            //        txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
-                    
-            //    }
-
-            //    get_invSer();
-            //    getAccSer();
-  
-
-            //string cyear = txt_InvDate.Value.Year.ToString("yy");
-            //string H_Date = date_.GregToHijri(txt_InvDate.Text);
-
-
-            //SqlCommand cmd = dal.sqlconn1.CreateCommand();
-            //    SqlTransaction trans;
-            //    trans = dal.sqlconn1.BeginTransaction();
-            //    cmd.Connection = dal.sqlconn1;
-            //    cmd.Transaction = trans;
-
-            //    try
-            //    {
-            //    cmd.CommandText = @"insert into wh_inv_data (Ser_no, Branch_code, Transaction_code, Cyear, Sanad_no, G_date, ACC_TYPE, Acc_no,
-            //     Acc_Branch_code, Payment_Type, Sales_man_Id, acc_serial_no, Po_no, User_id, NetAmount, PanyedAmount,
-            //     Cash_costomer_name, total_cost, Inv_Notes, Costmer_No, Phone, Adress, K_M_ACC_NO, K_M_Credit_TAX,
-            //     K_M_Debit_TAX, COSTMER_K_M_NO, K_M_SER, KM_CODE_ACC, MAIN_KM_CODE,PROJECT_NO,Refrance_No,REQUIST_NO,Qutation_No,Dowen_Payment_acc_no,Dowen_Payment,Dowen_Payment_Vat,Sales_Vat,Dowen_Payment_Ratio)
-            //     values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text +
-            //        "', '" + txt_InvDate.Value.ToString("yy") + "' ,'" + txtMainSer.Text +
-            //        "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','A', '" + Uc_Customer.ID.Text +
-            //        "', '" + txtBranch_Id.Text + "', '" + Convert.ToString(Payment_Type.SelectedValue) +
-            //        "', '" + Uc_Cost.ID.Text + "', '" + AccSer_No.Text + "', '" + Po_No.Text + "' , '" + userID.Text +
-            //        "', '" + inv_Grid1.txtNetTotal.Text.ToDecimal() + "', '" + inv_Grid1.paied_amount.Text.ToDecimal() +
-            //        "', '" + cashCustomer.Desc.Text + "', '0', '" + txt_InvNot.Text + "', '" + cashCustomer.ID.Text +
-            //        "', '" + txt_custTel.Text + "', '" + txt_address.Text + "', '" + Vat_acc.Text + "', '" + inv_Grid1.txtTotalVAT.Text.ToDecimal() +
-            //        "', '0', '" + Cust_Vat_No.Text + "', '0','" + txtKmCode.Text + "','" + Vat_Class.Text + "','"+Uc_Project.ID.Text+ 
-            //        "','"+txt_Refrance.Text+"','"+ Po_No.Text+ "','"+ txt_Qutation.Text+"','"+txt_DP_Acc.ID.Text+"','"+inv_Grid1.txt_DP_Disc.Text.ToDecimal()+ 
-            //        "','" + inv_Grid1.txtDPVat.Text.ToDecimal() + "','" + inv_Grid1.txtSalesVat.Text.ToDecimal() + "','"+ txt_DP_Ratio.Text.ToDecimal()+"')";
-
-            //    cmd.ExecuteNonQuery();
-
-
-            //    foreach (Controls.Con_Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
-            //    {
-
-            //        if (r.txt_Code.Text != string.Empty && r.qty.Value > 0 && r.TxtPrice.Value > 0)
-            //        {
-            //            cmd.CommandText = @" insert into wh_MATERIAL_TRANSACTION (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,total_disc,DISC_R,DISC_R2,DISC_R3,
-            //            G_DATE,Unit,Local_Price,USER_ID,main_counter,balance,Store_Code,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT,modular,DP_Ratio,DP_Amount,VAT_RATIO) 
-            //           values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
-            //            "' ,'" + txtMainSer.Text + "','" + r.txt_Code.Text + "' ,'0','" +
-            //           r.qty.Text + "','" + ((r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) + inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
-            //            "' ,'" + (r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) * 100 + "' ,'0','" + (inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
-            //            "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + Convert.ToString(r.txtUnit.SelectedValue) +
-            //            "' ,'" + r.TxtPrice.Text.ToDecimal() + "' , '" + userID.Text + "','" +
-            //            inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + "', '" + r.qty.Text.ToDecimal() + "', '" + txtStore_ID.Text +
-            //           "','" + r.KM_TYPE_ITEMS.Text + "' ,'0','" + r.VatValue.Text.ToDecimal() + "','"+r.txtNote.Text+ "','" + r.txt_DP_Ratio.Value + "','" + r.TxtDisc.Value + "','"+r.VatRate.Value+"')";
-
-            //            cmd.ExecuteNonQuery();
-
-            //        }
-
-            //    }
-
-
-
-            //    cmd.CommandText = @"UPDATE  wh_Serial SET "+ Doc_Type.Text.ToString()+"= '" + txt_InvNu.Text + "'," + M_Doc_Type.Text.ToString() + "= '" + txtMainSer.Text + "'  WHERE Branch_code = '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.ToString("yy") + "' ";
-            //    cmd.ExecuteNonQuery();
-
-                
-
-            //    cmd.CommandText = @"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
-            //    balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING,SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO,PROJECT_NO )
-            //    Values('" + acc_year.Text + "', '" + Uc_Customer.ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
-            //    Uc_Cost.ID.Text + "','" + inv_Grid1.txtNetValue.Text + "','" + 0 + "','" + inv_Grid1.txtNetValue.Text + "','" + H_Date + "','" +
-            //    txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            //    userID.Text + "','" + "فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
-            //    txtStore_ID.Text + "','" + AccSer_No.Text + "','" + Uc_Project.ID.Text + "')";
-            //    cmd.ExecuteNonQuery();
-
-            //    cmd.CommandText = @"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
-            //     balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO,PROJECT_NO )
-            //    Values('" + acc_year.Text + "', '" + txtAcc2_ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
-            //    Uc_Cost.ID.Text + "','" + 0 + "','" + inv_Grid1.txt_SubTot.Text.ToDecimal() + "','" + -inv_Grid1.txtNetTotal.Text.ToDecimal() + "','" + H_Date + "','" +
-            //    txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            //    userID.Text + "','" + "فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
-            //    txtStore_ID.Text + "','" + AccSer_No.Text + "','" + Uc_Project.ID.Text + "')";
-            //    cmd.ExecuteNonQuery();
-
-            //    cmd.CommandText = @"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
-            //    balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO,PROJECT_NO )
-            //    Values('" + acc_year.Text + "', '" + Vat_acc.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
-            //    Uc_Cost.ID.Text + "','" + 0 + "','" + inv_Grid1.txtSalesVat.Text.ToDecimal() + "','" + -inv_Grid1.txtTotalVAT.Text.ToDecimal() + "','" + H_Date + "','" +
-            //    txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            //    userID.Text + "','" + "ضريبة فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
-            //    txtStore_ID.Text + "','" + AccSer_No.Text + "','" + Uc_Project.ID.Text + "')";
-            //    cmd.ExecuteNonQuery();
-
-            //    if (inv_Grid1.txt_DP_Disc.Text.ToDecimal() > 0)
-            //    {
-            //        cmd.CommandText = @"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
-            //        balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO,PROJECT_NO )
-            //        Values('" + acc_year.Text + "', '" + txt_DP_Acc.ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
-            //        Uc_Cost.ID.Text + "','" + inv_Grid1.txt_DP_Disc.Text.ToDecimal() + "','0','" + -inv_Grid1.txtNetTotal.Text.ToDecimal() + "','" + H_Date + "','" +
-            //        txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            //        userID.Text + "','" + "خصم دفعة مقدمة فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
-            //        txtStore_ID.Text + "','" + AccSer_No.Text + "','" + Uc_Project.ID.Text + "')";
-            //        cmd.ExecuteNonQuery();
-
-            //        cmd.CommandText = @"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
-            //    balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO,PROJECT_NO )
-            //    Values('" + acc_year.Text + "', '" + Vat_acc.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
-            //    Uc_Cost.ID.Text + "','" + inv_Grid1.txtDPVat.Text.ToDecimal() + "','0','" + -inv_Grid1.txtTotalVAT.Text.ToDecimal() + "','" + H_Date + "','" +
-            //    txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            //    userID.Text + "','" + "خصم ضريبة دفعة مقدمة فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
-            //    txtStore_ID.Text + "','" + AccSer_No.Text + "','" + Uc_Project.ID.Text + "')";
-            //        cmd.ExecuteNonQuery();
-
-
-            //    }
-
-
-
-            //    cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + Main_AccSer_No.Text + "' , main_daily_ser = '" + AccSer_No.Text + "' WHERE BRANCH_CODE=  '" + txtBranch_Id.Text + "' and ACC_YEAR='" + acc_year.Text + "' ";
-            //    cmd.ExecuteNonQuery();
-
-
-
-
-
-            //    trans.Commit();
-            //    MessageBox.Show("Data was saved ---- تم حفظ البيانات ", "Save --- حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-
-
-            //}
-            //catch (Exception ex)
-            //    {
-            //        trans.Rollback();
-            //        MessageBox.Show(ex.Message);
-            //    }
-            //    finally
-            //    {
-            //        dal.sqlconn1.Close();
-            //    }
-
+         
 
             }
     
@@ -485,68 +330,20 @@ namespace Report_Pro.PL
         private void addInvoice()
         {
 
-                //if (Uc_Customer.ID.Text == string.Empty)
-                //{
-                //    MessageBox.Show("فضلا.. تاكد من اختيار العميل ", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
-
-
-
-                //if (Payment_Type.SelectedIndex < 0)
-                //{
-                //    MessageBox.Show("فضلا.. تاكد من نوع الفاتورة", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
-
-                //if (inv_Grid1.txtNetTotal.Text.ToDecimal() <= 0)
-                //{
-                //    MessageBox.Show("لايمكن حفظ فاتورة بقيمة اقل من او يساوي صفر", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
-
-
-
-
-
-                //if (Convert.ToString(Payment_Type.SelectedValue) == "11")
-                //{
-                //    if (cmb_Pay.SelectedIndex < 0)
-                //    {
-                //        MessageBox.Show("فضلا.. تاكد من طريقة السداد", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //        return;
-                //    }
-
-                //    if (cashCustomer.Desc.Text.Replace(" ", string.Empty) == "")
-                //    {
-                //        MessageBox.Show("تأكد من اسم العميل النقدي", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //        return;
-                //    }
-
-
-
-                //}
-
-
-                //if (IsGridValid() == false)
-                //{
-                //    return;
-                //}
-
                 dal.Execute_1(@"iF NOT EXISTS " +
-                 "(select Branch_code,Cyear  from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "') BEGIN INSERT INTO wh_Serial (Branch_code,Cyear) VALUES('" + txtStore_ID.Text + "','" + txt_InvDate.Value.Date.ToString("yy") + "') end");
+                 "(select Branch_code,Cyear  from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txtcyear.Text + "') BEGIN INSERT INTO wh_Serial (Branch_code,Cyear) VALUES('" + txtStore_ID.Text + "','" + txt_InvDate.Value.Date.ToString("yy") + "') end");
 
 
 
                 if (Convert.ToString(Payment_Type.SelectedValue) == "2")
                 {
                     Doc_Type.Text = "XSD";
-                    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
+                    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txtcyear.Text + "'").Rows[0][0].ToString();
                 }
                 else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
                 {
                     Doc_Type.Text = "XSC";
-                    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
+                    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txtcyear.Text + "'").Rows[0][0].ToString();
 
                 }
 
@@ -554,7 +351,7 @@ namespace Report_Pro.PL
                 getAccSer();
 
 
-                string cyear = txt_InvDate.Value.Year.ToString("yy");
+               // string cyear = txt_InvDate.Value.Year.ToString("yy");
                 string H_Date = date_.GregToHijri(txt_InvDate.Text);
 
 
@@ -571,7 +368,7 @@ namespace Report_Pro.PL
                  Cash_costomer_name, total_cost, Inv_Notes, Costmer_No, Phone, Adress, K_M_ACC_NO, K_M_Credit_TAX,
                  K_M_Debit_TAX, COSTMER_K_M_NO, K_M_SER, KM_CODE_ACC, MAIN_KM_CODE,PROJECT_NO,Ref,REQUIST_NO,Qutation_No,Dowen_Payment_acc_no,Dowen_Payment,Dowen_Payment_Vat,Sales_Vat,Dowen_Payment_Ratio)
                  values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text +
-                        "', '" + txt_InvDate.Value.ToString("yy") + "' ,'" + txtMainSer.Text +
+                        "', '" + txtcyear.Text + "' ,'" + txtMainSer.Text +
                         "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','A', '" + Uc_Customer.ID.Text +
                         "', '" + txtBranch_Id.Text + "', '" + Convert.ToString(Payment_Type.SelectedValue) +
                         "', '" + Uc_Cost.ID.Text + "', '" + AccSer_No.Text + "', '" + Po_No.Text + "' , '" + userID.Text +
@@ -592,7 +389,7 @@ namespace Report_Pro.PL
                         {
                             cmd.CommandText = @" insert into wh_MATERIAL_TRANSACTION (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,total_disc,DISC_R,DISC_R2,DISC_R3,
                         G_DATE,Unit,Local_Price,USER_ID,main_counter,balance,Store_Code,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT,modular,DP_Ratio,DP_Amount,VAT_RATIO) 
-                       values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
+                       values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txtcyear.Text +
                             "' ,'" + txtMainSer.Text + "','" + r.txt_Code.Text + "' ,'0','" +
                            r.qty.Text + "','" + ((r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) + inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
                             "' ,'" + (r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) * 100 + "' ,'0','" + (inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
@@ -609,7 +406,7 @@ namespace Report_Pro.PL
 
 
 
-                    cmd.CommandText = @"UPDATE  wh_Serial SET " + Doc_Type.Text.ToString() + "= '" + txt_InvNu.Text + "'," + M_Doc_Type.Text.ToString() + "= '" + txtMainSer.Text + "'  WHERE Branch_code = '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.ToString("yy") + "' ";
+                    cmd.CommandText = @"UPDATE  wh_Serial SET " + Doc_Type.Text.ToString() + "= '" + txt_InvNu.Text + "'," + M_Doc_Type.Text.ToString() + "= '" + txtMainSer.Text + "'  WHERE Branch_code = '" + txtStore_ID.Text + "' and Cyear='" + txtcyear.Text + "' ";
                     cmd.ExecuteNonQuery();
 
                 string arabicDesc, englishDesc;
@@ -712,73 +509,6 @@ namespace Report_Pro.PL
 
         private void UpdateInvoice()
         {
-
-            //if (Uc_Customer.ID.Text == string.Empty)
-            //{
-            //    MessageBox.Show("فضلا.. تاكد من اختيار العميل ", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
-
-
-            //if (Payment_Type.SelectedIndex < 0)
-            //{
-            //    MessageBox.Show("فضلا.. تاكد من نوع الفاتورة", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
-            //if (inv_Grid1.txtNetTotal.Text.ToDecimal() <= 0)
-            //{
-            //    MessageBox.Show("لايمكن حفظ فاتورة بقيمة اقل من او يساوي صفر", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
-
-
-
-
-            //if (Convert.ToString(Payment_Type.SelectedValue) == "11")
-            //{
-            //    if (cmb_Pay.SelectedIndex < 0)
-            //    {
-            //        MessageBox.Show("فضلا.. تاكد من طريقة السداد", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //        return;
-            //    }
-
-            //    if (cashCustomer.Desc.Text.Replace(" ", string.Empty) == "")
-            //    {
-            //        MessageBox.Show("تأكد من اسم العميل النقدي", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //        return;
-            //    }
-
-
-
-            //}
-
-
-            //if (IsGridValid() == false)
-            //{
-            //    return;
-            //}
-
-            //dal.Execute_1(@"iF NOT EXISTS " +
-            // "(select Branch_code,Cyear  from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "') BEGIN INSERT INTO wh_Serial (Branch_code,Cyear) VALUES('" + txtStore_ID.Text + "','" + txt_InvDate.Value.Date.ToString("yy") + "') end");
-
-
-
-            //if (Convert.ToString(Payment_Type.SelectedValue) == "2")
-            //{
-            //    Doc_Type.Text = "XSD";
-            //    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
-            //}
-            //else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
-            //{
-            //    Doc_Type.Text = "XSC";
-            //    txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
-
-            //}
-
-            string cyear = txt_InvDate.Value.Year.ToString("yy");
             string H_Date = date_.GregToHijri(txt_InvDate.Text);
 
 
@@ -793,10 +523,10 @@ namespace Report_Pro.PL
             try
             {
 
-                cmd.CommandText = @"delete from wh_material_transaction  where SER_NO = '" + txt_InvNu.Text + "'  and Transaction_code = '" + Doc_Type.Text + "' and Branch_code = '" + txtStore_ID.Text + "' and Cyear = '" + txt_InvDate.Value.ToString("yy") + "' ";
+                cmd.CommandText = @"delete from wh_material_transaction  where SER_NO = '" + txt_InvNu.Text + "'  and Transaction_code = '" + Doc_Type.Text + "' and Branch_code = '" + txtStore_ID.Text + "' and Cyear = '" + txtcyear.Text + "' ";
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText = @"delete from wh_inv_data  where SER_NO = '" + txt_InvNu.Text + "'  and Transaction_code = '" + Doc_Type.Text + "' and Branch_code = '" + txtStore_ID.Text + "' and Cyear = '" + txt_InvDate.Value.ToString("yy") + "' ";
+                cmd.CommandText = @"delete from wh_inv_data  where SER_NO = '" + txt_InvNu.Text + "'  and Transaction_code = '" + Doc_Type.Text + "' and Branch_code = '" + txtStore_ID.Text + "' and Cyear = '" + txtcyear.Text + "' ";
                 cmd.ExecuteNonQuery();
 
                 cmd.CommandText = @"delete from daily_transaction  where SER_NO = '" + AccSer_No.Text + "'  and Branch_code = '" + txtBranch_Id.Text + "' and ACC_YEAR = '" + acc_year.Text + "' ";
@@ -809,7 +539,7 @@ namespace Report_Pro.PL
                  Cash_costomer_name, total_cost, Inv_Notes, Costmer_No, Phone, Adress, K_M_ACC_NO, K_M_Credit_TAX,
                  K_M_Debit_TAX, COSTMER_K_M_NO, K_M_SER, KM_CODE_ACC, MAIN_KM_CODE,PROJECT_NO,Ref,REQUIST_NO,Qutation_No,Dowen_Payment_acc_no,Dowen_Payment,Dowen_Payment_Vat,Sales_Vat,Dowen_Payment_Ratio)
                  values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text +
-                    "', '" + txt_InvDate.Value.ToString("yy") + "' ,'" + txtMainSer.Text +
+                    "', '" + txtcyear.Text + "' ,'" + txtMainSer.Text +
                     "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','A', '" + Uc_Customer.ID.Text +
                     "', '" + txtBranch_Id.Text + "', '" + Convert.ToString(Payment_Type.SelectedValue) +
                     "', '" + Uc_Cost.ID.Text + "', '" + AccSer_No.Text + "', '" + Po_No.Text + "' , '" + userID.Text +
@@ -830,7 +560,7 @@ namespace Report_Pro.PL
                     {
                         cmd.CommandText = @" insert into wh_MATERIAL_TRANSACTION (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,total_disc,DISC_R,DISC_R2,DISC_R3,
                         G_DATE,Unit,Local_Price,USER_ID,main_counter,balance,Store_Code,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT,modular,DP_Ratio,DP_Amount,VAT_RATIO) 
-                       values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
+                       values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txtcyear.Text +
                         "' ,'" + txtMainSer.Text + "','" + r.txt_Code.Text + "' ,'0','" +
                        r.qty.Text + "','" + ((r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) + inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
                         "' ,'" + (r.TxtDisc.Text.ToDecimal() / r.txt_subTOt.Text.ToDecimal()) * 100 + "' ,'0','" + (inv_Grid1.disc_Rate.Text.ToDecimal()) * 100 +
@@ -974,6 +704,7 @@ namespace Report_Pro.PL
                 Vat_acc.Text = Dt_3.Rows[0]["K_M_ACC_NO_SALES"].ToString();
                 Vat_acc_Desc.Text = Dt_3.Rows[0]["PAYER_NAME"].ToString();
             }
+            txtcyear.Text = Properties.Settings.Default.C_year;
 
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Syria));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.UAE));
@@ -1231,19 +962,31 @@ namespace Report_Pro.PL
 
         private void btn_Search_Credit_Click(object sender, EventArgs e)
         {
-            search_Inv("XSD");
+            PL.invoice_list_frm ord = new PL.invoice_list_frm();
+            ord.trans_code = "XSD";
+            //ord.trans_code_1 = "xsd";
+            ord.ShowDialog();
+
+            int ii = ord.dg_orders_list.CurrentRow.Index;
+            string ser_ = ord.dg_orders_list.CurrentRow.Cells[0].FormattedValue.ToString();
+            string trans_ = ord.dg_orders_list.CurrentRow.Cells[7].FormattedValue.ToString();
+            string year_ = ord.dg_orders_list.CurrentRow.Cells[8].FormattedValue.ToString();
+            string branch_= Properties.Settings.Default.BranchId;
+
+            //frm.txtSearch.t.Text, txtStore_ID.Text, _transaction, Properties.Settings.Default.C_year
+            search_Inv(ser_,branch_, "XSD",year_);
            // BSave.Enabled = false;
         }
 
-        private void search_Inv(string _transaction)
+        private void search_Inv(string _no, string _branch, string _transaction, string _year)
         {
-            PL.frmSerch frm = new PL.frmSerch();
-            frm.ShowDialog();
-            getSalesInv(frm.txtSearch.t.Text, txtStore_ID.Text, _transaction, Properties.Settings.Default.C_year);
+            //PL.frmSerch frm = new PL.frmSerch();
+            //frm.ShowDialog();
+            getSalesInv(_no, _branch, _transaction, _year);
             if (dt_inv.Rows.Count > 0)
             {
                 Doc_Type.Text = dt_inv.Rows[0]["Transaction_code"].ToString();
-                
+                txtcyear.Text = dt_inv.Rows[0]["cyear"].ToString();
                 txt_InvDate.Text = dt_inv.Rows[0]["G_date"].ToString();
                 Uc_Customer.ID.Text = dt_inv.Rows[0]["Acc_no"].ToString();
                 Payment_Type.SelectedValue = dt_inv.Rows[0]["Payment_Type"].ToString();
@@ -1310,7 +1053,22 @@ namespace Report_Pro.PL
 
         private void btn_Search_Mser_Click(object sender, EventArgs e)
         {
-            search_Inv("XSC");
+            PL.invoice_list_frm ord = new PL.invoice_list_frm();
+            ord.trans_code = "XSC";
+            //ord.trans_code_1 = "xsd";
+            ord.ShowDialog();
+
+            int ii = ord.dg_orders_list.CurrentRow.Index;
+            string ser_ = ord.dg_orders_list.CurrentRow.Cells[0].ToString();
+            string trans_ = ord.dg_orders_list.CurrentRow.Cells[7].ToString();
+            string year_ = ord.dg_orders_list.CurrentRow.Cells[8].ToString();
+            string branch_ = Properties.Settings.Default.BranchId;
+
+            //frm.txtSearch.t.Text, txtStore_ID.Text, _transaction, Properties.Settings.Default.C_year
+            search_Inv(ser_, branch_, "XSC", year_);
+
+
+           
            // BSave.Enabled = false;
         }
 

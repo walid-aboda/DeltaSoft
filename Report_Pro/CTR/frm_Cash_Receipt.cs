@@ -1195,7 +1195,7 @@ namespace Report_Pro.CTR
         {
             DataTable dt_ = dal.getDataTabl_1(@" select * from (SELECT ACC_YEAR,ACC_NO,BRANCH_code,ser_no,COST_CENTER,meno,g_date,sanad_no,SANAD_TYPE,sp_ser_no
             ,user_name,desc2,sheek_no,sheek_bank,sheek_date,sheek_or_cash,notes,SOURCE_CODE,Wh_Branch_Code,Sheek,payType_No,shequeBank_no
-            ,Dafter_no,Dafter_ser,SANAD_TYPE2,desc_E  FROM daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + _branch + "' and  sanad_no ='" + _sanad + "' and  meno>0) as A , (select acc_no as acc_cr,desc2 as desc_cr   from daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + _branch + "' and  sanad_no ='" + _sanad + "' and loh>0)  as cr_acc ");
+            ,Dafter_no,Dafter_ser,SANAD_TYPE2,desc_E,PROJECT_NO  FROM daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + _branch + "' and  sanad_no ='" + _sanad + "' and  meno>0) as A , (select acc_no as acc_cr,desc2 as desc_cr   from daily_transaction where SANAD_TYPE2 in('CR','BR') and BRANCH_code='" + _branch + "' and  sanad_no ='" + _sanad + "' and loh>0)  as cr_acc ");
 
             ClearTextBoxes();
             //G_Search.Visible = false;
@@ -1223,7 +1223,7 @@ namespace Report_Pro.CTR
                 txtDescr_E.Text = dt_.Rows[0]["desc_E"].ToString();
                 cheuqeOrCash.Text = dt_.Rows[0]["sheek_or_cash"].ToString();
                 txtSpecialNo.Text = dt_.Rows[0]["sp_ser_no"].ToString();
-
+                Project.ID.Text = dt_.Rows[0]["PROJECT_NO"].ToString();
                 LoadSanad(txt_sandNo.TextS, acc_year.Text, txtStore_ID.Text, txt_source_code.Text);
             }
             Get_Total();

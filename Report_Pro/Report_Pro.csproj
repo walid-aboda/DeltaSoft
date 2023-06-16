@@ -1959,11 +1959,11 @@
     <Compile Include="PL\OpenedForms.designer.cs">
       <DependentUpon>OpenedForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\order_list_frm.cs">
+    <Compile Include="PL\invoice_list_frm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\order_list_frm.designer.cs">
-      <DependentUpon>order_list_frm.cs</DependentUpon>
+    <Compile Include="PL\invoice_list_frm.designer.cs">
+      <DependentUpon>invoice_list_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Prepaid_expenses.cs">
       <SubType>Form</SubType>
@@ -3219,9 +3219,6 @@
     <EmbeddedResource Include="MyControls\UC_KM_Item.ar.resx">
       <DependentUpon>UC_KM_Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyControls\UC_Project.ar.resx">
-      <DependentUpon>UC_Project.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_Project.resx">
       <DependentUpon>UC_Project.cs</DependentUpon>
     </EmbeddedResource>
@@ -3940,8 +3937,8 @@
       <DependentUpon>OpenedForms.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\order_list_frm.resx">
-      <DependentUpon>order_list_frm.cs</DependentUpon>
+    <EmbeddedResource Include="PL\invoice_list_frm.resx">
+      <DependentUpon>invoice_list_frm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Prepaid_expenses.resx">
